@@ -6,3 +6,17 @@
     AddType application/octet-stream .bin
     AddType audio/mpeg .mp3
 </IfModule>
+
+# Compressão: o relevo (altura.bin, 4 MB) e os JSON caem muito.
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/javascript application/json application/octet-stream image/svg+xml
+</IfModule>
+
+# Cache curto para o que muda com os dados e o código; longo para fonte, ícones e imagem.
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 hour"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType application/octet-stream "access plus 1 month"
+</IfModule>

@@ -21,6 +21,8 @@ Público: visitantes e turistas (leitura a 3–4 m, toque ou mouse), equipe da S
 | RF7 | Publicação online (hospedagem estática) | pendente | média |
 | RF8 | Passaporte digital com carimbos por visita | **fora de escopo** (inspira o visual da ficha) | futuro |
 | RF9 | Versão 2D leve para celular | **fora de escopo** (o telão é para TV/notebook) | futuro |
+| RF10 | **Área administrativa web (PHP + MySQL)** para inserir, editar e excluir atrativos (e rotas, categorias, experiências), com login, trilha de auditoria e publicação; o telão passa a ler do banco por uma API. Detalhes na seção 9 | **pendente — pedido de 16/10/2026** (plano em `STEPS.md`, F7–F8) | alta |
+| RF11 | **Idiomas: português, inglês, francês e alemão** no telão (interface e conteúdo), com seletor de idioma, `?lang=` e fallback para o português. Detalhes na seção 9 | **pendente — pedido de 16/10/2026** (plano em `STEPS.md`, F9) | alta |
 
 ## 3. Regras de negócio
 
@@ -49,6 +51,12 @@ Entrada: 12 PDFs (links em [dados-fonte/FONTES.md](dados-fonte/FONTES.md)). Saí
 - `node verificar.mjs` verde (sintaxe + 15 testes de dados + provas no navegador: clique real em município, alvo, alvos colados, relevo, lista, legenda; ficha conferida contra os dados e **QR da tela decodificado**; passeio; servidor; 4 tamanhos de tela).
 - RF5: o usuário aprova a captura 1080p lado a lado com a referência.
 
+## 9. Administração e idiomas (pedidos de 16/10/2026 — ainda não implementados)
+
+**Admin (RF10).** PHP ≥ 8.2 + MySQL/MariaDB (PDO, consultas preparadas), mesmas convenções do projeto-irmão `mapa-3d` (`app/` PSR-4, `config/`, `database/migracoes`, PHPUnit/PHPStan). Funcionalidades: login (senha com `password_hash`, sessão com cookie `HttpOnly`/`SameSite`, token CSRF em todo formulário, limite de tentativas, troca de senha obrigatória no primeiro acesso; **nenhuma senha padrão no repositório**: o primeiro usuário nasce por comando); lista de atrativos com busca, filtros (região, município, rota, precisão, sem tradução) e paginação; formulário de inserir/editar com validação (nome e município obrigatórios; município da lista oficial; coordenada dentro do estado e a menos de 12 km do município; precisão derivada da origem da coordenada; telefone/URL em formato válido); rotas, categorias e experiências escolhidas em caixas (não mais por palavra-chave); **excluir com confirmação** (lógica, com restaurar — ver D11); trilha de auditoria (quem mudou o quê e quando); importação inicial a partir de `dados-fonte/atrativos.json`; exportação CSV/XLSX; botão **Publicar** que regera o cache da API e o pacote estático do telão. Segurança: escape de saída em toda página, upload nenhum, cabeçalhos de segurança, admin fora do caminho público do telão.
+
+**Idiomas (RF11).** PT (original), EN, FR, DE. (a) **Interface** (~80 textos: título, abas, rótulos da ficha, avisos, painel de fontes, botões) em dicionários `telao/i18n/{pt,en,fr,de}.json`, com chaves e variáveis, formatação de números e datas pelo idioma. (b) **Conteúdo traduzível por atrativo:** descrição e funcionamento (nome, endereço, telefone, redes e município ficam como no guia). Nomes das 9 rotas, categorias e experiências também têm tradução. Cada tradução tem status `automática` ou `revisada` e pode ser editada no admin; falta de tradução cai para o português. (c) Seletor de idioma sempre visível (PT · EN · FR · DE), `?lang=xx`, lembrado no navegador; o passeio mantém o idioma escolhido. (d) Montserrat já cobre os acentos de FR/DE (é, è, ç, ü, ß, œ). Critério de aceitação: nenhuma chave sem texto em nenhum idioma (teste automático) e telas de cada idioma conferidas por captura.
+
 ## 7. Fora do escopo atual
 
 Cadastro/edição de produtores, passaporte digital, versão mobile, calendário de colheitas/festas, áudio/narração (removido do projeto-base).
@@ -60,6 +68,12 @@ Cadastro/edição de produtores, passaporte digital, versão mobile, calendário
 | D1 | O repositório é **público** e traz telefones/redes dos empreendimentos (vindos dos guias públicos). Pode? | manter público · tornar privado · remover contatos da versão pública |
 | D2 | Direitos de uso das descrições e do conteúdo dos guias em site próprio | pedir autorização à TurisRio · resumir as descrições |
 | D3 | As 9 rotas implementadas × as 6 do briefing (Café, Queijos, Frutas/Flores, Cachaças, Mata, Litoral caiçara) | adotar as 9 · reduzir às 3–6 prioritárias · validar nomes com a Setur |
-| D4 | Hospedagem online e domínio | subdomínio de `fanara.com.br` · GitHub Pages · outro |
+| D4 | Hospedagem online e domínio | **decidido (16/10/2026): subdomínio criado pelo usuário** — falta o endereço, a versão do PHP/MySQL e o tipo de acesso (D10) |
 | D5 | 161 atrativos só no município: completar coordenadas com a TurisRio? | pedir planilha de coordenadas · aceitar |
 | D6 | Fonte da identidade visual (Montserrat, licença OFL, será embutida) | Montserrat · outra fonte da marca do estado |
+| D7 | **Quem traduz as ~630 descrições** para EN/FR/DE? | tradução automática agora (eu faço, marcada "automática" até revisão no admin) · só a interface traduzida, conteúdo em português com aviso · tradução humana depois, pelo admin |
+| D8 | **De onde o telão lê os dados online** | API PHP lendo o MySQL (sempre atualizado) com cache + exportação estática para a TV offline · só exportação estática, regerada no botão "Publicar" |
+| D9 | **Quem acessa o admin** | vários usuários com papéis (administrador/editor) · um único usuário |
+| D10 | Hospedagem do PHP + MySQL (versão do PHP e do MySQL, acesso SSH, cron) | mesma do `mapa-3d` (compartilhada, PHP ≥ 8.2) · outra |
+| D11 | Excluir atrativo | exclusão lógica com "restaurar" (recomendado) · exclusão definitiva |
+| D12 | Nomes próprios em outros idiomas (rotas/categorias traduzidos; nomes de atrativos, municípios e regiões ficam como no guia) | confirmar com a Setur |

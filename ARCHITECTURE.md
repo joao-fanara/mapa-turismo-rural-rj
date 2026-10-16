@@ -33,5 +33,17 @@ flowchart LR
 ## Testes e qualidade
 `verificar.mjs` → sintaxe, `test_dados.py` e `telao/_provas/provas.mjs` (Chrome headless por CDP, sem dependências: cliques reais, ficha conferida contra os dados, QR decodificado da tela com OpenCV, passeio, servidor PowerShell, 4 tamanhos de tela, contraste; reprova em exceção, `console.error`, violação de CSP ou requisição externa). `.github/workflows/verificar.yml` roda o gate no GitHub (ainda não executado).
 
+## Arquitetura proposta (F7–F10, ainda não implementada)
+
+```mermaid
+flowchart LR
+  ADM[admin/ PHP: login, CRUD, auditoria] --> DB[(MySQL)]
+  SEED[dados-fonte/atrativos.json] -->|importar| DB
+  DB --> API[api/dados.php?lang= → registros, lentes, fichas, municipios]
+  API --> TELAO[telao/ no navegador, i18n PT/EN/FR/DE]
+  DB -->|Publicar| EST[telao/dados/ estático por idioma] --> TV[TV offline]
+```
+Decisões propostas: o banco é a fonte da verdade, e o pipeline Python vira só a **importação inicial**; o telão continua estático e passa a escolher a fonte (`api` online, `estatico` offline); idioma é parâmetro da API e do telão; traduções ficam em tabela própria com status; convenções do `mapa-3d` (PHP ≥ 8.2, PDO, `Mapa\` em `app/`, migrações numeradas, PHPUnit/PHPStan). Impacto: nenhum arquivo do telão é removido; `cena.js` troca textos fixos por `t()`; `gera_telao.py` continua válido para o modo offline até a exportação do admin substituí-lo.
+
 ## Débitos técnicos
 1. `cena.js` monolítico. 2. A cobertura do solo tem células de 280 m: de perto a borda entre classes depende do ruído do shader (orgânico, mas não é dado real). 3. Casamento QR↔atrativo por ordem (mitigado: contagem igual + conferência de nome na URL, 0 trocas detectadas). 4. 161 atrativos sem coordenada. 5. Rotas por palavras-chave. 6. Provas dependem de Chrome; em Linux usam SwiftShader (lento). 7. Layout não pensado para celular.

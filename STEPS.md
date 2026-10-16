@@ -7,7 +7,11 @@
 | F3 Telão 3D funcional offline (fork do "Mapa de CT&I em 3D") | **concluída** — clique em tudo, ficha com QR, passeio, TV/4K, servidor PowerShell |
 | **F4 Identidade visual rural** | **v1 implementada (16/10/2026) — aguarda aprovação do usuário lado a lado com a referência.** Papel creme, relevo sólido pintado, alfinetes com ícone, ficha-passaporte com carimbo, Montserrat; 8 provas objetivas (claridade, cores, fonte, contraste) |
 | F5 Qualidade/CI | gate local pronto (`node verificar.mjs`); workflow GitHub Actions criado, **ainda não executado** |
-| F6 Publicação online | pendente |
+| F6 Publicação online | pendente — destino: subdomínio do usuário (D4); depende de F7–F9 |
+| **F7 Banco e API** (MySQL + PHP, mesmo formato de JSON do telão) | **planejada** — aguarda D7–D10 |
+| **F8 Área administrativa** (login, CRUD, auditoria, importar/exportar, publicar) | **planejada** |
+| **F9 Idiomas PT/EN/FR/DE** (interface + conteúdo + seletor) | **planejada** |
+| F10 Instalação no subdomínio (`docs/instalacao.md`, deploy, backup) | **planejada** |
 
 ## F4 — pedido do usuário: "a estética deve remeter ao aspecto rural e não sci-fi" (referência `docs/referencia-visual.webp`; "não precisa ser exatamente igual, mas parecida é excelente")
 
@@ -18,6 +22,20 @@ Briefing em [docs/direcao-visual.md](docs/direcao-visual.md).
 **Ideias para a v2 (não feitas; só com aprovação):** ilustrações pontuais (casas de fazenda, cafezal, vaca) e rosa dos ventos desenhada; textura de papel e vinheta; controles fora da área do mapa; alfinetes agrupados em zoom longe; ajustar as cores depois de ver na TV real.
 
 **Critério de conclusão da F4:** o usuário aprovar as capturas 1080p/4K (estado, município, ficha) ao lado da referência.
+
+## F7–F10 — plano (16/10/2026; só começa após validação das dúvidas D7–D12 em `REQUIREMENTS.md`)
+
+**Ordem recomendada:** F7 → F8 → F9 → F10. A F9 (interface) pode andar em paralelo à F8, mas o conteúdo traduzido depende do esquema da F7.
+
+**F7 Banco e API.** Entregas: `database/schema.sql` + `database/migracoes/`; tabelas `atrativos` (todos os campos do `fichas.json` + `excluido_em`), `atrativo_traducoes` (idioma, descrição, funcionamento, status automática/revisada), `rotas`, `categorias`, `experiencias` (+ traduções) e as ligações N:N, `municipios`/`regioes`, `usuarios`, `auditoria`; `app/` PSR-4 (`Mapa\`), `Db` (PDO, utf8mb4), repositórios; `database/seed/` gerado de `dados-fonte/atrativos.json`; `api/dados.php?lang=` devolvendo os mesmos 4 JSON do telão a partir do banco (com ETag e cache em arquivo); telão com `?fonte=api|estatico`. **Critério:** a API gerada do seed produz JSON idêntico (semântico) ao `telao/dados/*` atual; testes de integração com MySQL de verdade (Docker); PHPStan e PHPUnit verdes.
+
+**F8 Admin.** Entregas: `admin/` fora do caminho público do telão; login, papéis (D9), CSRF, limite de tentativas, troca de senha obrigatória, `bin/criar-usuario` (sem senha padrão); lista com busca/filtros/paginação; formulário com validações (regras de coordenada de `test_dados.py` portadas para PHP, com os mesmos testes); abas de tradução por idioma; excluir/restaurar (D11); auditoria; importar do JSON; exportar CSV/XLSX; botão Publicar (regera cache e pacote estático). **Critério:** testes de unidade e integração dos repositórios e das validações, teste de sistema (login → criar → editar → excluir → publicar → aparece na API), testes de segurança (CSRF, XSS no escape, SQL injection nos filtros, acesso sem login), PHPStan nível alto.
+
+**F9 Idiomas.** Entregas: `telao/i18n/{pt,en,fr,de}.json`; função `t()` e `data-i18n`; todos os textos fixos de `index.html`/`cena.js` extraídos; seletor PT·EN·FR·DE + `?lang=` + `localStorage`; formatação de números/datas por idioma; traduções de rotas/categorias/experiências; descrições e horários traduzidos (D7); `Accept-Language` como padrão na primeira visita. **Critério:** teste automático de paridade de chaves (nenhuma faltando nem sobrando), provas do harness em cada idioma (ficha, legenda, passeio) e capturas de PT/EN/FR/DE conferidas; sem estouro de layout com os textos mais longos (alemão).
+
+**F10 Instalação.** `docs/instalacao.md` (criar banco/usuário MySQL, `config/config.php`, `composer install --no-dev`, permissões, `bin/criar-usuario`, importar seed, cron de backup), checklist de publicação, rollback; sem credenciais no repositório. **Critério:** instalação do zero num ambiente limpo (Docker) seguindo só o documento.
+
+**Riscos:** (1) tradução automática de ~630 descrições × 3 idiomas exige revisão humana antes de divulgar; (2) hospedagem compartilhada pode limitar versão do PHP, `exec`, cron e tamanho do `max_execution_time` na exportação; (3) o telão é pesado (1 milhão de triângulos, ~5 MB de dados): servir com compressão e cabeçalhos de cache; (4) admin público exige HTTPS e atenção a senhas fracas.
 
 ## Como rodar
 `node verificar.mjs` (completo, ~3 min, precisa de Chrome/Chromium; em Linux usa SwiftShader — pode ser mais lento) · `node verificar.mjs rapido` (sintaxe + dados). Pré-requisitos: Node 22+, Python 3.10+ com `openpyxl` e `opencv-python-headless`.

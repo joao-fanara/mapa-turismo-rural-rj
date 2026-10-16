@@ -3,3 +3,5 @@ telao/_provas/chrome-perfil/
 telao/_provas/*.png
 __pycache__/
 *.pyc
+servidor-php/config/config.php
+*.senha*.txt

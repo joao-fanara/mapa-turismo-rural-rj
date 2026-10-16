@@ -54,5 +54,8 @@ Entrada pública (gov.br OAuth2) → registro `pendente` → fila de moderação
 ## Direção: site é a regra, telão é o desejável
 Uma única página; o telão é um modo (tela grande, passeio automático, escala 4K) sobre o mesmo motor. O caminho padrão é o visitante no celular; sem WebGL cai numa lista/busca.
 
+## Lado servidor (implementado em 16/10/2026)
+`servidor-php/` (PHP 8.3, PDO, sem framework nem composer): `app/bootstrap.php` (config fora da pasta pública, conexão em modo estrito, sessão, CSRF, escape, papéis, auditoria), `app/atrativos.php` (regras e gravação), `app/csv.php`, `app/publicar.php` (banco → arquivos estáticos do site), `admin/index.php` (telas), `api/atrativos.php` (leitura pública), `bin/criar-usuario.php`. Banco MySQL 5.7 (`database/migracoes/001..003`). O site continua estático: o banco só é lido pelo admin, pela API e no Publicar.
+
 ## Débitos técnicos
 1. `cena.js` monolítico. 2. A cobertura do solo tem células de 280 m: de perto a borda entre classes depende do ruído do shader (orgânico, mas não é dado real). 3. Casamento QR↔atrativo por ordem (mitigado: contagem igual + conferência de nome na URL, 0 trocas detectadas). 4. 161 atrativos sem coordenada. 5. Rotas por palavras-chave. 6. Provas dependem de Chrome; em Linux usam SwiftShader (lento). 7. Layout não pensado para celular.

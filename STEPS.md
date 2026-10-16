@@ -73,3 +73,17 @@ Feito: `database/migracoes/001-esquema.sql` (MySQL 5.7, utf8mb4; mapas/regiões/
 
 ## Celular — ajustes após teste em aparelho real
 Cartão compacto (cabe com 9 rotas sem rolar), unidades dvh, zona dos rótulos entre o título e a folha, rótulos não saem mais da tela. Ainda: leque de ladrilhos pode passar sob os botões do topo.
+
+## F7/F8 — banco, publicar e área administrativa (16/10/2026)
+**No ar:** https://turismo.fanara.com.br/admin/ (código em `servidor-php/`; no servidor: `~/apps/turismo-rural/{app,bin,tests,database,config,backups}` fora da pasta pública, e só `admin/index.php`, `admin.css` e `.htaccess` na pasta pública).
+- Login (sessão segura, CSRF em todo formulário, bloqueio após 5 erros, senha forte, troca obrigatória no 1º acesso, nenhuma senha no repositório: o 1º administrador nasce por `php bin/criar-usuario.php email "Nome" administrador`).
+- Lista com busca e filtros (município, rota, localização, traduções a revisar/faltando, ativos/aguardando/excluídos) e paginação.
+- Cadastro/edição com as mesmas regras do CSV (município do RJ, coordenada dentro do estado e a ≤ 12 km do município, site só http/https, SIM/NÃO, duplicado nome+município), rotas/produtos/experiências por caixas, traduções EN/FR/DE com "revisada" (mudar o português devolve a "automática").
+- Excluir com confirmação (lógica) e restaurar; histórico (auditoria) de toda ação.
+- Planilha CSV: modelo, exportar tudo (fórmulas neutralizadas), enviar → prévia linha a linha → importar só as válidas numa transação.
+- Publicar (só administrador): gera registros/lentes/fichas/trad-* a partir do banco, com cópia da versão anterior e troca atômica.
+- Usuários (administrador): criar com senha temporária mostrada uma vez, desativar/reativar; papéis administrador/editor/moderador.
+
+**Provas:** `servidor-php/tests/integracao.php` (no servidor, banco `fanara87_tteste`, recriado do zero: Publicar reproduz exatamente os arquivos do pipeline Python; validação; criar/editar/excluir/restaurar; auditoria; CSV; senha e bloqueio) e `node servidor-php/tests/admin_http.mjs` (contra o site: páginas protegidas, CSRF, cabeçalhos, cookie, arquivos bloqueados, API com entrada inválida). Bugs reais achados pelos testes: telefone cortado em 120 caracteres (MySQL sem modo estrito — corrigido com migração 003 e `STRICT_ALL_TABLES` na conexão) e "NÃO INF." fora do SIM/NÃO.
+
+**Falta:** criar o 1º administrador (decisão do usuário: e-mail); fila de moderação com aprovar/recusar (RF14; a lista já filtra "aguardando"); login gov.br (D13); integrar as provas PHP ao `verificar.mjs`/CI; tela de edição de rotas/produtos/experiências.

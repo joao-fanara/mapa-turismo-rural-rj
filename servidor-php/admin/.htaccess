@@ -1,0 +1,6 @@
+Options -Indexes
+DirectoryIndex index.php
+<FilesMatch "^(?!(index\.php|admin\.css)$).+$">
+  Require all denied
+</FilesMatch>
+Header always set Strict-Transport-Security "max-age=31536000"

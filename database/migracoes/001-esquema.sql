@@ -55,7 +55,7 @@ CREATE TABLE atrativos (
   endereco VARCHAR(300) NOT NULL DEFAULT '',
   descricao TEXT NULL,
   funcionamento VARCHAR(400) NOT NULL DEFAULT '',
-  telefone VARCHAR(120) NOT NULL DEFAULT '',
+  telefone VARCHAR(255) NOT NULL DEFAULT '',
   instagram VARCHAR(160) NOT NULL DEFAULT '',
   site VARCHAR(255) NOT NULL DEFAULT '',
   wifi ENUM('','SIM','NÃO') NOT NULL DEFAULT '',

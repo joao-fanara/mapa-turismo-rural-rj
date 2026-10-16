@@ -43,7 +43,7 @@ for lente, t in tipo.items():
         termo_id[(t, it['nome'])] = nid
         out.append(f"INSERT INTO termos (id, mapa_id, tipo, slug, nome, curto, cor, simbolo, ordem) VALUES ({nid}, 1, {q(t)}, {q(it['slug'])}, {q(it['nome'])}, {q(it['curto'])}, {q(it.get('cor'))}, {q(it.get('simbolo'))}, {ordem});")
 mun = {m['nome']: m['codigo'] for m in M['municipios']}
-prec = {'endereço': 'endereco'}
+sn = lambda v: '' if v not in ('SIM', 'NÃO') else v  # "NÃO INF." (não informado) = em branco
 vistos_termo = set()
 for n, (a, c) in enumerate(zip(A, codigos), 1):
     f = F[c]
@@ -52,7 +52,7 @@ for n, (a, c) in enumerate(zip(A, codigos), 1):
     rota = termo_id.get(('rota', a['rota_principal']))
     out.append(
         'INSERT INTO atrativos (id, mapa_id, codigo, nome, municipio_codigo, endereco, descricao, funcionamento, telefone, instagram, site, wifi, agendar, pet, lat, lng, precisao, mapa_url, rota_principal_id, status, origem, fonte_guia) VALUES '
-        f"({n}, 1, {q(c)}, {q(a['nome'])}, {q(codmun)}, {q(a['endereco'])}, {q(a['descricao'])}, {q(a['funcionamento'])}, {q(a['telefone'])}, {q(a['instagram'])}, {q(a['site'])}, {q(a['wifi'])}, {q(a['agendar'])}, {q(a['pet'])}, "
+        f"({n}, 1, {q(c)}, {q(a['nome'])}, {q(codmun)}, {q(a['endereco'])}, {q(a['descricao'])}, {q(a['funcionamento'])}, {q(a['telefone'])}, {q(a['instagram'])}, {q(a['site'])}, {q(sn(a['wifi']))}, {q(sn(a['agendar']))}, {q(sn(a['pet']))}, "
         f"{q(f['lat'])}, {q(f['lng'])}, {q(f['precisao'])}, {q(a['mapa_url'])}, {rota or 'NULL'}, 'publicado', 'guia', {q(f'{a['regiao']} · pdf {a['pdf']} p.{a['page']}')});")
     for t, campo in (('rota', 'rotas'), ('produto', 'categorias'), ('experiencia', 'experiencias')):
         for nome in dict.fromkeys(x.strip() for x in (a.get(campo) or '').split(';') if x.strip()):

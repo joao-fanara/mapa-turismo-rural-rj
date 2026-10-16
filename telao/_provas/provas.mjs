@@ -417,6 +417,15 @@ async function tamanhos(A, cdpPorta, url) {
   }
 }
 
+function simbolosDoAdmin() { // o admin só oferece ícones que o mapa sabe desenhar
+  const php = fs.readFileSync(path.join(RAIZ, '..', 'servidor-php', 'app', 'termos.php'), 'utf8');
+  const lista = [...(php.match(/const SIMBOLOS = \[([\s\S]*?)\];/)?.[1] ?? '').matchAll(/'([a-z-]+)' =>/g)].map((m) => m[1]);
+  const cena = fs.readFileSync(path.join(RAIZ, 'cena.js'), 'utf8'), bloco = cena.slice(cena.indexOf('const SIMBOLO = {'), cena.indexOf('};', cena.indexOf('const SIMBOLO = {')));
+  const faltam = lista.filter((k) => !new RegExp(`(^|[\\s{,])'?${k}'?:\\s*\\[`).test(bloco));
+  ok('admin: todos os ícones oferecidos para rotas existem no mapa (SIMBOLO)', lista.length >= 10 && !faltam.length, { lista: lista.length, faltam });
+}
+simbolosDoAdmin();
+
 function contraste() { // tudo sobre o papel creme dos cartões (#fbf5e6): texto ≥ 4,5:1; cor de rota (alfinete, ícone, carimbo) ≥ 3:1
   const lum = (h) => { const [r, g, b] = [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255).map((c) => (c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4)); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
   const razao = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };

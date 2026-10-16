@@ -4,7 +4,7 @@
 // O site continua estático (abre offline na TV); o banco só é lido aqui.
 declare(strict_types=1);
 
-const ARQUIVOS_PUBLICADOS = ['registros.json', 'lentes.json', 'fichas.json', 'trad-en.json', 'trad-fr.json', 'trad-de.json'];
+const ARQUIVOS_PUBLICADOS = ['registros.json', 'lentes.json', 'fichas.json', 'trad-en.json', 'trad-fr.json', 'trad-de.json', 'termos-en.json', 'termos-fr.json', 'termos-de.json'];
 
 /** Monta os arquivos em memória: [nome => dados]. */
 function montar_publicacao(): array
@@ -77,7 +77,7 @@ function montar_publicacao(): array
         $pr['total'] = count(array_filter($reg, fn ($r) => $r[3] === $pr['classe']));
     }
     unset($pr);
-    $meta = ['versao_base' => 'banco-' . date('Ymd-Hi'), 'data_corte' => date('Y-m-d'), 'total' => count($reg)] + $regAnt['meta'];
+    $meta = $regAnt['meta'];
     $meta['versao_base'] = 'banco-' . date('Ymd-Hi');
     $meta['data_corte'] = date('Y-m-d');
     $meta['total'] = count($reg);
@@ -113,6 +113,10 @@ function montar_publicacao(): array
             }
         }
         $out["trad-$l.json"] = (object) $tr;
+    }
+    foreach (traducoes_termos() as $l => $nomes) {
+        ksort($nomes, SORT_STRING);
+        $out["termos-$l.json"] = (object) $nomes;
     }
     return $out;
 }

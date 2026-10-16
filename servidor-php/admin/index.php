@@ -9,6 +9,7 @@ require "$APP/bootstrap.php";
 require "$APP/atrativos.php";
 require "$APP/csv.php";
 require "$APP/publicar.php";
+require "$APP/termos.php";
 
 cabecalhos_seguranca();
 iniciar_sessao();
@@ -34,7 +35,7 @@ function pagina(string $titulo, string $corpo): never
     unset($_SESSION['aviso']);
     $menu = '';
     if ($u && !$u['trocar_senha']) {
-        $itens = [['lista', 'Lugares'], ['novo', 'Novo lugar']];
+        $itens = [['lista', 'Lugares'], ['novo', 'Novo lugar'], ['termos', 'Rotas e produtos']];
         if (pode('csv')) {
             $itens[] = ['csv', 'Planilha (CSV)'];
         }
@@ -335,6 +336,93 @@ if ($p === 'csv') {
         . '2. Preencha no Excel ou LibreOffice e salve como <b>CSV UTF-8</b> (separado por ponto e vírgula). Uma linha por lugar; rotas, produtos e experiências separados por ";".<br>'
         . '3. Envie: você vê a prévia, linha a linha, antes de gravar. Linha com <b>código</b> existente atualiza o lugar; sem código, cria (ou atualiza se o nome já existir no município).</p>'
         . '<form method="post" enctype="multipart/form-data">' . csrf_campo() . '<label>Arquivo CSV (até 2 MB) <input type="file" name="arquivo" accept=".csv,text/csv" required></label> <button type="submit">Ver prévia</button></form></div>');
+}
+
+// ---------- rotas, produtos e experiências ----------
+if ($p === 'termos') {
+    $html = '<p class="ajuda">Rotas dão a cor e o ícone do alfinete; produtos e experiências aparecem nas abas "Produtos" e "Quero…" do mapa. Mudanças só aparecem no site depois de Publicar.</p>';
+    foreach (TIPOS_TERMO as $tipo => $rot) {
+        $html .= '<h2>' . e($rot) . 's</h2>' . (pode('editar') ? '<p><a href="?p=termo&amp;tipo=' . $tipo . '">+ Criar ' . e(mb_strtolower($rot)) . '</a></p>' : '')
+            . '<table><thead><tr><th>Cor</th><th>Nome</th><th>Nome curto (legenda)</th><th>Lugares</th><th>Traduções</th><th></th></tr></thead><tbody>';
+        $s = db()->prepare("SELECT t.*, (SELECT COUNT(*) FROM atrativo_termos x WHERE x.termo_id = t.id) AS usos,
+            (SELECT COUNT(*) FROM traducoes r WHERE r.entidade = 'termo' AND r.entidade_id = t.id AND r.campo = 'nome') AS trad,
+            (SELECT COUNT(*) FROM traducoes r WHERE r.entidade = 'termo' AND r.entidade_id = t.id AND r.status = 'revisada') AS rev
+            FROM termos t WHERE t.mapa_id = 1 AND t.tipo = ? ORDER BY t.ordem, t.nome");
+        $s->execute([$tipo]);
+        foreach ($s as $t) {
+            $html .= '<tr><td>' . e((string) $t['cor']) . '</td><td>' . e($t['nome']) . '</td><td>' . e($t['curto']) . '</td><td>' . (int) $t['usos'] . '</td><td>'
+                . (int) $t['trad'] . ' de 3' . ($t['rev'] ? ' · ' . (int) $t['rev'] . ' revisada(s)' : '') . '</td><td>' . (pode('editar') ? '<a href="?p=termo&amp;id=' . $t['id'] . '">Editar</a>' : '') . '</td></tr>';
+        }
+        $html .= '</tbody></table>';
+    }
+    pagina('Rotas e produtos', $html);
+}
+if ($p === 'termo') {
+    if (!pode('editar')) {
+        ir('?p=termos', 'Seu papel não permite editar.');
+    }
+    $id = isset($_GET['id']) ? (int) $_GET['id'] : null;
+    $t = $id ? carregar_termo($id) : null;
+    if ($id && !$t) {
+        ir('?p=termos', 'Termo não encontrado.');
+    }
+    $tipo = $t['tipo'] ?? (string) ($_GET['tipo'] ?? 'rota');
+    if (!isset(TIPOS_TERMO[$tipo])) {
+        ir('?p=termos');
+    }
+    $in = $t ?? ['tipo' => $tipo, 'nome' => '', 'curto' => '', 'cor' => '#5b2a4a', 'simbolo' => 'uva', 'compoe' => '', 'ordem' => 50];
+    $trad = [];
+    foreach (IDIOMAS as $l) {
+        foreach (['nome', 'curto'] as $c) {
+            $trad[$l][$c] = [$t['traducoes'][$l][$c]['texto'] ?? '', $t['traducoes'][$l][$c]['status'] ?? 'automatica'];
+        }
+    }
+    $err = [];
+    if ($post && ($_POST['acao'] ?? '') === 'excluir') {
+        if (empty($_POST['confirmo'])) {
+            ir("?p=termo&id=$id", 'Exclusão não confirmada.');
+        }
+        $msg = excluir_termo((int) $id);
+        ir($msg ? "?p=termo&id=$id" : '?p=termos', $msg ?? 'Excluído.');
+    }
+    if ($post) {
+        $in = $_POST + ['tipo' => $tipo];
+        foreach (IDIOMAS as $l) {
+            foreach (['nome', 'curto'] as $c) {
+                $trad[$l][$c] = [(string) ($_POST["t_{$l}_$c"] ?? ''), isset($_POST["r_{$l}_$c"]) ? 'revisada' : 'automatica'];
+            }
+        }
+        [$d, $err] = validar_termo($in, $t);
+        if (!$err) {
+            $nid = salvar_termo($d, $id, $trad);
+            ir("?p=termo&id=$nid", 'Salvo. Publique para o site mostrar.');
+        }
+    }
+    $erro = static fn ($c) => isset($err[$c]) ? '<span class="erro">' . e($err[$c]) . '</span>' : '';
+    $v = static fn ($c) => e((string) ($in[$c] ?? ''));
+    $html = ($err ? '<p class="erro" role="alert">Corrija os campos marcados.</p>' : '') . '<form method="post" class="cartao">' . csrf_campo()
+        . '<label>Nome * <input name="nome" value="' . $v('nome') . '" required maxlength="160"></label>' . $erro('nome')
+        . '<label>Nome curto (legenda do mapa, até 24 letras) <input name="curto" value="' . $v('curto') . '" maxlength="24"></label>' . $erro('curto')
+        . '<label>Ordem na legenda <input type="number" name="ordem" min="0" max="999" value="' . (int) ($in['ordem'] ?? 0) . '"></label>';
+    if ($tipo === 'rota') {
+        $html .= '<div class="linha"><label>Cor do alfinete <input type="color" name="cor" value="' . $v('cor') . '"></label>'
+            . '<label>Ícone <select name="simbolo">' . implode('', array_map(fn ($k, $n) => '<option value="' . e($k) . '"' . (($in['simbolo'] ?? '') === $k ? ' selected' : '') . '>' . e($n) . '</option>', array_keys(SIMBOLOS), SIMBOLOS)) . '</select></label></div>'
+            . $erro('cor') . $erro('simbolo') . '<p class="ajuda">A cor precisa de contraste de pelo menos 3:1 sobre o papel creme do mapa (tons médios e escuros).</p>'
+            . '<label>O que a rota reúne (um item por linha; aparece na lista da rota) <textarea name="compoe" rows="3">' . e(str_replace('; ', "\n", (string) ($in['compoe'] ?? ''))) . '</textarea></label>';
+    }
+    $html .= '<fieldset><legend>Traduções do nome</legend>';
+    foreach (['en' => 'Inglês', 'fr' => 'Francês', 'de' => 'Alemão'] as $l => $nl) {
+        foreach (['nome' => 'Nome', 'curto' => 'Nome curto'] as $c => $rc) {
+            $html .= '<div class="linha"><label>' . $rc . ' — ' . $nl . ' <input name="t_' . $l . '_' . $c . '" lang="' . $l . '" value="' . e($trad[$l][$c][0]) . '"' . ($c === 'curto' ? ' maxlength="24"' : '') . '></label>'
+                . '<label class="caixa"><input type="checkbox" name="r_' . $l . '_' . $c . '"' . ($trad[$l][$c][1] === 'revisada' ? ' checked' : '') . '> revisada</label></div>';
+        }
+    }
+    $html .= '</fieldset><div class="acoes"><button type="submit">Salvar</button> <a href="?p=termos">Voltar</a></div></form>';
+    if ($t) {
+        $html .= '<form method="post" class="perigo">' . csrf_campo() . '<input type="hidden" name="acao" value="excluir"><p class="ajuda">Usado por ' . (int) $t['usos'] . ' lugar(es). Só dá para excluir quando nenhum lugar usa.</p>'
+            . '<label class="caixa"><input type="checkbox" name="confirmo" required> Confirmo a exclusão</label> <button type="submit">Excluir</button></form>';
+    }
+    pagina(($t ? 'Editar: ' . $t['nome'] : 'Criar ' . mb_strtolower(TIPOS_TERMO[$tipo])), $html);
 }
 
 // ---------- publicar ----------

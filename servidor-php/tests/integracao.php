@@ -13,6 +13,7 @@ require __DIR__ . '/../app/bootstrap.php';
 require __DIR__ . '/../app/atrativos.php';
 require __DIR__ . '/../app/publicar.php';
 require __DIR__ . '/../app/csv.php';
+require __DIR__ . '/../app/termos.php';
 
 $falhas = 0;
 function ok(string $nome, bool $cond, mixed $det = null): void
@@ -108,7 +109,37 @@ foreach ($antes['fichas.json'] as $c => $f) {
 ok('publicar: fichas iguais campo a campo', !$difF, array_slice($difF, 0, 3));
 foreach (IDIOMAS as $l) {
     ok("publicar: trad-$l igual", $novo["trad-$l.json"] == $antes["trad-$l.json"]);
+    ok("publicar: termos-$l (nomes traduzidos) igual", $novo["termos-$l.json"] == $antes["termos-$l.json"], array_diff_assoc($antes["termos-$l.json"], $novo["termos-$l.json"]));
 }
+
+// --- termos: rota nova com cor e ícone; produto novo; contraste; excluir só se não usado
+[$t, $et] = validar_termo(['tipo' => 'rota', 'nome' => 'Azeites e Vinhos', 'curto' => 'Azeites e vinhos', 'cor' => '#f1e6c8', 'simbolo' => 'uva']);
+ok('termos: cor clara demais é recusada (contraste < 3:1 sobre o papel)', isset($et['cor']), $et);
+[$t, $et] = validar_termo(['tipo' => 'rota', 'nome' => 'Azeites e Vinhos', 'curto' => 'Azeites e vinhos', 'cor' => '#5b2a4a', 'simbolo' => 'nada']);
+ok('termos: ícone fora da lista é recusado', isset($et['simbolo']));
+[$t, $et] = validar_termo(['tipo' => 'rota', 'nome' => 'Azeites e Vinhos', 'curto' => 'Azeites e vinhos', 'cor' => '#5b2a4a', 'simbolo' => 'uva', 'compoe' => "vinícolas
+olivais e lagares", 'ordem' => 10]);
+ok('termos: rota válida', !$et && $t['slug'] === 'azeites-e-vinhos' && $t['compoe'] === 'vinícolas; olivais e lagares', $et ?: $t);
+$rid = salvar_termo($t, null, ['en' => ['nome' => ['Olive Oils and Wines', 'revisada'], 'curto' => ['Olive oil and wine', 'automatica']]]);
+[$pr, $ep] = validar_termo(['tipo' => 'produto', 'nome' => 'Azeite']);
+$pid = salvar_termo($pr, null, []);
+ok('termos: produto novo ganha ícone e cor padrão', !$ep && carregar_termo($pid)['simbolo'] === 'anel');
+[$dup, $ed] = validar_termo(['tipo' => 'produto', 'nome' => 'Azeite']);
+ok('termos: nome repetido no mesmo tipo é recusado', isset($ed['nome']));
+[$d3, $e3] = validar_atrativo(['nome' => 'Lagar do Teste', 'municipio' => 'Miguel Pereira', 'rota_principal' => 'azeites-e-vinhos', 'produtos' => 'Azeite', 'lat' => '-22.455', 'lng' => '-43.470']);
+$lid = salvar_atrativo($d3);
+$pub = json_decode(json_encode(montar_publicacao(), JSON_UNESCAPED_UNICODE), true);
+$g = array_column($pub['registros.json']['grupos'], null, 'slug')['azeites-e-vinhos'] ?? null;
+ok('publicar: rota nova sai com cor, total e na legenda com o ícone', $g && $g['cor_luz'] === '#5b2a4a' && $g['total'] === 1
+    && in_array('uva', array_column($pub['lentes.json']['lentes']['camadas']['itens'], 'simbolo'), true), $g);
+ok('publicar: produto novo na lente Produtos e no lugar', in_array('azeite', array_column($pub['lentes.json']['lentes']['tipos']['itens'], 'slug'), true)
+    && $pub['lentes.json']['por_registro']['lagar-do-teste']['tipos'] === ['azeite']);
+ok('publicar: nome traduzido da rota vai para termos-en', ($pub['termos-en.json']['Azeites e Vinhos'] ?? '') === 'Olive Oils and Wines' && ($pub['termos-en.json']['Azeites e vinhos'] ?? '') === 'Olive oil and wine');
+ok('termos: não exclui rota em uso', excluir_termo($rid) !== null);
+excluir_atrativo($lid);
+$pdo->prepare('DELETE FROM atrativo_termos WHERE atrativo_id = ?')->execute([$lid]);
+$pdo->prepare('UPDATE atrativos SET rota_principal_id = NULL WHERE id = ?')->execute([$lid]);
+ok('termos: exclui quando ninguém usa', excluir_termo($rid) === null && carregar_termo($rid) === null);
 
 // --- validação
 [$d, $err] = validar_atrativo(['nome' => '', 'municipio' => 'Atlantis', 'rotas' => 'Rota Inexistente', 'lat' => '-22.5', 'lng' => '', 'site' => 'javascript:alert(1)', 'wifi' => 'talvez']);

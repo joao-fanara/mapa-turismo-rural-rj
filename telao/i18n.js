@@ -55,8 +55,10 @@ async function carregar(novo) {
   idioma = novo in IDIOMAS ? novo : 'pt';
   cat = {}; trad = {};
   if (idioma === 'pt') return;
-  const [c, d] = await Promise.all([`i18n/${idioma}.json`, `dados/trad-${idioma}.json`].map((u) => fetch(u).then((r) => (r.ok ? r.json() : {})).catch(() => ({}))));
-  cat = c; trad = d;
+  // termos-xx.json: nomes de rotas, produtos e experiências traduzidos no admin (publicados do banco); valem sobre o catálogo fixo
+  const [c, d, tm] = await Promise.all([`i18n/${idioma}.json`, `dados/trad-${idioma}.json`, `dados/termos-${idioma}.json`]
+    .map((u) => fetch(u).then((r) => (r.ok ? r.json() : {})).catch(() => ({}))));
+  cat = { ...c, ...tm }; trad = d;
 }
 
 export async function aplicarIdioma(novo, persistir = true) {

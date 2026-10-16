@@ -146,4 +146,8 @@ for i, l in enumerate(('en', 'fr', 'de')):
             if l in v:
                 trad[cod] = {k: x for k, x in v[l].items() if x}
     json.dump(trad, open(os.path.join(raiz, 'telao', 'dados', f'trad-{l}.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
+    # nomes de rotas/produtos/experiências (o admin publica este mesmo arquivo a partir do banco)
+    lentes = json.load(open(os.path.join(raiz, 'telao', 'dados', 'lentes.json'), encoding='utf-8'))['lentes']
+    nomes = {x for v in lentes.values() for it in v['itens'] for x in (it['nome'], it['curto'])}
+    json.dump({k: C[k][i] for k in sorted(nomes) if k in C}, open(os.path.join(raiz, 'telao', 'dados', f'termos-{l}.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     print(l, len(C), len(trad))

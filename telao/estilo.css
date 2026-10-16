@@ -159,10 +159,10 @@ button { font-family: var(--fonte); }
 }
 @keyframes pulso { 50% { box-shadow: 0 .3rem 1.6rem rgba(180, 83, 42, .5); } }
 
-#controles { position: absolute; left: 2rem; bottom: calc(var(--rodape-h) + 1.2rem); display: flex; gap: 1rem; }
+#controles { position: absolute; right: 39.5rem; bottom: calc(var(--rodape-h) + 1.2rem); display: flex; gap: .8rem; } /* sobre o mar, ao lado da bússola: não cobre a costa oeste */
 #pausa, #ver-estado {
-  pointer-events: auto; min-width: 14.5rem; min-height: 3.6rem; padding: .6rem 1.4rem;
-  font: 800 1.2rem var(--fonte); color: var(--verde); background: var(--papel);
+  pointer-events: auto; min-width: 11rem; min-height: 3.6rem; padding: .6rem 1.1rem;
+  font: 800 1.05rem var(--fonte); color: var(--verde); background: var(--papel);
   border: .16rem solid var(--verde-2); border-radius: 3rem; box-shadow: var(--sombra); cursor: pointer;
 }
 #pausa[aria-pressed="true"] { background: var(--verde); color: var(--papel); }

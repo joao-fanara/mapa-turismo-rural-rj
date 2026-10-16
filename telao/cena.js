@@ -94,7 +94,9 @@ async function baixar(nome, tipo) {
 }
 
 await iniciarIdiomas();
-iniciar().catch((e) => { aviso('Não foi possível montar o mapa: ' + e.message); console.error(e); falhar(e); });
+const semWebGL = (() => { try { const c = document.createElement('canvas'); return !(c.getContext('webgl2') || c.getContext('webgl')); } catch { return true; } })();
+if (semWebGL || new URLSearchParams(location.search).get('modo') === 'lista') (await import('./lista.js')).iniciarLista().then(marcarPronto, falhar); // sem WebGL: lista com busca
+else iniciar().catch((e) => { aviso('Não foi possível montar o mapa: ' + e.message); console.error(e); falhar(e); });
 
 async function iniciar() {
   const [bin, png, altJ, cobJ, munJ, regJ, lenJ, ficJ] = await Promise.all([
@@ -694,8 +696,10 @@ async function iniciar() {
     document.documentElement.style.setProperty('--rodape-h', `${rd.height}px`);
     document.documentElement.style.setProperty('--titulo-b', `${t.bottom}px`);
     const x0 = 0; // sem painel de legenda
-    livre.w = clamp((c.left - x0) / innerWidth, 0.4, 1); livre.cx = x0 / innerWidth + livre.w / 2;
-    livre.h = clamp((rd.top - t.bottom) / innerHeight, 0.4, 1); livre.cy = (rd.top + t.bottom) / 2 / innerHeight;
+    const folha = innerWidth <= 900; // celular: cartão, lista e ficha são folhas na base; o mapa fica entre o título e a folha mais alta
+    const base = folha ? Math.min(rd.top, ...[$('cartao'), painelI, fichaEl, $('fontes')].filter((e) => e.offsetParent).map((e) => e.getBoundingClientRect().top)) : rd.top;
+    livre.w = folha ? 1 : clamp((c.left - x0) / innerWidth, 0.4, 1); livre.cx = x0 / innerWidth + livre.w / 2;
+    livre.h = clamp((base - t.bottom) / innerHeight, folha ? 0.2 : 0.4, 1); livre.cy = (base + t.bottom) / 2 / innerHeight;
     // zona onde o leque do selecionado e o nome dele devem caber (ajuste, em atualizarRotulos): entre a legenda e o cartão, abaixo do título,
     // acima da bússola, dos botões e do convite do passeio
     const mg = 0.6 * remPx, cv = $('convite');

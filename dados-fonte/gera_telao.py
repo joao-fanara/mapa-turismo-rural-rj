@@ -60,9 +60,9 @@ for ag in agreg.values(): ag['grupos'] = dict(ag['grupos']); ag['grupos_presente
 
 tot = Counter(r[2] for r in reg)
 grupos = [{'slug': s, 'nome': n, 'ordem': i + 1, 'cor_dado': cd, 'cor_token': cd, 'cor_luz': cl, 'total': tot[s]} for i, (n, s, cd, cl, _) in enumerate(ROTA) if tot[s]]
-precisoes = [{'classe': 'endereco', 'rotulo': 'Ponto exato (QR do guia)', 'leitura': 'Coordenada do QR "Ver mapa" do guia oficial.', 'cautela': False, 'ponto_exato_permitido': True},
-             {'classe': 'referencia', 'rotulo': 'Ponto aproximado (bairro ou endereço)', 'leitura': 'Coordenada aproximada: a localidade apontada pelo QR do guia ou o endereço geocodificado (OpenStreetMap).', 'cautela': False, 'ponto_exato_permitido': True},
-             {'classe': 'municipal', 'rotulo': 'Só no município (sem ponto no guia)', 'leitura': 'Sem coordenada no guia: o ponto indica só o município.', 'cautela': True, 'ponto_exato_permitido': False}]
+precisoes = [{'classe': 'endereco', 'rotulo': 'Localização exata no mapa', 'leitura': 'Coordenada do QR "Ver mapa" do guia oficial.', 'cautela': False, 'ponto_exato_permitido': True},
+             {'classe': 'referencia', 'rotulo': 'Localização aproximada no mapa', 'leitura': 'Coordenada aproximada: a localidade apontada pelo QR do guia ou o endereço geocodificado (OpenStreetMap).', 'cautela': False, 'ponto_exato_permitido': True},
+             {'classe': 'municipal', 'rotulo': 'Endereço não informado (só o município)', 'leitura': 'Sem coordenada no guia: o ponto indica só o município.', 'cautela': True, 'ponto_exato_permitido': False}]
 for p in precisoes: p['total'] = sum(r[3] == p['classe'] for r in reg)
 
 meta = {'fonte': 'Guias Turismo Rural RJ (TurisRio / Setur-RJ), 12 regiões turísticas', 'versao_base': 'prototipo-0.1', 'data_corte': '2026-10-15',

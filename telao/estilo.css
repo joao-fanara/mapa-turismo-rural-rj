@@ -198,7 +198,7 @@ button { font-family: var(--fonte); }
 #i-conta { font-size: 1.3rem; font-weight: 800; margin-top: .4rem; }
 #i-def, #i-nota, #i-pos, #i-mais { font-size: 1.1rem; line-height: 1.3; font-weight: 600; color: var(--tinta); margin-top: .3rem; }
 #i-nota, #i-pos { color: var(--tinta-suave); }
-#i-lista { list-style: none; margin-top: .6rem; border-top: .1rem solid var(--linha); overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; min-height: 0; flex: 0 1 auto; scrollbar-width: thin; scrollbar-color: var(--borda) transparent; }
+#i-lista { list-style: none; margin-top: .6rem; border-top: .1rem solid var(--linha); overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; min-height: 0; flex: 0 1 auto;  }
 #i-lista li { padding: .45rem 0; border-bottom: .1rem solid var(--linha); font-size: 1.1rem; line-height: 1.25; }
 #i-lista li > b { display: block; font-weight: 800; }
 #i-lista .inst { display: block; color: var(--tinta-suave); }
@@ -221,7 +221,7 @@ button { font-family: var(--fonte); }
 
 /* ficha do atrativo = página de passaporte: à esquerda, no lugar do painel "o que tem aqui" (left e width medidos em medirHud()) */
 #ficha { pointer-events: auto; left: 2rem; top: calc(var(--titulo-b, 10rem) + .6rem); width: 40rem; max-height: calc(100% - var(--titulo-b, 10rem) - var(--rodape-h) - 7.6rem);
-  overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; scrollbar-width: thin; scrollbar-color: var(--borda) transparent;
+  overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; 
   padding: 1rem 1.4rem 1.2rem; z-index: 6; }
 #ficha .i-topo { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 #ficha .i-topo .olho { overflow: hidden; text-overflow: ellipsis; }
@@ -259,16 +259,18 @@ button { font-family: var(--fonte); }
   #ficha, #item { max-height: 72vh; overflow-y: auto; z-index: 6; }
   body:has(#ficha:not([hidden])) #cartao, body:has(#item:not([hidden])) #cartao { display: none; }
   #f-corpo { grid-template-columns: 1fr; justify-items: start; }
-  #f-qr-bloco { display: none; }
-  #f-abrir:not([hidden]) { display: block; margin-top: .8rem; padding: .8rem 1rem; text-align: center; font: 800 1rem var(--fonte); color: var(--papel); background: var(--verde); border-radius: 3rem; text-decoration: none; pointer-events: auto; }
   #f-fechar, #i-fechar { position: sticky; top: 0; }
   #fechar { position: sticky; bottom: 0; }
   #bussola { right: .6rem; top: 2.8rem; bottom: auto; }
   .rosa { width: 3.6rem; height: 3.6rem; }
   #agulha { font-size: 1rem; }
-  #controles { left: .6rem; right: auto; top: 2.8rem; bottom: auto; }
+  #controles { left: .6rem; right: 5rem; top: 2.8rem; bottom: auto; flex-wrap: nowrap; gap: .4rem; }
+  #controles > * { flex: 1 1 0; min-width: 0; text-align: center; line-height: 1.1; }
+  #titulo { padding-bottom: 3.6rem; }
+  .c-grupos li { grid-template-columns: 1.4rem minmax(0, 1fr) 3.2rem; }
+  .c-grupos .trilho { display: none; }
   #pausa { display: none; }
-  #ver-estado { min-width: 0; min-height: 44px; padding: .3rem .9rem; font-size: .95rem; }
+  #ver-estado { min-width: 0; min-height: 44px; padding: .3rem .6rem; font-size: .8rem; }
   #rodape { gap: .5rem; padding: .3rem .6rem; justify-content: space-between; }
   #r-base { display: none; }
   #info { min-width: 44px; padding: 0 .8rem; font-size: .9rem; white-space: nowrap; }
@@ -281,6 +283,11 @@ button { font-family: var(--fonte); }
 }
 
 #f-abrir { display: none; }
+/* barras de rolagem grossas e fáceis de pegar (toque e mouse) */
+#i-lista, #ficha, #item, #cartao, #fontes { scrollbar-width: auto; }
+#i-lista::-webkit-scrollbar, #ficha::-webkit-scrollbar, #item::-webkit-scrollbar, #cartao::-webkit-scrollbar, #fontes::-webkit-scrollbar { width: 1.1rem; }
+#i-lista::-webkit-scrollbar-track, #ficha::-webkit-scrollbar-track, #item::-webkit-scrollbar-track, #cartao::-webkit-scrollbar-track, #fontes::-webkit-scrollbar-track { background: var(--papel-2); border-radius: .6rem; }
+#i-lista::-webkit-scrollbar-thumb, #ficha::-webkit-scrollbar-thumb, #item::-webkit-scrollbar-thumb, #cartao::-webkit-scrollbar-thumb, #fontes::-webkit-scrollbar-thumb { background: var(--borda); border: .2rem solid var(--papel-2); border-radius: .6rem; min-height: 3rem; }
 /* idiomas */
 #idiomas { display: flex; gap: .2rem; pointer-events: auto; flex: none; }
 #idiomas button { min-width: max(44px, 2.8rem); min-height: max(44px, 2.5rem); border: .12rem solid var(--linha); border-radius: .5rem; background: var(--papel-2); color: var(--tinta-suave); font: 800 1rem var(--fonte); cursor: pointer; }
@@ -292,3 +299,37 @@ html[lang^="de"] #c-olho.subir::after { content: " ↑ Region ansehen"; }
 html[lang^="en"] .rot.sel::after { content: "approximate position"; }
 html[lang^="fr"] .rot.sel::after { content: "position approximative"; }
 html[lang^="de"] .rot.sel::after { content: "ungefähre Position"; }
+
+/* "Ver em lista" e modo lista (sem WebGL) */
+#ver-lista { pointer-events: auto; display: grid; place-items: center; min-height: 3.6rem; padding: .6rem 1.1rem; font: 800 1.05rem var(--fonte); color: var(--verde); background: var(--papel); border: .16rem solid var(--verde-2); border-radius: 3rem; box-shadow: var(--sombra); text-decoration: none; }
+body.modo-lista { overflow: auto; background: var(--papel-2); }
+body.modo-lista :is(#tela, #marcas, #rotulos, #titulo, #bussola, #cartao, #item, #ficha, #convite, #controles, #fontes, #aviso, #info, #tela-cheia) { display: none; }
+body.modo-lista #rodape { position: fixed; }
+#modo-lista { max-width: 56rem; margin: 0 auto; padding: 1rem 1rem 5rem; font-size: 1rem; }
+#modo-lista header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+#modo-lista h1 { font-size: 2rem; font-weight: 800; text-transform: uppercase; }
+#modo-lista h1 .rio { color: var(--verde); } #modo-lista h1 .rural { color: var(--terracota); }
+#modo-lista a { color: var(--verde); font-weight: 800; }
+#ml-filtros { display: grid; gap: .5rem; margin-top: .8rem; }
+#ml-filtros input, #ml-filtros select { min-height: 44px; padding: .4rem .8rem; font: 600 1rem var(--fonte); color: var(--tinta); background: var(--papel); border: .14rem solid var(--borda); border-radius: .6rem; }
+#ml-conta { margin: .8rem 0 .3rem; font-weight: 800; color: var(--tinta-suave); }
+#ml-lista { list-style: none; }
+#ml-lista li { border-bottom: .1rem solid var(--linha); }
+#ml-lista button { display: block; width: 100%; min-height: 48px; padding: .6rem .2rem; text-align: left; background: none; border: 0; font: inherit; color: var(--tinta); cursor: pointer; }
+#ml-lista button b { display: block; color: var(--verde); font-weight: 800; }
+#ml-lista button span { font-size: .9rem; color: var(--tinta-suave); font-weight: 600; }
+#ml-lista .mais { padding: .6rem .2rem; color: var(--tinta-suave); }
+#ml-ficha { margin-top: 1rem; padding: 1rem 1.2rem; background: var(--papel); border: .16rem solid var(--borda); border-radius: .7rem; }
+#ml-ficha h2 { color: var(--verde); font-size: 1.6rem; margin: .6rem 0 .2rem; }
+#ml-ficha dl { display: grid; grid-template-columns: 8rem 1fr; gap: .4rem .8rem; margin: .8rem 0; }
+#ml-ficha dt { font-weight: 800; color: var(--terracota); } #ml-ficha dd { overflow-wrap: anywhere; font-weight: 600; }
+#ml-ficha .descricao { white-space: pre-line; line-height: 1.5; margin-top: .8rem; padding-top: .8rem; border-top: .1rem solid var(--linha); }
+#ml-voltar, #ml-maps { min-height: 44px; padding: .5rem 1.2rem; font: 800 1rem var(--fonte); color: var(--verde); background: var(--papel); border: .14rem solid var(--verde-2); border-radius: 3rem; cursor: pointer; }
+#ml-maps { display: inline-block; margin-top: .6rem; text-decoration: none; color: var(--papel); background: var(--verde); }
+@media (max-width: 900px) { #ver-lista { min-height: 44px; padding: .3rem .6rem; font-size: .8rem; } }
+
+/* QR é do telão e do impresso: em telas menores que 1500 px o aparelho já está na mão, então vira botão */
+@media (max-width: 1499px) {
+  #f-qr-bloco { display: none; }
+  #f-abrir:not([hidden]) { display: block; margin-top: .8rem; padding: .8rem 1rem; text-align: center; font: 800 1rem var(--fonte); color: var(--papel); background: var(--verde); border-radius: 3rem; text-decoration: none; pointer-events: auto; }
+}

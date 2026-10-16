@@ -401,7 +401,7 @@ async function tamanhos(A, cdpPorta, url) {
       return { dd: px('#f-dados dd'), nome: px('#f-nome'), qr: q.width, rolagemH: document.documentElement.scrollWidth > innerWidth,
         dentro: f.left >= 0 && f.right <= innerWidth + 1 && f.top >= 0 && f.bottom <= innerHeight + 1, sobrepoe: !(f.right <= c.left || f.left >= c.right || f.bottom <= c.top || f.top >= c.bottom) }; })()`);
     const larga = Number(tam.split('x')[0]) >= 1366;
-    ok(`tamanhos ${tam}: letra da ficha ≥ ${lim.dd}px, nome ≥ ${lim.nome}px, QR ≥ ${lim.qr}px`, m.dd >= lim.dd && m.nome >= lim.nome && (m.qr >= lim.qr || (tam === '390x844' && m.qr === 0 && (await B.av("getComputedStyle(document.getElementById('f-abrir')).display === 'block'")))), m); // celular: botão do Maps no lugar do QR
+    ok(`tamanhos ${tam}: letra da ficha ≥ ${lim.dd}px, nome ≥ ${lim.nome}px, QR ≥ ${lim.qr}px`, m.dd >= lim.dd && m.nome >= lim.nome && (m.qr >= lim.qr || (Number(tam.split('x')[0]) < 1500 && m.qr === 0 && (await B.av("getComputedStyle(document.getElementById('f-abrir')).display === 'block'")))), m); // celular: botão do Maps no lugar do QR
     ok(`tamanhos ${tam}: sem rolagem horizontal e ficha dentro da tela`, !m.rolagemH && m.dentro, m);
     if (larga) ok(`tamanhos ${tam}: ficha não cobre o cartão`, !m.sobrepoe, m);
     await B.capturar(`p-tam-${tam}.png`);
@@ -453,7 +453,7 @@ async function idiomas(A, cdpPorta, url) {
     ok(`idiomas ${l}: traduz todos os ${Object.keys(FIC).length} lugares`, Object.keys(FIC).every((k) => tr[k]?.descricao || !FIC[k].descricao));
     ok(`idiomas ${l}: sem U+FFFD no conteúdo`, !JSON.stringify(tr).includes('�'));
   }
-  const LEN = ler('lentes.json'), nomes = new Set([REG.meta.fonte, REG.meta.aviso, REG.meta.ressalvas.ausencia, ...REG.grupos.map((g) => g.nome)]);
+  const LEN = ler('lentes.json'), nomes = new Set([REG.meta.fonte, REG.meta.aviso, REG.meta.ressalvas.ausencia, ...REG.grupos.map((g) => g.nome), ...REG.precisoes.map((p) => p.rotulo)]);
   for (const v of Object.values(LEN.lentes)) { nomes.add(v.rotulo); if (v.nota) nomes.add(v.nota); for (const i of v.itens) { nomes.add(i.nome); nomes.add(i.curto); } }
   for (const l of L) { const falta = [...nomes].filter((n) => !(n in cat(l))); ok(`idiomas ${l}: catálogo cobre todos os nomes dos dados (rotas, produtos, experiências, avisos)`, !falta.length, falta); }
   ok('idiomas: acentos de nomes próprios preservados', ['Piraí', 'Paraíba', 'Sertão da Prata'].every((n) => !Object.values(trad('en')).some((v) => /Pirai|Paraiba|Sertao da Prata/.test(v.descricao ?? ''))));
@@ -503,7 +503,28 @@ async function celular(A, cdpPorta, url) {
   }
 }
 
-const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook, idiomas, celular];
+async function modolista(A, cdpPorta, url) {
+  for (const tam of ['390x844', '1366x768']) {
+    const B = await abrirAba(cdpPorta, `${url}?modo=lista`, tam);
+    await B.abrirTelao();
+    ok(`lista simples ${tam}: lista com todos os lugares e sem canvas visível`, await B.ate("document.querySelectorAll('#ml-lista li').length > 100", 5000) && await B.av("getComputedStyle(document.getElementById('tela')).display === 'none'"));
+    await B.av("(() => { const q = document.getElementById('ml-busca'); q.value = 'cafe'; q.dispatchEvent(new Event('input')); })()");
+    const n = await B.av("document.querySelectorAll('#ml-lista li').length");
+    ok(`lista simples ${tam}: busca sem acento acha lugares`, n > 0 && n < Object.keys(FIC).length, n);
+    await B.clicar(B.centro(await B.ret('#ml-lista button')));
+    ok(`lista simples ${tam}: ficha em texto com link do Maps`, await B.ate("!document.getElementById('ml-ficha').hidden && (document.getElementById('ml-maps')?.href || '').startsWith('https://')", 3000));
+    ok(`lista simples ${tam}: sem rolagem lateral`, await B.av('document.documentElement.scrollWidth <= innerWidth'));
+    await B.clicar(B.centro(await B.ret('#ml-voltar')));
+    ok(`lista simples ${tam}: voltar mostra a lista`, await B.ate("document.getElementById('ml-ficha').hidden && !document.getElementById('ml-lista').hidden", 2000));
+    await B.clicar(B.centro(await B.ret('#idiomas [data-idioma="fr"]')));
+    ok(`lista simples ${tam}: idioma muda o botão de volta ao 3D`, await B.ate("document.getElementById('ml-3d').textContent === 'Voir la carte 3D'", 4000));
+    await B.capturar(`p-lista-${tam}.png`);
+    await B.limpo(`lista simples ${tam}`);
+    await fetch(`http://127.0.0.1:${cdpPorta}/json/close/${B.id}`);
+  }
+}
+
+const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook, idiomas, celular, modolista];
 
 function servidorHTTP(porta) {
   const mimes = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.bin': 'application/octet-stream' };

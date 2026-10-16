@@ -64,3 +64,6 @@ Feito: `telao/i18n.js` (motor: catálogo por texto em português, `t()`, `tLista
 
 ## RF12 celular — situação (16/10/2026)
 Feito (CSS `@media (max-width: 900px)`): título compacto, cartão/lista/ficha/"Sobre o mapa" como folhas na base da tela (rolam, botão Fechar fixo), cartão some com a ficha aberta, bússola e "Ver o estado inteiro" no topo, rodapé enxuto (idiomas + Sobre), QR substituído por botão "Abrir no Google Maps". Provas: seção `celular` (360×740, 390×844, 412×915, 768×1024, 844×390: sem rolagem lateral, tudo na tela, alvos ≥ 40 px, ficha, painel, troca de idioma por toque). Falta: alternativa sem WebGL (lista/busca, D14), enquadramento do mapa acima da folha, testes em aparelho real, acessibilidade (leitor de tela).
+
+## Pendências do celular resolvidas (16/10/2026)
+Modo lista sem WebGL (`telao/lista.js`, automático ou `?modo=lista`, botão "Ver em lista"): busca sem acento, filtro por rota/município, ficha em texto com link do Maps, idiomas. D14 resolvida como "3D com alternativa leve". Enquadramento do mapa acima da folha no celular; barras de rolagem grossas. Seção de provas `modolista`. Falta: teste em aparelho real e leitor de tela.

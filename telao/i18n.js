@@ -4,6 +4,8 @@
 export const IDIOMAS = { pt: 'pt-BR', en: 'en-GB', fr: 'fr-FR', de: 'de-DE' };
 let idioma = 'pt', cat = {}, trad = {};
 const originais = new WeakMap(), atributos = new WeakMap(), nos = new Set(), elementos = new Set();
+const escritos = new WeakMap(); // último texto que este módulo escreveu em cada nó: a mutação que ele mesmo causa não vira "original"
+const escrever = (n, x) => { escritos.set(n, x); n.data = x; };
 let ocupado = false;
 
 export const idiomaAtual = () => idioma;
@@ -31,7 +33,7 @@ function arvore(raiz) {
     const n = w.currentNode;
     if (!originais.has(n)) { originais.set(n, n.data); nos.add(n); }
     const x = traduzirTexto(originais.get(n));
-    if (n.data !== x) n.data = x;
+    if (n.data !== x) escrever(n, x);
   }
   ocupado = false;
 }
@@ -64,7 +66,7 @@ export async function aplicarIdioma(novo, persistir = true) {
     const ativo = b.dataset.idioma === idioma;
     b.setAttribute('aria-pressed', String(ativo)); b.tabIndex = ativo ? 0 : -1;
   }
-  for (const n of nos) if (n.isConnected) n.data = originais.get(n); // volta ao português antes de aplicar o novo catálogo
+  for (const n of nos) if (n.isConnected && n.data !== originais.get(n)) escrever(n, originais.get(n)); // volta ao português antes de aplicar o novo catálogo
   for (const e of elementos) if (e.isConnected) for (const [a, v] of Object.entries(atributos.get(e))) e.setAttribute(a, v);
   arvore(document.body); attrs(document.body);
   document.title = t('Rio Rural · Turismo Rural RJ');
@@ -93,13 +95,15 @@ export async function iniciarIdiomas() {
     for (const m of ms) {
       if (m.type === 'attributes') { attrs(m.target); continue; }
       if (m.type === 'characterData') {
-        const n = m.target; originais.set(n, n.data); nos.add(n);
-        const x = traduzirTexto(n.data); if (n.data !== x) { ocupado = true; n.data = x; ocupado = false; }
+        const n = m.target;
+        if (escritos.get(n) === n.data) continue; // fui eu que escrevi
+        originais.set(n, n.data); nos.add(n);
+        const x = traduzirTexto(n.data); if (n.data !== x) escrever(n, x);
         continue;
       }
       for (const a of m.addedNodes) {
         if (a.nodeType === 1) { arvore(a); attrs(a); }
-        else if (a.nodeType === 3) { originais.set(a, a.data); nos.add(a); const x = traduzirTexto(a.data); if (a.data !== x) { ocupado = true; a.data = x; ocupado = false; } }
+        else if (a.nodeType === 3) { originais.set(a, a.data); nos.add(a); const x = traduzirTexto(a.data); if (a.data !== x) escrever(a, x); }
       }
     }
   }).observe(document.body, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ['aria-label', 'title'] });

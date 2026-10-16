@@ -704,6 +704,7 @@ async function iniciar() {
     // acima da bússola, dos botões e do convite do passeio
     const mg = 0.6 * remPx, cv = $('convite');
     zona = [Math.max(x0, painelI.hidden ? 0 : painelI.getBoundingClientRect().right, fichaEl.hidden ? 0 : fichaEl.getBoundingClientRect().right) + mg, t.bottom + mg, c.left - mg, Math.min($('bussola').getBoundingClientRect().top, $('controles').getBoundingClientRect().top, cv.hidden ? Infinity : cv.getBoundingClientRect().top) - mg];
+    if (folha) zona = [mg, t.bottom + mg, innerWidth - mg, base - mg]; // celular: o mapa livre é a faixa entre o título e a folha mais alta
     larguraLivre = (zona[2] - zona[0]) / remPx; alturaLivre = (zona[3] - zona[1]) / remPx;
   }
   // ---------- marcações (DOM sobreposto: sempre por cima do relevo, nítidas em 4K) ----------
@@ -982,6 +983,24 @@ async function iniciar() {
     $('f-lista').append(dt, dd);
   }
   montarFontes();
+  // busca: município (aproxima e mostra o nome) ou lugar (abre a ficha); sugestões nativas do navegador
+  const busca = $('busca'), semAcento = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
+  $('busca-opcoes').append(...[...municipios.map((m) => m.nome), ...Object.values(ficJ).map((f) => `${f.nome} · ${f.municipio}`)]
+    .map((v) => Object.assign(document.createElement('option'), { value: v })));
+  const rotularBusca = () => { busca.placeholder = t('Buscar município ou lugar'); busca.setAttribute('aria-label', busca.placeholder); };
+  rotularBusca();
+  function buscar() {
+    const v = semAcento(busca.value);
+    if (!v) return;
+    const m = municipios.find((x) => semAcento(x.nome) === v) ?? (v.length >= 3 && municipios.find((x) => semAcento(x.nome).startsWith(v)));
+    const cod = !m && Object.keys(ficJ).find((c) => semAcento(`${ficJ[c].nome} · ${ficJ[c].municipio}`) === v || semAcento(ficJ[c].nome) === v);
+    if (m) { fecharFicha(); fecharItem(); selecionar({ tipo: 'municipio', m }); }
+    else if (cod) abrirFicha(cod);
+    else return;
+    busca.value = ''; busca.blur(); interagiu();
+  }
+  busca.addEventListener('change', buscar);
+  busca.addEventListener('keydown', (e) => { e.stopPropagation(); if (e.key === 'Enter') buscar(); }); // teclas do mapa (1/2/3, N, F) não valem dentro da busca
   const painelF = $('fontes'), botaoInfo = $('info');
   function mostrarFontes(abrir) {
     if (painelF.hidden === !abrir) return;
@@ -1132,6 +1151,12 @@ async function iniciar() {
     const perto = alvosSob(sx, sy), certeiro = perto.length && perto[0].d <= 14;
     const mk = !certeiro && marcas.find((k) => k.modo === 'etq' && sx >= k.ret[0] && sx <= k.ret[2] && sy >= k.ret[1] && sy <= k.ret[3]);
     if (mk) return selecionar({ tipo: 'municipio', m: mk.m }); // tocar a etiqueta seleciona o município
+    // de longe (estado ou região), os alfinetes ficam colados: tocar o mapa aproxima o município e mostra o nome dele;
+    // só um toque em cima de um alfinete isolado abre a ficha direto
+    if (selecao.tipo !== 'municipio' && cam.dist > PERTO_KM && !(perto.length === 1 && certeiro)) {
+      const p0 = tocarRelevo(sx, sy), m0 = p0 && municipios.find((mm) => dentro(mm, p0[0], p0[1]));
+      if (m0) return selecionar({ tipo: 'municipio', m: m0 });
+    }
     if (perto.length === 1 || (certeiro && perto[1]?.d > 2 * perto[0].d)) return abrirFicha(perto[0].r[5]);
     if (perto.length > 1) return abrirListaPontos(perto.slice(0, 12).map((x) => x.r));
     const p = tocarRelevo(sx, sy);
@@ -1425,7 +1450,7 @@ async function iniciar() {
   };
   window.__telao.ficha = () => fichaAberta;
   window.addEventListener('telao:idioma', () => { // refaz o que cena.js monta com t() e com os dados traduzidos
-    subtitulo(); montarFontes(); preencherCartao();
+    subtitulo(); montarFontes(); preencherCartao(); rotularBusca();
     if (fichaAberta) abrirFicha(fichaAberta);
     else if (itemAberto && itemAberto.slugs.length) {
       const { municipio, slugs } = itemAberto, i = porCodigo.get(municipio);

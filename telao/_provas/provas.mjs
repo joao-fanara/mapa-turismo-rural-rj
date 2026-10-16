@@ -274,11 +274,18 @@ const livreHud = `const hud = [...document.querySelectorAll('.lad, .marca .etq, 
 
 async function juntos(A) { // dois alvos colados sob o mesmo toque: abre a lista curta para escolher
   await A.abrirTelao();
-  const par = await A.av(`(() => { ${livreHud}
-    for (const a of pts) for (const b of pts) { if (a.c >= b.c) continue; const d = Math.hypot(a.p[0] - b.p[0], a.p[1] - b.p[1]); if (d < 6 || d > 16) continue;
-      const mx = (a.p[0] + b.p[0]) / 2, my = (a.p[1] + b.p[1]) / 2; if (!livre(mx, my, 40)) continue;
-      if (pts.some((o) => o !== a && o !== b && Math.hypot(o.p[0] - mx, o.p[1] - my) < 30)) continue; return { a: a.c, b: b.c, p: [mx, my], d }; } return null; })()`);
-  ok('juntos: há dois alvos colados (6–16 px) para testar', !!par);
+  const acharPar = (dmax = 16) => A.av(`(() => { ${livreHud}
+    for (const a of pts) for (const b of pts) { if (a.c >= b.c) continue; const d = Math.hypot(a.p[0] - b.p[0], a.p[1] - b.p[1]); if (d < 6 || d > ${dmax}) continue;
+      const mx = (a.p[0] + b.p[0]) / 2, my = (a.p[1] + b.p[1]) / 2; if (!livre(mx, my, ${dmax > 16 ? 20 : 40})) continue;
+      if (pts.some((o) => o !== a && o !== b && Math.hypot(o.p[0] - mx, o.p[1] - my) < 28)) continue; return { a: a.c, b: b.c, p: [mx, my], d }; } return null; })()`);
+  let par = await acharPar();
+  ok('juntos: há dois alvos colados (6–16 px) na vista do estado', !!par);
+  if (!par) return;
+  await A.clicar(par.p);
+  ok('juntos: de longe, tocar entre alfinetes colados aproxima o município (e mostra o nome)', await A.ate("window.__telaoDepuracao.selecao() !== 'estado' && document.querySelector('.rot.sel')?.textContent.length > 0", 3000));
+  await espera(2000);
+  for (let k = 0; k < 4 && !(par = await acharPar(30)); k++) await espera(800);
+  ok('juntos: perto, há dois alvos colados (6–30 px) para testar', !!par, await A.av(`(() => { ${livreHud} let n = 0, l = 0; for (const a of pts) for (const b of pts) { if (a.c >= b.c) continue; const d = Math.hypot(a.p[0] - b.p[0], a.p[1] - b.p[1]); if (d >= 6 && d <= 30) { n++; if (livre((a.p[0] + b.p[0]) / 2, (a.p[1] + b.p[1]) / 2, 20)) l++; } } return { pts: pts.length, pares: n, livres: l, sel: window.__telaoDepuracao.selecao(), dist: window.__telaoDepuracao.cam().dist }; })()`));
   if (!par) return;
   await A.clicar(par.p);
   ok('juntos: toque entre dois alvos abre a lista para escolher', await A.ate("!document.getElementById('item').hidden && /lugares próximos/.test(document.getElementById('i-titulo').textContent)", 3000), par);
@@ -471,6 +478,10 @@ async function idiomas(A, cdpPorta, url) {
     ok(`idiomas ${l}→${outro}: ficha aberta é refeita no novo idioma`, await B.ate(`document.getElementById('f-descricao').textContent === ${JSON.stringify(trad(outro)[cod].descricao)}`, 4000));
     await B.clicar(B.centro(await B.ret('#idiomas [data-idioma="pt"]')));
     ok(`idiomas ${l}→pt: volta ao português`, await B.ate(`document.getElementById('f-descricao').textContent === ${JSON.stringify(FIC[cod].descricao)} && document.getElementById('c-total-rot').textContent === 'lugares para visitar'`, 4000));
+    ok(`idiomas ${l}→${outro}→pt: abas, botões, lema e rodapé voltam todos ao português`, await B.ate(`(() => { const tx = (s) => document.querySelector(s)?.textContent.trim();
+      return [...document.querySelectorAll('#c-abas button')].map((b) => b.textContent).join('|') === 'Rotas|Quero…|Produtos'
+        && /^(Pausar|Retomar) passeio$/.test(tx('#pausa')) && tx('#ver-estado') === 'Ver o estado inteiro' && tx('#ver-lista') === 'Ver em lista'
+        && tx('.lema') === 'Sabores, histórias e caminhos' && tx('#r-base').startsWith('Informações dos guias') && tx('#info') === 'ⓘ Sobre o mapa'; })()`, 4000));
     await B.capturar(`p-idioma-${l}.png`);
     await B.limpo(`idiomas ${l}`);
     await fetch(`http://127.0.0.1:${cdpPorta}/json/close/${B.id}`);
@@ -524,7 +535,22 @@ async function modolista(A, cdpPorta, url) {
   }
 }
 
-const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook, idiomas, celular, modolista];
+async function busca(A) {
+  await A.abrirTelao();
+  const digitar = async (txt) => {
+    await A.clicar(A.centro(await A.ret('#busca')));
+    await A.cdp.send('Input.insertText', { text: txt });
+    await A.tecla('Enter', 'Enter', 13);
+  };
+  await digitar('miguel pereira');
+  ok('busca: "miguel pereira" (sem acento, minúsculas) aproxima o município', await A.ate("window.__telaoDepuracao.selecao() === 'Miguel Pereira'", 4000));
+  ok('busca: o nome do município aparece no mapa e no cartão', await A.ate("document.querySelector('.rot.sel')?.textContent.includes('Miguel Pereira') && document.getElementById('c-nome').textContent === 'Miguel Pereira'", 4000));
+  const cod = Object.keys(FIC)[5];
+  await digitar(`${FIC[cod].nome} · ${FIC[cod].municipio}`);
+  ok('busca: nome de um lugar abre a ficha dele', await A.ate(`window.__telao.ficha() === ${JSON.stringify(cod)}`, 4000));
+}
+
+const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook, idiomas, celular, modolista, busca];
 
 function servidorHTTP(porta) {
   const mimes = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.bin': 'application/octet-stream' };

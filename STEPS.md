@@ -67,3 +67,9 @@ Feito (CSS `@media (max-width: 900px)`): título compacto, cartão/lista/ficha/"
 
 ## Pendências do celular resolvidas (16/10/2026)
 Modo lista sem WebGL (`telao/lista.js`, automático ou `?modo=lista`, botão "Ver em lista"): busca sem acento, filtro por rota/município, ficha em texto com link do Maps, idiomas. D14 resolvida como "3D com alternativa leve". Enquadramento do mapa acima da folha no celular; barras de rolagem grossas. Seção de provas `modolista`. Falta: teste em aparelho real e leitor de tela.
+
+## F7 Banco e API — início (16/10/2026)
+Feito: `database/migracoes/001-esquema.sql` (MySQL 5.7, utf8mb4; mapas/regiões/municípios/termos/atrativos com status+origem+enviado_por para RF14, exclusão lógica, traduções com status, usuários com papéis, auditoria), `database/gerar_dados_iniciais.py` → `dados-iniciais.sql` (630 lugares, 30 termos, 92 municípios, 3.819 traduções automáticas) carregado no banco de produção, e API de leitura `servidor-php/api/atrativos.php` (`?lang=&q=&rota=&municipio=&limite=`; consultas preparadas; validação de entrada) publicada em `/api/atrativos.php`. Falta: exportar o formato do telão (registros/lentes/fichas) a partir do banco ("Publicar"), testes automáticos da API no gate, F8 admin (login, CRUD, CSV em lote, moderação, restaurar).
+
+## Celular — ajustes após teste em aparelho real
+Cartão compacto (cabe com 9 rotas sem rolar), unidades dvh, zona dos rótulos entre o título e a folha, rótulos não saem mais da tela. Ainda: leque de ladrilhos pode passar sob os botões do topo.

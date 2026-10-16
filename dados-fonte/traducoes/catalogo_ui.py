@@ -33,6 +33,7 @@ C = {
 'Localização exata no mapa': ('Exact location on the map', 'Emplacement exact sur la carte', 'Genauer Standort auf der Karte'),
 'Localização aproximada no mapa': ('Approximate location on the map', 'Emplacement approximatif sur la carte', 'Ungefährer Standort auf der Karte'),
 'Endereço não informado (só o município)': ('Address not given (municipality only)', 'Adresse non communiquée (commune seulement)', 'Adresse nicht angegeben (nur Gemeinde)'),
+'Buscar município ou lugar': ('Search municipality or place', 'Rechercher une commune ou un lieu', 'Gemeinde oder Ort suchen'),
 'Todo o estado': ('Whole state', 'Tout l’État', 'Ganzer Bundesstaat'),
 'Estado do Rio de Janeiro': ('State of Rio de Janeiro', 'État de Rio de Janeiro', 'Bundesstaat Rio de Janeiro'),
 'lugar para visitar': ('place to visit', 'lieu à visiter', 'Ort zu besuchen'),

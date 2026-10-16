@@ -4,4 +4,4 @@ telao/_provas/*.png
 __pycache__/
 *.pyc
 servidor-php/config/config.php
-*.senha*.txt
+*senha*.txt

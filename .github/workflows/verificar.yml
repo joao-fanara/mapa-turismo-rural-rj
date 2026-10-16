@@ -1,0 +1,15 @@
+name: verificar
+on: [push, pull_request]
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install openpyxl opencv-python-headless
+      - run: node verificar.mjs
+        env: { TELAO_CHROME: google-chrome-stable }
+      # ainda não executado (ver STEPS.md): em Linux o WebGL roda em SwiftShader e pode exigir ajustes de tempo

@@ -1,0 +1,303 @@
+[
+ {
+  "guia": "01",
+  "regiao": "Vale do Café",
+  "total_extraido": 118,
+  "total_no_guia": 118,
+  "propostas": 1,
+  "confirmadas": [
+   {
+    "tipo": "campo",
+    "indice": 108,
+    "page": 70,
+    "campo": "instagram",
+    "valor_atual": "Fogão Divino Restaurante - Fazenda Carvalheira",
+    "valor_correto": "",
+    "evidencia": "Na página 70 (Fazenda União Carvalheira) a única rede social exibida é um ícone azul do Facebook (letra f) ao lado do texto \"Fogão Divino Restaurante - Fazenda Carvalheira\"; não há ícone nem @ do Instagram nesse bloco.",
+    "valor_final": "",
+    "motivo": "Página 70 mostra, no bloco da Fazenda União Carvalheira, apenas o ícone azul do Facebook (letra f) ao lado do texto 'Fogão Divino Restaurante - Fazenda Carvalheira'. Não há ícone de Instagram nem @handle, então o campo instagram deve ficar vazio."
+   }
+  ]
+ },
+ {
+  "guia": "02",
+  "regiao": "Costa do Sol",
+  "total_extraido": 70,
+  "total_no_guia": 70,
+  "propostas": 0,
+  "confirmadas": []
+ },
+ {
+  "guia": "03",
+  "regiao": "Agulhas Negras",
+  "total_extraido": 22,
+  "total_no_guia": 22,
+  "propostas": 1,
+  "confirmadas": [
+   {
+    "tipo": "campo",
+    "indice": 19,
+    "page": 21,
+    "campo": "funcionamento",
+    "valor_atual": "Das terça-feira a domingo de 9h às 16h.",
+    "valor_correto": "De terça-feira a domingo de 9h às 16h.",
+    "evidencia": "Página 21 (Trutas da Serrinha - Trutário), conferido com zoom no trecho: \"FUNCIONAMENTO: De terça-feira a domingo de 9h às 16h.\" O JSON traz \"Das terça-feira\", e a página traz \"De terça-feira\".",
+    "valor_final": "De terça-feira a domingo de 9h às 16h.",
+    "motivo": "A página 21 (Trutas da Serrinha - Trutário) mostra claramente \"FUNCIONAMENTO: De terça-feira a domingo de 9h às 16h.\" O JSON atual traz \"Das terça-feira a domingo de 9h às 16h.\", que é erro de transcrição."
+   }
+  ]
+ },
+ {
+  "guia": "04",
+  "regiao": "Serra Verde Imperial",
+  "total_extraido": 155,
+  "total_no_guia": 155,
+  "propostas": 9,
+  "confirmadas": [
+   {
+    "tipo": "campo",
+    "indice": 145,
+    "page": 82,
+    "campo": "endereco",
+    "valor_atual": "Estradas Pedras da Vargem Grande",
+    "valor_correto": "Estrada Pedras da Vargem Grande",
+    "evidencia": "p082, ficha Sítio Sabor da Montanha Orgânicos: o endereço impresso é 'Estrada Pedras da Vargem Grande' (singular, sem 's').",
+    "valor_final": "Estrada Pedras da Vargem Grande",
+    "motivo": "Zoom em p082 mostra claramente 'Estrada Pedras da Vargem Grande' (singular)."
+   },
+   {
+    "tipo": "campo",
+    "indice": 30,
+    "page": 23,
+    "campo": "site",
+    "valor_atual": "me.ahazou.com/pesqueirodosansao",
+    "valor_correto": "",
+    "evidencia": "p023, Pesque Pague Rancho das Palmeiras: abaixo de '@ranchodaspalmeiras_pesquepague' (ícone Instagram) aparece 'me.ahazou.com/pesqueirodosansao' precedido do ícone azul do Facebook; não há ícone de globo/site na ficha, então site deve ficar vazio.",
+    "valor_final": "",
+    "motivo": "p023: 'me.ahazou.com/pesqueirodosansao' vem com o ícone azul do Facebook; só há ícones de Instagram e Facebook, sem globo/site. O JSON não tem campo Facebook e as outras fichas só com Facebook (ex.: p082) ficam com site vazio."
+   },
+   {
+    "tipo": "campo",
+    "indice": 150,
+    "page": 84,
+    "campo": "site",
+    "valor_atual": "ecoplaytour.com.br",
+    "valor_correto": "",
+    "evidencia": "p084, EcoPlay Tour: a linha mostra ícone Instagram 'ecoplay_tour' e ícone azul do Facebook com o texto 'ecoplaytour.com.br'; não há ícone de globo/site, então site deve ficar vazio.",
+    "valor_final": "",
+    "motivo": "p084 EcoPlay Tour: 'ecoplaytour.com.br' está ao lado do ícone do Facebook; não há ícone de globo."
+   },
+   {
+    "tipo": "campo",
+    "indice": 151,
+    "page": 84,
+    "campo": "site",
+    "valor_atual": "ecoplaytour.com.br",
+    "valor_correto": "",
+    "evidencia": "p084, Notur Travel: a linha mostra ícone Instagram '@notur.travel' e ícone azul do Facebook com o texto 'ecoplaytour.com.br'; não há ícone de globo/site, então site deve ficar vazio.",
+    "valor_final": "",
+    "motivo": "p084 Notur Travel: 'ecoplaytour.com.br' está ao lado do ícone do Facebook; não há ícone de globo."
+   },
+   {
+    "tipo": "campo",
+    "indice": 95,
+    "page": 58,
+    "campo": "descricao",
+    "valor_atual": "Hospedagem; café da manhã; restaurante; trilhas com condurores; lago para pesca; decoração indígena; não é aconselhável para crianças; ideal para grupos; Centro de referência de aquicultura e hidroponia. Oferece sauna; campo de futebol / vôlei; piscina e wifi nas áreas comuns. Espaços para promover workshops e eventos: Sala rústica de reunião, ambiente descontraído e simples, com capacidade para abrigar até 40 pessoas. Recursos: tv, vídeo, projetor de slides, anfiteatro ao ar livre, capacidade para 80 pessoas. Ideal para vivências, dramatizações e representações teatrais",
+    "valor_correto": "Hospedagem; café da manhã; restaurante; trilhas com condutores; lago para pesca; decoração indígena; não é aconselhável para crianças; ideal para grupos; Centro de referência de aquicultura e hidroponia. Oferece sauna; campo de futebol / vôlei; piscina e wifi nas áreas comuns. Espaços para promover workshops e eventos: Sala rústica de reunião, ambiente descontraído e simples, com capacidade para abrigar até 40 pessoas. Recursos: tv, vídeo, projetor de slides, anfiteatro ao ar livre, capacidade para 80 pessoas. Ideal para vivências, dramatizações e representações teatrais",
+    "evidencia": "p058, Sítio do Ser: a página mostra 'trilhas com condutores; lago para pesca'; o JSON traz 'condurores' (erro de transcrição, palavra inexistente).",
+    "valor_final": "Hospedagem; café da manhã; restaurante; trilhas com condutores; lago para pesca; decoração indígena; não é aconselhável para crianças; ideal para grupos; Centro de referência de aquicultura e hidroponia. Oferece sauna; campo de futebol / vôlei; piscina e wifi nas áreas comuns. Espaços para promover workshops e eventos: Sala rústica de reunião, ambiente descontraído e simples, com capacidade para abrigar até 40 pessoas. Recursos: tv, vídeo, projetor de slides, anfiteatro ao ar livre, capacidade para 80 pessoas. Ideal para vivências, dramatizações e representações teatrais",
+    "motivo": "p058 mostra 'trilhas com condutores'. O valor proposto é idêntico ao atual, só com 'condurores' trocado por 'condutores' (conferido por substituição)."
+   },
+   {
+    "tipo": "duplicado",
+    "indice": 54,
+    "page": 36,
+    "campo": "",
+    "valor_atual": "Sítio Candeias",
+    "valor_correto": "remover (duplicata do índice 52, p035)",
+    "evidencia": "p036 repete a ficha 'Sítio Candeias - Estrada do Brejal s/n - Cachoeirinha Brejal', mesma descrição e telefone (24) 99295-6018 já presentes em p035; a cópia de p036 não traz FUNCIONAMENTO, a de p035 traz 'A partir das 10h', por isso manter a de p035.",
+    "valor_final": "remover índice 54 (p036), manter índice 52 (p035)",
+    "motivo": "p035 e p036 trazem a mesma ficha Sítio Candeias (endereço, descrição, telefone, Wi-Fi SIM, agendar SIM, selo pet colorido). Só p035 tem 'A partir das 10h', então a de p035 é a mais completa."
+   },
+   {
+    "tipo": "duplicado",
+    "indice": 88,
+    "page": 54,
+    "campo": "",
+    "valor_atual": "Feira Orgânica e Agroecológica de Teresópolis",
+    "valor_correto": "remover (duplicata do índice 144, p081)",
+    "evidencia": "A ficha 'Feira Orgânica e Agroecológica de Teresópolis - Rua Fritz Weber, 75' aparece em p054 e de novo em p081, com mesma descrição, funcionamento '08h às 13h' e telefone '(21) 99860-8718 e(21) 97549-2985'; a cópia de p081 é mais completa (@organicosparatodos, organicosparatodos.com.br, selo Friendly Pet colorido), a de p054 não tem redes nem selo.",
+    "valor_final": "remover índice 88 (p054), manter índice 144 (p081)",
+    "motivo": "A mesma ficha aparece em p054 e em p081, com igual nome, endereço, descrição, horário e telefone. A de p081 é a mais completa (Instagram, site, selo pet colorido). Observação: o campo agendar difere (NÃO em p054, SIM em p081); mantém-se o de p081."
+   },
+   {
+    "tipo": "duplicado",
+    "indice": 152,
+    "page": 84,
+    "campo": "",
+    "valor_atual": "Rota Certa Ecoturismo",
+    "valor_correto": "remover (duplicata do índice 149, p083)",
+    "evidencia": "A ficha 'Rota Certa Ecoturismo - R. Olegário Bernardes, 341' aparece em p083 e de novo em p084, com mesma descrição, funcionamento '24h', telefone '(21) 2742-7782 e (21) 99168-9019', @rotacertaecoturismo e www.rotacertaecoturismo.com (só os quadros Wi-Fi/Agendar diferem: NÃO/NÃO em p083, SIM/SIM em p084).",
+    "valor_final": "remover índice 152 (p084), manter índice 149 (p083)",
+    "motivo": "A ficha Rota Certa Ecoturismo aparece em p083 e em p084 com mesmo endereço, descrição, horário, telefone, Instagram e site. Só os quadros Wi-Fi/Agendar diferem (NÃO/NÃO em p083, SIM/SIM em p084), então a escolha de qual manter é arbitrária; a duplicidade é clara."
+   },
+   {
+    "tipo": "duplicado",
+    "indice": 120,
+    "page": 69,
+    "campo": "",
+    "valor_atual": "Restaurante Flor do Valle",
+    "valor_correto": "remover (cópia da ficha Cantina Verde, índice 119; o Flor do Valle real é o índice 121, p070)",
+    "evidencia": "Em p069 as duas fichas são idênticas exceto pelo título: ambas com 'Estrada Teresópolis-Friburgo, 3375, Albuquerque', '(21) 3641-9625', '09h às 18h', mesma descrição ('Restaurante de comida caseira mineira. Costuma exibir peças artísticas na entrada do local.') e Facebook 'Cantina Verde'; o Restaurante Flor do Valle com dados próprios está em p070 (Rodovia Dr. Rogério Moura Estevão, 4001, (21) 2644-6363).",
+    "valor_final": "remover índice 120 (p069, Flor do Valle cópia da Cantina Verde), manter 119 e 121",
+    "motivo": "Em p069 as duas fichas são idênticas exceto pelo título (mesmo endereço 3375, telefone, horário, descrição e Facebook 'Cantina Verde'). O Flor do Valle com dados próprios está em p070 (índice 121). Remover o 120 não perde informação, pois ela já está no 119."
+   }
+  ]
+ },
+ {
+  "guia": "05",
+  "regiao": "Região Metropolitana",
+  "total_extraido": 8,
+  "total_no_guia": 8,
+  "propostas": 0,
+  "confirmadas": []
+ },
+ {
+  "guia": "06",
+  "regiao": "Costa Verde",
+  "total_extraido": 37,
+  "total_no_guia": 37,
+  "propostas": 0,
+  "confirmadas": []
+ },
+ {
+  "guia": "07",
+  "regiao": "Costa Doce",
+  "total_extraido": 22,
+  "total_no_guia": 22,
+  "propostas": 2,
+  "confirmadas": [
+   {
+    "tipo": "campo",
+    "indice": 0,
+    "page": 4,
+    "campo": "page",
+    "valor_atual": "p004",
+    "valor_correto": "p005",
+    "evidencia": "A ficha 'Cachaça Tellura / Estrada RJ 194 Campos p/ Gargaú' está na imagem p005.jpg. A p004.jpg é a capa do município CAMPOS DOS GOYTACAZES, sem nenhum atrativo.",
+    "valor_final": "p005",
+    "motivo": "p004.jpg é a capa do município Campos dos Goytacazes, sem atrativo. A ficha 'Cachaça Tellura / Estrada RJ 194 Campos p/ Gargaú' está em p005.jpg. O JSON (índice 0) tem nome Tellura com page p004."
+   },
+   {
+    "tipo": "campo",
+    "indice": 1,
+    "page": 5,
+    "campo": "page",
+    "valor_atual": "p005",
+    "valor_correto": "p006",
+    "evidencia": "A ficha 'Cachaça Barra Velha / Barra Velha - Farol' está na imagem p006.jpg. A p005.jpg traz a ficha da Cachaça Tellura.",
+    "valor_final": "p006",
+    "motivo": "p006.jpg traz a ficha 'Cachaça Barra Velha / Barra Velha - Farol'. p005.jpg é a Tellura. O JSON (índice 1) tem nome Barra Velha com page p005."
+   }
+  ]
+ },
+ {
+  "guia": "08",
+  "regiao": "Caminhos Coloniais",
+  "total_extraido": 24,
+  "total_no_guia": 24,
+  "propostas": 0,
+  "confirmadas": []
+ },
+ {
+  "guia": "09",
+  "regiao": "Caminhos da Serra",
+  "total_extraido": 65,
+  "total_no_guia": 65,
+  "propostas": 0,
+  "confirmadas": []
+ },
+ {
+  "guia": "10",
+  "regiao": "Caminhos da Mata",
+  "total_extraido": 25,
+  "total_no_guia": 25,
+  "propostas": 1,
+  "confirmadas": [
+   {
+    "tipo": "campo",
+    "indice": 12,
+    "page": 13,
+    "campo": "endereco",
+    "valor_atual": "Estrada Cachoeira dos Bagres, após a Escola Municipal Alzemiro Luzi, em frente a ponte.",
+    "valor_correto": "Estrada Cachoeira dos Bagres, após a Escola Municipal Alzemiro Luzi, em frente à ponte.",
+    "evidencia": "Página 13, Pitanga Decor, linha de endereço: \"Estrada Cachoeira dos Bagres, após a Escola Municipal Alzemiro Luzi, em frente à ponte.\" (crase em \"à ponte\"; o JSON perdeu o acento)",
+    "valor_final": "Estrada Cachoeira dos Bagres, após a Escola Municipal Alzemiro Luzi, em frente à ponte.",
+    "motivo": "A página 13 mostra o endereço do Pitanga Decor como 'Estrada Cachoeira dos Bagres, após a Escola Municipal Alzemiro Luzi, em frente à ponte.', com crase em 'à ponte'. O JSON (índice 12) tem 'em frente a ponte.' sem crase, então a correção procede."
+   }
+  ]
+ },
+ {
+  "guia": "11",
+  "regiao": "Baixada Verde",
+  "total_extraido": 20,
+  "total_no_guia": 20,
+  "propostas": 1,
+  "confirmadas": [
+   {
+    "tipo": "campo",
+    "indice": 0,
+    "page": 5,
+    "campo": "page",
+    "valor_atual": "p005",
+    "valor_correto": "p006",
+    "evidencia": "A ficha 'Instituto Sinal do Vale' está em p006.jpg, cujo rodapé mostra '| 06 |', logo abaixo do cabeçalho 'MUNICÍPIO: DUQUE DE CAXIAS'. A p005.jpg é só a capa de município com o título 'DUQUE DE CAXIAS' e texto de apresentação, sem atrativo. Todos os campos de conteúdo do item estão corretos; só o campo page está errado.",
+    "valor_final": "p006",
+    "motivo": "p006.jpg mostra a ficha do Instituto Sinal do Vale (cabeçalho Município: Duque de Caxias, rodapé '| 06 |', endereço, telefone 21998928910, @sinaldovale, www.sinaldovale.org, Wi-Fi SIM, Precisa agendar SIM). p005.jpg é apenas a capa do município com texto de apresentação, sem atrativo. O campo page deve ser p006."
+   }
+  ]
+ },
+ {
+  "guia": "12",
+  "regiao": "Águas do Noroeste",
+  "total_extraido": 69,
+  "total_no_guia": 69,
+  "propostas": 3,
+  "confirmadas": [
+   {
+    "tipo": "campo",
+    "indice": 3,
+    "page": 8,
+    "campo": "instagram",
+    "valor_atual": "komeningue",
+    "valor_correto": "",
+    "evidencia": "Na p008 (Komeningue Lanchonete e Pizzaria) a única rede social é o ícone azul do Facebook seguido de 'komeningue'; não há ícone nem handle de Instagram.",
+    "valor_final": "",
+    "motivo": "p008: o handle 'komeningue' aparece ao lado do ícone azul do Facebook; não há ícone nem handle de Instagram. O índice 3 do JSON corresponde a Komeningue (p008)."
+   },
+   {
+    "tipo": "campo",
+    "indice": 21,
+    "page": 21,
+    "campo": "instagram",
+    "valor_atual": "Cachaça Morro Grande",
+    "valor_correto": "",
+    "evidencia": "Na p021 (Alambique Morro Grande) a única rede social é o ícone azul do Facebook com o texto 'Cachaça Morro Grande'; não há ícone nem handle de Instagram.",
+    "valor_final": "",
+    "motivo": "p021: 'Cachaça Morro Grande' aparece ao lado do ícone azul do Facebook (o ícone do Instagram aparece só na Casa do Artesão de Italva, acima). O índice 21 do JSON é Alambique Morro Grande."
+   },
+   {
+    "tipo": "campo",
+    "indice": 35,
+    "page": 33,
+    "campo": "instagram",
+    "valor_atual": "artesanatomiracemarj",
+    "valor_correto": "",
+    "evidencia": "Na p033 (Casa do Artesão, Miracema) a única rede social é o ícone azul do Facebook com o texto 'artesanatomiracemarj'; não há ícone nem handle de Instagram.",
+    "valor_final": "",
+    "motivo": "p033: 'artesanatomiracemarj' aparece ao lado do ícone azul do Facebook; não há ícone nem handle de Instagram. O índice 35 do JSON é Casa do Artesão (Miracema)."
+   }
+  ]
+ }
+]

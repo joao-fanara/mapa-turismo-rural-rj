@@ -1,0 +1,5 @@
+node_modules/
+telao/_provas/chrome-perfil/
+telao/_provas/*.png
+__pycache__/
+*.pyc

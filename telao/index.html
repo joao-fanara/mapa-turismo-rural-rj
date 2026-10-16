@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; media-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rio Rural · Turismo Rural RJ · Telão</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="estilo.css">
+<script src="vendor/qr/qrcode.min.js"></script>
+<script type="module" src="cena.js"></script>
+</head>
+<body>
+<canvas id="tela"></canvas>
+<div id="marcas" aria-hidden="true"></div>
+<div id="rotulos" aria-hidden="true"></div>
+
+<header id="titulo" class="hud">
+  <div class="olho">Protótipo · Turismo Rural RJ</div>
+  <h1>Rio Rural: sabores, histórias e caminhos</h1>
+  <p id="subtitulo"></p>
+  <p id="leitura"></p>
+</header>
+
+<div id="bussola" class="hud">
+  <button id="norte" class="rosa" type="button" aria-label="Voltar ao norte" title="Voltar ao norte (tecla N)"><span id="agulha" aria-hidden="true">N</span></button>
+  <div class="leituras" aria-hidden="true">
+    <span>Azimute <b id="l-az"></b></span>
+    <span>Inclinação <b id="l-incl"></b></span>
+    <span>Relevo exagerado <b id="l-exag"></b></span>
+  </div>
+</div>
+
+<aside id="cartao" class="hud painel" aria-live="polite">
+  <div class="olho" id="c-olho"></div>
+  <h2 id="c-nome"></h2>
+  <div class="c-total"><b id="c-total"></b><span id="c-total-rot"></span></div>
+  <p class="c-sub" id="c-sub"></p>
+  <div class="c-abas" id="c-abas" role="tablist" aria-label="Lente do mapa (teclas 1, 2 e 3)"></div>
+  <div id="c-lente" role="tabpanel">
+    <div class="olho c-secao" id="c-grupos-titulo"></div>
+    <p class="c-nota" id="c-nota" hidden></p>
+    <ul class="c-grupos" id="c-grupos"></ul>
+    <p class="c-semtipo" id="c-semtipo" hidden></p>
+  </div>
+  <div class="olho c-secao" id="c-cob-titulo"></div>
+  <div class="c-barra" id="c-barra"></div>
+  <ul class="c-cob" id="c-cob"></ul>
+  <p class="c-ressalva" id="c-ressalva"></p>
+</aside>
+
+
+<section id="item" class="hud painel" hidden role="dialog" aria-labelledby="i-titulo">
+  <div class="i-topo"><div class="olho" id="i-olho"></div><button id="i-fechar" type="button">Fechar</button></div>
+  <h3 id="i-nome"><span id="i-glifo" aria-hidden="true"></span><span id="i-titulo"></span></h3>
+  <p id="i-conta"></p>
+  <p id="i-def"></p>
+  <p id="i-nota" hidden></p>
+  <p id="i-pos"></p>
+  <ul id="i-lista"></ul>
+  <p id="i-mais" hidden></p>
+</section>
+
+<section id="ficha" class="hud painel" hidden role="dialog" aria-labelledby="f-nome">
+  <div class="i-topo"><div class="olho" id="f-olho"></div><button id="f-fechar" type="button">Fechar</button></div>
+  <h3 id="f-nome"></h3>
+  <p id="f-rota"></p>
+  <p id="f-selos"></p>
+  <div id="f-corpo">
+    <dl id="f-dados"></dl>
+    <figure id="f-qr-bloco"><div id="f-qr"></div><figcaption>Aponte o celular para abrir no mapa</figcaption></figure>
+  </div>
+  <p id="f-precisao" hidden></p>
+  <p id="f-descricao"></p>
+</section>
+
+<div id="convite" class="hud" hidden>Toque num município · arraste para mover · gire e incline com dois dedos</div>
+
+<div id="controles">
+  <button id="pausa" type="button" aria-pressed="false" title="Também pela barra de espaço">Pausar passeio</button>
+  <button id="ver-estado" type="button" aria-label="Ver o estado inteiro">Ver o estado inteiro</button>
+</div>
+
+<footer id="rodape" class="hud">
+  <p id="r-base">PROTÓTIPO · dados extraídos dos 12 guias Turismo Rural RJ (TurisRio/Setur-RJ) · corte 15/10/2026 · pontos pelo QR "Ver mapa" dos guias e, alguns, pelo endereço (OpenStreetMap) · fontes completas em ⓘ</p>
+  <button id="tela-cheia" type="button" hidden aria-label="Tela cheia" title="Tela cheia (tecla F)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <button id="info" type="button" aria-expanded="false" aria-controls="fontes">ⓘ Info</button>
+</footer>
+
+<section id="fontes" class="hud painel" hidden aria-label="Fontes dos dados">
+  <div class="olho">Fontes dos dados</div>
+  <dl id="f-lista"></dl>
+  <button id="fechar" type="button">Fechar</button>
+</section>
+
+<div id="aviso" hidden><p id="aviso-texto"></p></div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Pacote estático do telão: o Apache da hospedagem é antigo e o site manda nosniff,
+# então o tipo de cada arquivo vai declarado aqui.
+<IfModule mod_mime.c>
+    AddType text/javascript .js
+    AddType application/json .json
+    AddType application/octet-stream .bin
+    AddType audio/mpeg .mp3
+</IfModule>

@@ -453,6 +453,9 @@ async function idiomas(A, cdpPorta, url) {
     ok(`idiomas ${l}: traduz todos os ${Object.keys(FIC).length} lugares`, Object.keys(FIC).every((k) => tr[k]?.descricao || !FIC[k].descricao));
     ok(`idiomas ${l}: sem U+FFFD no conteúdo`, !JSON.stringify(tr).includes('�'));
   }
+  const LEN = ler('lentes.json'), nomes = new Set([REG.meta.fonte, REG.meta.aviso, REG.meta.ressalvas.ausencia, ...REG.grupos.map((g) => g.nome)]);
+  for (const v of Object.values(LEN.lentes)) { nomes.add(v.rotulo); if (v.nota) nomes.add(v.nota); for (const i of v.itens) { nomes.add(i.nome); nomes.add(i.curto); } }
+  for (const l of L) { const falta = [...nomes].filter((n) => !(n in cat(l))); ok(`idiomas ${l}: catálogo cobre todos os nomes dos dados (rotas, produtos, experiências, avisos)`, !falta.length, falta); }
   ok('idiomas: acentos de nomes próprios preservados', ['Piraí', 'Paraíba', 'Sertão da Prata'].every((n) => !Object.values(trad('en')).some((v) => /Pirai|Paraiba|Sertao da Prata/.test(v.descricao ?? ''))));
   const cod = Object.keys(FIC).find((k) => FIC[k].descricao && FIC[k].funcionamento && FIC[k].precisao === 'endereco');
   for (const l of L) {

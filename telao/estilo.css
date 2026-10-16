@@ -251,3 +251,15 @@ button { font-family: var(--fonte); }
   #ficha, #item { left: .5rem !important; right: .5rem; width: auto !important; top: auto; bottom: calc(var(--rodape-h) + .5rem); max-height: 70vh; }
   #f-corpo { grid-template-columns: 1fr; justify-items: start; }
 }
+
+/* idiomas */
+#idiomas { display: flex; gap: .2rem; pointer-events: auto; flex: none; }
+#idiomas button { min-width: max(44px, 2.8rem); min-height: max(44px, 2.5rem); border: .12rem solid var(--linha); border-radius: .5rem; background: var(--papel-2); color: var(--tinta-suave); font: 800 1rem var(--fonte); cursor: pointer; }
+#idiomas button[aria-pressed="true"] { border-color: var(--verde); background: var(--verde); color: var(--papel); }
+#idiomas button:focus-visible { outline: 3px solid var(--terracota); outline-offset: 2px; }
+html[lang^="en"] #c-olho.subir::after { content: " ↑ see the region"; }
+html[lang^="fr"] #c-olho.subir::after { content: " ↑ voir la région"; }
+html[lang^="de"] #c-olho.subir::after { content: " ↑ Region ansehen"; }
+html[lang^="en"] .rot.sel::after { content: "approximate position"; }
+html[lang^="fr"] .rot.sel::after { content: "position approximative"; }
+html[lang^="de"] .rot.sel::after { content: "ungefähre Position"; }

@@ -55,3 +55,9 @@ Na modelagem da F7–F8: atrativo com `status` (`rascunho`/`pendente`/`publicado
 
 ## F8 inclui RF15 (CSV em lote)
 Tela: modelo CSV → upload → pré-visualização (válidas/com aviso/rejeitadas, mesmas regras do formulário) → confirmar → importar em transação com relatório e desfazer pelo log. Testes: BOM, `;`/`,`, acentos, linha inválida, duplicada, arquivo grande, injeção de fórmula.
+
+## Reordenação (16/10/2026): site primeiro
+Ordem nova: (1) idiomas (em andamento, vale para o site) → (2) **site responsivo/celular + alternativa sem WebGL + acessibilidade** → (3) desacoplar tema (RF13) → (4) F7 banco/API → (5) F8 admin (CRUD, CSV, moderação) → (6) telão como modo opcional (já existe; manter testes). Assumido D14 = 3D com alternativa leve.
+
+## F9 Idiomas — situação (16/10/2026)
+Feito: `telao/i18n.js` (motor: catálogo por texto em português, `t()`, `tLista()`, seletor PT·EN·FR·DE, `?lang=`, lembrado no navegador, refaz ficha/lista/painel ao trocar), catálogos `telao/i18n/{en,fr,de}.json` (gerados por `dados-fonte/traducoes/catalogo_ui.py`), 629 descrições/horários traduzidos em `telao/dados/trad-*.json` (status: **automática**, revisão humana pendente), números e datas pelo idioma. Provas: seção `idiomas` (paridade de chaves e variáveis, sem U+FFFD, cobertura dos 630 lugares, troca com ficha aberta, volta ao português). Falta: edição das traduções no admin (F8), telas conferidas por captura em 4K, exportar o catálogo para o banco.

@@ -145,7 +145,7 @@ async function conferirFicha(A, codigo, rotulo) {
 // ---------- seções ----------
 async function carregar(A) {
   await A.abrirTelao();
-  ok('carregar: <title>', (await A.av('document.title')) === 'Rio Rural · Turismo Rural RJ · Telão');
+  ok('carregar: <title>', (await A.av('document.title')) === 'Rio Rural · Turismo Rural RJ');
   ok('carregar: h1 "Rio Rural" e lema', (await A.av("document.querySelector('h1').textContent")) === 'Rio Rural' && (await A.av("document.querySelector('.lema').textContent")).includes('Sabores, histórias e caminhos'));
   const munCom = Object.keys(AGR).filter((c) => c !== 'sem_municipio' && AGR[c].total > 0).length;
   const sub = await A.av("document.getElementById('subtitulo').textContent");
@@ -441,7 +441,40 @@ async function servidor() {
   matar(ps);
 }
 
-const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook];
+async function idiomas(A, cdpPorta, url) {
+  const cat = (l) => JSON.parse(fs.readFileSync(path.join(RAIZ, 'i18n', `${l}.json`), 'utf8'));
+  const trad = (l) => ler(`trad-${l}.json`);
+  const L = ['en', 'fr', 'de'], chaves = Object.keys(cat('en'));
+  for (const l of L) {
+    const c = cat(l), tr = trad(l);
+    ok(`idiomas ${l}: mesmas chaves nos três catálogos`, Object.keys(c).length === chaves.length && chaves.every((k) => k in c));
+    ok(`idiomas ${l}: nenhum texto vazio ou corrompido (U+FFFD)`, Object.values(c).every((v) => v && !v.includes('�')));
+    ok(`idiomas ${l}: variáveis {x} iguais ao português`, chaves.every((k) => (k.match(/\{\w+\}/g) || []).sort().join() === (c[k].match(/\{\w+\}/g) || []).sort().join()));
+    ok(`idiomas ${l}: traduz todos os ${Object.keys(FIC).length} lugares`, Object.keys(FIC).every((k) => tr[k]?.descricao || !FIC[k].descricao));
+    ok(`idiomas ${l}: sem U+FFFD no conteúdo`, !JSON.stringify(tr).includes('�'));
+  }
+  ok('idiomas: acentos de nomes próprios preservados', ['Piraí', 'Paraíba', 'Sertão da Prata'].every((n) => !Object.values(trad('en')).some((v) => /Pirai|Paraiba|Sertao da Prata/.test(v.descricao ?? ''))));
+  const cod = Object.keys(FIC).find((k) => FIC[k].descricao && FIC[k].funcionamento && FIC[k].precisao === 'endereco');
+  for (const l of L) {
+    const B = await abrirAba(cdpPorta, `${url}?lang=${l}`, '1920x1080');
+    await B.abrirTelao();
+    ok(`idiomas ${l}: <html lang> e título`, await B.av(`document.documentElement.lang.startsWith('${l}') && document.title !== 'Rio Rural · Turismo Rural RJ'`));
+    ok(`idiomas ${l}: interface sem português visível`, await B.av("!/lugares para visitar|Sobre o mapa|Pausar passeio|Ver o estado inteiro/.test(document.body.innerText) && document.getElementById('c-total-rot').textContent !== 'lugares para visitar'"));
+    await B.av(`window.__telao.abrir(${JSON.stringify(cod)})`); await espera(300);
+    const d = trad(l)[cod];
+    ok(`idiomas ${l}: ficha traz a descrição traduzida`, await B.av(`document.getElementById('f-descricao').textContent === ${JSON.stringify(d.descricao)}`));
+    const outro = L.find((x) => x !== l);
+    await B.clicar(B.centro(await B.ret(`#idiomas [data-idioma="${outro}"]`)));
+    ok(`idiomas ${l}→${outro}: ficha aberta é refeita no novo idioma`, await B.ate(`document.getElementById('f-descricao').textContent === ${JSON.stringify(trad(outro)[cod].descricao)}`, 4000));
+    await B.clicar(B.centro(await B.ret('#idiomas [data-idioma="pt"]')));
+    ok(`idiomas ${l}→pt: volta ao português`, await B.ate(`document.getElementById('f-descricao').textContent === ${JSON.stringify(FIC[cod].descricao)} && document.getElementById('c-total-rot').textContent === 'lugares para visitar'`, 4000));
+    await B.capturar(`p-idioma-${l}.png`);
+    await B.limpo(`idiomas ${l}`);
+    await fetch(`http://127.0.0.1:${cdpPorta}/json/close/${B.id}`);
+  }
+}
+
+const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook, idiomas];
 
 function servidorHTTP(porta) {
   const mimes = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.bin': 'application/octet-stream' };

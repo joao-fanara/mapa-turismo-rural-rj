@@ -51,5 +51,8 @@ O motor (relevo, alfinetes, cartão, ficha, passeio) deve ficar independente do 
 ## Horizonte: cadastro do cidadão (RF14)
 Entrada pública (gov.br OAuth2) → registro `pendente` → fila de moderação no admin → `publicado`/`recusado`. O esquema da F7 já prevê status e origem.
 
+## Direção: site é a regra, telão é o desejável
+Uma única página; o telão é um modo (tela grande, passeio automático, escala 4K) sobre o mesmo motor. O caminho padrão é o visitante no celular; sem WebGL cai numa lista/busca.
+
 ## Débitos técnicos
 1. `cena.js` monolítico. 2. A cobertura do solo tem células de 280 m: de perto a borda entre classes depende do ruído do shader (orgânico, mas não é dado real). 3. Casamento QR↔atrativo por ordem (mitigado: contagem igual + conferência de nome na URL, 0 trocas detectadas). 4. 161 atrativos sem coordenada. 5. Rotas por palavras-chave. 6. Provas dependem de Chrome; em Linux usam SwiftShader (lento). 7. Layout não pensado para celular.

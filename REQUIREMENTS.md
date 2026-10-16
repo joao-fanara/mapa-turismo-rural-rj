@@ -2,6 +2,9 @@
 
 Estado em 16/10/2026. Cada item tem **status** (implementado · parcial · pendente · fora de escopo) e **prioridade** (alta · média · baixa).
 
+## 0. Prioridade do produto (decisão de 16/10/2026)
+Este projeto é também **modelo para outros mapas temáticos de órgãos do governo**. Para o modelo: **o site é a regra e o telão é o desejável.** O site público (celular, tablet e notebook, mouse ou toque, acessível, com idiomas) é a entrega obrigatória; o telão 3D para TV é um **modo** da mesma página, desejável e opcional. Consequências: RF12 (celular) sobe para **prioridade máxima e vem antes de RF10/RF11 no telão**; o site precisa funcionar sem WebGL (lista/busca como alternativa); os testes de celular e de acessibilidade valem tanto quanto os de TV; o texto é para o visitante (ver Linguagem).
+
 ## 1. Objetivo
 
 Plotar, em um mapa que abre **offline no navegador** (protótipo; depois online), os atrativos dos 12 guias "Turismo Rural RJ" da TurisRio/Setur-RJ (https://www.rj.gov.br/turisrio/node/132), para exibição em **TV grande** (centros de atendimento ao turista, feiras, estandes) e uso em notebook. A identidade visual deve **remeter ao campo, não à ficção científica** (referência: [docs/referencia-visual.webp](docs/referencia-visual.webp), o "Passaporte Rural do Rio").
@@ -22,7 +25,7 @@ Público: visitantes e turistas (leitura a 3–4 m, toque ou mouse), equipe da S
 | RF8 | Passaporte digital com carimbos por visita | **fora de escopo** (inspira o visual da ficha) | futuro |
 | RF9 | Versão 2D leve para celular | **fora de escopo** (o telão é para TV/notebook) | futuro |
 | RF10 | **Área administrativa web (PHP + MySQL)** para inserir, editar e excluir atrativos (e rotas, categorias, experiências), com login, trilha de auditoria e publicação; o telão passa a ler do banco por uma API. Detalhes na seção 9 | **pendente — pedido de 16/10/2026** (plano em `STEPS.md`, F7–F8) | alta |
-| RF12 | **Celular**: layout responsivo (fichas e listas em folha na base da tela, gestos de toque) | **pendente — pedido de 16/10/2026** | alta |
+| RF12 | **Site responsivo** (regra do modelo): celular, tablet e notebook; **Celular**: layout responsivo (fichas e listas em folha na base da tela, gestos de toque) | **pendente — pedido de 16/10/2026; prioridade máxima** | **máxima** |
 | RF13 | **Modelo reutilizável**: o projeto deve servir de base para outros mapas temáticos de outros órgãos do governo — tema, marca, textos, rotas/categorias, região e dados configuráveis fora do código (sem "Rio"/"Turismo Rural" fixos em `cena.js`) | **pendente — pedido de 16/10/2026** | alta |
 | RF14 | **Cadastro enviado pelo cidadão** (horizonte): o produtor/empreendedor entra com **login gov.br**, envia o próprio cadastro e a área administrativa **avalia e libera ou recusa** (fila de moderação). **Não implementar agora**; a F7–F8 deve deixá-lo preparado | **futuro — pedido de 16/10/2026** | média |
 | RF15 | **Importação em lote por CSV** no admin: enviar planilha .csv (UTF-8, `;` ou `,`), com modelo para baixar, **pré-visualização com validação linha a linha** (erros e avisos), confirmação e gravação em transação; atualiza por código ou insere; registra na auditoria; limite de tamanho; sem executar fórmulas (neutralizar `=`,`+`,`-`,`@` na exportação) | **pendente — pedido de 16/10/2026** (F8) | alta |
@@ -84,3 +87,4 @@ Cadastro/edição de produtores, passaporte digital, versão mobile, calendário
 | D11 | Excluir atrativo | exclusão lógica com "restaurar" (recomendado) · exclusão definitiva |
 | D12 | Nomes próprios em outros idiomas (rotas/categorias traduzidos; nomes de atrativos, municípios e regiões ficam como no guia) | confirmar com a Setur |
 | D13 | Login gov.br para cidadãos: exige credenciamento junto ao gov.br e tratamento LGPD dos dados | credenciar o órgão · alternativa: cadastro com e-mail verificado |
+| D14 | "Site é a regra": a página única mantém o 3D como visual principal com alternativa leve (lista/busca) quando não há WebGL, ou o site passa a ser 2D/lista e o 3D vira modo opcional? | 3D com alternativa leve (padrão assumido) · site 2D e 3D opcional |

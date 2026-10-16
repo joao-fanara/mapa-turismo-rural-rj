@@ -1,0 +1,242 @@
+[
+ {
+  "codigo": "sitio-aldeia-branca",
+  "descricao": "Contato com a natureza, gastronomia, aprendizado da rapadura e do melaço. Plantio de mudas, trilhas terrestres e banho de rio.",
+  "funcionamento": "Das 7h às 18h."
+ },
+ {
+  "codigo": "casa-do-artesao",
+  "descricao": "Artesanato.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "cooperativa-de-laticinios-de-conceicao-de-macabu",
+  "descricao": "A cooperativa logo se destaca pela qualidade do leite, do queijo, do requeijão e, em especial, da manteiga.",
+  "funcionamento": "Das 9h às 17h."
+ },
+ {
+  "codigo": "apicultura-jose-fortes-abelha-sem-ferrao",
+  "descricao": "Palestras , degustação e venda de mel. A criação das abelhas sem ferrão é denominada meliponicultura e é voltada, sobretudo, para a produção de mel.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "esculturas-do-vinycios",
+  "descricao": "O turista poderá conhecer o acervo artístico do Vinycios, que traz uma pegada renascentista para as suas obras, tendo esculturas em escala e em tamanho natural.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "cachaca-artesanal-rio-do-meio",
+  "descricao": "A Cachaça Artesanal Rio do Meio teve sua fabricação iniciada no ano de 2004. A cachaça Rio do Meio que leva nome do Sítio a qual é fabricada, iniciou-se com intuito de consumo próprio, para os amigos e apreciadores da bebida.",
+  "funcionamento": "Das 9h às 17h."
+ },
+ {
+  "codigo": "exposicao-agropecuaria-industrial-e-comercial-de-c",
+  "descricao": "A Exposição é um evento que acontece uma vez ao ano (segunda quinzena de julho), com objetivo de fomentar o agronegócio, a indústria e o comércio de Cordeiro e região.",
+  "funcionamento": "24h."
+ },
+ {
+  "codigo": "fazenda-penedo",
+  "descricao": "Visitação interna na sede, visitação à fábrica de cachaça e licores artesanais. Almoço, drinks, cervejas, porções e refeições à la carte. Venda de cachaça e licores artesanais de fabricação própria e bar.",
+  "funcionamento": "De segunda-feira a sexta-feira com agendamento. Finais de semana das 10h às 16h."
+ },
+ {
+  "codigo": "capitao-bock-cervejaria-e-bar",
+  "descricao": "O Bar do Capitão Bock reúne boa gastronomia, espaço de lazer e todos os estilos de cerveja artesanal em um único local. Um espaço amplo e arejado, ideal para passar bons momentos com a família e amigos.",
+  "funcionamento": "Finais de semana e feriados. Das 11h às 20h."
+ },
+ {
+  "codigo": "cachaca-d-altim",
+  "descricao": "O sítio São Sebastião conta com uma cachaçaria e todo um espaço que harmoniza com a natureza. Temos a nossa venda do barranco, uma venda no sistema Pegue e Pague, onde você encontra produtos locais e mudas de plantas e frutas.",
+  "funcionamento": "De terça-feira a sexta-feira das 10h às 18h. Sábado das 8h às 18h. Domingo das 8h às 13h."
+ },
+ {
+  "codigo": "cachoeira-do-thadeu",
+  "descricao": "Locação de espaço, banho de cachoeira, bar, quadra de voley, campo de futebol, pesca, sauna. Espaço de paz, conexão com a natureza e tranquilidade.",
+  "funcionamento": "Das 9 às 17h."
+ },
+ {
+  "codigo": "casarao-de-macuco",
+  "descricao": "O local por si só, é um dos poucos Casarões antigos existentes no centro da Cidade. Em seu interior, conta um pouco da história da linha férrea que fez parte da criação do Município e de grande importância para toda Região.",
+  "funcionamento": "De quinta-feira a sábado. Das 18h às 2h. Domingo a partir de 12h."
+ },
+ {
+  "codigo": "fazenda-nossa-senhora-dos-prazeres-do-ribeirao-dou",
+  "descricao": "Nós abrimos às 10h para quem optar por um brunch ou a partir de 12h para a opção de almoço, podendo se estender ao lanche da tarde ao som de uma sanfona.",
+  "funcionamento": "Das 10h30 às 17h."
+ },
+ {
+  "codigo": "fazenda-benfica",
+  "descricao": "Visitação à Fazenda centenária, com história, almoço feito em fogão à lenha, venda de artesanato e doces caseiros.",
+  "funcionamento": "Das 10h às 16h."
+ },
+ {
+  "codigo": "recanto-do-lago",
+  "descricao": "Fabricação de produtos caseiros, comidas caseiras e espaço rústico para visitação.",
+  "funcionamento": "Das 9h às 18h."
+ },
+ {
+  "codigo": "rancho-santa-fe",
+  "descricao": "",
+  "funcionamento": "Das 9h às 18h."
+ },
+ {
+  "codigo": "fazenda-boa-vista-2",
+  "descricao": "Fontes de água mineral, visitação da mesma, passeio no terreiro de pedras e arredores da fazenda.",
+  "funcionamento": "Das 9h às 17h."
+ },
+ {
+  "codigo": "cooperativa-regional-agropecuaria-de-macuco-ltda",
+  "descricao": "Produção de produtos derivados do leite com visitação e cafeteria.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "fazenda-maravilha",
+  "descricao": "Caminhada pela fazenda, oficinas de goiabada e bananada artesanal.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "madalena-adventure",
+  "descricao": "Passeios de quadriciclo no circuito rural de Santa Maria Madalena. Na rota da estrada do 17 temos uma parada na Fazenda Boa Fé, para degustação de queijos artesanais, e uma parada no hotel Auberge Valaissane para conhecimento de agroindústrias da propriedade.",
+  "funcionamento": "Todos os dias."
+ },
+ {
+  "codigo": "emporio-santa-maria",
+  "descricao": "Souvenir e decorações de artesanato local em geral.",
+  "funcionamento": "De segunda-feira a sábado das 9h às 18h. Domingo das 9h às 15h."
+ },
+ {
+  "codigo": "armazem-um",
+  "descricao": "Produtos da roça.",
+  "funcionamento": "De segunda-feira a sábado das 7h30 às 19h. Domingo das 7h30 às 16h."
+ },
+ {
+  "codigo": "auberge-valaisanne",
+  "descricao": "O Auberge Valaisanne é mais que um hotel-fazenda, é um refúgio para dias despreocupados. Possui lagos para pescaria, trilhas para caminhadas, corredeiras, e ainda visitação às plantações)",
+  "funcionamento": "Das 9h às 22h."
+ },
+ {
+  "codigo": "artesanato-mineral",
+  "descricao": "Lembranças de Santa Maria Madalena produzidas por artesãos da cidade.",
+  "funcionamento": "De sexta-feira a domingo, das 8h às 16h."
+ },
+ {
+  "codigo": "deguste-turismo-agencia-de-turismo-receptivo",
+  "descricao": "Receptivo para passeios turísticos na região. Exemplo: Jeep Tour Rural)",
+  "funcionamento": "Das 8h às 16h. Atendimento online."
+ },
+ {
+  "codigo": "amapruris-associacao-de-moradores-amigos-produtore",
+  "descricao": "Degustação e comercialização de produtos artesanais da Associação das Produtoras Rurais do Ribeirão Santíssimo.",
+  "funcionamento": "Sábados das 9h às 15h."
+ },
+ {
+  "codigo": "fazenda-sao-geronimo",
+  "descricao": "Doces caseiros, geléias, licores, conserva de pimenta, caponatas, picles, cachaças, queijo,artesanato e principalmente refeição tipicamente rural.",
+  "funcionamento": "Das 8h às 18h."
+ },
+ {
+  "codigo": "queijaria-fazenda-boa-fe",
+  "descricao": "No passeio até a Fazenda Boa Fé você vai percorrer uma antiga estrada de trem com passagens e cortes nas pedras, de paisagem bucólica e exuberante. Já na nossa fazenda, conhecerá sobre as técnicas de sustentabilidade, visitará a queijaria e criação de tilápias em cativeiro. Você ainda poderá degustar os produtos, como queijos e iogurtes fresquinhos.",
+  "funcionamento": "Todos os dias."
+ },
+ {
+  "codigo": "fazenda-santa-cruz",
+  "descricao": "A fazenda histórica, integrante de um valioso trecho da antiga linha férrea Leopoldina, encanta os visitantes com suas matas nativas, mirantes naturais e paisagens deslumbrantes. Construídos por engenheiros ingleses no século XIX, os três túneis na fazenda possuem grande valor histórico e cultural. A propriedade, fundada por volta de 1880, conta com uma casa-sede imponente, antigos engenhos de café, moinho de fubá, engenho de cana e uma pequena usina de energia hidrelétrica. Durante a visita, os hóspedes têm a oportunidade de explorar a capela, o alambique e o antigo moinho de pedra e madeira, além de desfrutar de petiscos, cervejas e da cachaça Santa Cruz, produzida no local. O cenário pitoresco, com estradas bem conservadas, proporciona aos visitantes uma experiência única, onde podem sentir a atmosfera da era colonial, capturar belas fotos e desfrutar da paisagem envolvente.",
+  "funcionamento": "Finais de semana, das 09h às 17h."
+ },
+ {
+  "codigo": "fazenda-boa-vista-alambique-sinha-brasil",
+  "descricao": "Propriedade do século XIX abriga uma fábrica de cachaça de qualidade superior, um museu e uma coleção impressionante de mais de 800 rótulos de cachaça. Experimente a premiada SINHÁ BRASIL, uma cachaça produzida com rigoroso controle de qualidade, desde o cultivo da cana-de-açúcar até o engarrafamento. Explore o processo de produção em visitas mensais, onde você poderá degustar os diferentes rótulos e saborear um autêntico almoço preparado na fazenda. Uma experiência turística única que vai encantar todos os seus sentidos",
+  "funcionamento": "Das 09h às 17h."
+ },
+ {
+  "codigo": "trajano-sem-fronteira",
+  "descricao": "Passeios de quadriciclo, moto off road, e 4X4. Trajano X triunfo, Trajano X sodrelândia  e Barragem, Trajano X por do Sol, Trilha pedra da torre, Trilha do carrapato, Trilha do pereirinha, Trilha do retiro.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "toca-da-coruja",
+  "descricao": "Aluguel de veículos, passeios turísticos com guia. Aluguel de quadriciclo, motos offroad e buggy. Área de camping e quartos, oferece também refeição (petisco).",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "fazenda-do-canteiro",
+  "descricao": "Turismo Rural e Gastronomia. Visitação a uma fazenda centenária de arquitetura colonial em pleno funcionamento de produção. Onde podemos oferecer experiências na bovinocultura de corte e leite, no plantio e colheita de goiabas, cana de açúcar, horta, eucalipto e etc.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "fazenda-olaria",
+  "descricao": "Visitação do acervo antigo da cidade e da histórica fazenda produtora de café do século XIX. A fazenda pertencia a tradicional família Moraes, cujo maior expoente foi Raul Veiga, que tornou-se governador do estado do Rio de Janeiro na primeira metade do século XX.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "agua-mineral-trajano-de-moraes",
+  "descricao": "Fonte de Água Natural. Visita a uma das melhores fontes de água mineral do estado.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "rancho-jsg",
+  "descricao": "Passeios a cavalo, contemplação do pôr do sol em um deck, vista para um cenário paradisíaco de montanhas e muito verde.",
+  "funcionamento": "Agendamento durante o dia."
+ },
+ {
+  "codigo": "buteco-jsg",
+  "descricao": "Músicas típicas, modas de viola, fogueiras, eventos de cavalgada e shows sertanejos.",
+  "funcionamento": "Somente agendamento."
+ },
+ {
+  "codigo": "rancho-do-severino",
+  "descricao": "Rodízio de comida caseira em fogão à lenha em um ambiente familiar e atendimento diferenciado. Contatos com animais criados no rancho,referência em Itaboraí e cidades vizinhas.",
+  "funcionamento": "Finais de semana, das 11h30 às 18h."
+ },
+ {
+  "codigo": "parque-paleontologico-de-sao-jose",
+  "descricao": "Museu com diversos tipos de fósseis, peças históricas e uma réplica da preguiça gigante. Conexão com a natureza: lagoa, trilhas,observação de animais silvestres.",
+  "funcionamento": "Das 8h às 20h."
+ },
+ {
+  "codigo": "hotel-fazenda-encanto-da-serrinha",
+  "descricao": "Ordenha de animais, passeios em pôneis e cavalos, lago para pesca esportiva, passeio de trenzinho pela propriedade e arredores,comercialização de queijos e geleias produzidas na propriedade, assim como frutas colhidas no sítio, como: banana, mamão, manga, siriguela, acerola e laranja e vários tipos de hortaliças.",
+  "funcionamento": "Somente agendamento."
+ },
+ {
+  "codigo": "horto-santa-clara",
+  "descricao": "Visita a produção, venda de mudas de plantas ornamentais e de árvores frutíferas. Possibilidade de comercialização no local.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "fabrica-de-bananada-rio-bonito",
+  "descricao": "Rio Bonito é conhecido por sua riqueza em plantação de bananas, e a Fábrica de Bananada utiliza as frutas da região e agricultores locais. O visitante poderá participar e conhecer todo o processo do produto, desde a matéria prima, até a embalagem e futura distribuição, além de poder degustar os doces fabricados no local.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "so-do-milho",
+  "descricao": "O local oferece produtos derivados do milho, único na região. O milk shake de milho é referência de venda, além do milho torrado, sucos, doces e salgados oriundos do milho.",
+  "funcionamento": "Das 9h às 20h."
+ },
+ {
+  "codigo": "restaurante-quartas-na-lenha",
+  "descricao": "Ambiente rústico, cercado por natureza, árvores frutíferas, clima rural e refeições em fogão à lenha. Espaço dedicado à exposição de antiguidades.",
+  "funcionamento": "Quarta-feira a domingo, das 11h30 às 15h30."
+ },
+ {
+  "codigo": "ecopolo",
+  "descricao": "O visitante terá a experiência de ver a produção dos itens decorativos que são produzidos pelas artesãs do local, terão acesso às máquinas de tear, os tecidos e as peças já prontas. Além de desfrutar no jardim do Ecopolo um delicioso café da manhã, ou tarde, preparado pela equipe.Há 20 anos desenvolvemos bolsas, acessórios e produtos da Linha Home em tecelagem manual, uma técnica milenar onde o tecido é o resultado do entrelaçamento dos fios, através da urdidura (fios no sentido vertical no tear) e a trama (fios na horizontal). Todo o trabalho é feito de forma manual. Nova coleção com peças exclusivas de material reciclado.",
+  "funcionamento": "De segunda-feira a sexta-feira, das 9h às 17h."
+ },
+ {
+  "codigo": "hotel-fazenda-colinas",
+  "descricao": "Hotel Fazenda com boas acomodações e quartos amplos, piscinas para adultos e crianças, quadra poliesportiva, sauna, sala de jogos, bar e restaurante. Contato com a natureza, passeio de bike, passeio a cavalo, pedalinho.",
+  "funcionamento": "24 horas."
+ },
+ {
+  "codigo": "hotel-fazenda-rio-bonito-ecolodge",
+  "descricao": "Ótima opção para quem procura tranquilidade em meio a natureza. Lago com tambaquis e pacus para pesca esportiva, piscina, quadra de futebol gramada, quadra de vôlei, futmesa, horta na área externa, trilhas e próximo a rampas de voo livre.",
+  "funcionamento": "24 horas."
+ },
+ {
+  "codigo": "pitanga-decor",
+  "descricao": "Café regional da manhã ou tarde, com produtos típicos do interior. O café é preparado ao ar livre, em meio a plantação de bananeiras.",
+  "funcionamento": "Das 8h às 17h."
+ }
+]

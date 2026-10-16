@@ -1,0 +1,72 @@
+{
+ "sitio-raposinha": {
+  "en": {
+   "descricao": "Get in touch with nature and with the making of handcrafted products.",
+   "funcionamento": "From 8 am to 6 pm."
+  },
+  "fr": {
+   "descricao": "Un contact avec la nature et avec la production de produits artisanaux.",
+   "funcionamento": "De 8 h à 18 h."
+  },
+  "de": {
+   "descricao": "Kontakt mit der Natur und mit der Herstellung handwerklicher Produkte.",
+   "funcionamento": "8–18 Uhr."
+  }
+ },
+ "pizzaria-la-pizza": {
+  "en": {
+   "descricao": "Pizzeria with a stone oven, gourmet pizza and products from Fazenda Dendê (gourmet, traditional and specialty coffees (ground and beans), stone-ground flour from a water mill, honey, jam, dry jabuticaba wine and rosé wine made from Niágara Rosada grapes.",
+   "funcionamento": "Thursday to Sunday and on public holidays."
+  },
+  "fr": {
+   "descricao": "Pizzeria avec four à pierre, pizzas gourmet et produits de la Fazenda Dendê (cafés gourmet, traditionnel et spécial (moulu et en grains), farine de maïs de moulin à eau, miel, confitures, vin sec de jabuticaba et vin rosé issu de raisins Niágara Rosada.",
+   "funcionamento": "Du jeudi au dimanche et les jours fériés."
+  },
+  "de": {
+   "descricao": "Pizzeria mit Steinofen, Gourmet-Pizza und Produkten der Fazenda Dendê (Gourmet-, traditioneller und Spezialkaffee (gemahlen und als Bohnen), Maismehl aus der Wassermühle, Honig, Konfitüre, trockener Jabuticaba-Wein und Roséwein aus Niágara-Rosada-Trauben.",
+   "funcionamento": "Donnerstag bis Sonntag und an Feiertagen."
+  }
+ },
+ "sitio-vai-e-volta-cafes-especiais": {
+  "en": {
+   "descricao": "Coffee grown in the northwest of the state of Rio de Janeiro, where a high-altitude tropical climate combined with the careful post-harvest handling of family farmers favors the production of specialty beans. From seed to cup! Visitors will get to know the family production of specialty coffees, grown and roasted by the Rodolphi family, who take care of every detail of production to ensure that the coffee reaches the cup with the quality the plant produced. Two-time champion producer of the first specialty coffee competition of the Northwest Fluminense region.",
+   "funcionamento": "Monday to Friday, 8 am–5 pm, and Saturdays, 9 am–12 pm."
+  },
+  "fr": {
+   "descricao": "Café cultivé dans la région nord-ouest de l'État de Rio de Janeiro, où le climat tropical d'altitude, associé au soin apporté à la gestion post-récolte par des agriculteurs familiaux, favorise la production de grains d'exception. De la graine à la tasse ! Le visiteur découvrira la production familiale de cafés spéciaux, cultivés et torréfiés par la famille Rodolphi, qui veille à chaque détail de la production pour que le café arrive dans la tasse avec la qualité donnée par la plante. Producteur double champion du premier concours de cafés spéciaux du Nord-Ouest Fluminense.",
+   "funcionamento": "Du lundi au vendredi, de 8 h à 17 h, et le samedi, de 9 h à 12 h."
+  },
+  "de": {
+   "descricao": "Kaffee aus dem Nordwesten des Bundesstaates Rio de Janeiro, wo das tropische Höhenklima in Verbindung mit der sorgfältigen Nacherntebehandlung durch bäuerliche Familienbetriebe die Erzeugung von Spezialitätenkaffee begünstigt. Von der Bohne bis zur Tasse! Die Besucher lernen die familiäre Erzeugung von Spezialitätenkaffees kennen, die von der Familie Rodolphi angebaut und geröstet werden. Sie kümmert sich um jedes Detail der Produktion, damit der Kaffee mit der Qualität in die Tasse gelangt, die die Pflanze hervorgebracht hat. Zweifacher Meisterproduzent des ersten Spezialitätenkaffee-Wettbewerbs im Nordwesten von Rio de Janeiro (Noroeste Fluminense).",
+   "funcionamento": "Montag bis Freitag, 8–17 Uhr, und samstags, 9–12 Uhr."
+  }
+ },
+ "adega-alexandrino-bendia": {
+  "en": {
+   "descricao": "Property visits, tastings and sale of craft beer, jabuticaba wine and a variety of liqueurs.",
+   "funcionamento": "From 9 am to 5 pm."
+  },
+  "fr": {
+   "descricao": "Visite de la propriété, dégustation et vente de bière artisanale, de vin de jabuticaba et de liqueurs variées.",
+   "funcionamento": "De 9 h à 17 h."
+  },
+  "de": {
+   "descricao": "Besichtigung des Anwesens, Verkostung und Verkauf von Craft-Bier, Jabuticaba-Wein und verschiedenen Likören.",
+   "funcionamento": "9–17 Uhr."
+  }
+ },
+ "pousada-chacara-vista-alegre": {
+  "en": {
+   "descricao": "Although it is considered a rural area, the pousada is a 5-minute drive from the center of Varre-Sai. You can also go on foot. Guests have the privilege of being in the countryside and yet within Varre-Sai, and can even visit a beautiful lavender plantation",
+   "funcionamento": "24 hours."
+  },
+  "fr": {
+   "descricao": "Bien que située en zone rurale, la pousada se trouve à 5 minutes en voiture du centre de Varre-Sai. On peut aussi s'y rendre à pied. Le client a le privilège d'être à la campagne tout en étant dans Varre-Sai, et peut même visiter une magnifique plantation de lavande",
+   "funcionamento": "24 h/24."
+  },
+  "de": {
+   "descricao": "Obwohl die Gegend als ländlich gilt, liegt die Pousada nur 5 Autominuten vom Zentrum von Varre-Sai entfernt. Man kann auch zu Fuß hingehen. Der Gast genießt das Privileg, auf dem Land und zugleich in Varre-Sai zu sein, und kann außerdem eine wunderschöne Lavendelplantage besuchen",
+   "funcionamento": "24 Stunden."
+  }
+ }
+}

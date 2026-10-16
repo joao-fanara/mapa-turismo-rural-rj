@@ -1,0 +1,674 @@
+{
+ "hidroportoes-1": {
+  "en": {
+   "descricao": "Planting and harvesting food.",
+   "funcionamento": "9 am–4 pm."
+  },
+  "fr": {
+   "descricao": "Plantation et récolte d'aliments.",
+   "funcionamento": "De 9 h à 16 h."
+  },
+  "de": {
+   "descricao": "Anpflanzen und Ernten von Lebensmitteln.",
+   "funcionamento": "9–16 Uhr."
+  }
+ },
+ "solar-fazenda-do-cedro": {
+  "en": {
+   "descricao": "Farm hotel, mini farm, recreation, cycle path, gastronomy, hiking trail and horseback riding.",
+   "funcionamento": "24 hours."
+  },
+  "fr": {
+   "descricao": "Hôtel-ferme, mini-ferme, loisirs, piste cyclable, gastronomie, sentier de randonnée et balades à cheval.",
+   "funcionamento": "24 h/24."
+  },
+  "de": {
+   "descricao": "Farmhotel, Mini-Farm, Freizeitangebote, Radweg, Gastronomie, Wanderweg und Ausritte.",
+   "funcionamento": "24 Stunden."
+  }
+ },
+ "agrovila-terra-de-guaxo": {
+  "en": {
+   "descricao": "Interaction with agroecological crops and organic food produced on site.",
+   "funcionamento": "7 am–6 pm."
+  },
+  "fr": {
+   "descricao": "Découverte de cultures agroécologiques et de plats biologiques produits sur place.",
+   "funcionamento": "De 7 h à 18 h."
+  },
+  "de": {
+   "descricao": "Kontakt mit agrarökologischen Anpflanzungen und vor Ort erzeugten Bio-Lebensmitteln.",
+   "funcionamento": "7–18 Uhr."
+  }
+ },
+ "casa-do-tapete": {
+  "en": {
+   "descricao": "Weaving. Handcrafted work. Visitors can operate the machines and make their own rug.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Tissage. Travail artisanal. Les visiteurs peuvent manipuler les machines et créer leur propre tapis.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Weberei. Handwerkliche Arbeit. Die Besucher können die Maschinen bedienen und ihren eigenen Teppich weben.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "fazenda-paraiso": {
+  "en": {
+   "descricao": "Centuries-old farm, gastronomy, gin distillery, horseback riding, hiking trails, waterfall, music festivals, conventions and private events.",
+   "funcionamento": "7 am–6 pm."
+  },
+  "fr": {
+   "descricao": "Ferme centenaire, gastronomie, distillerie de gin, balades à cheval, sentiers de randonnée, cascade, festivals de musique, congrès et événements privés.",
+   "funcionamento": "De 7 h à 18 h."
+  },
+  "de": {
+   "descricao": "Jahrhundertealte Farm, Gastronomie, Gin-Destillerie, Ausritte, Wanderwege, Wasserfall, Musikfestivals, Tagungen und private Veranstaltungen.",
+   "funcionamento": "7–18 Uhr."
+  }
+ },
+ "chacara-santana-ilha-do-borella": {
+  "en": {
+   "descricao": "Restaurant specializing in fish, boat gatherings, kayaks and biking. Immersion in nature in the middle of the Paraíba River.",
+   "funcionamento": "Thursday to Sunday and public holidays, from 11 am."
+  },
+  "fr": {
+   "descricao": "Restaurant spécialisé dans le poisson, rassemblements de bateaux, kayaks et vélo. Immersion dans la nature au milieu du fleuve Paraíba.",
+   "funcionamento": "Du jeudi au dimanche et les jours fériés, à partir de 11 h."
+  },
+  "de": {
+   "descricao": "Restaurant mit Schwerpunkt auf Fisch, Bootstreffen, Kajaks und Radfahren. Naturerlebnis mitten im Rio Paraíba.",
+   "funcionamento": "Donnerstag bis Sonntag und an Feiertagen, ab 11 Uhr."
+  }
+ },
+ "fazenda-da-bocaina": {
+  "en": {
+   "descricao": "Native Atlantic Forest reserve, preserved by the farm's owners. Cattle raising, fish farming, bromeliad, anthurium and orchid greenhouses, horseback and carriage rides, walks on exclusive trails, swimming and fishing in the ponds, watching the sunset with a picnic, planting and harvesting some food, visiting the vegetable garden and orchard, and feeding the animals.",
+   "funcionamento": "8 am–6 pm."
+  },
+  "fr": {
+   "descricao": "Réserve de forêt atlantique native, préservée par les propriétaires de la ferme. Élevage de bovins, pisciculture, bromeliarium, anthurium et orchidarium, promenades à cheval et en calèche, randonnées sur des sentiers exclusifs, baignade et pêche dans les étangs, coucher de soleil accompagné d'un pique-nique, plantation et récolte de quelques aliments, visite du potager et du verger, et nourrissage des animaux.",
+   "funcionamento": "De 8 h à 18 h."
+  },
+  "de": {
+   "descricao": "Naturreservat des Atlantischen Regenwalds, von den Eigentümern der Farm geschützt. Rinderzucht, Fischzucht, Bromelien-, Anthurien- und Orchideengarten, Ausritte und Kutschfahrten, Wanderungen auf exklusiven Pfaden, Schwimmen und Angeln in den Teichen, Sonnenuntergang mit Picknick, Anpflanzen und Ernten einiger Lebensmittel, Besuch von Gemüsegarten und Obstgarten sowie Füttern der Tiere.",
+   "funcionamento": "8–18 Uhr."
+  }
+ },
+ "fazenda-cachoeira-pousada-colonial-valverde": {
+  "en": {
+   "descricao": "Available for rent for events, retreats, parties, weddings and baptisms. It has a church, a colonial house, a waterfall, a swimming pool, horses, milking in the corral, trails, pig feeding, an old plough, an ox cart, and more.",
+   "funcionamento": "From Friday 6 pm to Sunday 6 pm."
+  },
+  "fr": {
+   "descricao": "Disponible à la location pour événements, retraites, fêtes, mariages et baptêmes. On y trouve une église, une maison coloniale, une cascade, une piscine, des chevaux, la traite au corral, des sentiers, le nourrissage des cochons, une charrue ancienne, un char à bœufs, etc.",
+   "funcionamento": "Du vendredi à 18 h au dimanche à 18 h."
+  },
+  "de": {
+   "descricao": "Zu mieten für Veranstaltungen, Retreats, Feiern, Hochzeiten und Taufen. Mit Kirche, Kolonialhaus, Wasserfall, Pool, Pferden, Melken im Kuhstall, Wanderwegen, Schweinefütterung, altem Pflug, Ochsenkarren usw.",
+   "funcionamento": "Von Freitag 18 Uhr bis Sonntag 18 Uhr."
+  }
+ },
+ "fazenda-boa-esperanca": {
+  "en": {
+   "descricao": "Day use on an 18th-century farm, with period furniture, ecological trails, a registered climbing rock, refreshing showers, river bathing, horses for hire, full board, jams for sale, souvenir postcards, pesticide-free fruit, vegetables, eggs and milk, and items from the era of slavery.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Day use dans une ferme du XVIIIe siècle, avec mobilier d'époque, sentiers écologiques, rocher d'escalade déjà répertorié, douches revigorantes, baignade en rivière, chevaux à louer, pension complète, confitures à vendre, cartes postales souvenirs, fruits, légumes, œufs et lait sans pesticides, objets de l'époque de l'esclavage.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Tagesaufenthalt auf einer Farm aus dem 18. Jahrhundert mit zeitgenössischen Möbeln, ökologischen Wanderwegen, einem bereits erfassten Kletterfelsen, erfrischenden Duschen, Baden im Fluss, Pferden zum Mieten, Vollpension, Marmeladen zum Verkauf, Souvenir-Postkarten, Obst, Gemüse, Eiern und Milch ohne Pestizide sowie Gegenständen aus der Zeit der Sklaverei.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "haras-da-ginga": {
+  "en": {
+   "descricao": "Horseback riding and equestrian show. Champion Pampa Marchador horses.",
+   "funcionamento": "9 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Balades à cheval et spectacle équestre. Chevaux Pampa Marchador champions.",
+   "funcionamento": "De 9 h à 17 h."
+  },
+  "de": {
+   "descricao": "Ausritte und Reitshow. Preisgekrönte Pampa-Marchador-Pferde.",
+   "funcionamento": "9–17 Uhr."
+  }
+ },
+ "hotel-fazenda-cheiro-do-mato": {
+  "en": {
+   "descricao": "Accommodation, breakfast, lunch, swimming pool, fishing and horseback riding.",
+   "funcionamento": "9 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Hébergement, petit-déjeuner, déjeuner, piscine, pêche et balades à cheval.",
+   "funcionamento": "De 9 h à 17 h."
+  },
+  "de": {
+   "descricao": "Unterkunft, Frühstück, Mittagessen, Pool, Angeln und Ausritte.",
+   "funcionamento": "9–17 Uhr."
+  }
+ },
+ "fazenda-monte-cafe": {
+  "en": {
+   "descricao": "A two-hundred-year-old farm from the slavery era, inventoried by the Instituto Cidade Viva of Rio de Janeiro and the Federal University of Minas Gerais, where visitors will feel the atmosphere of a farm of the Coffee Barons. Now engaged in rural tourism, it offers visitors the Pampa horse carousel, meditation at Isabel Libertadora's Wishing Pond, the avenue of imperial palms and the crossing of the footbridge, cow milking, a bamboo grove tunnel, a river beach, swimming in the dam, a stone lookout, a nursery and orchard, paintings by José Maria Vilarongo, the ruins of a drying yard, an aqueduct and a stone mill.",
+   "funcionamento": "24 hours."
+  },
+  "fr": {
+   "descricao": "Ferme bicentenaire de l'époque esclavagiste, inventoriée par l'Instituto Cidade Viva de Rio de Janeiro et l'Université fédérale du Minas Gerais, où le visiteur ressentira l'atmosphère d'une ferme des Barons du Café. Aujourd'hui tournée vers le tourisme rural, elle propose au visiteur le carrousel de chevaux Pampa, la méditation au Bassin des Vœux d'Isabel Libertadora, l'allée de palmiers impériaux et la traversée de la passerelle, la traite des vaches, le tunnel de bambous, la plage de rivière, la baignade au barrage, un belvédère en pierre de taille, la pépinière et le verger, les peintures de José Maria Vilarongo, les ruines d'une aire de séchage, un aqueduc et un moulin de pierre.",
+   "funcionamento": "24 h/24."
+  },
+  "de": {
+   "descricao": "Zweihundert Jahre alte Farm aus der Zeit der Sklaverei, vom Instituto Cidade Viva in Rio de Janeiro und der Bundesuniversität von Minas Gerais inventarisiert, in der die Besucher die Atmosphäre einer Farm der Kaffeebarone spüren. Heute im ländlichen Tourismus tätig, bietet sie den Besuchern das Pampa-Pferdekarussell, Meditation am Wunschteich von Isabel Libertadora, die Allee der Königspalmen und die Überquerung der Hängebrücke, Kühe melken, einen Bambustunnel, einen Flussstrand, Baden im Stausee, eine Aussichtsplattform aus Naturstein, Pflanzgarten und Obstgarten, Gemälde von José Maria Vilarongo, die Ruinen eines Trockenplatzes, ein Aquädukt und eine Steinmühle.",
+   "funcionamento": "24 Stunden."
+  }
+ },
+ "ecoplay-tour-agencia-receptiva-e-operadora": {
+  "en": {
+   "descricao": "A route visiting historic farms and attractions of the region. We are an agency and tour operator specializing in selling rural experience itineraries in Rio de Janeiro state to the travel trade.",
+   "funcionamento": "Monday to Friday, 9 am–4 pm."
+  },
+  "fr": {
+   "descricao": "Un itinéraire de visite de fermes historiques et d'attractions de la région. Nous sommes une agence et un opérateur spécialisés dans la commercialisation (auprès des professionnels du tourisme) d'itinéraires d'expériences rurales dans l'État de Rio de Janeiro.",
+   "funcionamento": "Du lundi au vendredi, de 9 h à 16 h."
+  },
+  "de": {
+   "descricao": "Eine Route zu historischen Farmen und Attraktionen der Region. Wir sind eine Agentur und ein Reiseveranstalter, die sich auf den Vertrieb (an die Reisebranche) von Routen mit ländlichen Erlebnissen im Bundesstaat Rio de Janeiro spezialisiert haben.",
+   "funcionamento": "Montag bis Freitag, 9–16 Uhr."
+  }
+ },
+ "fazenda-sao-fulgencio-alambique-sao-fulgencio": {
+  "en": {
+   "descricao": "Distillery visit; if booked in advance, you can watch cachaça being made. You can also taste the cachaça from the different barrels. Our cachaça is produced in a traditional still, but with infrastructure comparable to agro-industrial systems.",
+   "funcionamento": "9 am–4 pm."
+  },
+  "fr": {
+   "descricao": "Visite de l'alambic ; sur rendez-vous, vous pourrez assister à la production de la cachaça. Vous pourrez aussi déguster la cachaça des différents fûts. Notre cachaça est produite dans un alambic, mais avec une infrastructure comparable à celle des systèmes agro-industriels.",
+   "funcionamento": "De 9 h à 16 h."
+  },
+  "de": {
+   "descricao": "Besuch der Brennerei; bei vorheriger Anmeldung kann man die Herstellung der Cachaça miterleben. Außerdem kann man die Cachaça aus den verschiedenen Fässern verkosten. Unsere Cachaça wird in einer Brennblase hergestellt, jedoch mit einer Infrastruktur, die der von Agrarbetrieben entspricht.",
+   "funcionamento": "9–16 Uhr."
+  }
+ },
+ "alambique-cachaca-itajoana": {
+  "en": {
+   "descricao": "The distillery is open to visitors, and you can see the whole careful production process of Itajoana; for groups of 10 or more, a hearty lunch can be booked on site. Cachaça Itajoana, produced in the district of Bemposta, in the city of Três Rios, combines the warmth of the countryside with an extremely tasty cachaça. This premium spirit, launched in 2017, aims to offer cachaça lovers distinctive, high-quality blends. In 2020, Cachaça Itajoana won a gold medal at Expocachaça, in the Cachaça Blends category, with its black label (Balsam, Oak and Amburana blends).",
+   "funcionamento": "Monday to Sunday, by appointment."
+  },
+  "fr": {
+   "descricao": "L'alambic est ouvert à la visite et l'on peut y découvrir tout le processus de production soigné d'Itajoana ; pour les groupes à partir de 10 personnes, il est possible de réserver un déjeuner copieux sur place. La Cachaça Itajoana, produite dans le district de Bemposta, dans la ville de Três Rios, allie la chaleur de la campagne à une cachaça extrêmement savoureuse. Cette boisson premium, née en 2017, vise notamment à proposer aux amateurs de cachaça des assemblages différenciés et de qualité. En 2020, la Cachaça Itajoana a remporté, avec son étiquette noire (assemblages Baume, Chêne et Amburana), une médaille d'or à l'Expocachaça, dans la catégorie Assemblages de cachaça.",
+   "funcionamento": "Du lundi au dimanche, sur rendez-vous."
+  },
+  "de": {
+   "descricao": "Die Brennerei ist für Besucher geöffnet, und man kann den gesamten sorgfältigen Herstellungsprozess der Itajoana kennenlernen; für Gruppen ab 10 Personen kann vor Ort ein reichhaltiges Mittagessen gebucht werden. Die Cachaça Itajoana, hergestellt im Distrikt Bemposta in der Stadt Três Rios, verbindet die Gemütlichkeit des Landlebens mit einer außerordentlich schmackhaften Cachaça. Das 2017 entstandene Premium-Getränk will Cachaça-Liebhabern unter anderem besondere, hochwertige Blends bieten. 2020 gewann die Cachaça Itajoana mit dem schwarzen Etikett (Blends Bálsamo, Carvalho und Amburana) eine Goldmedaille bei der Expocachaça in der Kategorie Cachaça-Blends.",
+   "funcionamento": "Montag bis Sonntag, nur nach Voranmeldung."
+  }
+ },
+ "duvivier-hotel-fazenda": {
+  "en": {
+   "descricao": "The farm hotel offers experiences with animals and the chance to pick produce from its vegetable garden. It has a water-powered mill where corn is ground. In some of the hotel's rooms, guests can enjoy a private outdoor wood-heated hot tub, in an exceptionally refined and cosy setting. By appointment, activities such as the Track Day are available, thanks to a partnership between the hotel and the RMattheis team (Stock Car and Rally dos Sertões), which runs its off-road track here.",
+   "funcionamento": "24 hours, by reservation."
+  },
+  "fr": {
+   "descricao": "L'hôtel-ferme propose des expériences avec les animaux et la possibilité de cueillir des produits dans son potager. Il possède un moulin actionné par la force de l'eau, où l'on moud le maïs. Dans certaines chambres de l'hôtel, on peut profiter d'un bain extérieur privatif chauffé au bois, dans un cadre particulièrement raffiné et chaleureux. Sur rendez-vous, des activités comme le Track Day sont possibles, grâce à un partenariat entre l'hôtel et l'équipe RMattheis (Stock Car et Rallye dos Sertões), qui y exploite sa piste tout-terrain.",
+   "funcionamento": "24 h/24, sur réservation."
+  },
+  "de": {
+   "descricao": "Das Farmhotel bietet Erlebnisse mit Tieren und die Möglichkeit, im eigenen Gemüsegarten zu ernten. Es verfügt über eine Wassermühle, in der Mais gemahlen wird. In einigen Zimmern des Hotels gibt es einen privaten, holzbefeuerten Außenwhirlpool in außergewöhnlich edlem und gemütlichem Ambiente. Nach Voranmeldung sind Aktivitäten wie der Track Day möglich, dank einer Partnerschaft des Hotels mit dem Team RMattheis (Stock Car und Rally dos Sertões), das hier seine Offroad-Strecke betreibt.",
+   "funcionamento": "24 Stunden, nur mit Reservierung."
+  }
+ },
+ "fazenda-da-paciencia": {
+  "en": {
+   "descricao": "Fazenda da Paciência now offers a unique accommodation experience: to enjoy the property, guests must rent the whole farm, enjoying a unique and exclusive taste of country life. Gastronomy and the breeding of Arabian horses are the highlights of the place, which also has a small waterfall on the property for the exclusive use of visitors.",
+   "funcionamento": "By appointment."
+  },
+  "fr": {
+   "descricao": "La Fazenda da Paciência offre aujourd'hui une expérience d'hébergement unique : pour profiter des lieux, le visiteur doit louer la ferme dans son intégralité et vivre une expérience unique et exclusive de la vie à la campagne. La gastronomie et l'élevage de chevaux arabes sont les grands atouts du lieu, qui compte aussi une petite cascade dans la propriété, à l'usage exclusif des visiteurs.",
+   "funcionamento": "Sur rendez-vous."
+  },
+  "de": {
+   "descricao": "Die Fazenda da Paciência bietet heute ein einzigartiges Übernachtungserlebnis: Um das Anwesen zu nutzen, muss die gesamte Farm gemietet werden, was ein einzigartiges und exklusives Erlebnis des Landlebens ermöglicht. Die Gastronomie und die Zucht von Araberpferden sind die großen Besonderheiten des Ortes, der außerdem einen kleinen Wasserfall auf dem Gelände hat, der den Besuchern exklusiv zur Verfügung steht.",
+   "funcionamento": "Nur nach Voranmeldung."
+  }
+ },
+ "encontro-dos-tres-rios-pontal": {
+  "en": {
+   "descricao": "The place is a true leisure complex with a distinctly rural character. It consists of an inn and a restaurant that share the name of the site: Pontal. It is a permanent preservation area of the Atlantic Forest, living in harmony with a variety of wild animals within the reserve, and also has the Cachaça Museum, hammock area, zip line, treetop adventure course and climbing. All this with an enchanting view of the meeting of the three rivers. The meeting of the three rivers (Piabanha, Paraibuna and Paraíba do Sul), the only triple delta in Latin America (a perfect triangle), takes place in a spacious spot for tourists who also enjoy extreme sports. Rafters run the rapids of the Paraibuna River on a course of about three hours that ends at the meeting of the rivers. The Paraibuna is considered one of the best rivers in Brazil for the sport, as it has a large volume of water and does not depend on rain for rafting, and its rapids are class 2 and 3, allowing the sport to be practised all year round.",
+   "funcionamento": "Accommodation, day use and meals by reservation and appointment."
+  },
+  "fr": {
+   "descricao": "Le lieu est un véritable complexe de loisirs, aux caractéristiques très rurales. Il est formé d'une pousada et d'un restaurant qui portent le nom du site : Pontal. C'est une aire de préservation permanente de la forêt atlantique, où l'on vit en harmonie avec une grande variété d'animaux sauvages au sein de la réserve ; on y trouve aussi le Musée de la Cachaça, un espace hamacs, une tyrolienne, un parcours acrobatique en hauteur et de l'escalade. Le tout avec une vue enchanteresse sur la confluence des trois rivières. La confluence des trois rivières (Piabanha, Paraibuna et Paraíba do Sul), unique delta triple d'Amérique latine (un triangle parfait), se situe dans un vaste espace pour les touristes amateurs de sports extrêmes. Les adeptes de rafting descendent les rapides de la rivière Paraibuna sur un parcours d'environ trois heures qui se termine à la confluence des rivières. La Paraibuna est considérée comme l'une des meilleures rivières du Brésil pour ce sport : elle a un grand volume d'eau, ne dépend pas des pluies pour le rafting, et ses rapides de classe 2 et 3 permettent de pratiquer ce sport toute l'année.",
+   "funcionamento": "Hébergement, day use et repas sur réservation et rendez-vous."
+  },
+  "de": {
+   "descricao": "Der Ort ist ein echter Freizeitkomplex mit ausgeprägt ländlichem Charakter. Er besteht aus einer Pousada und einem Restaurant, die den Namen des Ortes tragen: Pontal. Es ist ein dauerhaftes Schutzgebiet des Atlantischen Regenwalds mit einem harmonischen Miteinander vieler wilder Tierarten im Reservat, dazu gibt es das Cachaça-Museum, einen Hängemattenbereich, eine Seilrutsche, einen Hochseilgarten und Klettern. All das mit bezauberndem Blick auf den Zusammenfluss der drei Flüsse. Der Zusammenfluss der drei Flüsse (Piabanha, Paraibuna und Paraíba do Sul), das einzige Dreifachdelta Lateinamerikas (ein perfektes Dreieck), liegt an einem weitläufigen Ort für Touristen, die auch Extremsport mögen. Rafter fahren die Stromschnellen des Rio Paraibuna auf einer etwa dreistündigen Strecke hinab, die am Zusammenfluss der Flüsse endet. Der Paraibuna gilt als einer der besten Flüsse Brasiliens für diesen Sport, da er viel Wasser führt, fürs Rafting nicht vom Regen abhängt und seine Stromschnellen der Klasse 2 und 3 den Sport das ganze Jahr über ermöglichen.",
+   "funcionamento": "Unterkunft, Tagesaufenthalt und Mahlzeiten nur mit Reservierung und Voranmeldung."
+  }
+ },
+ "pesqueiro-recanto-dos-emmerich": {
+  "en": {
+   "descricao": "Snacks, swimming pool, pay-and-fish pond, fun and a family-friendly atmosphere.",
+   "funcionamento": "Weekends, 10 am–7 pm."
+  },
+  "fr": {
+   "descricao": "Petits plats à grignoter, piscine, pêche payante, divertissement et ambiance familiale.",
+   "funcionamento": "Les week-ends, de 10 h à 19 h."
+  },
+  "de": {
+   "descricao": "Snacks, Pool, Angeln gegen Gebühr, Spaß und familiäre Atmosphäre.",
+   "funcionamento": "Wochenenden, 10–19 Uhr."
+  }
+ },
+ "pesque-e-pague-remanso-verde": {
+  "en": {
+   "descricao": "Day use, fishing and restaurant.",
+   "funcionamento": "Weekends and public holidays. 9 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Day use, pêche et restaurant.",
+   "funcionamento": "Les week-ends et jours fériés. De 9 h à 17 h."
+  },
+  "de": {
+   "descricao": "Tagesaufenthalt, Angeln und Restaurant.",
+   "funcionamento": "Wochenenden und Feiertage. 9–17 Uhr."
+  }
+ },
+ "cachaca-eller": {
+  "en": {
+   "descricao": "Discover how cachaça is made, from harvesting, milling, fermentation and distillation to ageing.",
+   "funcionamento": "8 am–4 pm."
+  },
+  "fr": {
+   "descricao": "Découvrez la production de la cachaça, de la récolte au vieillissement, en passant par le broyage, la fermentation et la distillation.",
+   "funcionamento": "De 8 h à 16 h."
+  },
+  "de": {
+   "descricao": "Die Herstellung der Cachaça kennenlernen: von der Ernte über das Mahlen, die Gärung und die Destillation bis zur Reifung.",
+   "funcionamento": "8–16 Uhr."
+  }
+ },
+ "horto-do-tiao": {
+  "en": {
+   "descricao": "A pleasant, green setting where ornamental and fruit plants are grown, and where flower arrangements and much more are sold.",
+   "funcionamento": "Monday to Saturday, 7:30 am–5 pm. Sunday, 8:30–11 am."
+  },
+  "fr": {
+   "descricao": "Un cadre agréable et verdoyant où sont cultivées des plantes ornementales et fruitières, et où l'on vend aussi des compositions florales et bien plus encore.",
+   "funcionamento": "Du lundi au samedi, de 7 h 30 à 17 h. Dimanche, de 8 h 30 à 11 h."
+  },
+  "de": {
+   "descricao": "Eine angenehme, grüne Umgebung, in der Zierpflanzen und Obstgehölze gezogen werden und in der außerdem Blumengestecke und vieles mehr verkauft werden.",
+   "funcionamento": "Montag bis Samstag, 7:30–17 Uhr. Sonntag, 8:30–11 Uhr."
+  }
+ },
+ "cachaca-do-odil": {
+  "en": {
+   "descricao": "Experience tour of cachaça production, which has been going on for over 30 years. Visits by appointment. Access via dirt road.",
+   "funcionamento": "12–5 pm."
+  },
+  "fr": {
+   "descricao": "Visite-expérience de la production de cachaça, qui existe depuis plus de 30 ans. Visites sur rendez-vous. Accès par chemin de terre.",
+   "funcionamento": "De 12 h à 17 h."
+  },
+  "de": {
+   "descricao": "Erlebnistour durch die Cachaça-Herstellung, die seit über 30 Jahren besteht. Besuche nur nach Voranmeldung. Zufahrt über eine unbefestigte Straße.",
+   "funcionamento": "12–17 Uhr."
+  }
+ },
+ "cerveja-bendita-breja": {
+  "en": {
+   "descricao": "Learn about the craft beer production process and get to know the raw materials.",
+   "funcionamento": "Tuesday, 5–11 pm. Friday, 7 pm–11:45 pm, and Saturday, 5 pm–midnight."
+  },
+  "fr": {
+   "descricao": "Comprendre le processus de production de la bière artisanale et découvrir les matières premières.",
+   "funcionamento": "Mardi, de 17 h à 23 h. Vendredi, de 19 h à 23 h 45, et samedi, de 17 h à minuit."
+  },
+  "de": {
+   "descricao": "Den Herstellungsprozess von Craft-Bier verstehen und die Rohstoffe kennenlernen.",
+   "funcionamento": "Dienstag, 17–23 Uhr. Freitag, 19–23:45 Uhr, und Samstag, 17–24 Uhr."
+  }
+ },
+ "espaco-neu": {
+  "en": {
+   "descricao": "Day use. Venue with swimming pools, a fish pond, waterfall, saunas and barbecue areas.",
+   "funcionamento": "Weekends and public holidays."
+  },
+  "fr": {
+   "descricao": "Day use. Espace avec piscines, étang à poissons, cascade, saunas et barbecues.",
+   "funcionamento": "Les week-ends et jours fériés."
+  },
+  "de": {
+   "descricao": "Tagesaufenthalt. Anlage mit Pools, Fischteich, Wasserfall, Saunen und Grillplätzen.",
+   "funcionamento": "Wochenenden und Feiertage."
+  }
+ },
+ "sitio-das-goiabas-schott": {
+  "en": {
+   "descricao": "Have you ever had the chance to see guava products being made by hand? No? Meet the Schott family and their homemade sweets, the guava plantation, the preparation of the fruit, the boiler and the product storage area. A small farm where the Schott family grows guavas and shows how the production process works. Access is via dirt road.",
+   "funcionamento": "By appointment only."
+  },
+  "fr": {
+   "descricao": "Avez-vous déjà eu l'occasion de suivre la production artisanale des dérivés de la goyave ? Non ? Faites la connaissance de la famille Schott et de ses confiseries maison, de la plantation de goyaviers, de la préparation des fruits, de la chaudière et de l'espace de stockage des produits. Petite exploitation où la famille Schott produit des goyaves et montre le fonctionnement du processus de production. L'accès se fait par chemin de terre.",
+   "funcionamento": "Uniquement sur rendez-vous."
+  },
+  "de": {
+   "descricao": "Hatten Sie schon einmal die Gelegenheit, die handwerkliche Herstellung von Guavenprodukten mitzuerleben? Nein? Lernen Sie die Familie Schott und ihre hausgemachten Süßwaren kennen, die Guavenplantage, die Zubereitung der Früchte, den Kessel und den Lagerraum der Produkte. Auf diesem Landgut baut die Familie Schott Guaven an und zeigt, wie der Herstellungsprozess funktioniert. Die Zufahrt erfolgt über eine unbefestigte Straße.",
+   "funcionamento": "Nur nach Voranmeldung."
+  }
+ },
+ "fazenda-caieira": {
+  "en": {
+   "descricao": "Located 8 km from the centre of Bom Jardim, the farm is equipped to host a variety of events. An excellent option for relaxing, with facilities for get-togethers. A leisure area with a natural-water swimming pool, waterfall, football pitch and other activities.",
+   "funcionamento": "Not specified."
+  },
+  "fr": {
+   "descricao": "Située à 8 km du centre de Bom Jardim, la ferme est aménagée pour accueillir divers événements. Une excellente option pour se reposer, avec une infrastructure pour les fêtes entre amis ou en famille. Un espace de loisirs avec piscine d'eau naturelle, cascade, terrain de football et autres activités.",
+   "funcionamento": "Non précisé."
+  },
+  "de": {
+   "descricao": "Die 8 km vom Zentrum von Bom Jardim entfernte Farm ist für verschiedenste Veranstaltungen ausgestattet. Eine ausgezeichnete Option zur Erholung, mit Einrichtungen für gesellige Zusammenkünfte. Ein Freizeitbereich mit Naturwasser-Pool, Wasserfall, Fußballplatz und weiteren Aktivitäten.",
+   "funcionamento": "Nicht angegeben."
+  }
+ },
+ "camping-recanto-da-siriema": {
+  "en": {
+   "descricao": "Camping Recanto da Siriema - A space dedicated to camping, with green area, lake and support facilities for those who want to enjoy this activity.",
+   "funcionamento": "Every day."
+  },
+  "fr": {
+   "descricao": "Camping Recanto da Siriema - Espace dédié au camping, avec espace vert, lac et infrastructure d'accueil pour ceux qui souhaitent pratiquer cette activité.",
+   "funcionamento": "Tous les jours."
+  },
+  "de": {
+   "descricao": "Camping Recanto da Siriema – Ein dem Camping gewidmeter Platz mit Grünfläche, See und Einrichtungen für alle, die diese Aktivität ausüben möchten.",
+   "funcionamento": "Täglich."
+  }
+ },
+ "refugio-do-humaita": {
+  "en": {
+   "descricao": "Located in the district of Barra Alegre, Refúgio do Humaitá is a place offering a variety of experiences, from visiting the ornamental bird breeding facility to taking courses related to agro-industry.",
+   "funcionamento": "By appointment only."
+  },
+  "fr": {
+   "descricao": "Situé dans le district de Barra Alegre, le Refúgio do Humaitá est un lieu qui propose des expériences variées, de la visite de l'élevage d'oiseaux ornementaux aux cours liés à l'agro-industrie.",
+   "funcionamento": "Uniquement sur rendez-vous."
+  },
+  "de": {
+   "descricao": "Das im Distrikt Barra Alegre gelegene Refúgio do Humaitá bietet vielfältige Erlebnisse, vom Besuch der Zucht von Ziervögeln bis hin zu Kursen rund um die Agrarindustrie.",
+   "funcionamento": "Nur nach Voranmeldung."
+  }
+ },
+ "hotel-fazenda-minha-gloria": {
+  "en": {
+   "descricao": "Set amid nature, in a cinematic landscape of 165,000 square metres, it offers direct contact with exotic and gentle animals. Accommodation in independent chalets, in a rustic style that blends with the rural atmosphere.",
+   "funcionamento": "24 hours."
+  },
+  "fr": {
+   "descricao": "Situé au cœur de la nature, dans un décor cinématographique de 165 000 mètres carrés, il offre un contact direct avec des animaux exotiques et paisibles. Hébergement en chalets indépendants, dans un style rustique en harmonie avec l'ambiance rurale.",
+   "funcionamento": "24 h/24."
+  },
+  "de": {
+   "descricao": "Mitten in der Natur, in einer filmreifen Kulisse von 165.000 Quadratmetern, bietet es direkten Kontakt zu exotischen und zutraulichen Tieren. Unterkunft in separaten Chalets im rustikalen Stil, der zur ländlichen Atmosphäre passt.",
+   "funcionamento": "24 Stunden."
+  }
+ },
+ "sitio-das-jaqueiras": {
+  "en": {
+   "descricao": "Great for relaxing. The place is a simple, rustic but very cosy setting in the countryside. The leisure area has a swimming pool, a barbecue and a large lawn with swings and a treehouse for children.",
+   "funcionamento": "Not specified."
+  },
+  "fr": {
+   "descricao": "Idéal pour se reposer. Le lieu se caractérise par un cadre simple et rustique, mais très chaleureux, en pleine campagne. L'espace de loisirs comprend une piscine, un barbecue et une grande pelouse avec balançoires et cabane dans les arbres pour les enfants.",
+   "funcionamento": "Non précisé."
+  },
+  "de": {
+   "descricao": "Ideal zum Entspannen. Der Ort zeichnet sich durch eine einfache, rustikale, aber sehr gemütliche Atmosphäre auf dem Land aus. Der Freizeitbereich umfasst einen Pool, einen Grillplatz und eine große Rasenfläche mit Schaukeln und einem Baumhaus für Kinder.",
+   "funcionamento": "Nicht angegeben."
+  }
+ },
+ "sitio-aconchego": {
+  "en": {
+   "descricao": "The property is surrounded by nature and also has an orchard with a variety of fruits such as mulberry, mango, guava, avocado, starfruit and banana. Room service plus breakfast. Use of the swimming pool and the other facilities on the grounds is included, as well as the barbecue and sauna.",
+   "funcionamento": "By appointment only."
+  },
+  "fr": {
+   "descricao": "Les alentours de la propriété sont couverts de nature, et il y a aussi un verger avec de nombreux fruits comme la mûre, la mangue, la goyave, l'avocat, la carambole et la banane. Service en chambre et petit-déjeuner. L'utilisation de la piscine et des autres dépendances du terrain est libre, ainsi que celle du barbecue et du sauna.",
+   "funcionamento": "Uniquement sur rendez-vous."
+  },
+  "de": {
+   "descricao": "Die Umgebung des Grundstücks ist von Natur geprägt, und es gibt einen Obstgarten mit vielen Früchten wie Maulbeeren, Mangos, Guaven, Avocados, Sternfrüchten und Bananen. Zimmerservice plus Frühstück. Die Nutzung des Pools und der übrigen Bereiche des Grundstücks ist frei, ebenso die des Grills und der Sauna.",
+   "funcionamento": "Nur nach Voranmeldung."
+  }
+ },
+ "casa-do-leite": {
+  "en": {
+   "descricao": "A lovely spot in the bucolic district of Bom Jardim. It offers irresistible treats: sweets, breads, cheeses and artisanal yoghurts that delight visitors' palates.",
+   "funcionamento": "Not specified."
+  },
+  "fr": {
+   "descricao": "Un lieu charmant, situé dans le bucolique district de Bom Jardim. Il propose des délices irrésistibles : confiseries, pains, fromages et yaourts artisanaux qui ravissent le palais des visiteurs.",
+   "funcionamento": "Non précisé."
+  },
+  "de": {
+   "descricao": "Ein reizender Ort im ländlich-idyllischen Distrikt Bom Jardim. Er bietet unwiderstehliche Köstlichkeiten: Süßes, Brot, Käse und handwerklich hergestellte Joghurts, die den Gaumen der Besucher erfreuen.",
+   "funcionamento": "Nicht angegeben."
+  }
+ },
+ "cafe-monthal": {
+  "en": {
+   "descricao": "A beautiful farm, known for its coffee, milk, cheese and bolinho de chuva (sweet fried dough balls), which periodically opens its doors for an experience tour in which, through guided visits, visitors learn about country culture and the stages of coffee processing. From harvest to roasting, with a bit of history, culminating in a mini tasting tour of the different ways of preparing the drink. A chance to experience mountain harvesting. Live it on site, from the plantation to the final roast, enjoying incredible nature.",
+   "funcionamento": "Monday to Friday, 8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Une belle ferme, réputée pour son café, son lait, son fromage et ses bolinhos de chuva (beignets sucrés), qui ouvre périodiquement ses portes pour une visite-expérience : au fil de visites guidées, le visiteur découvre la culture rurale et les étapes de la transformation du café. De la récolte à la torréfaction, avec un peu d'histoire, jusqu'à une mini-dégustation des différentes façons de préparer la boisson. L'occasion de vivre ce qu'est la récolte en montagne. Une expérience « in loco », de la plantation à la torréfaction finale, au sein d'une nature incroyable.",
+   "funcionamento": "Du lundi au vendredi, de 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Eine wunderschöne Farm, bekannt für ihren Kaffee, ihre Milch, ihren Käse und ihre Bolinhos de Chuva (süße frittierte Teigbällchen), die regelmäßig ihre Türen für eine Erlebnistour öffnet, bei der die Besucher in geführten Besichtigungen etwas über die Kultur des Landlebens und die Verarbeitungsschritte des Kaffees erfahren. Von der Ernte bis zur Röstung, mit etwas Geschichte, und zum Abschluss eine kleine Verkostungstour durch die verschiedenen Zubereitungsarten des Getränks. Eine Gelegenheit, die Bergernte selbst zu erleben. Vor Ort erleben, von der Plantage bis zur fertigen Röstung, inmitten einer unglaublichen Natur.",
+   "funcionamento": "Montag bis Freitag, 8–17 Uhr."
+  }
+ },
+ "vila-de-porto-marinho": {
+  "en": {
+   "descricao": "Visit to the most significant sites for the production and processing of Anã de Porto Marinho rice; visits to the homes of family farmers; boat trip on the Paraíba do Sul River and ox-cart ride; on-site explanation of the history of the village and the municipality, as well as the community's cultural traditions; sale of typical sweets and crafts; tasting of local cuisine, whose main attractions are Anã de Porto Marinho rice, a potential geographical indication, and fish.",
+   "funcionamento": "Weekends, from 10 am."
+  },
+  "fr": {
+   "descricao": "Visite des lieux les plus significatifs de la production et de la transformation du riz Anã de Porto Marinho ; visite des maisons des producteurs familiaux ; promenade en bateau sur le fleuve Paraíba do Sul et en char à bœufs ; explications sur place concernant l'histoire du village et de la commune, ainsi que les manifestations culturelles de la communauté ; vente de confiseries et d'artisanat typiques ; dégustation de la cuisine locale, dont les principaux atouts sont le riz Anã de Porto Marinho, potentielle indication géographique, et le poisson.",
+   "funcionamento": "Les week-ends, à partir de 10 h."
+  },
+  "de": {
+   "descricao": "Besuch der wichtigsten Stätten der Erzeugung und Verarbeitung des Reises Anã de Porto Marinho; Besuch bei den Häusern der Familienbetriebe; Bootsfahrt auf dem Rio Paraíba do Sul und Fahrt im Ochsenkarren; Erläuterungen vor Ort zur Geschichte des Dorfes und der Gemeinde sowie zu den kulturellen Traditionen der Dorfgemeinschaft; Verkauf typischer Süßwaren und Kunsthandwerks; Verkostung der lokalen Küche, deren Hauptattraktionen der Reis Anã de Porto Marinho, eine mögliche geschützte geografische Angabe, und der Fisch sind.",
+   "funcionamento": "Wochenenden, ab 10 Uhr."
+  }
+ },
+ "fazenda-santa-fe": {
+  "en": {
+   "descricao": "Visit to the farm of Sister Zélia and Jerônimo, the couple declared Servants of God, the only married couple beatified and in the process of canonization. It is a historic site and a sanctuary.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Visite de la ferme de Sœur Zélia et Jerônimo, le couple déclaré serviteurs de Dieu, seul couple béatifié et en cours de canonisation. C'est un lieu historique et un sanctuaire.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Besuch der Farm von Schwester Zélia und Jerônimo, dem Ehepaar, das zu Dienern Gottes erklärt wurde, dem einzigen seliggesprochenen Ehepaar, dessen Heiligsprechungsverfahren läuft. Es ist ein historischer Ort und ein Heiligtum.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "porto-velho-do-cunha": {
+  "en": {
+   "descricao": "Fishing-inspired gastronomy, land trails, boat trips, sport fishing and crafts.",
+   "funcionamento": "7 am–6 pm."
+  },
+  "fr": {
+   "descricao": "Gastronomie de la pêche, sentiers terrestres, balades en bateau, pêche sportive et artisanat.",
+   "funcionamento": "De 7 h à 18 h."
+  },
+  "de": {
+   "descricao": "Fischgerichte, Wanderwege an Land, Bootsfahrten, Sportfischen und Kunsthandwerk.",
+   "funcionamento": "7–18 Uhr."
+  }
+ },
+ "sitio-santa-luz": {
+  "en": {
+   "descricao": "Contact with the work of the country people, with herbal medicine, medicinal plants, nursery, planting, knowledge and hospitality.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Contact avec le travail des gens de la campagne, avec la phytothérapie, les plantes médicinales, le jardin de plantes, la plantation, le savoir et l'accueil.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Kontakt mit der Arbeit der Landbevölkerung, mit Pflanzenheilkunde, Heilpflanzen, Pflanzgarten, Anbau, Wissen und Gastfreundschaft.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "fazenda-boa-vista": {
+  "en": {
+   "descricao": "Contact with nature, gastronomy, tree planting, hiking trails and horseback riding.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Contact avec la nature, gastronomie, plantation d'arbres, sentiers et balades à cheval.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Naturerlebnis, Gastronomie, Baumpflanzen, Wanderwege und Ausritte.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "laticinio-trevo": {
+  "en": {
+   "descricao": "Cheese tasting and a visit to the countryside.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Dégustation de fromages et découverte du milieu rural.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Käseverkostung und Besuch im ländlichen Raum.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "laticinios-relogio": {
+  "en": {
+   "descricao": "Gastronomy, history and an experience at a historic dairy. The history of the Relógio brand takes us back to the end of the 19th century, precisely 13 April 1871, the day Joaquim Simões de Araújo was born in Espinho, near Viseu, Portugal. In the vigour of his twenties, he joined three Portuguese friends and set out on an adventure to Brazil, dreaming of making a life under better conditions. Always driven by an entrepreneurial spirit, in 1912 he bought Fazenda João Dias and built a dairy there. With the railway station very close to the dairy, Joaquim shipped all the milk and butter by train to the larger cities. So the time the train passed set the pace of production. It is said that, in the middle of his work, he would repeat in his thick Portuguese accent: \"Olha o relógio! Olha o relógio!\" (\"Mind the clock! Mind the clock!\"), warning the employees of the right time for the train's arrival. And so, in this atmosphere of work and poetry, the name Relógio was born for the products.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Gastronomie, histoire et expérience dans une laiterie historique. L'histoire de la marque Relógio nous ramène à la fin du XIXe siècle, précisément au 13 avril 1871, date de naissance de Joaquim Simões de Araújo, à Espinho, près de Viseu, au Portugal. Dans la force de ses vingt ans, il s'est associé à trois amis portugais et s'est embarqué dans une aventure vers le Brésil, rêvant de faire sa vie dans de meilleures conditions. Toujours animé par l'esprit d'entreprise, il acquiert en 1912 la Fazenda João Dias et y construit une laiterie. La gare ferroviaire étant très proche de la laiterie, Joaquim expédiait par le train toute la production de lait et de beurre vers les grandes villes. L'horaire de passage du train réglait donc la production. On raconte qu'au milieu des activités, il répétait avec son fort accent portugais : « Olha o relógio ! Olha o relógio ! » (« Regardez l'horloge ! Regardez l'horloge ! »), avertissant les employés de l'heure exacte d'arrivée du train. Et c'est ainsi, dans ce climat de travail et de poésie, qu'est né le nom Relógio pour les produits.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Gastronomie, Geschichte und Erlebnis in einer historischen Molkerei. Die Geschichte der Marke Relógio führt uns ans Ende des 19. Jahrhunderts, genau zum 13. April 1871, dem Geburtstag von Joaquim Simões de Araújo in Espinho bei Viseu in Portugal. Mit der Kraft seiner zwanzig Jahre schloss er sich drei portugiesischen Freunden an und brach zu einem Abenteuer nach Brasilien auf, in der Hoffnung, sich dort bessere Lebensbedingungen zu schaffen. Stets von Unternehmergeist beseelt, erwarb er 1912 die Fazenda João Dias und baute dort eine Molkerei. Da der Bahnhof ganz in der Nähe der Molkerei lag, schickte Joaquim die gesamte Milch- und Butterproduktion per Zug in die größeren Städte. So bestimmte die Durchfahrtszeit des Zuges den Produktionsrhythmus. Der Überlieferung nach rief er mitten in der Arbeit mit seinem starken portugiesischen Akzent: „Olha o relógio! Olha o relógio!“ („Achtung, die Uhr! Achtung, die Uhr!“) und mahnte die Angestellten so zur rechten Zeit für die Ankunft des Zuges. Und so entstand in dieser Atmosphäre aus Arbeit und Poesie der Name Relógio für die Produkte.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "parque-natural-municipal-do-livramento": {
+  "en": {
+   "descricao": "Fresh air, contact with wild animals, native trees, trails, seedling planting, local history, river bathing and camping.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Air pur, contact avec les animaux sauvages, arbres indigènes, sentiers, plantation de jeunes plants, histoire locale, baignade en rivière et camping.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Frische Luft, Kontakt mit Wildtieren, einheimische Bäume, Wanderwege, Pflanzen von Setzlingen, lokale Geschichte, Baden im Fluss und Camping.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "fazenda-conceicao": {
+  "en": {
+   "descricao": "Contact with nature, wild animals, gastronomy, bike trails, waterfall swimming and plenty of history.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Contact avec la nature, animaux sauvages, gastronomie, sentiers de VTT, baignade en cascade et beaucoup d'histoire.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Naturerlebnis, Wildtiere, Gastronomie, Radwege, Baden im Wasserfall und viel Geschichte.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "s-a-mudas": {
+  "en": {
+   "descricao": "Seedling planting and learning about plants.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Plantation de jeunes plants et découverte des plantes.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Pflanzen von Setzlingen und Pflanzenkunde.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "tunel-que-chora": {
+  "en": {
+   "descricao": "Horseback trail, caves and contact with nature.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Sentier équestre, grottes et contact avec la nature.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Reitweg, Höhlen und Naturerlebnis.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "cachaca-da-quinta": {
+  "en": {
+   "descricao": "Cachaça tasting, history and contact with nature. Since 1923, Cachaça da Quinta has been produced at Fazenda da Quinta, in a valley near the Paraíba do Sul River, at an altitude of about two hundred and twenty metres. The property has soil, climate and microclimate ideal for growing sugarcane, for fermentation and for making the products. To this especially favourable terroir are added the rigorous quality standards in the making of Cachaça da Quinta. It is well worth visiting to see the whole production process. The property has soil and climate ideal for growing sugarcane, for fermentation and for making the products. It was the first Brazilian spirit to receive the Grand Gold Medal at the Concours Mondial de Bruxelles. In the National Ranking of the Cúpula da Cachaça (2022–2023 biennium), Cachaça da Quinta – Branca received the highest score among all competitors, in an unprecedented feat: a white cachaça surpassing the scores of cachaças from different woods, stored, aged, premium and extra premium.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Dégustation de cachaça, histoire et contact avec la nature. Depuis 1923, la Cachaça da Quinta est produite à la Fazenda da Quinta, dans une vallée proche du fleuve Paraíba do Sul, à une altitude d'environ deux cent vingt mètres. La propriété offre un sol, un climat et un microclimat idéaux pour la culture de la canne, la fermentation et l'élaboration des produits. À ce terroir particulièrement favorable s'ajoutent les normes de qualité rigoureuses de l'élaboration de la Cachaça da Quinta. Cela vaut la peine de visiter et de découvrir tout le processus de production. La propriété offre un sol et un climat idéaux pour la culture de la canne à sucre, la fermentation et l'élaboration des produits. Ce fut le premier distillat brésilien à recevoir la Grande Médaille d'or du Concours Mondial de Bruxelles. Dans le classement national de la Cúpula da Cachaça (biennale 2022-2023), la Cachaça da Quinta – Branca a obtenu la meilleure note parmi tous les concurrents, un fait inédit : une cachaça blanche dépassant la note de cachaças issues de différents bois, stockées, vieillies, premium et extra premium.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Cachaça-Verkostung, Geschichte und Naturerlebnis. Seit 1923 wird die Cachaça da Quinta auf der Fazenda da Quinta hergestellt, in einem Tal nahe dem Rio Paraíba do Sul auf einer Höhe von etwa zweihundertzwanzig Metern. Das Anwesen besitzt Boden, Klima und Mikroklima, die ideal für den Zuckerrohranbau, die Gärung und die Herstellung der Produkte sind. Zu diesem besonders günstigen Terroir kommen die strengen Qualitätsstandards bei der Herstellung der Cachaça da Quinta hinzu. Es lohnt sich, den gesamten Produktionsprozess zu besuchen und kennenzulernen. Das Anwesen besitzt Boden und Klima, die ideal für den Zuckerrohranbau, die Gärung und die Herstellung der Produkte sind. Sie war das erste brasilianische Destillat, das die Grand Gold Medal des Concours Mondial de Bruxelles erhielt. Im nationalen Ranking der Cúpula da Cachaça (Zweijahreszeitraum 2022–2023) erhielt die Cachaça da Quinta – Branca die höchste Punktzahl aller Teilnehmer und schuf damit ein Novum: Eine klare Cachaça übertraf die Punktzahlen von Cachaças aus verschiedenen Hölzern, gelagert, gereift, Premium und Extra Premium.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "fazenda-santo-antonio": {
+  "en": {
+   "descricao": "Contact with nature, waterfall swimming, gastronomy, local history and land trails.",
+   "funcionamento": "8 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Contact avec la nature, baignade en cascade, gastronomie, histoire locale et sentiers terrestres.",
+   "funcionamento": "De 8 h à 17 h."
+  },
+  "de": {
+   "descricao": "Naturerlebnis, Baden im Wasserfall, Gastronomie, lokale Geschichte und Wanderwege an Land.",
+   "funcionamento": "8–17 Uhr."
+  }
+ },
+ "feira-livre": {
+  "en": {
+   "descricao": "Gastronomy, culture, local literature, organic products, crafts, creative economy and family farming.",
+   "funcionamento": "Saturdays, 7 am–5 pm."
+  },
+  "fr": {
+   "descricao": "Gastronomie, culture, littérature locale, produits biologiques, artisanat, économie créative et agriculture familiale.",
+   "funcionamento": "Le samedi, de 7 h à 17 h."
+  },
+  "de": {
+   "descricao": "Gastronomie, Kultur, lokale Literatur, Bio-Produkte, Kunsthandwerk, Kreativwirtschaft und familiäre Landwirtschaft.",
+   "funcionamento": "Samstags, 7–17 Uhr."
+  }
+ }
+}

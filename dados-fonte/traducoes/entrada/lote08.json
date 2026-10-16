@@ -1,0 +1,242 @@
+[
+ {
+  "codigo": "torarte-madeiras",
+  "descricao": "Fabricação de móveis em madeira, galeria em desenvolvimento com restaurante tradicional",
+  "funcionamento": "07h às 18h"
+ },
+ {
+  "codigo": "vem-da-serra-artesaos-da-estrada",
+  "descricao": "Atelier de móveis e artesanato sustentável. Oferece artesanato e decoração de 13 artesãos da região, com peças autorais, sustentáveis e de Identidade cultural local.",
+  "funcionamento": "Qua a Sáb, 09h às 17h"
+ },
+ {
+  "codigo": "casa-rosa-e-verde",
+  "descricao": "Hospedagem com café da manhã e/ou pensão completa; Cursos de manejo e tratamento de bambu; Day-use de área de lazer com piscina, campo de futebol e churrasqueira no clube Holiday. Compotas artesanais; Horta orgânica.",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "sitio-boa-ventura",
+  "descricao": "Café da manhã; almoço; Visitação à produção; Colha e pague. Agricultura familiar e produção de orgânicos",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "sitio-demedeiros",
+  "descricao": "Unidade de produção orgânica associada à AAT - Associação Agroecológica de Teresópolis. Produção vegetal orgânica. Colhe e pague, caminhada na mata, mini cursos, refeições. Visitação mediante agendamento acompanhada de guia ou não.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "sitio-do-bicho-solto",
+  "descricao": "Unidade de produção orgânica associada à AAT - Associação Agroecológica de Teresópolis. Hortaliças orgânicas e mel. Cursos, estágios e vivências agroecológicas",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "sitio-paraiso",
+  "descricao": "Unidade de produção orgânica associada à AAT - Associação Agroecológica de Teresópolis. Produção orgânica de verduras, legumes e grãos orgânicos. Pesca, visita à produção orgânica.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "sitio-pe-de-serra",
+  "descricao": "Ovos caipira e agricultura orgânica. Horta orgânica e criação de animais. Lago com pedalinhos; tirolesa; trilhas; café da manhã; almoço; horta orgânica; animais e aves.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "sitio-saira-azul-organicos",
+  "descricao": "Unidade de produção orgânica associada à AAT - Associação Agroecológica de Teresópolis. Trilhas e caminhadas ecológicas, acompanhamento de plantio e colheita para conhecimento, pesca, refeições, estadia, visita ao parque municipal de montanhas, compra de produtos orgânicos, observação de pássaros, palestras sobre educação ambiental e agroflorestas, criação de animais.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "sitio-terra-de-guaxo",
+  "descricao": "Unidade de produção orgânica associada à AAT - Associação Agroecológica de Teresópolis. Produção vegetal diversificada, com as seguintes principais culturas: banana, cana, aipim, milho, cúrcuma e quiabo. Apicultura. Processamento dos alimentos da roça para confecção de pães, bolos e massa para tapioca. Visita guiada dos plantios e da área de processamento, almoço orgânico da roça, atividades para grupos de crianças, aula de agroecologia com atividade prática adaptada a todo tipo de público, descoberta das Pancs.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "haras-sonho-verde",
+  "descricao": "Caminhadas e trilhas; visitação às baías de cavalos de raça; Agricultura orgânica com destaque para legumes, temperos e hortaliças.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "trutas-do-firmeza",
+  "descricao": "Criatório e entreposto de trutas",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "rancho-cria-da-terra",
+  "descricao": "Unidade de produção orgânica associada à AAT - Associação Agroecológica de Teresópolis. Ovos de Galinha Orgânicos, Verduras, Legumes, Frutíferas e Mel. Lago próprio para banho, alojamentos para 80 pessoas, campinho de futebol e vôlei de grama, caminhadas e visitação à área de produção.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "associacao-de-produtores-rurais-da-microbacia-hidr",
+  "descricao": "Organização dos produtores rurais de Lúcios, capacitação dos produtores rurais, cursos que os levem para agroecologia, assistência técnica, cozinha comunitária; banco de sementes; oficina de pães e doces com produtos da roça. Criação de uma rede de mulheres produtoras",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "feira-organica-e-agroecologica-de-teresopolis",
+  "descricao": "Alimentos orgânicos diretamente dos produtores. Legumes, verduras, frutas, ovos, mel, suco verde, caldo de cana, pães e bolos, doces caseiros, mudas e adubos orgânicos. Música ao vivo e almoço todos os sábados, parquinho para as crianças, eventos culturais, artesanato local, entrega de cestas à domicílio. Estacionamento gratuito para clientes.",
+  "funcionamento": "08h às 13h"
+ },
+ {
+  "codigo": "sitio-sabor-da-montanha-organicos",
+  "descricao": "Unidade de produção orgânica associada à AAT - Associação Agroecológica de Teresópolis. Hortaliças, frutas, legumes e grãos orgânicos, geleias, compotas e doces. Visitação, café da manhã, almoço, ou lanche da tarde, colheita de produtos",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "paraiso-das-flores",
+  "descricao": "Colha e pague. Horto com 3 estufas. Produtos disponibilizados: Orquídeas, Bromélias, Forrações, Árvores Frutíferas, Pedras Decorativas, Vasos de Barro, Polietileno e Cimento, Terras, Palmeiras, Bougainville, Mudas de Rosa, Cercas Vivas, Arranjos, e muito mais.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "sitio-dos-anjinhos",
+  "descricao": "Estadia. Mata Atlântica.",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "atlantica-turismo",
+  "descricao": "Operadora de turismo. Segmento prioritário: Ecoturismo. Especializada em Tour Cervejeiro. Vendem pacotes nacionais, internacionais, operam transfer, vendem bilhetes de trens europeus",
+  "funcionamento": "09h às 20h"
+ },
+ {
+  "codigo": "rota-certa-ecoturismo",
+  "descricao": "Operadora de turismo com especialização em ecoturismo, lazer em família; turismo rural; rapel; trekking; trekking; cavalgada; experiência rural. Turismo de aventura.",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "ecoplay-tour",
+  "descricao": "Agência de viagem. Segmento prioritário: Ecoturismo. Especializada em Turismo Rural, Gastronômico e Pedagógico. A Ecoplay proporciona experiências aos visitantes que valorizem a comunidade local e despertem uma consciência ambiental. Possui seis roteiros formatadores e precificados.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "notur-travel",
+  "descricao": "Agência de receptivo. Segmento prioritário: Cultural (cívico, étnico, religioso, místico e esotérico). Especializada em Turismo Gastronômico; Pedagógico; Cultural (patrimônio histórico). Agência home office.",
+  "funcionamento": "08h às 18h"
+ },
+ {
+  "codigo": "retour",
+  "descricao": "Agência de viagem. Segmento prioritário: Turismo Receptivo e Emissivo, Turismo Cultural, Rural, Pedagógico, Religioso, Gastronômico e Cervejeiro e Ecoturismo. A RÊTOUR foi a primeira a fazer turismo receptivo e rural em Teresópolis, com mais de 15 anos no mercado.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "fazenda-sete-voltas",
+  "descricao": "Pesque e Pague, Restaurante, Passeio a cavalo, Visitação de animais, Aluguel de churrasqueiras e espaço com piscina, sauna e campo de futebol.",
+  "funcionamento": "Sab e Dom"
+ },
+ {
+  "codigo": "fazendinha-rio",
+  "descricao": "A Fazendinha Rio é uma das melhores atrações de Vargem Grande se você pretende visitar o bairro com crianças. O local é considerado um Parque Rural Pedagógico, onde os pequenos podem entrar em contato com os animais de fazenda, conhecer a horta e o pomar, fazer passeios a cavalo e até mesmo ordenhar as vacas.",
+  "funcionamento": "10h às 17h - Sábados, Domingos e Feriados"
+ },
+ {
+  "codigo": "museu-quilombo-cafunda-astrogilda",
+  "descricao": "Lá você poderá conhecer o Museu do Quilombo e ainda pode aproveitar para conhecer alguns dos restaurantes que ficam dentro da comunidade. O Bar da Nilza e o Bar e Restaurante Tô na Boa são os mais famosos do local.",
+  "funcionamento": "Somente com horário agendado"
+ },
+ {
+  "codigo": "arca-do-noah-parque-de-educacao-ambiental",
+  "descricao": "É o seu zoológico em Guaratiba, Zona Oeste do Rio de Janeiro. Contamos com uma área de fazendinha interativa, onde os visitantes podem alimentar animais como pôneis, lhamas, cabras búfalos e muitos outros, usando alimentos disponibilizados pelo parque. O Viveiro de Imersão é o ponto alto da interação, com quase uma centena de aves que comem nas suas mãos! (porção de sementes disponibilizadas pelo parque)\n\nOs passeios são livres e os nossos monitores ficam estrategicamente posicionados pelo parque para proporcionar a melhor experiência durante a sua visitação.",
+  "funcionamento": "09h às 16h - Segunda a Sexta (Passeios Escolares) | 09h às 16h - Sábados, Domingos e Feriados (Livre)"
+ },
+ {
+  "codigo": "caminhada-de-santa-cruz",
+  "descricao": "Roteiro 1 - Fazenda Real de Santa Cruz: Antes de Petrópolis, a Família Imperial passava férias em Santa Cruz.\nPatrimônios Visitados: Igreja de Santa Bárbara, Escola Jesuítica, Sede da Fazenda Real, Senzalas Unifamiliares e a escravidão em Santa Cruz, Casa do Conde dos Arcos, Antigo Centro do Bairro, Antigo Hospital de Escravos, Casa de Augusta Candiani, Terceira Escola Mixta do Brasil, Pórtico da Fazenda e Monumento aos Expedicionários.\n\nRoteiro 2 - Santa Cruz que alimenta a toda Capital Nacional, de Jóia da Coroa a provedor da Capital: descubra o quanto Santa Cruz já esteve à frente na modernização do país.\nPatrimônios visitados: Largo do Bodegão e suas negociações, A energia elétrica chegou primeiro aqui, Barão e Princesa: duas escolas de origem nobre, Mirante da Boa Vista, Os trens que conectavam Santa Cruz ao Mundo, O correr de casas: a Vila Operária do Matadouro Imperial, Ruínas do Matadouro, Mural 450 anos, Palacete Princesa Isabel, nunca pertenceu a Isabel! e Jardins de Glaziou, ou o que restou.\n\nRoteiro 3 - Residências, Marcos e Referências Mundiais: descubra como Santa Cruz atraía a atenção de figuras importantes e o quanto isso influenciou na nossa arquitetura\nPatrimônios visitados: Vilas, solares e palacetes antigos: suas histórias através da arquitetura, Mural 450 anos, Palacete Horácio Lemos, Monumento a Santos Dumont, Antigos cinemas do bairro, Espaço Cultural NR (exceto domingos), Fonte Wallace, Residência Júlio Cesário de Mello, Marco da Fazenda Imperial, Pórtico da Fazenda Real e Marco XI",
+  "funcionamento": "É preciso agendar préviamente com guia cadastrado"
+ },
+ {
+  "codigo": "fogao-da-roca",
+  "descricao": "Sabor Rural à Mesa: buffet liberado de comida da roça, onde as comidas são feitas no fogão a lenha, lembrando aquela típica comida de fazenda!\nPreço único com churrasco e sobremesa incluída.\nNo sítio você vai encontrar: passeio a cavalo, mini fazendinha, música ao vivo aos sábados e feriados, cascatinha com água da fonte natural para crianças, pesque e solte no nosso lago cheinho de peixes, Pula Pula para crianças, natureza em volta, árvores, plantas e flores variadas.\nEntrada, estacionamento e acesso aos animais gratuito.\nAcessibilidade para cadeirantes.",
+  "funcionamento": "07h às 18h - Sábados, Domingos e Feriados | 07h às 12h - Café da manhã | 11h às 16h - Almoço"
+ },
+ {
+  "codigo": "haras-sao-francisco-de-assis",
+  "descricao": "Cavalgadas Guiadas, Restaurante",
+  "funcionamento": "Sábados, Domingos e Feriados"
+ },
+ {
+  "codigo": "pc-equitacao",
+  "descricao": "Aulas de equitação para iniciantes",
+  "funcionamento": "Somente com horário agendado"
+ },
+ {
+  "codigo": "sertao-do-vale-mambucaba",
+  "descricao": "Conhecer os locais de beneficiamento da produção agrícola em uma associação, podendo fazer visita no campo de onde vem a produção. Vivenciar a realidade do produtor rural, sempre guiada por um produtor.",
+  "funcionamento": "De segunda-feira a sábado das 08h às 17h."
+ },
+ {
+  "codigo": "sertao-de-mambucaba",
+  "descricao": "Integração com a natureza e visita a pontos históricos da região, que foi palco para a passagem do café do Vale do Paraíba, no período do império no Brasil, e também o ciclo da Banana, no século XX. Saída do Sítio São João e caminhada até a Cachoeira das Três Quedas, para banho e contemplação.",
+  "funcionamento": "Das 06h às 17h."
+ },
+ {
+  "codigo": "aldeia-sapukai",
+  "descricao": "Os Guaranis conservam suas tradições ancestrais, como danças e cantos e a maioria é bilingue, já que além do Tupi Guarani, falam Português. Lá os moradores mantêm uma vida simples cultivando para seu sustento alimentos como mandioca, banana e palmito, além de plantas medicinais. Seu colorido trabalho de cestaria, colares, pulseiras e artesanato em madeira são muito apreciados por turistas. Ao visitar a aldeia você será apresentado à cultura Guarani por meio de atividades como canto cultural, pintura corporal, roda de conversas, comidas típicas, passeio guiado e apresentações. Para os adeptos de aventuras são oferecidas ainda atividades como trilha guiada até a linda Cachoeira da Aldeia, tiro ao alvo com zarabatana, arco e flecha.",
+  "funcionamento": "Não informado."
+ },
+ {
+  "codigo": "sertao-de-mambucaba-2",
+  "descricao": "Passeio para observação de aves (birdwatching) em meio a mata atlântica e suas belezas cênicas.",
+  "funcionamento": "Das 06h às 18h."
+ },
+ {
+  "codigo": "aie-eletuloju",
+  "descricao": "Aiê Eletuloju: uma porta para o sagrado no Quilombo Santa Rita do Bracuí. Agroecossistema, vivências, trilhas, Palestras, oficinas, produtos da roça, atividades culturais, ensinamento sobre etnobotânica e etnoecologia, manejos sustentáveis. Um polo agroecológico que tem como foco a educação trabalhando eixos centrais como: Quilombo, Candomblé e o grande leque da permacultura.",
+  "funcionamento": "Das 07h às 18h."
+ },
+ {
+  "codigo": "bee-point-meliponario-saco-do-ceu",
+  "descricao": "Local para conhecer abelhas nativas sem ferrão, experimentar o mel produzido na Mata Atlântica e aprender sobre a importância dos polinizadores para a saúde das florestas. Tour guiado por profissional com formação superior em apicultura e meliponicultura, abertura de caixas, degustação de meles e frutas do pomar. Meliponário legalizado junto aos órgãos ambientais e aberto à visitação, aptos a receber turistas e proporcionar uma experiência ímpar na degustação de meles das abelhas nativas da costa verde.",
+  "funcionamento": "Das 08h às 17h."
+ },
+ {
+  "codigo": "sitio-sao-joao",
+  "descricao": "Café da manhã, almoço, camping. Início às 8:30h com um delicioso café da manhã até às 10h, seguindo para uma caminhada até a ponte de arame e cachoeira no Sítio São João com retorno às 12h para almoço!",
+  "funcionamento": "Das 08h às 19h."
+ },
+ {
+  "codigo": "hotel-fazenda-vira-country",
+  "descricao": "Visitação ao único alambique da cidade - Cachaça Desinibida de Angra, com degustação, piscinas, pesque e pague, caminhada a uma belíssima cachoeira, espaço Kids. A visitação ao alambique é uma verdadeira vivência na produção da cachaça.  O alambique fica dentro do Hotel Fazenda Vira Country, onde há pesque e pague, piscinas, espaço kids e cachoeira.",
+  "funcionamento": "Das 09h às 17h."
+ },
+ {
+  "codigo": "alho-poro-restaurante",
+  "descricao": "Gastronomia contemporânea à base de frutos do mar e de opções de proteínas bovina e suína, além de uma variedade de risotos. Clima de montanha, ambiente familiar,  decoração rústica, onde os clientes podem desfrutar de cachoeiras e de uma piscina natural com águas cristalinas, contemplando a natureza e o canto dos pássaros.",
+  "funcionamento": "De quinta-feira a domingo, das 12h às 17h."
+ },
+ {
+  "codigo": "turismo-de-base-comunitaria-do-quilombo-santa-rita",
+  "descricao": "O Quilombo Santa Rita do Bracuí tem uma bonita história de luta e tradição. O Turismo de Base Comunitária foi o meio usado pelos quilombolas para passar sua história e receberem uma renda. Opções para o turista: passar um belo dia na comunidade, café quilombola, trilha, hospedagem casual, refeições tradicionais, oficinas, contação de histórias entre outros atrativos. Todas as atividades são feitas pelos quilombolas.",
+  "funcionamento": "Das 08h às 17h."
+ },
+ {
+  "codigo": "republica-educacao-solidaria",
+  "descricao": "Localizada em frente ao Terminal Turístico Janete Dias de Aguiar, porta de entrada da Vila do Abraão, capital da Ilha Grande, a área da Republica Educação Solidária abriga um conjunto de imóveis simbólicos para conectar-se a comunidade e a reconhecer-se na espacialidade, ressignificando a noção de pertencimento e territorialidade do visitante. Nosso diferencial é o Circuito Curto de Comercialização, no qual apresentamos a possibilidade de conhecer o morador e poder comprar direto do produtor, conhecendo o seu espaço e ajudando a escoar suas versáteis produções e serviços. Tempo de visitação: Para manter os princípios da República Educação Solidária, não há um tempo médio definido para a visitação, pois o circuito pode durar de algumas horas a uma vida inteira.",
+  "funcionamento": "Não informado."
+ },
+ {
+  "codigo": "nativa-da-ilha-tours-concierge",
+  "descricao": "Nativa da Ilha é um micro-empreendimento criado para ser ferramenta de impacto social na região da Baía da Ilha Grande. Sua missão é servir de apoio não só às comunidades tradicionais, mas também contribuir para a criação de uma consciência de respeito e valorização da cultura popular oferecendo produtos e serviços que contribuam para o alcance de uma nova perspectiva e consciência que ajude a evitar que identidades tradicionais sejam diluídas. Nossos roteiros de turismo de base comunitária visam promover um turismo mais justo e inclusivo, pois colocam a população local no protagonismo para responder às demandas dos ecossistemas locais e contribuir para gerar renda e autonomia para essas populações rurais.",
+  "funcionamento": "Das 09h às 18h."
+ },
+ {
+  "codigo": "cooperativa-mista-sul-fluminense",
+  "descricao": "Visita a propriedades rurais de cooperados e conhecer a rotina dos agricultores familiares, refeições, café da roça pescaria em lagos, banho de rio, entre outros.",
+  "funcionamento": "Das 09h às 18h."
+ },
+ {
+  "codigo": "restaurante-70-da-roca",
+  "descricao": "Mini fazendinha com muitas atrações. Área de lazer, salão de jogos, e animais para as crianças. Restaurante a moda mineira. Espaço para descansar após almoço, área de lazer, passeios pelo sítio.",
+  "funcionamento": "Domingos a partir das 11h."
+ },
+ {
+  "codigo": "sitio-bumerangue",
+  "descricao": "Fazendinha, passeio a cavalo, mini zoo, lagos com peixes, piscinas, tirolesa, refeições.",
+  "funcionamento": "Das 08h às 17h."
+ },
+ {
+  "codigo": "haras-mazomba",
+  "descricao": "Passeio a cavalo, equoterapia, prova de marcha, mini fazendinha, colhe e pague, cantina com café (em construção).",
+  "funcionamento": "De segunda-feira a sábado, das 08h às 17h."
+ },
+ {
+  "codigo": "emporio-da-barreira",
+  "descricao": "Restaurante em meio à natureza com trilha histórica e cachoeira. Contato com a natureza num ambiente rústico, acolhedor e de produtos da agricultura familiar.",
+  "funcionamento": "De quinta-feira a domingo, das 09h às 18h."
+ }
+]

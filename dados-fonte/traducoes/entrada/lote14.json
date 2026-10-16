@@ -1,0 +1,27 @@
+[
+ {
+  "codigo": "sitio-raposinha",
+  "descricao": "Contato com a natureza e com a produção de produtos artesanais.",
+  "funcionamento": "Das 08h às 18h."
+ },
+ {
+  "codigo": "pizzaria-la-pizza",
+  "descricao": "Pizzaria com forno de pedra, pizza gourmet e com produtos da Fazenda Dendê (cafés gourmet, tradicional, especial (pó é grão), fubá de moinho  d’água, mel, geleia, vinhos de jabuticaba seco e vinho rosé da produção de uvas niágara rosada.",
+  "funcionamento": "De quinta-feira a domingo e em feriados."
+ },
+ {
+  "codigo": "sitio-vai-e-volta-cafes-especiais",
+  "descricao": "Café cultivado na região noroeste fluminense, onde o clima tropical de altitude associado ao cuidadoso manejo pós-colheita de agricultores familiares favorecem a produção de grãos especiais. Da semente à xícara! O visitante vai conhecer a produção familiar de cafés especiais, produzidos e torrados pela família Rodolphi, que cuida de todos os detalhes da produção para garantir que o café chegue na xícara com a qualidade produzida pela planta. Produtor BiCampeão do primeiro concurso de cafés especiais do Noroeste Fluminense.",
+  "funcionamento": "De segunda-feira a sexta-feira, das 8h às 17h, e sábados, das 09h às 12h."
+ },
+ {
+  "codigo": "adega-alexandrino-bendia",
+  "descricao": "Visitação à propriedade, degustação e venda de cerveja artesanal, vinho de jabuticaba, licores variados.",
+  "funcionamento": "Das 9h às 17h."
+ },
+ {
+  "codigo": "pousada-chacara-vista-alegre",
+  "descricao": "Embora seja considerada zona rural, a pousada está localizada a 5 min de carro do centro de Varre-Sai. Pode-se ir a pé. O hóspede tem o privilégio de estar na roça e ao mesmo tempo dentro de Varre-Sai, ainda visitar uma linda plantação de lavanda",
+  "funcionamento": "24 horas."
+ }
+]

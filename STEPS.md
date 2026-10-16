@@ -45,3 +45,13 @@ Regerar dados: `python dados-fonte/merge.py && python dados-fonte/gera_telao.py`
 ## Riscos
 - `cena.js` é monolítico (~1,7 mil linhas, uma função com closures); a troca do relevo mexe no coração dele. Fazer incrementalmente e rodar o gate a cada passo.
 - Em máquina sem GPU a malha densa pode pesar: manter `?q=media|baixa`.
+
+
+## Pedido de 16/10/2026 — reutilização (RF13)
+Antes da F7, separar o que é do tema (marca, textos, rotas, paleta, região/malha, fontes) do motor genérico: arquivo de configuração do tema + dicionários i18n; banco com `tema`/`mapa` como entidade, para hospedar vários mapas. Critério: criar um segundo mapa de exemplo só com configuração e dados.
+
+## Preparar para RF14 (cadastro via gov.br)
+Na modelagem da F7–F8: atrativo com `status` (`rascunho`/`pendente`/`publicado`/`recusado`), `origem` (admin/cidadão), `enviado_por` (identificador gov.br, só o necessário — LGPD) e motivo da recusa; fila de moderação no admin e papel `moderador`. Login gov.br = OAuth2/OpenID (login único gov.br, exige credenciamento do órgão) — decisão D13. Nada disso é construído agora.
+
+## F8 inclui RF15 (CSV em lote)
+Tela: modelo CSV → upload → pré-visualização (válidas/com aviso/rejeitadas, mesmas regras do formulário) → confirmar → importar em transação com relatório e desfazer pelo log. Testes: BOM, `;`/`,`, acentos, linha inválida, duplicada, arquivo grande, injeção de fórmula.

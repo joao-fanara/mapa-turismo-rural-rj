@@ -45,5 +45,11 @@ flowchart LR
 ```
 Decisões propostas: o banco é a fonte da verdade, e o pipeline Python vira só a **importação inicial**; o telão continua estático e passa a escolher a fonte (`api` online, `estatico` offline); idioma é parâmetro da API e do telão; traduções ficam em tabela própria com status; convenções do `mapa-3d` (PHP ≥ 8.2, PDO, `Mapa\` em `app/`, migrações numeradas, PHPUnit/PHPStan). Impacto: nenhum arquivo do telão é removido; `cena.js` troca textos fixos por `t()`; `gera_telao.py` continua válido para o modo offline até a exportação do admin substituí-lo.
 
+## Direção: modelo reutilizável (RF13)
+O motor (relevo, alfinetes, cartão, ficha, passeio) deve ficar independente do tema; marca, textos, rotas e região vão para configuração e dados. Hoje há acoplamento (nomes e textos fixos em `cena.js`, `gera_telao.py`) — débito a pagar junto da i18n (F9).
+
+## Horizonte: cadastro do cidadão (RF14)
+Entrada pública (gov.br OAuth2) → registro `pendente` → fila de moderação no admin → `publicado`/`recusado`. O esquema da F7 já prevê status e origem.
+
 ## Débitos técnicos
 1. `cena.js` monolítico. 2. A cobertura do solo tem células de 280 m: de perto a borda entre classes depende do ruído do shader (orgânico, mas não é dado real). 3. Casamento QR↔atrativo por ordem (mitigado: contagem igual + conferência de nome na URL, 0 trocas detectadas). 4. 161 atrativos sem coordenada. 5. Rotas por palavras-chave. 6. Provas dependem de Chrome; em Linux usam SwiftShader (lento). 7. Layout não pensado para celular.

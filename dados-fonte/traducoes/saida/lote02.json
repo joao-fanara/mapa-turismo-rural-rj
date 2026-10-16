@@ -1,0 +1,674 @@
+{
+ "cachaca-dona-vania": {
+  "en": {
+   "descricao": "A short introduction to how cachaça is made, with a visit to the production and storage areas. At the end of the tour, a tasting of the cachaças.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Une brève présentation du processus de fabrication de la cachaça, avec visite des espaces de production et de stockage. À la fin du parcours, dégustation des cachaças.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Eine kurze Einführung in die Herstellung der Cachaça mit Besichtigung der Produktions- und Lagerbereiche. Zum Abschluss gibt es eine Verkostung der Cachaças.",
+   "funcionamento": ""
+  }
+ },
+ "coisas-da-roca": {
+  "en": {
+   "descricao": "Tasting of local products.",
+   "funcionamento": "7 am–6 pm"
+  },
+  "fr": {
+   "descricao": "Dégustation de produits locaux.",
+   "funcionamento": "De 7 h à 18 h"
+  },
+  "de": {
+   "descricao": "Verkostung lokaler Produkte.",
+   "funcionamento": "7–18 Uhr"
+  }
+ },
+ "fazenda-verde-essencia": {
+  "en": {
+   "descricao": "Visit to the Mini Farm and the Organic Vegetable Garden, plus holistic experiences.",
+   "funcionamento": "7 am–6 pm"
+  },
+  "fr": {
+   "descricao": "Visite de la mini-ferme et du potager biologique, expériences holistiques.",
+   "funcionamento": "De 7 h à 18 h"
+  },
+  "de": {
+   "descricao": "Besuch der Mini-Farm und des Bio-Gemüsegartens sowie ganzheitliche Erlebnisse.",
+   "funcionamento": "7–18 Uhr"
+  }
+ },
+ "fabrica-de-orquideas": {
+  "en": {
+   "descricao": "Enjoy the view over part of the city from the lookout point, where the sunset is always beautiful.",
+   "funcionamento": "24 hours"
+  },
+  "fr": {
+   "descricao": "Contemplez une partie de la ville depuis le belvédère, où le coucher de soleil est toujours magnifique.",
+   "funcionamento": "24 h/24"
+  },
+  "de": {
+   "descricao": "Genießen Sie vom Aussichtspunkt den Blick auf einen Teil der Stadt; der Sonnenuntergang ist hier immer wunderschön.",
+   "funcionamento": "24 Stunden"
+  }
+ },
+ "lago-do-palmares": {
+  "en": {
+   "descricao": "A peaceful spot to take in nature, go for a walk, ride a bike or a horse, or enjoy a family picnic.",
+   "funcionamento": "24 hours"
+  },
+  "fr": {
+   "descricao": "Un endroit tranquille pour admirer la nature, faire une promenade, du vélo ou une balade à cheval, ou pique-niquer en famille.",
+   "funcionamento": "24 h/24"
+  },
+  "de": {
+   "descricao": "Ein ruhiger Ort, um die Natur zu bewundern, spazieren zu gehen, Rad oder zu Pferd zu fahren oder mit der Familie ein Picknick zu machen.",
+   "funcionamento": "24 Stunden"
+  }
+ },
+ "doces-caseiros-da-vovo-maria": {
+  "en": {
+   "descricao": "Tasting of sweets made in copper pots over a wood-fired stove.",
+   "funcionamento": "9 am–6 pm"
+  },
+  "fr": {
+   "descricao": "Dégustation de confiseries préparées dans de grands chaudrons sur un fourneau à bois.",
+   "funcionamento": "De 9 h à 18 h"
+  },
+  "de": {
+   "descricao": "Verkostung von Süßspeisen, die im Kupferkessel auf dem Holzofen zubereitet werden.",
+   "funcionamento": "9–18 Uhr"
+  }
+ },
+ "horto-municipal": {
+  "en": {
+   "descricao": "At the municipal botanical nursery you connect with nature through the garden itself, learning about the practices used for replanting and conservation and getting to know the different native trees grown there.",
+   "funcionamento": "Monday to Friday, 8 am–4 pm"
+  },
+  "fr": {
+   "descricao": "Au jardin botanique municipal, vous entrez en contact avec la nature à travers le jardin lui-même, en découvrant les pratiques de replantation et de préservation de la nature et les différentes essences d'arbres natifs qui y sont cultivées.",
+   "funcionamento": "Du lundi au vendredi, de 8 h à 16 h"
+  },
+  "de": {
+   "descricao": "In der städtischen Baumschule kommen Sie über den Garten selbst mit der Natur in Berührung, lernen die Methoden der Wiederaufforstung und des Naturschutzes kennen und entdecken die verschiedenen einheimischen Baumarten, die dort gezogen werden.",
+   "funcionamento": "Montag bis Freitag, 8–16 Uhr"
+  }
+ },
+ "orquidario-boa-vista": {
+  "en": {
+   "descricao": "Experience the greenhouses, from planting to cultivation, with a carp pond, nature and sunset views, and lunch and snacks made with organic products (by appointment).",
+   "funcionamento": "9 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Immersion dans les serres, de la plantation à la culture, avec bassin de carpes, contemplation de la nature et du coucher de soleil, déjeuner et collation préparés avec des produits biologiques (sur rendez-vous).",
+   "funcionamento": "De 9 h à 17 h"
+  },
+  "de": {
+   "descricao": "Erleben Sie die Gewächshäuser vom Pflanzen bis zur Kultivierung, mit Karpfenteich, Naturbetrachtung und Sonnenuntergang sowie Mittagessen und Imbiss aus biologischen Produkten (nur nach Voranmeldung).",
+   "funcionamento": "9–17 Uhr"
+  }
+ },
+ "apiario-do-cico": {
+  "en": {
+   "descricao": "Tasting of honey from different blossoms and a demonstration of how honey is harvested.",
+   "funcionamento": "Monday to Sunday, 9 am–4 pm"
+  },
+  "fr": {
+   "descricao": "Dégustation de miels de différentes floraisons et démonstration de la récolte du miel.",
+   "funcionamento": "Du lundi au dimanche, de 9 h à 16 h"
+  },
+  "de": {
+   "descricao": "Verkostung von Honig aus verschiedenen Blüten und Vorführung, wie der Honig geerntet wird.",
+   "funcionamento": "Montag bis Sonntag, 9–16 Uhr"
+  }
+ },
+ "bistro-e-cogos-boutique": {
+  "en": {
+   "descricao": "Local cuisine and gastronomy.",
+   "funcionamento": "9 am–6 pm"
+  },
+  "fr": {
+   "descricao": "Cuisine et gastronomie locales.",
+   "funcionamento": "De 9 h à 18 h"
+  },
+  "de": {
+   "descricao": "Lokale Küche und Gastronomie.",
+   "funcionamento": "9–18 Uhr"
+  }
+ },
+ "rancho-quindins": {
+  "en": {
+   "descricao": "Visitors can interact with a variety of animals and enjoy a true country experience: riding a horse or pony, milking a cow, planting and harvesting vegetables in the garden, fishing, and dining at a great restaurant.",
+   "funcionamento": "Friday, 10 am–6 pm; Saturday and Sunday, 10 am–11 pm"
+  },
+  "fr": {
+   "descricao": "Les visiteurs peuvent côtoyer de nombreux animaux et vivre une véritable expérience rurale : monter à cheval ou à poney, traire une vache, planter et récolter des légumes au potager, pêcher, et se régaler dans un excellent restaurant.",
+   "funcionamento": "Le vendredi, de 10 h à 18 h ; le samedi et le dimanche, de 10 h à 23 h"
+  },
+  "de": {
+   "descricao": "Die Besucher können mit zahlreichen Tieren in Kontakt treten und ein echtes Landleben erleben: auf einem Pferd oder Pony reiten, eine Kuh melken, im Gemüsegarten Gemüse pflanzen und ernten, angeln und in einem hervorragenden Restaurant schlemmen.",
+   "funcionamento": "Freitag, 10–18 Uhr; Samstag und Sonntag, 10–23 Uhr"
+  }
+ },
+ "seal-hortifruti": {
+  "en": {
+   "descricao": "Learn about how the produce is grown and about the history of protected cultivation in greenhouses.",
+   "funcionamento": "Monday to Friday, 9 am–3 pm; Saturday, 9 am–noon"
+  },
+  "fr": {
+   "descricao": "Découvrez la production des cultures et l'histoire de la culture protégée sous serre.",
+   "funcionamento": "Du lundi au vendredi, de 9 h à 15 h ; le samedi, de 9 h à 12 h"
+  },
+  "de": {
+   "descricao": "Lernen Sie den Anbau der Produkte und die Geschichte des geschützten Anbaus in Gewächshäusern kennen.",
+   "funcionamento": "Montag bis Freitag, 9–15 Uhr; Samstag, 9–12 Uhr"
+  }
+ },
+ "museu-da-cachaca": {
+  "en": {
+   "descricao": "The Cachaça Museum is the first of its kind in the country. Its founders, Íris and Iale Renan (now deceased), opened the museum in 1991, after years of research in libraries and of collecting several hundred bottles bought in every corner of Brazil to build this vast and distinctive collection. It is presented to visitors alongside paintings, collections of chronicles and articles, specialized books, popular folk verses, an antique mini still, and many other attractions that make up the important history of cachaça. The Cachaça Museum also houses a craft spirits distillery, two cellars and a bar offering free tastings.",
+   "funcionamento": "Tuesday and Friday, 9 am–6 pm; Saturday, 9 am–7 pm, to Sunday, 9 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Le Musée de la Cachaça est le premier du genre dans le pays. Ses fondateurs, Íris et Iale Renan (aujourd'hui décédé), l'ont inauguré en 1991, après des années de recherches dans les bibliothèques et la collecte de plusieurs centaines de bouteilles achetées aux quatre coins du Brésil pour constituer cette collection vaste et singulière. Elle est présentée aux visiteurs avec des tableaux, des recueils de chroniques et d'articles, des livres spécialisés, des chansons populaires, un ancien mini-alambic et bien d'autres attractions qui racontent l'histoire importante de la cachaça. Le musée abrite également une distillerie artisanale d'eau-de-vie, deux caves et un bar proposant des dégustations gratuites.",
+   "funcionamento": "Mardi et vendredi, de 9 h à 18 h ; du samedi, de 9 h à 19 h, au dimanche, de 9 h à 17 h"
+  },
+  "de": {
+   "descricao": "Das Cachaça-Museum ist das erste seiner Art im Land. Seine Gründer, Íris und Iale Renan (inzwischen verstorben), eröffneten das Museum 1991, nachdem sie jahrelang in Bibliotheken recherchiert und mehrere hundert Flaschen aus allen Winkeln Brasiliens gesammelt hatten, um diese umfangreiche und einzigartige Sammlung aufzubauen. Sie wird den Besuchern zusammen mit Gemälden, Sammlungen von Chroniken und Artikeln, Fachbüchern, Volksliedversen, einer alten Mini-Brennerei und vielen weiteren Attraktionen präsentiert, die die bedeutende Geschichte der Cachaça erzählen. Im Museum befinden sich außerdem eine handwerkliche Branntweinbrennerei, zwei Weinkeller und eine Bar mit kostenlosen Verkostungen.",
+   "funcionamento": "Dienstag und Freitag, 9–18 Uhr; Samstag, 9–19 Uhr, bis Sonntag, 9–17 Uhr"
+  }
+ },
+ "sabores-do-nando": {
+  "en": {
+   "descricao": "A-la-carte restaurant serving Brazilian and regional food, plus an emporium with local products.",
+   "funcionamento": "Monday and Tuesday, 9 am–3 pm; Wednesday and Thursday, 9 am–3 pm and 6–11 pm; Friday to Sunday, 9 am–11 pm"
+  },
+  "fr": {
+   "descricao": "Restaurant à la carte proposant une cuisine brésilienne et régionale, avec une épicerie de produits locaux.",
+   "funcionamento": "Lundi et mardi, de 9 h à 15 h ; mercredi et jeudi, de 9 h à 15 h et de 18 h à 23 h ; du vendredi au dimanche, de 9 h à 23 h"
+  },
+  "de": {
+   "descricao": "À-la-carte-Restaurant mit brasilianischer und regionaler Küche sowie ein Feinkostladen mit lokalen Produkten.",
+   "funcionamento": "Montag und Dienstag, 9–15 Uhr; Mittwoch und Donnerstag, 9–15 und 18–23 Uhr; Freitag bis Sonntag, 9–23 Uhr"
+  }
+ },
+ "ruinas-do-casarao": {
+  "en": {
+   "descricao": "A visit to see where Fazenda São José dos Pinheiros once stood, a property dating from 1851 and a landmark of the Coffee Cycle in the Paraíba Valley.",
+   "funcionamento": "24 hours"
+  },
+  "fr": {
+   "descricao": "Visite des lieux où se trouvait la Fazenda São José dos Pinheiros, propriété de 1851 et jalon du cycle du café dans la vallée du Paraíba.",
+   "funcionamento": "24 h/24"
+  },
+  "de": {
+   "descricao": "Besichtigung des Ortes, an dem die Fazenda São José dos Pinheiros stand, ein Anwesen von 1851 und ein Meilenstein des Kaffeezyklus im Paraíba-Tal.",
+   "funcionamento": "24 Stunden"
+  }
+ },
+ "loja-da-estacao": {
+  "en": {
+   "descricao": "A cultural space housing the town's craftspeople shop, with a variety of products on sale to the community and visitors.",
+   "funcionamento": "9 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Espace culturel abritant la boutique des artisans de la ville, avec des produits variés en vente pour la communauté et les visiteurs.",
+   "funcionamento": "De 9 h à 17 h"
+  },
+  "de": {
+   "descricao": "Ein Kulturraum, in dem der Laden der Kunsthandwerker der Stadt untergebracht ist, mit vielfältigen Produkten zum Verkauf an die Gemeinde und an Besucher.",
+   "funcionamento": "9–17 Uhr"
+  }
+ },
+ "creasf-casa-do-jongo": {
+  "en": {
+   "descricao": "A Culture Hub that runs activities in schools, welcomes visitors and brings together other popular culture groups in the region.",
+   "funcionamento": "9 am–6 pm"
+  },
+  "fr": {
+   "descricao": "Point de Culture qui développe des activités dans les écoles, accueille les visiteurs et fédère d'autres groupes de culture populaire de la région.",
+   "funcionamento": "De 9 h à 18 h"
+  },
+  "de": {
+   "descricao": "Ein Kulturzentrum (Ponto de Cultura), das Aktivitäten in Schulen entwickelt, Besucher empfängt und andere Gruppen der Volkskultur der Region vernetzt.",
+   "funcionamento": "9–18 Uhr"
+  }
+ },
+ "fazenda-confianca": {
+  "en": {
+   "descricao": "A visit to the colonial past, with access to the main house, which is about to turn 200 years old. Visit the slave quarters, which still preserve features from the period of slavery, such as dungeons and the stocks.",
+   "funcionamento": "8 am–6 pm"
+  },
+  "fr": {
+   "descricao": "Une visite dans le passé colonial, avec accès à la maison de maître, qui va bientôt avoir 200 ans. Visite de la senzala, qui conserve encore les caractéristiques de l'époque de l'esclavage, avec ses cachots et son tronc.",
+   "funcionamento": "De 8 h à 18 h"
+  },
+  "de": {
+   "descricao": "Ein Besuch in der Kolonialvergangenheit mit Zugang zum Herrenhaus, das bald 200 Jahre alt wird. Besichtigung der Senzala (Sklavenunterkunft), die noch Merkmale der Sklavereizeit wie Verliese und den Pranger bewahrt.",
+   "funcionamento": "8–18 Uhr"
+  }
+ },
+ "sitio-nossas-raizes": {
+  "en": {
+   "descricao": "Agroecology, family farming and sustainable food production. Small-scale raising of cattle, chickens and ducks.",
+   "funcionamento": "8 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Agroécologie, agriculture familiale, production alimentaire durable. Petit élevage de bovins, de poules et de canards.",
+   "funcionamento": "De 8 h à 17 h"
+  },
+  "de": {
+   "descricao": "Agrarökologie, bäuerliche Familienlandwirtschaft und nachhaltige Lebensmittelproduktion. Kleine Haltung von Rindern, Hühnern und Enten.",
+   "funcionamento": "8–17 Uhr"
+  }
+ },
+ "chacara-villarinho": {
+  "en": {
+   "descricao": "Free-range chickens (egg production), ornamental plants, cacti, succulents, gardening, a home composting workshop, vegetable garden and earthworm humus production.",
+   "funcionamento": "8 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Élevage de poules fermières (production d'œufs), plantes ornementales, cactus, plantes grasses, jardinage, atelier de compostage domestique, potager et production d'humus de ver de terre.",
+   "funcionamento": "De 8 h à 17 h"
+  },
+  "de": {
+   "descricao": "Haltung von Freilandhühnern (Eierproduktion), Zierpflanzen, Kakteen, Sukkulenten, Gartenarbeit, Workshop zum Kompostieren zu Hause, Gemüsegarten und Herstellung von Wurmhumus.",
+   "funcionamento": "8–17 Uhr"
+  }
+ },
+ "sitio-do-beija-flor-da-dona-fia": {
+  "en": {
+   "descricao": "Homemade manioc products (tapioca starch, manioc starch and manioc flour) and organic farming.",
+   "funcionamento": "8 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Fabrication artisanale de produits à base de manioc (fécule de tapioca, fécule aigre et farine de manioc) et agriculture biologique.",
+   "funcionamento": "De 8 h à 17 h"
+  },
+  "de": {
+   "descricao": "Hausgemachte Maniokprodukte (Tapiokastärke, Maniokstärke und Maniokmehl) und ökologischer Landbau.",
+   "funcionamento": "8–17 Uhr"
+  }
+ },
+ "sede-campestre-da-aapvr": {
+  "en": {
+   "descricao": "Pay-to-fish pond, restaurant, eco-walks, pedal boats, swimming pools, football field and playground. Live music events on weekends. Inclusive tourism for seniors and people with disabilities. Time in nature in a family setting, with the option of weekend stays, picnic space rental, barbecue areas and countryside events.",
+   "funcionamento": "Tuesday to Friday, 8 am–4 pm; Saturday and Sunday, 8 am–6 pm"
+  },
+  "fr": {
+   "descricao": "Pêche en étang payante, restaurant, randonnées écologiques, pédalos, piscines, terrain de football, aire de jeux pour enfants. Événements musicaux le week-end. Tourisme inclusif pour les personnes âgées et handicapées. Vie au contact de la nature dans un cadre familial, avec possibilité de séjour le week-end, location d'espace pour pique-nique, barbecue et événements champêtres.",
+   "funcionamento": "Du mardi au vendredi, de 8 h à 16 h ; le samedi et le dimanche, de 8 h à 18 h"
+  },
+  "de": {
+   "descricao": "Angelteich (Pesque-pague), Restaurant, Öko-Wanderungen, Tretboote, Schwimmbecken, Fußballplatz und Spielplatz. An den Wochenenden gibt es Musikveranstaltungen. Inklusiver Tourismus für Senioren und Menschen mit Behinderung. Naturerlebnis in familiärer Atmosphäre mit der Möglichkeit zum Übernachten am Wochenende sowie zur Miete von Picknickflächen, Grillplätzen und für Veranstaltungen auf dem Land.",
+   "funcionamento": "Dienstag bis Freitag, 8–16 Uhr; Samstag und Sonntag, 8–18 Uhr"
+  }
+ },
+ "hotel-fazenda-sao-joao-de-pirai": {
+  "en": {
+   "descricao": "A vast rural area of more than 1 million square meters, made up of pastures, livestock, lakes, lots of greenery and fresh air, dairy and homemade sweets production, not to mention the indescribable views of sunrise and sunset. There is also a lake, ideal for sport fishing and water activities, offering unique experiences of genuine country life and an ideal setting for exercise, walking, running, cycling, horseback riding, off-road trails, mountain biking and any outdoor activity.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Une vaste zone rurale de plus d'un million de mètres carrés, composée de pâturages, d'élevages, de lacs, de beaucoup de verdure et d'air pur, avec une production de produits laitiers et de confiseries maison, sans oublier la vue indescriptible sur le lever et le coucher du soleil. Il y a aussi un lac, idéal pour la pêche sportive et les activités nautiques, qui offre des expériences uniques au contact de la vie à la campagne et un cadre idéal pour l'exercice physique, la marche, la course, le vélo, les balades à cheval, les sentiers tout-terrain, le VTT et toute activité de plein air.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Ein weitläufiges ländliches Gelände von mehr als 1 Million Quadratmetern mit Weiden, Viehhaltung, Seen, viel Grün und reiner Luft, mit Herstellung von Milchprodukten und hausgemachten Süßspeisen – und nicht zu vergessen der unbeschreibliche Blick auf Sonnenaufgang und Sonnenuntergang. Außerdem gibt es einen See, der sich ideal zum Sportangeln und für Wasseraktivitäten eignet und einzigartige Erlebnisse mit echtem Landleben bietet. Ein idealer Ort für Sport, Spaziergänge, Joggen, Radtouren, Ausritte, Offroad-Wege, Mountainbiking und jede andere Aktivität im Freien.",
+   "funcionamento": ""
+  }
+ },
+ "clube-de-pesca-pirai": {
+  "en": {
+   "descricao": "Founded in 1966 by amateur anglers and Light employees, the Piraí Fishing Club played a major role in environmental conservation at the Ribeirão das Lajes Reservoir and its surroundings. In partnership with Light, it ran fish restocking campaigns and has served as a support base for various Navy and Army activities.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Fondé en 1966 par des pêcheurs amateurs et des employés de Light, le Club de pêche de Piraí a joué un rôle majeur dans la préservation de l'environnement du réservoir de Ribeirão das Lajes et de ses alentours. Avec des actions menées en partenariat avec Light, il a organisé des campagnes de repeuplement en poissons et sert de base d'appui à diverses activités de la Marine et de l'Armée.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Der 1966 von Hobbyanglern und Mitarbeitern der Light gegründete Angelclub von Piraí spielte eine große Rolle für den Umweltschutz am Stausee Ribeirão das Lajes und in seiner Umgebung. In Zusammenarbeit mit Light führte er Kampagnen zum Wiederbesatz mit Fischen durch und dient als Stützpunkt für verschiedene Aktivitäten der Marine und des Heeres.",
+   "funcionamento": ""
+  }
+ },
+ "hotel-fazenda-st-robert": {
+  "en": {
+   "descricao": "Every proper countryside place has plenty of animals. At the Mini Farm, your children can get up close to our little animals and interact with them in a way that is nearly impossible in the country's big cities today. Visiting the Mini Farm is also a chance for your child to have some unique experiences. Children can milk the cows or feed the many rabbits of Coelhândia. The little ones will also get to interact with chickens, ducklings and much more. The Mini Farm is also home to some very distinguished residents, such as the Three Little Pigs and the buffaloes Bull and Bill. The two stars of the farm are the mascots Bob Panga and Lili the Little Cow, who are the kids' favorites. Another must-see stop on this tour, which pleases everyone from the youngest to the oldest, is the Boi Bandido (Outlaw Bull). There, the goal is to snap a photo of the fiercest animal on the farm.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Toute campagne qui se respecte compte de nombreux animaux. À la Mini Fazendinha, vos enfants pourront s'approcher de nos petites bêtes et interagir avec elles d'une façon devenue impossible dans les grandes villes du pays. Visiter la Mini Fazendinha est aussi l'occasion pour votre enfant de vivre des expériences uniques. Les enfants pourront traire les vaches ou nourrir les nombreux lapins de Coelhândia. Les plus petits auront aussi l'occasion de côtoyer des poules, des canetons et bien d'autres animaux. Enfin, la Mini Fazendinha compte d'autres pensionnaires très nobles, comme Les Trois Petits Cochons et les buffles Bull et Bill. Les deux stars de la ferme sont les mascottes Bob Panga et la petite vache Lili, les favorites des enfants. Autre étape incontournable de cette promenade, qui plaît des plus petits aux plus grands : le Boi Bandido (le Taureau Bandit). Le but y est de prendre une photo de l'animal le plus farouche de la ferme.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Jedes echte Landleben hat viele Tiere. Auf der Mini-Farm (Mini Fazendinha) können Ihre Kinder unseren Tierchen ganz nah kommen und mit ihnen auf eine Weise umgehen, die in den Großstädten des Landes heute kaum noch möglich ist. Der Besuch der Mini Fazendinha ist außerdem eine Gelegenheit für Ihr Kind, einzigartige Erfahrungen zu sammeln. Die Kinder dürfen die Kühe melken oder die vielen Kaninchen von Coelhândia füttern. Die Kleinen können auch mit Hühnern, Entenküken und vielem mehr in Kontakt kommen. Die Mini Fazendinha beherbergt außerdem weitere sehr noble Bewohner, wie Die Drei Schweinchen und die Büffel Bull und Bill. Die beiden Stars der Farm sind die Maskottchen Bob Panga und das Kühlein Lili, die Lieblinge der Kinder. Ein weiterer Pflichtstopp dieses Rundgangs, der Klein und Groß gefällt, ist der Boi Bandido (Bandit-Stier). Dort geht es darum, ein Foto vom wildesten Tier der Farm zu machen.",
+   "funcionamento": ""
+  }
+ },
+ "condominio-da-arte": {
+  "en": {
+   "descricao": "A place that showcases the work of local craftspeople. It is the perfect spot to get to know and buy products that express the culture of the town.",
+   "funcionamento": "Monday to Friday, 9 am–3 pm"
+  },
+  "fr": {
+   "descricao": "Un lieu qui met en valeur le travail des artisans locaux. C'est l'endroit idéal pour découvrir et acquérir des produits qui expriment la culture de la ville.",
+   "funcionamento": "Du lundi au vendredi, de 9 h à 15 h"
+  },
+  "de": {
+   "descricao": "Ein Ort, der die Arbeiten lokaler Kunsthandwerker zeigt. Hier lassen sich Produkte kennenlernen und erwerben, die die Kultur der Stadt widerspiegeln.",
+   "funcionamento": "Montag bis Freitag, 9–15 Uhr"
+  }
+ },
+ "tribeca": {
+  "en": {
+   "descricao": "Tribeca is a company working in the macadamia business at every stage of the production chain: seedling production, technical guidance for newcomers to the crop, technical support for partner growers, nut purchasing, nut processing, and the sale of kernels in domestic and foreign markets.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "La Tribeca est une entreprise active dans la filière de la noix de macadamia à toutes les étapes de la chaîne de production : production de plants, conseils techniques aux débutants dans cette culture, assistance technique aux producteurs partenaires, achat de noix, transformation des noix et commercialisation des amandes sur les marchés intérieur et extérieur.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Tribeca ist ein Unternehmen, das in allen Stufen der Wertschöpfungskette der Macadamia tätig ist: Anzucht von Setzlingen, fachliche Beratung für Einsteiger im Anbau, technische Betreuung der Partnererzeuger, Ankauf von Nüssen, Verarbeitung der Nüsse und Vermarktung der Kerne auf dem Inlands- und Auslandsmarkt.",
+   "funcionamento": ""
+  }
+ },
+ "hotel-fazenda-cascatinha": {
+  "en": {
+   "descricao": "Hotel Fazenda Cascatinha is set in a beautiful landscape surrounded by greenery and plenty of space, on a genuine, welcoming farm planned with comfortable facilities to host you and your family. An ideal place for those seeking hospitality, leisure, fun and relaxation, along with the peace and safety of a bucolic rural setting. A perfect place to take care of your mental health.",
+   "funcionamento": "Monday to Friday, 9 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Le Hotel Fazenda Cascatinha est situé dans un cadre magnifique, entouré de verdure et de beaucoup d'espace, dans une véritable ferme accueillante, conçue avec des infrastructures confortables pour vous recevoir, vous et votre famille. Un lieu idéal pour ceux qui recherchent hospitalité, loisirs, divertissement et détente, ainsi que la tranquillité et la sécurité qu'offre un cadre rural bucolique. Un endroit propice pour prendre soin de votre santé mentale.",
+   "funcionamento": "Du lundi au vendredi, de 9 h à 17 h"
+  },
+  "de": {
+   "descricao": "Das Hotel Fazenda Cascatinha liegt in einer wunderschönen Landschaft, umgeben von Grün und viel Platz, auf einer echten, einladenden Farm mit komfortabler Infrastruktur für Sie und Ihre Familie. Ein idealer Ort für alle, die Gastfreundschaft, Freizeit, Spaß und Entspannung suchen, dazu die Ruhe und Sicherheit einer idyllischen ländlichen Umgebung. Ein guter Ort, um etwas für die seelische Gesundheit zu tun.",
+   "funcionamento": "Montag bis Freitag, 9–17 Uhr"
+  }
+ },
+ "cachaca-artesanal-pirai": {
+  "en": {
+   "descricao": "A visit to the production of handcrafted aged cachaças, plus a chance to try the house's other well-known products, such as Gabriela Cravo e Canela cachaça, and others in flavors like banana, coconut, sweet corn and strawberry.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Visite de la production de cachaças vieillies de façon artisanale, avec la découverte d'autres produits célèbres de la maison, comme la cachaça Gabriela Cravo e Canela, et d'autres parfums comme la banane, la noix de coco, le maïs doux et la fraise.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Besichtigung der Herstellung handwerklich gereifter Cachaças und Kennenlernen weiterer bekannter Produkte des Hauses wie der Cachaça Gabriela Cravo e Canela sowie anderer Geschmacksrichtungen wie Banane, Kokosnuss, Zuckermais und Erdbeere.",
+   "funcionamento": ""
+  }
+ },
+ "hotel-fazenda-vale-de-santa-fe": {
+  "en": {
+   "descricao": "A 120 m² swimming pool in the middle of a lawn of more than 5,000 m², in a valley surrounded by Atlantic Forest with endless fruit trees and birds; a lake for rowing a boat alone or with someone you love; horseback riding on a Campolina horse over green hills, watching vast pastures with animals in complete harmony with nature; going to the corral to milk a Holstein cow; and hiking a trail while breathing the truly pure air of a preserved forest.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Une piscine de 120 m² au milieu d'une pelouse de plus de 5 000 m², dans une vallée entourée de Mata Atlântica, avec une infinité d'arbres fruitiers et d'oiseaux ; un lac pour ramer seul ou avec la personne de votre choix ; des balades à cheval sur un Campolina parmi les collines verdoyantes, en observant d'immenses pâturages où les animaux vivent en parfaite harmonie avec la nature ; la possibilité d'aller à l'enclos traire une vache holstein ; et de marcher sur un sentier en respirant l'air vraiment pur d'une forêt préservée.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Ein 120 m² großer Pool inmitten eines Rasens von mehr als 5.000 m² in einem von Atlantischem Regenwald (Mata Atlântica) umgebenen Tal mit unzähligen Obstbäumen und Vögeln; ein See zum Rudern, allein oder mit der liebsten Begleitung; Ausritte auf einem Campolina über grüne Hügel mit Blick auf riesige Weiden, auf denen Tiere in völligem Einklang mit der Natur leben; im Corral eine Holsteinkuh melken; und auf einem Pfad wandern und dabei die wirklich reine Luft eines geschützten Waldes atmen.",
+   "funcionamento": ""
+  }
+ },
+ "a-m-transportes-turisticos": {
+  "en": {
+   "descricao": "Tourist transportation.",
+   "funcionamento": "8 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Transport touristique.",
+   "funcionamento": "De 8 h à 17 h"
+  },
+  "de": {
+   "descricao": "Touristische Transportdienste.",
+   "funcionamento": "8–17 Uhr"
+  }
+ },
+ "guarana-quente": {
+  "en": {
+   "descricao": "Rural lodging and gastronomy in the Sertão da Prata, in Rio Claro.",
+   "funcionamento": "24 hours"
+  },
+  "fr": {
+   "descricao": "Hébergement et gastronomie rurale dans le Sertão da Prata, à Rio Claro.",
+   "funcionamento": "24 h/24"
+  },
+  "de": {
+   "descricao": "Ländliche Unterkunft und Gastronomie im Sertão da Prata in Rio Claro.",
+   "funcionamento": "24 Stunden"
+  }
+ },
+ "pousada-aguas-claras": {
+  "en": {
+   "descricao": "Caters to tourists and workers.",
+   "funcionamento": "7 am–10 pm"
+  },
+  "fr": {
+   "descricao": "Accueille des touristes et des travailleurs.",
+   "funcionamento": "De 7 h à 22 h"
+  },
+  "de": {
+   "descricao": "Für Touristen und Arbeiter.",
+   "funcionamento": "7–22 Uhr"
+  }
+ },
+ "sitio-dona-mila": {
+  "en": {
+   "descricao": "Contact with nature, learning about agroforestry, understanding sustainable concepts, natural poultry farming, and harvesting organic agroforestry products.",
+   "funcionamento": "Tuesday to Friday"
+  },
+  "fr": {
+   "descricao": "Contact avec la nature, découverte de l'agroforesterie, compréhension des concepts durables, aviculture naturelle, récolte de produits biologiques issus de l'agroforesterie.",
+   "funcionamento": "Du mardi au vendredi"
+  },
+  "de": {
+   "descricao": "Kontakt mit der Natur, Einblick in die Agroforstwirtschaft, Verständnis nachhaltiger Konzepte, natürliche Geflügelhaltung und Ernte biologischer Agroforstprodukte.",
+   "funcionamento": "Dienstag bis Freitag"
+  }
+ },
+ "parque-arqueologico-e-ambiental-de-sao-joao-marcos": {
+  "en": {
+   "descricao": "At the Park, visitors enjoy comfort and safety in an experience for all the senses: admire the landscapes of the Atlantic Forest and Ribeirão das Lajes, listen to birdsong and try, at the Kiosk, treats rescued from the recipe book of Dona Cidinha, a former resident. Admission is free, as are all activities. On the Visitor Circuit, the highlights are the ruins of the Mother Church and of the Captain-Major's House, a Memory Center with a scale model and exhibition, an amphitheater and a football field. There is also a bird observatory, a Creative Energy Room, an organic vegetable garden, a seedling nursery, a lookout point, the Fagundes Varela Reading Space, a sensory garden, and parking and restrooms with accessibility.",
+   "funcionamento": "Wednesday to Friday, 10 am–4 pm / Saturday and Sunday, 9 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Au Parc, les visiteurs profitent en toute sécurité et dans le confort d'une expérience pour tous les sens : admirer les paysages de la Mata Atlântica et de Ribeirão das Lajes, écouter le chant des oiseaux et goûter au kiosque des gourmandises tirées du livre de recettes de Dona Cidinha, ancienne habitante. L'entrée est gratuite, de même que toutes les activités. Sur le circuit de visite, les points forts sont les ruines de l'église mère et de la Casa do Capitão-mor, un centre de mémoire avec maquette et exposition, un amphithéâtre et un terrain de football. On y trouve aussi un observatoire d'oiseaux, la Salle d'Énergie Créative, un potager biologique, une pépinière, un belvédère, l'Espace de Lecture Fagundes Varela, un jardin sensoriel, un parking et des sanitaires accessibles.",
+   "funcionamento": "Du mercredi au vendredi, de 10 h à 16 h / samedi et dimanche, de 9 h à 17 h"
+  },
+  "de": {
+   "descricao": "Im Park genießen die Besucher Komfort und Sicherheit bei einem Erlebnis für alle Sinne: die Landschaften der Mata Atlântica und von Ribeirão das Lajes bewundern, dem Vogelgesang lauschen und am Kiosk Leckereien probieren, die aus dem Rezeptbuch von Dona Cidinha, einer ehemaligen Bewohnerin, wiederentdeckt wurden. Der Eintritt ist frei, ebenso alle Aktivitäten. Auf dem Besichtigungsrundgang sind die Ruinen der Hauptkirche und des Hauses des Capitão-mor, ein Gedächtniszentrum mit Modell und Ausstellung, ein Amphitheater und ein Fußballplatz die Höhepunkte. Außerdem gibt es eine Vogelbeobachtungsstation, den Raum der Kreativen Energie, einen Bio-Gemüsegarten, eine Baumschule, einen Aussichtspunkt, den Leseraum Fagundes Varela, einen Sinnesgarten sowie einen barrierefreien Parkplatz und barrierefreie Toiletten.",
+   "funcionamento": "Mittwoch bis Freitag, 10–16 Uhr / Samstag und Sonntag, 9–17 Uhr"
+  }
+ },
+ "cachaca-vidigal": {
+  "en": {
+   "descricao": "Tasting of aged cachaças.",
+   "funcionamento": "Wednesday to Sunday, 9 am–6 pm"
+  },
+  "fr": {
+   "descricao": "Dégustation de cachaças vieillies.",
+   "funcionamento": "Du mercredi au dimanche, de 9 h à 18 h"
+  },
+  "de": {
+   "descricao": "Verkostung gereifter Cachaças.",
+   "funcionamento": "Mittwoch bis Sonntag, 9–18 Uhr"
+  }
+ },
+ "rppn-alvorada-do-itavera": {
+  "en": {
+   "descricao": "With 4.5 km of well-kept trails inside the forest and scenic attractions such as a cave, a waterfall and sweeping views, visitors step into the forest, hear the trilling of birds and feel the fresh air in a setting free of crowds, letting them disconnect from the city and the problems of everyday life and recharge their energy for a new journey.",
+   "funcionamento": "9 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Avec 4,5 km de sentiers bien entretenus au cœur de la forêt et des sites pittoresques comme une grotte, une cascade et de beaux paysages, le visiteur qui entre dans la forêt, écoute le gazouillis des oiseaux et respire l'air frais dans un cadre sans foule parvient à se déconnecter de l'univers urbain et des soucis du quotidien, et retrouve son énergie pour un nouveau départ.",
+   "funcionamento": "De 9 h à 17 h"
+  },
+  "de": {
+   "descricao": "Auf 4,5 km gepflegten Wanderwegen im Wald mit landschaftlichen Attraktionen wie einer Grotte, einem Wasserfall und schönen Ausblicken betritt der Besucher den Wald, hört das Trillern der Vögel und spürt die frische Luft in einer Umgebung ohne Menschenmassen. So kann er sich von der Stadt und den Alltagssorgen lösen und neue Kraft für die nächste Etappe tanken.",
+   "funcionamento": "9–17 Uhr"
+  }
+ },
+ "sertao-do-sinfronio": {
+  "en": {
+   "descricao": "Eco-tour, lunch, breakfast, storytelling, waterfall and trail.",
+   "funcionamento": "During the day"
+  },
+  "fr": {
+   "descricao": "Excursion écologique, déjeuner, petit-déjeuner, contes, cascade et sentier.",
+   "funcionamento": "Pendant la journée"
+  },
+  "de": {
+   "descricao": "Öko-Ausflug, Mittagessen, Frühstück, Geschichtenerzählen, Wasserfall und Wanderweg.",
+   "funcionamento": "Tagsüber"
+  }
+ },
+ "footprints-logistics-services": {
+  "en": {
+   "descricao": "Operates as a local tour operator selling travel packages focused on ecotourism in Atlantic Forest areas and on the region's wealth of water (rivers, streams and waterfalls), with 4x4 and bike tours or visits to historic sites such as Fazenda da Grama, mountaineering, and lodging in country houses, small farms and inns. It also offers guided visits to dairies and agricultural production farms in the municipality.",
+   "funcionamento": "Monday to Friday, 8 am–5:30 pm"
+  },
+  "fr": {
+   "descricao": "Agit comme agence réceptive locale et vend des forfaits touristiques axés sur l'écotourisme dans les zones de Mata Atlântica, sur la richesse en eau (rivières, ruisseaux et cascades), des excursions en 4x4 ou à vélo ou des visites de sites historiques comme la Fazenda da Grama, de l'alpinisme et de l'hébergement dans des chácaras, sítios et pousadas. Propose également des visites guidées de laiteries et d'exploitations agricoles de la commune.",
+   "funcionamento": "Du lundi au vendredi, de 8 h à 17 h 30"
+  },
+  "de": {
+   "descricao": "Fungiert als lokaler Reiseveranstalter und verkauft Pauschalreisen mit Schwerpunkt Ökotourismus in Gebieten der Mata Atlântica, den Wasserreichtum der Region (Flüsse, Bäche und Wasserfälle), Touren im Geländewagen (4x4) oder mit dem Fahrrad oder zu historischen Stätten wie der Fazenda da Grama, Bergsteigen sowie Unterkünfte in Landhäusern (chácaras), kleinen Höfen (sítios) und Pousadas. Bietet außerdem geführte Besuche in Molkereien und landwirtschaftlichen Betrieben der Gemeinde an.",
+   "funcionamento": "Montag bis Freitag, 8–17.30 Uhr"
+  }
+ },
+ "pousada-rural-sitio-beija-flor": {
+  "en": {
+   "descricao": "We are a family-run rural inn offering the experience of country life: contact with nature and animals, and harvesting produce for your own meal.",
+   "funcionamento": "Monday to Friday"
+  },
+  "fr": {
+   "descricao": "Nous sommes une pousada rurale familiale : vivez l'expérience de la vie à la campagne, au contact de la nature et des animaux, et récoltez les produits de votre propre repas.",
+   "funcionamento": "Du lundi au vendredi"
+  },
+  "de": {
+   "descricao": "Wir sind eine familiengeführte ländliche Pousada: Erleben Sie das Leben auf dem Land, den Kontakt mit Natur und Tieren und die Ernte der Zutaten für Ihre eigene Mahlzeit.",
+   "funcionamento": "Montag bis Freitag"
+  }
+ },
+ "queijaria-hortela": {
+  "en": {
+   "descricao": "All products are made from buffalo milk and produced by hand, with state certification.",
+   "funcionamento": "By arrangement with the owner."
+  },
+  "fr": {
+   "descricao": "Tous les produits sont dérivés du lait de bufflonne et fabriqués de façon artisanale, avec certification de l'État.",
+   "funcionamento": "Sur rendez-vous avec le propriétaire."
+  },
+  "de": {
+   "descricao": "Alle Produkte werden aus Büffelmilch handwerklich hergestellt und sind staatlich zertifiziert.",
+   "funcionamento": "Nach Absprache mit dem Eigentümer."
+  }
+ },
+ "sitio-do-sossego": {
+  "en": {
+   "descricao": "Meditation spots, essential oils, handmade liqueurs, bamboo lamps, a laundry room, a lookout point and hammock area.",
+   "funcionamento": "Saturday and Sunday, 8–10 am"
+  },
+  "fr": {
+   "descricao": "Espaces de méditation, huiles essentielles, liqueurs artisanales, luminaires en bambou, lavoir, belvédère et coin hamacs.",
+   "funcionamento": "Samedi et dimanche, de 8 h à 10 h"
+  },
+  "de": {
+   "descricao": "Meditationsplätze, ätherische Öle, handgemachte Liköre, Bambuslampen, Waschplatz, Aussichtspunkt und Hängemattenbereich.",
+   "funcionamento": "Samstag und Sonntag, 8–10 Uhr"
+  }
+ },
+ "fazenda-uniao": {
+  "en": {
+   "descricao": "More than one hundred and forty hectares of nature form a unique valley full of history. Incredible landscapes can be enjoyed while breathing in the scent of the flowers growing in the property's gardens, leaving visitors with renewed energy. Horseback or quad bike rides, milking the mini cow, riding on the sandy bay, taking a photo with the friendly and photogenic little sheep or with the peacocks Custódio and Bernardino, not forgetting the mascot, the little donkey Ana-Bella, and also feeding the chickens and fishing in the lake. For those who simply like to enjoy nature, there is birdsong to admire, a walk along the farm's trails, or even a little nap in the hammock area.",
+   "funcionamento": "8–10 am"
+  },
+  "fr": {
+   "descricao": "Plus de cent quarante hectares de nature forment une vallée unique, riche d'histoire. On y admire des paysages incroyables en respirant le parfum des fleurs qui poussent dans les jardins de la propriété, ce qui procure aux visiteurs un regain d'énergie. Balades à cheval ou en quad, traite de la mini-vache, promenade à cheval dans la baie de sable, photo avec les sympathiques et photogéniques petits moutons ou avec les paons Custódio et Bernardino, sans oublier la mascotte, la petite ânesse Ana-Bella, ainsi que nourrir les poules et pêcher dans le lac. Pour ceux qui aiment simplement profiter de la nature, il y a le chant des oiseaux à admirer, une promenade sur les sentiers de la ferme, voire une petite sieste dans les hamacs.",
+   "funcionamento": "De 8 h à 10 h"
+  },
+  "de": {
+   "descricao": "Mehr als hundertvierzig Hektar Natur bilden ein einzigartiges, geschichtsträchtiges Tal. Atemberaubende Landschaften lassen sich genießen, während man den Duft der Blumen in den Gärten des Anwesens einatmet, was den Besuchern neue Energie schenkt. Ausritte oder Quad-Touren, die Mini-Kuh melken, Reiten in der Sandbucht, ein Foto mit den freundlichen und fotogenen Schäfchen oder mit den Pfauen Custódio und Bernardino, nicht zu vergessen das Maskottchen, die kleine Eselin Ana-Bella, außerdem die Hühner füttern und im See angeln. Wer einfach nur die Natur genießen möchte, kann dem Vogelgesang lauschen, auf den Wegen der Farm spazieren gehen oder sogar ein Nickerchen in den Hängematten halten.",
+   "funcionamento": "8–10 Uhr"
+  }
+ },
+ "artesanato-florart": {
+  "en": {
+   "descricao": "Located in the beautiful former railway station building, visitors can learn a bit about the region's history, told by the craftspeople themselves, and buy local crafts.",
+   "funcionamento": "9:30 am–5:30 pm"
+  },
+  "fr": {
+   "descricao": "Installé dans le beau bâtiment de l'ancienne gare ferroviaire, le visiteur peut découvrir un peu de l'histoire de la région, racontée par les artisans, et acquérir de l'artisanat local.",
+   "funcionamento": "De 9 h 30 à 17 h 30"
+  },
+  "de": {
+   "descricao": "Im schönen Gebäude des ehemaligen Bahnhofs können Besucher von den Kunsthandwerkern etwas über die Geschichte der Region erfahren und lokales Kunsthandwerk erwerben.",
+   "funcionamento": "9.30–17.30 Uhr"
+  }
+ },
+ "alambique-vieira-e-castro": {
+  "en": {
+   "descricao": "During the visit to this family-run artisanal cachaça producer, visitors learn about the production process, which meets standards of cleanliness and organization and uses state-of-the-art equipment while preserving the traditional, handcrafted way of making it.",
+   "funcionamento": "8–10 am"
+  },
+  "fr": {
+   "descricao": "Lors de la visite de cette entreprise familiale de production de cachaça artisanale, le visiteur découvre le processus de fabrication, qui respecte des normes de propreté et d'organisation et utilise des équipements de dernière génération, tout en préservant le mode de fabrication artisanal.",
+   "funcionamento": "De 8 h à 10 h"
+  },
+  "de": {
+   "descricao": "Beim Besuch dieses Familienbetriebs, der handwerkliche Cachaça herstellt, lernt der Besucher den Produktionsprozess kennen, der hohen Standards an Sauberkeit und Organisation entspricht und modernste Ausrüstung nutzt, dabei aber die handwerkliche Herstellungsweise bewahrt.",
+   "funcionamento": "8–10 Uhr"
+  }
+ },
+ "expresso-das-artes": {
+  "en": {
+   "descricao": "Sale of local crafts.",
+   "funcionamento": "8 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Vente d'artisanat local.",
+   "funcionamento": "De 8 h à 17 h"
+  },
+  "de": {
+   "descricao": "Verkauf von lokalem Kunsthandwerk.",
+   "funcionamento": "8–17 Uhr"
+  }
+ },
+ "cachaca-werneck": {
+  "en": {
+   "descricao": "A craft cachaça with quality standards equivalent to those used in producing the world's finest spirits, made by the couple Cilene and Eli Werneck. Visitors can see every stage of the process in detail, as Eli keeps spreadsheets for every stage of production, with full traceability. By looking at a bottle's batch label, it is possible to tell which area of the sugarcane field the cane came from and on which day or period it was cut and milled. As a result, it became the first producer in the state of Rio de Janeiro to receive the INMETRO Quality and Sustainability Certification.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Une cachaça artisanale dont les normes de qualité équivalent à celles des meilleurs spiritueux du monde, produite par le couple Cilene et Eli Werneck. Le visiteur peut découvrir en détail chaque étape du processus, car Eli tient des tableaux de suivi pour toutes les phases de la production, avec une traçabilité totale. En regardant l'étiquette de lot d'une bouteille, on peut dire de quelle parcelle de la plantation provient la canne et à quelle date ou période elle a été coupée et broyée. Résultat : il est devenu le premier producteur de l'État de Rio de Janeiro à recevoir la certification INMETRO de Qualité et de Durabilité.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Eine handwerklich hergestellte Cachaça mit Qualitätsstandards, die denen der besten Destillate der Welt entsprechen, produziert vom Ehepaar Cilene und Eli Werneck. Besucher können jede Phase des Prozesses im Detail kennenlernen, denn Eli führt Tabellen für alle Produktionsschritte mit lückenloser Rückverfolgbarkeit. Anhand des Chargenetiketts einer Flasche lässt sich feststellen, aus welchem Bereich des Zuckerrohrfelds das Rohr stammt und an welchem Tag oder in welchem Zeitraum es geschnitten und gemahlen wurde. Dadurch war er der erste Erzeuger im Bundesstaat Rio de Janeiro, der die INMETRO-Zertifizierung für Qualität und Nachhaltigkeit erhielt.",
+   "funcionamento": ""
+  }
+ },
+ "mini-mundo-rf": {
+  "en": {
+   "descricao": "A space for families, where tourists can go horseback riding, play football and meet the mini animals.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Un espace destiné aux familles, où les touristes peuvent faire des balades à cheval, jouer au football et découvrir les mini-animaux.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Ein Raum für Familien, in dem Touristen reiten, Fußball spielen und die Miniaturtiere kennenlernen können.",
+   "funcionamento": ""
+  }
+ }
+}

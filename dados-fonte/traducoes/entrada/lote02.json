@@ -1,0 +1,242 @@
+[
+ {
+  "codigo": "cachaca-dona-vania",
+  "descricao": "Uma breve apresentação sobre o processo de fabricação da cachaça, visitando os setores de produção e armazenamento do produto. Ao final do processo, uma degustação das cachaças.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "coisas-da-roca",
+  "descricao": "Degustação de Produtos locais",
+  "funcionamento": "07h às 18h"
+ },
+ {
+  "codigo": "fazenda-verde-essencia",
+  "descricao": "Visitação Mini Fazenda, Horta Orgânica, Experiências Holísticas",
+  "funcionamento": "07h às 18h"
+ },
+ {
+  "codigo": "fabrica-de-orquideas",
+  "descricao": "Contemplação da vista de parte da cidade no mirante, além do pôr do sol ser sempre lindo nesse mirante.",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "lago-do-palmares",
+  "descricao": "Um lugar tranquilo, para passar admirando a natureza, fazer uma caminhada, andar de bicicleta ou fazer uma cavalgada, um piquenique em família.",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "doces-caseiros-da-vovo-maria",
+  "descricao": "Degustação de doces feitos no tacho e no fogão a lenha.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "horto-municipal",
+  "descricao": "No Horto municipal você entra em contato com a natureza através do próprio jardim, conhecendo as práticas usadas para replantio e preservação da natureza, conhece as diferentes árvores nativas que são cultivadas no horto.",
+  "funcionamento": "SEG à SEX - 08h às 16h"
+ },
+ {
+  "codigo": "orquidario-boa-vista",
+  "descricao": "Vivência nas estufas, desde o plantio, cultivo, lago de carpas, contemplação da natureza e do pôr do sol , almoço e lanche servidos com produtos orgânicos(sob agendamento).",
+  "funcionamento": "09h às 17h"
+ },
+ {
+  "codigo": "apiario-do-cico",
+  "descricao": "Degustação de diferentes floradas de mel e apresentação de como é feita a retirada de mel.",
+  "funcionamento": "Seg a Dom 09h às 16h"
+ },
+ {
+  "codigo": "bistro-e-cogos-boutique",
+  "descricao": "Culinária local e gastronomia.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "rancho-quindins",
+  "descricao": "Os visitantes podem interagir com diversos animais e ter uma verdadeira experiência rural, como andar a cavalo ou pônei, tirar leite da vaca, plantar e colher verduras na horta, pescar e ainda se deliciar em um ótimo restaurante.",
+  "funcionamento": "SEX 10h às 18h - SAB e DOM das 10h às 23h"
+ },
+ {
+  "codigo": "seal-hortifruti",
+  "descricao": "Conhecer a produção dos produtos e a história do cultivo protegido em estufas.",
+  "funcionamento": "Seg a Sex - 09h às 15h - SAB 09h às 12h"
+ },
+ {
+  "codigo": "museu-da-cachaca",
+  "descricao": "Museu da Cachaça é o primeiro no gênero no país. Seus idealizadores, Íris e Iale Renan (hoje falecido), inauguraram o Museu em 1991 e foram necessários anos de pesquisas em bibliotecas e colecionando algumas centenas de garrafas compradas em todos os cantos do Brasil, para montar este acervo vasto e peculiar, que é apresentado aos seus visitantes junto com quadros, coleções de crônicas e artigos, livros especializados, trovas populares, um antigo mini alambique, dentre muitos outras atrações, que compõem a importante história da cachaça. No Museu da Cachaça também estão instaladas uma indústria artesanal de aguardente, duas adegas e um bar para degustação gratuita.",
+  "funcionamento": "Ter e Sex 09h às 18h Sab 09h às 19h a Dom 09h às 17h"
+ },
+ {
+  "codigo": "sabores-do-nando",
+  "descricao": "Restaurante de a la carte com comida brasileira e regional e empório com produtos locais.",
+  "funcionamento": "Seg e Ter 09h às 15h Qua e Qui 09h às 15h e 18h às 23h - Sex a Dom 09h às 23h"
+ },
+ {
+  "codigo": "ruinas-do-casarao",
+  "descricao": "Visitação identificando onde funcionou a Fazenda São José dos Pinheiros, propriedade de 1851, um marco do Ciclo do Café no Vale do Paraíba.",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "loja-da-estacao",
+  "descricao": "Espaço Cultural onde é instalada a loja do artesão da cidade, como produtos variados para venda a comunidade e visitantes.",
+  "funcionamento": "09h às 17h"
+ },
+ {
+  "codigo": "creasf-casa-do-jongo",
+  "descricao": "Ponto de Cultura desenvolvendo atividades em escolas, recebendo visitantes e articulando outros grupos de cultura popular da região",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "fazenda-confianca",
+  "descricao": "Uma visita ao passado do período colonial, com acesso às instalações do casarão que irá completar 200 anos de construção. Visita a senzala que ainda preserva a característica do período da escravidão como calabouços e tronco.",
+  "funcionamento": "08h às 18h"
+ },
+ {
+  "codigo": "sitio-nossas-raizes",
+  "descricao": "Agroecologia, agricultura familiar, produção sustentável de alimentos. Pequena criação de gado, galinha e patos.",
+  "funcionamento": "08h às 17h"
+ },
+ {
+  "codigo": "chacara-villarinho",
+  "descricao": "Criação de galinhas caipiras (produção de ovos), plantas ornamentais, cactos, suculentas, jardinagem, oficina de compostagem caseira, horta, produção de húmus de minhoca.",
+  "funcionamento": "08h às 17h"
+ },
+ {
+  "codigo": "sitio-do-beija-flor-da-dona-fia",
+  "descricao": "Fabricação caseira de produtos da mandioca (goma de tapioca, polvilho e farinha), agricultura orgânica.",
+  "funcionamento": "08h às 17h"
+ },
+ {
+  "codigo": "sede-campestre-da-aapvr",
+  "descricao": "Pesque-pague, Restaurante, Caminhadas Ecológicas, Pedalinhos, Piscinas,  Campo de Futebol, Parque Infantil. Aos finais de semana tem eventos musicais. Turismo inclusivo para idosos e deficientes. Convivência com a natureza em ambiente familiar com possibilidade de estadia aos finais de semana, aluguel de espaço para picnic, churrasqueira e eventos campestres.",
+  "funcionamento": "Ter a Sex de 08h às 16h - Sáb e Dom de 08h às 18h"
+ },
+ {
+  "codigo": "hotel-fazenda-sao-joao-de-pirai",
+  "descricao": "Possui uma vasta área rural com mais de 1 milhão de metros quadrados. Composta por pastos, criação de animais, lagos, muito verde e ar puro, produção de laticínios e doces caseiros, sem falar do visual indescritível do nascer e do pôr do sol. Há também um lago, que é ideal para pesca esportiva e atividades aquáticas, criando experiências únicas com verdadeiro contato da vida no campo e assim um ambiente ideal para exercícios, caminhadas, corridas, passeios de bicicletas, cavalgadas, trilhas off-road, mountain bike e qualquer atividade ao ar livre.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "clube-de-pesca-pirai",
+  "descricao": "Criado em 1966 por pescadores amadores e funcionários da Light, o Clube de Pesca de Piraí teve grande importância para a preservação ambiental na Represa de Ribeirão das Lajes e seu entorno. Com ações em parceria com a Light realizou campanhas de repeixamento e tem servido de base de apoio para diversas atividades da Marinha e do Exército.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "hotel-fazenda-st-robert",
+  "descricao": "Toda roça que se preze tem muitos animais. Na Mini Fazendinha seus filhos vão poder ficar bem perto do nossos bichinhos e interagir com eles de um jeito impossível de se fazer hoje em dia nas grandes cidades do país. Conhecer a Mini Fazendinha também é um momento para permitir que seu filho tenha algumas experiências únicas. As crianças poderão ordenhar as vaquinhas ou alimentar os muitos coelhos da Coelhândia. Os pequenos também terão a oportunidade de interagir com galinhas, patinhos e muito mais. Por fim, a Mini Fazendinha também conta com outros moradores muito nobres, como Os Três Porquinhos e os búfalos Bull e Bill.  As duas estrelas da fazenda são os mascotes Bob Panga e a Vaquinha Lili. Eles são os favoritos da criançada. Outra parada obrigatória desse passeio, que agrada desde os pequenos até os mais velhos, é acerca do Boi Bandido. Ali, o objetivo é bater uma foto do bicho mais invocado da fazendinha.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "condominio-da-arte",
+  "descricao": "Local que evidencia a obra de artesãos locais. É o local perfeito para se conhecer e adquirir produtos que manifestam a cultura da cidade.",
+  "funcionamento": "Seg à Sex - 09h às 15h"
+ },
+ {
+  "codigo": "tribeca",
+  "descricao": "A Tribeca é uma empresa que atua no negócio da macadâmia em todas as etapas da cadeia produtiva: produção de mudas, orientação técnica aos iniciantes na cultura, assistência técnica aos produtores parceiros, compra de nozes, beneficiamento de nozes e comercialização de amêndoas nos mercados interno e externo.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "hotel-fazenda-cascatinha",
+  "descricao": "O Hotel Fazenda Cascatinha situa-se em um belíssimo cenário cercado de verde e muito espaço, numa verdadeira e acolhedora fazenda planejada com confortável infraestrutura para receber você e sua família. Ambiente ideal para quem procura hospitalidade, lazer, diversão e relaxamento; além da tranquilidade e segurança que um bucólico ambiente rural proporciona. Local propício para você colocar sua saúde mental em dia.",
+  "funcionamento": "Segunda à Sexta - 09h às 17h"
+ },
+ {
+  "codigo": "cachaca-artesanal-pirai",
+  "descricao": "Visitação à produção de cachaças envelhecidas artesanalmente, além de conhecer outros famosos produtos da casa, como a cachaça Gabriela Cravo e Canela, e ainda de outros sabores, como banana, coco, milho verde e morango.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "hotel-fazenda-vale-de-santa-fe",
+  "descricao": "Piscina de 120 m2 no centro de um gramado com mais de 5.000 m2 num Vale cercado de Mata Atlântica com um sem fim de árvores frutíferas e pássaros; lago para remar em um bote só ou com quem você mais gostar; cavalgar em um campolina em montes verdes, podendo observar imensos pastos com animais em total harmonia com a natureza; poder ir ao curral tirar leite de uma vaca holandesa ; caminhar numa trilha e poder respirar o verdadeiro ar puro de uma mata preservada.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "a-m-transportes-turisticos",
+  "descricao": "Transporte turístico",
+  "funcionamento": "08h às 17h"
+ },
+ {
+  "codigo": "guarana-quente",
+  "descricao": "Hospedagem e gastronomia rural, no Sertão da Prata, em Rio Claro.",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "pousada-aguas-claras",
+  "descricao": "rabalho com turistas e trabalhadores.",
+  "funcionamento": "07h às 22h"
+ },
+ {
+  "codigo": "sitio-dona-mila",
+  "descricao": "Contato com a natureza, conhecimento da agrofloresta, entendimento de conceitos sustentáveis, avicultura natural, colheita de produtos orgânicos agroflorestais.",
+  "funcionamento": "Ter a Sex"
+ },
+ {
+  "codigo": "parque-arqueologico-e-ambiental-de-sao-joao-marcos",
+  "descricao": "No Parque, os visitantes têm conforto e segurança para desfrutar de uma experiência para todos os sentidos: admirar as paisagens da Mata Atlântica e de Ribeirão das Lajes, ouvir o canto dos pássaros e experimentar no Quiosque quitutes resgatados do livro de receitas da Dona Cidinha, ex-moradora. A admissão é gratuita, assim como todas as atividades. No Circuito de Visitação, o destaque são as ruínas da Igreja Matriz e da Casa do Capitão-mor, Centro de Memória com maquete e exposição, anfiteatro e campo de futebol. Há ainda o observatório de pássaros, Sala de Energia Criativa, horta orgânica, viveiro de mudas, mirante, Espaço de Leitura Fagundes Varela, jardim sensorial, estacionamento e banheiro com acessibilidade.",
+  "funcionamento": "Qua a Sex 10h às 16h / Sáb a Dom 9h às 17h"
+ },
+ {
+  "codigo": "cachaca-vidigal",
+  "descricao": "Degustação de cachaças envelhecidas.",
+  "funcionamento": "Qua a Dom - 9h às 18h"
+ },
+ {
+  "codigo": "rppn-alvorada-do-itavera",
+  "descricao": "Com 4,5 km de trilhas conservadas, dentro da floresta, com atrativos cênicos, como gruta, cachoeira e paisagens, o visitante ao adentrar na floresta, ouvir o trinado dos pássaros sentir o ar fresco em um ambiente sem aglomerações, consegue se desligar do ambiente citadino e problemas do dia a dia, recuperando suas energias para uma nova jornada.",
+  "funcionamento": "09h às 17h"
+ },
+ {
+  "codigo": "sertao-do-sinfronio",
+  "descricao": "Passeio ecológico, almoço, café da manhã, contação de história, cachoeira, trilha.",
+  "funcionamento": "Durante o dia"
+ },
+ {
+  "codigo": "footprints-logistics-services",
+  "descricao": "Atua como receptivo local com vendas de pacotes turísticos tendo como foco o turismo ecológico, em áreas de mata Atlântica, a riqueza hídrica (rios, córregos e cachoeiras), passeios em veículo 4x4, pedal ou passeios por locais históricos como Fazenda da Grama, montanhismo e hospedagem em chácaras, sítios e pousadas. Oferece também visitas guiadas aos laticínios e sítios de produção agrícola no município.",
+  "funcionamento": "Seg a Sex de 08h às 17:30"
+ },
+ {
+  "codigo": "pousada-rural-sitio-beija-flor",
+  "descricao": "Somos uma pousada rural familiar, a experiência da vivência na roça, o contato com a natureza, com os animais, a colheita do produto para sua própria refeição.",
+  "funcionamento": "Seg a Sex"
+ },
+ {
+  "codigo": "queijaria-hortela",
+  "descricao": "Todos os produtos são derivados do leite de búfala e produzidos artesanalmente, com certificação estadual.",
+  "funcionamento": "À combinar com o proprietário."
+ },
+ {
+  "codigo": "sitio-do-sossego",
+  "descricao": "Pontos de meditação, Óleos essenciais, licores artesanais, luminárias de bambu, lavandário, mirante e redário",
+  "funcionamento": "SAB E DOM - das 8h às 10h"
+ },
+ {
+  "codigo": "fazenda-uniao",
+  "descricao": "São mais de cento e quarenta hectares de natureza onde se forma um vale único repleto de história. Paisagens incríveis podem ser apreciadas enquanto respira-se o perfume das flores que crescem nos jardins da propriedade levando os visitantes a uma renovação de energia. Passeios a cavalo ou de quadriciclo, ordenha na mini-vaca, cavalgada na baia de areia, tirar uma fotografia com as simpáticas e fotogênicas ovelhinhas, ou com os pavões Custódio e Bernardino, sem esquecer da mascote, a jumentinha Ana-Bella, e ainda alimentar as galinhas e pescar no lago. Aos que apenas gostam de curtir a natureza, admirar os cantos dos pássaros, fazer uma caminhada pelas trilhas da fazenda ou até um cochilinho nos redários.",
+  "funcionamento": "08h às 10h"
+ },
+ {
+  "codigo": "artesanato-florart",
+  "descricao": "Localizado no belo prédio da antiga estação ferroviária, o visitante pode conhecer um pouco da história da região, contada pelos artesãos, e ainda adquirir artesanato local.",
+  "funcionamento": "09h30min às 17h30min"
+ },
+ {
+  "codigo": "alambique-vieira-e-castro",
+  "descricao": "Durante a visita a essa empresa familiar de produção de cachaça artesanal, o visitante conhece o processo produtivo, que possui padrões de limpeza, organização e equipamentos de última geração, porém preservando a forma artesanal de fabricação.",
+  "funcionamento": "08h às 10h"
+ },
+ {
+  "codigo": "expresso-das-artes",
+  "descricao": "Venda de artesanato local.",
+  "funcionamento": "08h às 17h"
+ },
+ {
+  "codigo": "cachaca-werneck",
+  "descricao": "Uma cachaça artesanal com padrões de qualidade equivalentes aos utilizados na produção dos melhores destilados do mundo, produzida pelo casal Cilene e Eli Werneck. O visitante pode conhecer detalhadamente cada fase do processo, pois Eli possui planilhas para todas as fases do processo de produção, com rastreabilidade total. Olhando uma garrafa, pela etiqueta de lote, é possível dizer de que área do canavial saiu a cana e em que dia ou período ela foi cortada e moída.  Isso trouxe como consequência ser o primeiro produtor do estado do Rio de Janeiro a receber a Certificação INMETRO de Qualidade e Sustentabilidade.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "mini-mundo-rf",
+  "descricao": "Espaço destinado a família, onde os turistas podem fazer passeios a cavalo, jogar futebol, conhecer os mini animais.",
+  "funcionamento": ""
+ }
+]

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; media-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="author" content="João Fanara">
 <meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rio Rural · Turismo Rural RJ · Telão</title>
@@ -17,7 +18,7 @@
 <div id="rotulos" aria-hidden="true"></div>
 
 <header id="titulo" class="hud">
-  <div class="olho">Protótipo · Turismo Rural RJ</div>
+  <div class="olho">Turismo Rural RJ</div>
   <h1><span class="rio">Rio</span> <span class="rural">Rural</span></h1>
   <p class="lema"><svg class="pico" viewBox="0 0 70 15" aria-hidden="true"><path d="M1 13 L14 4 L22 9 L35 1.5 L46 9 L53 5.5 L69 13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Sabores, histórias e caminhos</p>
   <p id="subtitulo"></p>
@@ -45,10 +46,6 @@
     <ul class="c-grupos" id="c-grupos"></ul>
     <p class="c-semtipo" id="c-semtipo" hidden></p>
   </div>
-  <div class="olho c-secao" id="c-cob-titulo"></div>
-  <div class="c-barra" id="c-barra"></div>
-  <ul class="c-cob" id="c-cob"></ul>
-  <p class="c-ressalva" id="c-ressalva"></p>
 </aside>
 
 
@@ -77,7 +74,7 @@
   <p id="f-descricao"></p>
 </section>
 
-<div id="convite" class="hud" hidden>Toque num município · arraste para mover · gire e incline com dois dedos</div>
+<div id="convite" class="hud" hidden>Toque num município para explorar · arraste para mover · gire e incline com dois dedos</div>
 
 <div id="controles">
   <button id="pausa" type="button" aria-pressed="false" title="Também pela barra de espaço">Pausar passeio</button>
@@ -85,13 +82,13 @@
 </div>
 
 <footer id="rodape" class="hud">
-  <p id="r-base">PROTÓTIPO · dados extraídos dos 12 guias Turismo Rural RJ (TurisRio/Setur-RJ) · corte 15/10/2026 · pontos pelo QR "Ver mapa" dos guias e, alguns, pelo endereço (OpenStreetMap) · fontes completas em ⓘ</p>
+  <p id="r-base">Informações dos guias Turismo Rural RJ (TurisRio / Setur-RJ). Confirme horários e agendamento com cada lugar antes de ir.</p>
   <button id="tela-cheia" type="button" hidden aria-label="Tela cheia" title="Tela cheia (tecla F)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-  <button id="info" type="button" aria-expanded="false" aria-controls="fontes">ⓘ Info</button>
+  <button id="info" type="button" aria-expanded="false" aria-controls="fontes">ⓘ Sobre o mapa</button>
 </footer>
 
-<section id="fontes" class="hud painel" hidden aria-label="Fontes dos dados">
-  <div class="olho">Fontes dos dados</div>
+<section id="fontes" class="hud painel" hidden aria-label="Sobre o mapa">
+  <div class="olho">Sobre o mapa · fontes dos dados</div>
   <dl id="f-lista"></dl>
   <button id="fechar" type="button">Fechar</button>
 </section>

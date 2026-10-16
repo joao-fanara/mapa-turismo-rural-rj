@@ -1,0 +1,242 @@
+[
+ {
+  "codigo": "hidroportoes-1",
+  "descricao": "Plantio e colheita de alimentos.",
+  "funcionamento": "Das 9h às 16h."
+ },
+ {
+  "codigo": "solar-fazenda-do-cedro",
+  "descricao": "Hotel Fazenda, mini fazenda, recreação, ciclovia, gastronomia, trilha e cavalgada.",
+  "funcionamento": "24 horas."
+ },
+ {
+  "codigo": "agrovila-terra-de-guaxo",
+  "descricao": "Interação com plantios agroecológicos e comida orgânica produzida no local.",
+  "funcionamento": "Das 7h às 18h."
+ },
+ {
+  "codigo": "casa-do-tapete",
+  "descricao": "Tecelagem. Trabalho artesanal. Os visitantes podem manusear as máquinas e criar seu próprio tapete.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "fazenda-paraiso",
+  "descricao": "Fazenda Centenária, gastronomia, destilaria de gin, cavalgadas, trilhas, cachoeira, festivais de músicas, convenções e eventos privados.",
+  "funcionamento": "Das 7h às 18h."
+ },
+ {
+  "codigo": "chacara-santana-ilha-do-borella",
+  "descricao": "Restaurante especializado em peixe, encontro de barcos, caiaques e bike. Integração com a natureza no meio do Rio Paraíba.",
+  "funcionamento": "De quinta-feira a domingo e feriados, a partir das 11h."
+ },
+ {
+  "codigo": "fazenda-da-bocaina",
+  "descricao": "Reserva nativa da mata atlântica, preservada pelos proprietários da fazenda. Criação de gado, piscicultura, bromeliário, anturário e orquidário, passeio a cavalo e charrete, caminhadas em trilhas exclusivas, nadar e pescar nos açudes, apreciar o pôr-do-sol acompanhado de um piquenique, plantar e colher alguns alimentos, visitar a horta, pomar e alimentar os animais.",
+  "funcionamento": "Das 8h às 18h."
+ },
+ {
+  "codigo": "fazenda-cachoeira-pousada-colonial-valverde",
+  "descricao": "Aluga se para eventos, retiros, festas, casamentos, batizados. Tem igreja, casa colonial, cachoeira, piscina, cavalos, ordenha no curral, trilhas, ceva de porcos, arado antigo, carro de boi, etc.",
+  "funcionamento": "De sexta-feira às 18h a domingo às 18h."
+ },
+ {
+  "codigo": "fazenda-boa-esperanca",
+  "descricao": "Day use em uma fazenda do século XVIII, com mobiliário da época, trilhas ecológicas, pedra para escaladas já cadastrada, duchas revigorantes, banho de rio, cavalos para aluguel, pensão completa, compotas para venda, cartão postal de recordação, frutas, legumes, ovos e leite sem agrotóxicos, peças do tempo da escravidão.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "haras-da-ginga",
+  "descricao": "Cavalgadas e Show Equestre. Cavalos Pampa Marchadores Campeões.",
+  "funcionamento": "Das 9h às 17h."
+ },
+ {
+  "codigo": "hotel-fazenda-cheiro-do-mato",
+  "descricao": "Hospedagem, café da manhã, almoço, piscina, pesca, passeio de cavalo.",
+  "funcionamento": "Das 9h às 17h."
+ },
+ {
+  "codigo": "fazenda-monte-cafe",
+  "descricao": "Fazenda bi-centenaria escravocrata inventariada pelo Instituto Cidade Viva do Rio de Janeiro e Universidade Federal de Minas Gerais onde o visitante irá sentir a atmosfera de uma fazenda dos Barões do Café. Atuando hoje no Turismo Rural, o visitante vive a experiência do Carrossel de cavalos Pampa, a Meditação no Tanque dos Desejos de Isabel Libertadora, a alameda de palmeiras imperiais e a passagem pela pinguela, tirar leite de vaca, túnel de bambuzal, praia de rio, banho de barragem, mirante de cantaria, horto e pomar, pinturas de José Maria Vilarongo, ruínas de terreiro, aqueduto e moinho de pedra.",
+  "funcionamento": "24 horas."
+ },
+ {
+  "codigo": "ecoplay-tour-agencia-receptiva-e-operadora",
+  "descricao": "Uma rota de visitação a fazendas históricas e atrativos da região. Somos uma agência e operadora especializada na comercialização (para o trade) de roteiros de experiências rurais no RJ.",
+  "funcionamento": "De segunda-feira a sexta-feira, das 9h às 16h."
+ },
+ {
+  "codigo": "fazenda-sao-fulgencio-alambique-sao-fulgencio",
+  "descricao": "Visitação ao Alambique, que se agendado, poderá ser visto no momento da produção da cachaça. Também poderá ser provada a cachaça dos diferentes tonéis existentes. Nossa cachaça é produzida em sistema de alambique, porém com toda infraestrutura compatível com sistemas de agroindústrias.",
+  "funcionamento": "Das 9h às 16h."
+ },
+ {
+  "codigo": "alambique-cachaca-itajoana",
+  "descricao": "O Alambique está aberto à visitação e é possível conhecer todo o processo cuidadoso de produção da Itajoana, e em casos de grupo a partir de 10 pessoas é possível contratar um almoço lá de caprichado. A Cachaça Itajoana, produzida no distrito de Bemposta, na cidade de Três Rios, une o aconchego do campo com uma cachaça extremamente saborosa. A bebida Premium nascida em 2017, tem como um de seus objetivos apresentar aos apreciadores da cachaça opções de blends diferenciados e de qualidade. A Cachaça Itajoana ganhou em 2020, através do rótulo preto (Blends Bálsamo, Carvalho e Amburana), medalha de Ouro na Expocachaça, categoria Blends de Cachaça.",
+  "funcionamento": "De segunda-feira a domingo, com agendamento prévio."
+ },
+ {
+  "codigo": "duvivier-hotel-fazenda",
+  "descricao": "O Hotel Fazenda oferece experiências com animais e a possibilidade de colher em sua horta. Possui um moinho movido a energia das águas, onde o milho é moído. Em alguns quartos do Hotel, é possível desfrutar de uma banheira externa privativa aquecida à lenha, com uma estrutura para lá de requintada e aconchegante. Mediante agendamento, é possível realizar atividades como o Track Day, graças a uma parceria do hotel com a equipe RMattheis (Stock Car e Rally dos Sertões), onde funciona a pista Off Road da equipe.",
+  "funcionamento": "24 horas, mediante reserva."
+ },
+ {
+  "codigo": "fazenda-da-paciencia",
+  "descricao": "A Fazenda da Paciência oferece hoje uma experiência única de hospedagem, visto que para que o visitante usufrua do espaço é necessário alugar a Fazenda em sua totalidade tendo uma experiência única e exclusiva da vida no meio rural. A gastronomia e a criação de cavalos árabes são os grandes diferenciais do local que conta ainda com uma pequena cachoeira localizada dentro da propriedade e de uso exclusivo para os visitantes.",
+  "funcionamento": "Mediante agendamento."
+ },
+ {
+  "codigo": "encontro-dos-tres-rios-pontal",
+  "descricao": "O local é um verdadeiro complexo de lazer, com características bem rurais. É formado por uma pousada e um restaurante que levam o nome do espaço: Pontal. É uma área de preservação permanente da mata atlântica e uma convivência harmoniosa com uma variedade de animais silvestres dentro da reserva, além do Museu da Cachaça, redário, tirolesa, arvorismo e escalada. Isso tudo com uma vista encantadora para o encontro dos três rios. O encontro dos três rios (Piabanha, Paraibuna e Paraíba do Sul), único delta triplo da América Latina (triângulo perfeito), se dá em local amplo para turistas que gostam também de esportes radicais. Praticantes de rafting que descem as corredeiras do rio Paraibuna no percurso que dura aproximadamente três horas e termina no encontro dos rios. O rio Paraibuna é considerado um dos melhores rios do Brasil para a prática do esporte, pois possui grande volume de água, não dependendo das chuvas para a prática de rafting, e as corredeiras são classe 2 e 3, permitindo a prática do esporte durante o ano inteiro.",
+  "funcionamento": "Hospedagem, day use e refeições mediante reserva e agendamento."
+ },
+ {
+  "codigo": "pesqueiro-recanto-dos-emmerich",
+  "descricao": "Petiscos, piscina, pesque e pague, diversão e ambiente familiar.",
+  "funcionamento": "Finais de semana, das 10h às 19h."
+ },
+ {
+  "codigo": "pesque-e-pague-remanso-verde",
+  "descricao": "Day-use, pescaria e restaurante.",
+  "funcionamento": "Finais de semana e feriados. Das 9h às 17h."
+ },
+ {
+  "codigo": "cachaca-eller",
+  "descricao": "Conhecer a produção da cachaça desde as etapas de colheita, moagem, fermentação, destilação e envelhecimento.",
+  "funcionamento": "Das 08h às 16h."
+ },
+ {
+  "codigo": "horto-do-tiao",
+  "descricao": "Ambiente aprazível e verdejante, no qual são cultivadas espécies de plantas ornamentais, frutíferas, além de comercializarem arranjos florais e muito mais.",
+  "funcionamento": "De segunda-feira à sábado, das 7h30 às 17h. Domingo das 8h30 às 11h."
+ },
+ {
+  "codigo": "cachaca-do-odil",
+  "descricao": "Tour de experiência pela produção de cachaça que acontece há mais de 30 anos. Visitas mediante agendamento. Acesso via estrada de chão.",
+  "funcionamento": "Das 12h às 17h."
+ },
+ {
+  "codigo": "cerveja-bendita-breja",
+  "descricao": "Entender o processo produtivo da cerveja artesanal e conhecer a matéria-prima.",
+  "funcionamento": "Terça-feira, das 17h às 23h. Sexta-feira, das 19h às 23h45 e sábado, das 17h às 00h."
+ },
+ {
+  "codigo": "espaco-neu",
+  "descricao": "Day-use. Espaço com piscinas, lago com peixes, cachoeira, saunas e churrasqueiras.",
+  "funcionamento": "Finais de Semana e feriados."
+ },
+ {
+  "codigo": "sitio-das-goiabas-schott",
+  "descricao": "Já teve a oportunidade de acompanhar a produção artesanal dos derivados da goiaba? Não? Conheça a família Schott e seus doces caseiros, a plantação de goiabas, o preparo das frutas, a caldeira e o espaço de armazenamento dos produtos. Sítio onde a família Schott produz goiabas e mostra como funciona o processo de produção. O acesso é via estrada de chão.",
+  "funcionamento": "Apenas mediante agendamento."
+ },
+ {
+  "codigo": "fazenda-caieira",
+  "descricao": "Localizada a 8 km do centro de Bom Jardim, a fazenda é estruturada para receber eventos diversos. Uma excelente opção para descanso e possui uma estrutura para confraternizações. Um espaço de lazer com piscina de água natural, cachoeira, campo de futebol e outras atividades.",
+  "funcionamento": "Não informado."
+ },
+ {
+  "codigo": "camping-recanto-da-siriema",
+  "descricao": "Camping Recanto da Siriema - Espaço dedicado ao camping com área verde, lago e estrutura de apoio para quem busca realizar essa atividade.",
+  "funcionamento": "Todos os dias."
+ },
+ {
+  "codigo": "refugio-do-humaita",
+  "descricao": "Localizado no distrito de Barra Alegre, o Refúgio do Humaitá é um espaço que oferece experiências variadas desde conhecer o criatório de aves ornamentais, até fazer os cursos relacionados à agroindústria.",
+  "funcionamento": "Somente mediante agendamento."
+ },
+ {
+  "codigo": "hotel-fazenda-minha-gloria",
+  "descricao": "Situado em meio à natureza, em um cenário cinematográfico de 165 mil metros quadrados, proporciona contato direto com animais exóticos e confortáveis. Hospedagem em chalés independentes, no estilo rústico atrelado ao clima rural.",
+  "funcionamento": "24h."
+ },
+ {
+  "codigo": "sitio-das-jaqueiras",
+  "descricao": "Ótimo para descanso. O local se caracteriza por ser um ambiente simples e rústico, mas muito aconchegante em meio à área rural. A área de lazer é composta de piscina, churrasqueira e grande espaço gramado com balanços e casa na árvore para crianças.",
+  "funcionamento": "Não informado."
+ },
+ {
+  "codigo": "sitio-aconchego",
+  "descricao": "O entorno da propriedade é coberto pela natureza e ainda há um pomar com diversas opções de frutas como amora, manga, goiaba, abacate, carambola e banana. Serviço de quarto + café da manhã. O uso da piscina e demais dependências do terreno estão liberados, assim como o uso da churrasqueira e sauna.",
+  "funcionamento": "Somente mediante agendamento."
+ },
+ {
+  "codigo": "casa-do-leite",
+  "descricao": "O adorável espaço, localizado no bucólico distrito de Bom Jardim. Oferece delícias impossíveis de resistir, doces, pães, queijos e iogurtes artesanais que encantam o paladar do visitante.",
+  "funcionamento": "Não informado."
+ },
+ {
+  "codigo": "cafe-monthal",
+  "descricao": "Uma linda fazenda, reconhecida pelo seu café, leite, queijo e bolinho de chuva que periodicamente abre as portas para um tour de experiências, onde através de visitas guiadas o visitante pode conhecer um pouco da cultura do campo e as etapas de processamento do café. Da colheita a torra, com um pouco de história, culminando em um mini tour gustativo pelos diversos modos de preparo da bebida. Oportunidade para que você possa vivenciar o que é a colheita de montanha. Vivenciando 'in loco' da plantação à torra final, desfrutando de uma natureza incrível.",
+  "funcionamento": "De segunda-feira à sexta-feira, das 8h às 17h."
+ },
+ {
+  "codigo": "vila-de-porto-marinho",
+  "descricao": "Visita aos pontos mais significativos referentes à produção e o beneficiamento do arroz Anã de Porto Marinho; Visita às casas dos produtores familiares; Passeio de barco pelo rio Paraíba do Sul e de carro de boi; Explanação in loco sobre a história da vila e do município, como também sobre as manifestações culturais da comunidade; comercialização da doceria e do artesanato típicos; degustação da culinária local, que tem como atrativos principais o arroz Anã de Porto Marinho, potencial indicação geográfica, e o pescado.",
+  "funcionamento": "Finais de semana, das 10h."
+ },
+ {
+  "codigo": "fazenda-santa-fe",
+  "descricao": "Visitação à Fazenda de Irmã Zélia e Jerônimo, o casal nomeado servos de Deus, único casal beatificado e em processo de canonização. É um local histórico e um santuário.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "porto-velho-do-cunha",
+  "descricao": "Gastronomia da pesca, trilhas terrestres, passeios de barco, pesca esportiva e artesanato.",
+  "funcionamento": "Das 7h às 18h."
+ },
+ {
+  "codigo": "sitio-santa-luz",
+  "descricao": "Contato com o trabalho do homem do campo com a fitoterapia, plantas medicinais, horto, plantio, conhecimento e acolhimento.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "fazenda-boa-vista",
+  "descricao": "Contato com a natureza, gastronomia, plantio de árvores, trilhas e cavalgadas.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "laticinio-trevo",
+  "descricao": "Degustação de queijos e visitação ao meio rural.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "laticinios-relogio",
+  "descricao": "Gastronomia, história e experiência com laticínio histórico. A história da Marca Relógio nos remete ao final do século XIX, precisamente a 13 de abril de 1871, data em que nasceu Joaquim Simões de Araújo, em Espinho, perro de Viseu, Portugal. Com o vigor dos seus vinte anos, juntou-se a três amigos portugueses, e embarcou em uma aventura para o Brasil, sonhando fazer a vida em melhores condições.Sempre animado pelo espírito empreendedor, em 1912, adquiriu a Fazenda João Dias e nela construiu um Laticínio. Com a estação ferroviária muito próxima ao laticínio, Joaquim despachada pelo trem toda a produção de leite e manteiga para as cidades maiores. Assim o horário em que o trem passava regulava a produção. Segundo consta, em meio às atividades, ele repetia com seu carregado sotaque português:_Olha o relógio! Olha o relógio! _ Alertando os funcionários para a hora certa da chegada do trem.E assim, nesse clima de trabalho e poesia, nasceu o nome Relógio para os produtos.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "parque-natural-municipal-do-livramento",
+  "descricao": "Ar puro, contato com animais silvestres, árvores nativas, trilhas, plantio de mudas, história local, banho de rio e camping.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "fazenda-conceicao",
+  "descricao": "Contato com a natureza, animais silvestres, gastronomia, trilhas para bike, banho de cachoeira e muita história.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "s-a-mudas",
+  "descricao": "Plantio de mudas e conhecimento das plantas.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "tunel-que-chora",
+  "descricao": "Trilha equestre, cavernas e contato com a natureza.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "cachaca-da-quinta",
+  "descricao": "Degustação da cachaça, história e contato com a natureza. Desde 1923 a Cachaça da Quinta é produzida na Fazenda da Quinta, em um vale próximo ao Rio Paraíba do Sul, com altitude em torno de duzentos e vinte metros. A propriedade possui solo, clima e microclima ideais ao cultivo da cana, à fermentação e à elaboração dos produtos. Ao terroir especialmente propício, somam-se os rigorosos padrões de qualidade na elaboração da Cachaça da Quinta. Vale a pena visitar e conhecer todo o processo produtivo. A propriedade possui solo e clima ideais ao cultivo da cana-de-açúcar, a fermentação e a elaboração dos produtos. Foi o primeiro destilado brasileiro a receber a Grand Gold Medal do Concours Mondial de Bruxelles. No Ranking Nacional da Cúpula da Cachaça (biênio 2022 - 2023), a Cachaça da Quinta - Branca recebeu a maior pontuação entre todas as concorrentes, protagonizando um fato inédito: uma branquinha ultrapassando a pontuação de cachaças oriundas de diferentes madeiras, armazenadas, envelhecidas, premium e extra premium.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "fazenda-santo-antonio",
+  "descricao": "Contato com a natureza, banho de cachoeira, gastronomia, história local e trilhas terrestres.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "feira-livre",
+  "descricao": "Gastronomia, cultura, literatura local, produtos orgânicos, artesanato, economia criativa e agricultura familiar.",
+  "funcionamento": "Sábados, das 7h às 17h."
+ }
+]

@@ -1,0 +1,242 @@
+[
+ {
+  "codigo": "estacao-de-permacultura-dumatutu",
+  "descricao": "Espaço destinado à práticas sustentáveis: trilhas ecológicas, produção de alimentos agroecológicos, manejo sustentável da palmeira Juçara, cursos voltados à permacultura.",
+  "funcionamento": "Das 09h às 16h."
+ },
+ {
+  "codigo": "agroindustria",
+  "descricao": "A Agroindústria de Mangaratiba trabalha com processamento, como a banana passa, farinha de banana e doces diversos de acordo com a safra local. No prédio funciona uma Associação de Agricultores do Município, que é responsável pelo processamento e vendas dos produtos. Há também a importância histórico-cultural do local, devido o prédio estar localizado bem próximo às Ruínas do Saco de Cima.",
+  "funcionamento": "Das 08h às 16h."
+ },
+ {
+  "codigo": "fazenda-da-lapa",
+  "descricao": "Fazenda histórica do período do café da antiga cidade de São João Marcos ou São João do Príncipe. Localizada na Serra do Piloto, Estrada Imperial de São João Marcus, primeira estrada de rodagem do Brasil. A Fazenda está aberta a visitação, hospedagem, restaurante e brechó. Possui cavalos, galinheiro, criação de gado leiteiro, produz queijo artesanal, banana orgânica, horta. O casarão está conservado e possui um pátio de secagem de café da época. Possui trilhas junto a mata atlântica, nascentes e piscina natural.",
+  "funcionamento": "Finais de semana, das 11h às 16h."
+ },
+ {
+  "codigo": "art-cafe",
+  "descricao": "Cafeteria com ambiente aconchegante, pão com linguiça e bolo de fubá muito elogiados, artesanato e produtos da roça.",
+  "funcionamento": "De Sexta-feira a domingo, das 07h às 20h."
+ },
+ {
+  "codigo": "circuito-imperial-da-serra-do-piloto",
+  "descricao": "O roteiro dá direito a passeio em carro 4x4, guiamento (guia credenciado Cadastur e especializado em atrativos naturais) histórico nos pontos turísticos durante o trajeto, caminhada ecológica até o Mirante da Represa de Ribeirão das Lajes e Ponte Bela, kit lanche, banho de cachoeira, almoço com comida feita à lenha (não incluso), e seguro assistência médica e hospitalar.",
+  "funcionamento": "Das 08h às 17h."
+ },
+ {
+  "codigo": "sitio-sao-goncalo",
+  "descricao": "Alambique artesanal com produção orgânica de cachaça, criação de galinhas com produção de ovos, ranário com alternativa de visitação e experiência, apiário com produção de hidromel.",
+  "funcionamento": "Não informado."
+ },
+ {
+  "codigo": "alambique-paratiana",
+  "descricao": "Alambique artesanal, com visitação guiada e loja com grande variedade de produtos artesanais.",
+  "funcionamento": "Das 09h30 às 17h."
+ },
+ {
+  "codigo": "alambique-pedra-branca",
+  "descricao": "Alambique de produção artesanal, com ótima vista para as montanhas e conta com uma loja de produtos locais.",
+  "funcionamento": "Das 09h30 às 17h."
+ },
+ {
+  "codigo": "cachaca-coqueiro",
+  "descricao": "É o Alambique artesanal mais antigo em funcionamento no município, desde 1803 e conta com loja de produtos locais em sua sede. Tour guiado nas dependências do alambique com explicação sobre o processo de fabricação e contando a história da cachaça mais antiga em atividade no município.",
+  "funcionamento": "Das 08h às 18h."
+ },
+ {
+  "codigo": "cachaca-maria-izabel",
+  "descricao": "É o único alambique do município fundado e gerido por uma mulher e tem todas suas etapas de produção supervisionada por ela, que dá o nome a cachaça. Vivência com roda de conversa com a proprietária, onde ela conta as etapas do processo de fabricação e até a história da cachaça no município de Paraty.",
+  "funcionamento": "Das 10h às 16h."
+ },
+ {
+  "codigo": "engenho-corisco",
+  "descricao": "Um dos alambiques mais tradicionais de Paraty, e está com a mesma família há décadas, mantendo as tradições. É possível fazer um tour com explicação sobre os processos da fabricação da cachaça e degustar todos os sabores na loja.",
+  "funcionamento": "Das 07h às 12h e das 13h30 às 17h."
+ },
+ {
+  "codigo": "alambique-engenho-d-ouro",
+  "descricao": "Tour guiado contando a história da cachaça Engenho D'Ouro. Conta com uma antiga casa de farinha na propriedade, restaurante e loja de doces artesanais, e o alambique fica ao lado da cachoeira do Tobogã.",
+  "funcionamento": "Das 08h30 às 17h."
+ },
+ {
+  "codigo": "paraty-tours",
+  "descricao": "Agência de Turismo muito bem estruturada, com mais de 28 anos de experiência.",
+  "funcionamento": "Das 08h às 21h."
+ },
+ {
+  "codigo": "agencia-paraty-adventure",
+  "descricao": "Agência de turismo credenciada e com 12 anos de experiência em Paraty.",
+  "funcionamento": "Das 08h às 21h."
+ },
+ {
+  "codigo": "akura-outdoor-experience",
+  "descricao": "Agência de turismo voltada ao ecoturismo e conta com roteiros personalizados.",
+  "funcionamento": "Das 06h às 18h."
+ },
+ {
+  "codigo": "quilombo-campinho-da-independencia",
+  "descricao": "As famílias que vivem no Quilombo antêm vivas as tradições como o Jongo, a Capoeira, histórias e saberes que remetem ao continente Africano. O turismo que ocorre lá é o de Base Comunitária e um dos principais atrativos do local é uma belíssima cachoeira, trilhas, ruínas do tempo da escravidão, além de rodas de conversa e a culinária típica, que o visitante degusta em um espaço construído junto a casa de moradores.",
+  "funcionamento": "Das 09h às 17h."
+ },
+ {
+  "codigo": "pousada-bromelias",
+  "descricao": "Pousada com SPA e Restaurante. Restaurante, área de lazer com piscina, salão de jogos, quadra de tênis, sauna, lounge de leitura com redário e uma cachoeira com piscina natural privativa dentro da Pousada. Área do Bem Estar onde fica o SPA da Pousada com os serviços de massagens, terapias, banhos de ofurô e muito mais.",
+  "funcionamento": "24h."
+ },
+ {
+  "codigo": "comunidade-tradicional-caicara-de-trindade",
+  "descricao": "Turismo de Base Comunitária. Valorização da cultura e identidade da comunidade tradicional caiçara de Trindade. Roda de conversa com pescadores, visita ao cerco de pesca flutuante, visita a casa de farinha, teatro de bonecos, sessão foto/vídeo/documentário sobre a história de Trindade com debate, Folia de Reis, oficina de artesanato, oficina de entalhe/costura de rede, entre outras.",
+  "funcionamento": "Das 09h às 17h."
+ },
+ {
+  "codigo": "sitio-rancho-capitu",
+  "descricao": "O trabalho é agroflorestal, observação de pássaros, e passeio nas cachoeiras do local.",
+  "funcionamento": "Das 07h às 16h."
+ },
+ {
+  "codigo": "fazenda-bananal",
+  "descricao": "A Fazenda Bananal é um destino imperdível para os amantes de turismo rural, com 187 hectares abertos à visitação. O destaque é a sustentabilidade, presente em todos os ângulos: ambiental, histórico-cultural e social. A visita à Fazenda Bananal é personalizada, permitindo que o visitante monte o próprio roteiro. A primeira parada recomendada é o Casarão Histórico, tombado pelo IPHAN, com sua estrutura original preservada. Atualmente, o espaço é utilizado para exposições temporárias que contam a história e as tradições de Paraty. A segunda parada é um roteiro que apresenta modelos e tecnologias que utilizam a força e a inteligência da natureza para criar sistemas produtivos mais limpos e sustentáveis. Durante o passeio, é possível conhecer a agrofloresta, a horta orgânica, a fossa verde, o biodigestor e outras boas práticas na relação com a natureza. A dica final é uma visita ao restaurante, onde são servidos pratos deliciosos que variam de acordo com a sazonalidade dos alimentos e priorizam ingredientes locais. A Agrofloresta e a Horta da Fazenda abastecem o restaurante com mais de 60 produtos diferentes por ano, cultivados sem o uso de agrotóxicos ou adubos químicos. Em resumo, a Fazenda Bananal é um lugar incrível que combina desenvolvimento e sustentabilidade, preservando o patrimônio histórico e cultural, e promovendo o turismo consciente. Se você quer aprender mais sobre práticas sustentáveis, saborear deliciosas refeições orgânicas e desfrutar de um passeio personalizado, não deixe de visitar a Fazenda Bananal!",
+  "funcionamento": "De segunda-feira a domingo, das 10h às 17h. O Restaurante pede reservas antecipada e fica aberto das 12h às 17h."
+ },
+ {
+  "codigo": "cachaca-tellura",
+  "descricao": "Produzida na Fazenda Abadia, que tem tradição no cultivo da cana de açúcar há mais de 100 anos. O visitante irá encontrar a verdadeira Cachaça-Arte, produzida em alambiques de cobre desde 2015. Para garantir a qualidade, a preocupação começa no plantio da cana de açúcar estendendo até a colheita, que é realizada manualmente. Outro ponto relevante é a higienização da fábrica que é feita a vapor para limpeza das tubulações e recipientes inox, eliminando a infecção bacteriana. A fermentação do caldo da cana é realizada com fermentos selecionados livres de bactérias prejudiciais. A destilação segue, rigorosamente, um processo de separação das frações da cabeça, coração e cauda; usando só o coração em sua produção, resultando uma cachaça de qualidade internacional. Em seguida a cachaça descansa em tonéis de madeiras nobres garantindo melhor aroma, cor e sabor ao produto final. Premiada em 2017 em Bruxelas onde recebeu reconhecimento do International Taste & Quality Institute gerando o certificado “Prêmio de Sabor Superior” (Superior Taste Award).",
+  "funcionamento": "07h às 17h"
+ },
+ {
+  "codigo": "cachaca-barra-velha",
+  "descricao": "Responsável pela produção das Cachaças Premiadas “Barra Velha”, o Alambique do Leley é o local onde irá também encontrar uma excelente comida caseira feita no fogão à lenha, artesanatos e variados doces regionais. Localizado na praia campista Farol de São Thomé, precisamente na Fazenda São Thomé, encontrará as instalações para produção artesanal das famosas cachaças que são reconhecidas e certificadas pelo Ministério da Agricultura, Pecuária e Abastecimento do Brasil. Seu envelhecimento é feito em barris de carvalho Pernod Ricard, que aliado ao perfeccionismo do produtor Leley, garante sucesso agregando qualidade e refinamento aos produtos. A cachaça Branca amadurecida recebeu medalha de Ouro na Expocachaça de Belo Horizonte. Pelo terceiro ano consecutivo a cachaça “Barra Velha” chegou entre as melhores do Brasil e que também rendeu o reconhecimento Internacional.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "cavalhada-de-santo-amaro",
+  "descricao": "A Cavalhada é o Ponto Alto da maior festa religiosa tradicional do Norte Fluminense, a “Festa de Santo Amaro”, que é o padroeiro da Baixada Campista, comemorado no dia 15 de Janeiro. A Cavalhada é uma manifestação que remonta à Idade Média, na qual 24 cavaleiros divididos em dois grupos - determinados pelas cores vermelha e azul - simulam uma batalha entre Mouros e Cristãos demonstrando suas habilidades e sua devoção.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "alambique-do-taizinho",
+  "descricao": "Localizado no distrito de Santa Maria, a Cachaça Soberana, produzida pelo Sr. Taizinho, apresenta uma grande diversidade de sabores incluindo a Cachaça de Jambu, tão difícil de ser encontrada.",
+  "funcionamento": "SEG a SAB de 07h às 18h"
+ },
+ {
+  "codigo": "cachoeira-do-bau",
+  "descricao": "As responsabilidades e tarefas do dia a dia podem elevar nossos níveis de estresse. E para esquecer esses problemas da rotina, não há remédio melhor que a natureza. Relaxar em uma piscina de águas naturais formada por uma cachoeira, rodeado somente pelas árvores e montanhas, ao som do canto dos pássaros, esta é a experiência vivida por quem visita a Cachoeira do Baú, no interior de Cardoso Moreira. Este é o local certo para quem deseja lavar a alma nas águas geladas de uma cachoeira, sem pensar em mais nada além daquele momento único.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "sitio-trapiche",
+  "descricao": "Com o autêntico “clima de interior”, o Sítio Trapiche oferece aos visitantes a estrutura perfeita para um bom final de semana em família. O local conta com duas piscinas, área coberta para churrasco, jogos de mesa, pula-pula e muito mais, tudo para te fazer reviver os bons momentos da infância. Quem conhece o Sítio Trapiche experimenta momentos únicos que reforçam ainda mais os laços familiares, com muita alegria e diversão.",
+  "funcionamento": "QUA A DOM de 09h às 22h"
+ },
+ {
+  "codigo": "atelie-nos-da-madeira",
+  "descricao": "Peças únicas e artesanais, representando a autêntica arte cardosense. O ateliê “Nós na Madeira” traz consigo um grande acervo de obras culturais de artistas do município de Cardoso Moreira, com peças produzidas através de madeiras de reflorestamento, reaproveitamentos e recicladas, unindo arte e sustentabilidade.",
+  "funcionamento": "SEG a SAB de 08h às 18h"
+ },
+ {
+  "codigo": "alambique-engenho-bau",
+  "descricao": "Acompanhar processo de produção da cachaça artesanal, análise sensorial e degustação.",
+  "funcionamento": "QUI A DOM de 09h às 18h"
+ },
+ {
+  "codigo": "fazenda-da-pedra",
+  "descricao": "Um lugar histórico de uma família tradicional com inúmeras histórias e riquezas que os turistas possam se encantar e conhecer. Em 1883 a fazenda pertencia ao Barão de Azeredo Coutinho, e no dia 24 de junho daquele ano recebeu a visita de D. Pedro II para um almoço.  O imperador fazia a viagem de São Fidélis para Campos para, à noite, inaugurar a luz elétrica da cidade. Em 1976 foram gravadas cenas da primeira versão de A escrava Isaura na Fazenda da Pedra.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "bar-do-edgar",
+  "descricao": "Próximo às mais belas cachoeiras da região, às margens do rio do Colégio, proporciona um contato com a natureza e um ambiente familiar. Faz parte também da rota de ciclismo.",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "casa-da-farinha-amparo",
+  "descricao": "O visitante tem a oportunidade de conhecer tanto o plantio quanto a área de produção da Casa de Farinha Amparo, que é uma tradição da agricultura familiar. Há 30 anos produzem uma farinha de mandioca especial, que é considerada a melhor da região.",
+  "funcionamento": "08h às 17h"
+ },
+ {
+  "codigo": "alambique-dos-reis",
+  "descricao": "Produzida artesanalmente em alambiques de cobre, fermentação natural e canavial próprio selecionado.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "viticultura-fazenda-vale-do-tabuinha",
+  "descricao": "O vinhedo já é tradição familiar, que além  de produzir deliciosas uvas que são vendidas pela região, recebe visitantes que podem conhecer a plantação. Ótima opção também para estudantes da área verem na prática todo o processo da viticultura. Além disso, proporciona festas juninas, visitação com degustação e vendas dos produtos. Ambiente familiar com contato direto com a natureza",
+  "funcionamento": "08h às 12h e 13h às 16h"
+ },
+ {
+  "codigo": "fabrica-dona-chica",
+  "descricao": "É feito a fabricação de polvilho doce, polvilho azedo, goma para tapioca, beiju, mix de pão de queijo. Além da plantação de pimenta rosa e primeira do reino e tratamento de eucalipto.",
+  "funcionamento": "TER A SEX de 05h às 21h"
+ },
+ {
+  "codigo": "dona-calu",
+  "descricao": "Uma experiência de um dia na fazenda, com diversos animais e degustação de produtos artesanais produzidos no local.",
+  "funcionamento": "QUA A DOM de 09h às 18h"
+ },
+ {
+  "codigo": "boutique-do-artesanato",
+  "descricao": "Variedade de artesanato feito pelos artesãos locais.",
+  "funcionamento": "08h às 17h"
+ },
+ {
+  "codigo": "barco-do-lael",
+  "descricao": "Passeio de barco passando pelo Manguezal de Gargaú e pelo Litoral do Rio Paraíba. Serviço oferecido há mais de 20 anos",
+  "funcionamento": "07 às 17h"
+ },
+ {
+  "codigo": "fabrica-de-goiabada",
+  "descricao": "Fabricação de goiabada cascão em tablete e goiabada em palha. Tudo muito artesanal.",
+  "funcionamento": "08h às 16h"
+ },
+ {
+  "codigo": "rancho-do-peixe-pesque-e-pague",
+  "descricao": "Local bem agradável, com área de lazer para adultos e crianças. Piscina, comida caseira e deliciosa.",
+  "funcionamento": "09h30min às 18h"
+ },
+ {
+  "codigo": "cavalgada-dos-amigos",
+  "descricao": "A Cavalgada dos amigos é uma manifestação cultural em forma de passeio a cavalo, onde cavaleiros e amazonas, entre crianças e idosos que compartilham o gosto pela vida no campo se confraternizam durante o trajeto. O evento acontece anualmente no mês de maio e atrai visitantes de diversas cidades da região.",
+  "funcionamento": "10h às 00h"
+ },
+ {
+  "codigo": "sitio-vovo-berenice",
+  "descricao": "A propriedade conta com 2500 galinhas e uma produção de 200 dúzias de ovos por dia. Além dessa atividade, há o plantio de hortaliças e um coqueiral, onde os visitantes podem escolher o que levar para casa direto do pé. No local são comercializados ovos frescos, água de coco e as hortaliças colhidas na hora. Os visitantes são recebidos pela proprietária que conta a história da família e de como começou a criação que deu origem ao local.",
+  "funcionamento": "07h às 17h"
+ },
+ {
+  "codigo": "sitio-familia-toledo",
+  "descricao": "A propriedade rural  familiar conta com uma mandala de hortaliças variadas proporcionando uma experiência imersiva para os visitantes que também podem visitar o pomar  e colher dependendo da época do ano, laranjas, mexericas e melancias. Conhecer espécies como o pé de urucum e até mesmo recolher ovos frescos no pequeno galinheiro doméstico. Ao fim do passeio um simples porém típico café da roça, com batata doce e aipim cozidos e quentinhos, bolo de fubá, geleias e sucos  de frutas da estação e aquele café coado na hora. Isso sem falar na hospitalidade do proprietário Manoel Toledo que recebe a todos com um generoso sorriso. Os produtos colhidos podem ser adquiridos pelos visitantes , assim como os demais que também são comercializados no local. O Café da tarde faz parte da experiência e está incluso na entrada.",
+  "funcionamento": "9h às 17h"
+ },
+ {
+  "codigo": "rancho-paiol",
+  "descricao": "O Rancho possui espaço para receber 44 pessoas, distribuídos em mesas de 8, 6 e 4 lugares, e funciona para eventos fechados, com cardápio definido e reserva.",
+  "funcionamento": "Finais de semana"
+ },
+ {
+  "codigo": "sitio-sao-luiz",
+  "descricao": "Plantio e contemplação de flores.",
+  "funcionamento": "Das 9h às 16h."
+ },
+ {
+  "codigo": "cervejaria-fredbier",
+  "descricao": "Vivências do processo de fabricação de cervejas e degustação.",
+  "funcionamento": "Das 9h às 16h."
+ },
+ {
+  "codigo": "pesqueiro-pousada-novo-xodo",
+  "descricao": "Lazer, pescaria e gastronomia.",
+  "funcionamento": "De quarta-feira a domingo, das 10h às 19h."
+ },
+ {
+  "codigo": "borgo-del-vino",
+  "descricao": "Gastronomia. Degustação e vinhos. Adega especializada em vinhos nacionais com rótulos provados e aprovados de vinícolas escolhidas a dedo.",
+  "funcionamento": "Das 18h às 00h."
+ },
+ {
+  "codigo": "organicos-fazenda-brasil",
+  "descricao": "Plantio, colheita e contemplação.",
+  "funcionamento": "Não informado."
+ }
+]

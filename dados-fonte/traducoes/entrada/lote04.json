@@ -1,0 +1,242 @@
+[
+ {
+  "codigo": "fazenda-resort-bom-viver",
+  "descricao": "Hotel Fazenda: serviços de hospedagem, alimentação e lazer.",
+  "funcionamento": "Das 8h às 21h. Todos os dias do ano."
+ },
+ {
+  "codigo": "apolo-11-turismo",
+  "descricao": "Visita as principais floriculturas da cidade + praça Agroecológica.",
+  "funcionamento": "Das 8h às 21h."
+ },
+ {
+  "codigo": "dentinho-mountain-park",
+  "descricao": "Imersão total na natureza através das trilhas, cachoeiras e mirantes.",
+  "funcionamento": "Das 8h às 18h."
+ },
+ {
+  "codigo": "sitio-do-riacho",
+  "descricao": "Day Use aos domingos com amplo espaço arborizado com árvores nativas identificadas, riachos, cachoeira e infraestrutura de lazer com piscina, salão de jogos, estacionamento interno e ecoturismo.",
+  "funcionamento": "Domingos. Das 8h às 16h. Day use com reserva."
+ },
+ {
+  "codigo": "tia-chelle-excursoes",
+  "descricao": "Conectar o turista com a natureza através de um banho de cachoeira, passeio em uma trilha curta, passeios de cavalo e estar próximo da cultura local. Finalização no circuito rural e praia.",
+  "funcionamento": "Das 9h às 18h."
+ },
+ {
+  "codigo": "conchita-galvan-arte-bijoux",
+  "descricao": "Aulas de cerâmica, venda de produtos de produção própria, café e bolo feitos na lenha, com ovos caipiras de criações da casa, num ambiente caseiro e belas vistas. Ar puro.",
+  "funcionamento": "Finais de semana pela manhã."
+ },
+ {
+  "codigo": "m-r-sabor-de-mel",
+  "descricao": "Pastel, caldo, bolinho de aipim, frutas típicas e almoço.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "pousada-sitio-santa-anna",
+  "descricao": "Especializados em hóspedes com língua alemã que querem conhecer o Rio de Janeiro, Niterói, Maricá ou o Brasil, ver o máximo possível em um curto período. Cozinha alemã-brasileira Ideal para visitantes em cruzeiro que gostariam de visitar o Rio em detalhes antes ou depois de sua viagem, traslado ida e volta aeroporto / porto.",
+  "funcionamento": "24h."
+ },
+ {
+  "codigo": "sitio-sonho-meu",
+  "descricao": "Estamos em meio a natureza, com produtos de qualidade e artesanais. Lugar para você tomar um delicioso café rural, cercado de muita natureza, belíssima vista panorâmica da pedra de itaocaia e um ótimo ponto de observação para apreciar a lua e as estrelas.",
+  "funcionamento": "Agendamento prévio."
+ },
+ {
+  "codigo": "rancho-ze-colmeia",
+  "descricao": "Produção de Eventos, contato com a natureza e campo de futebol.",
+  "funcionamento": "24h."
+ },
+ {
+  "codigo": "pensao-da-tia-joana",
+  "descricao": "Local familiar, comida caseira, aconchegante e agradável.",
+  "funcionamento": "Das 12h às 14h."
+ },
+ {
+  "codigo": "atelie-de-ceramica-ferreira-de-barro",
+  "descricao": "Aulas de cerâmica, louças em cerâmica artesanal e trabalho feito a mão.",
+  "funcionamento": "Das 9h às 18h."
+ },
+ {
+  "codigo": "samba-la-cueca",
+  "descricao": "Trilha ecoturística e cavalgada, comida típica chilena e cozinha tradicional brasileira.",
+  "funcionamento": "De quarta-feira a domingo, das 9h às 18h."
+ },
+ {
+  "codigo": "restaurante-costela-fogo-de-chao",
+  "descricao": "Sistema buffet ou a la carte, bebidas à parte. Piscina, riacho, salão de jogos, parquinho infantil, redário, escorrega inflável, camas elásticas e piscina de bolinhas.",
+  "funcionamento": "Finais de semana e feriados. Das 10h às 17h."
+ },
+ {
+  "codigo": "bandtour",
+  "descricao": "Ecoturismo, tirolesa, cachoeira, rampa de voo livre, Os visitantes são transportados para lugares incríveis e de difícil acesso, por um jipe 4x4 estilo savana com capacidade para 9 lugares. Locais: Espraiado, orla da praia de Itaipuaçu, Araçatiba.",
+  "funcionamento": "Das 8h às 19h."
+ },
+ {
+  "codigo": "atelie-jose-pereira",
+  "descricao": "Tapeçarias, móveis em madeira de demolição e artesanato.",
+  "funcionamento": "Das 8h às 18h."
+ },
+ {
+  "codigo": "luxtour-viagens-turismo",
+  "descricao": "Turismo de experiência voltado à gastronomia rural local, vivência com animais da fazenda e contato com a natureza.",
+  "funcionamento": "De segunda-feira a sabado. Dos 8h às 19h."
+ },
+ {
+  "codigo": "sitio-atoinha",
+  "descricao": "Venda de produtos variados da roça, exclusivamente artesanais e/ou produzidos no local em um projeto de Agroecologia de aproximadamente 1000 m².",
+  "funcionamento": "Das 8h às 16h."
+ },
+ {
+  "codigo": "parada-rincao-mimoso",
+  "descricao": "Venda de leite de vacas, queijo, esterco, plantas e lanches.",
+  "funcionamento": "Comercial."
+ },
+ {
+  "codigo": "alto-espraiado",
+  "descricao": "Espaço campestre de locação, com paisagismo que integra a natureza e as pessoas, para atender de forma personalizada vários estilos de eventos, por apenas um dia ou até mesmo para hospedagem individuais, familiares e em grupos.",
+  "funcionamento": "Das 9h às 18h."
+ },
+ {
+  "codigo": "vivencia-marica",
+  "descricao": "Experiência Gastronômica Rural, alimentos sem agrotóxicos produzidos no local, pescaria, cavalgadas, trilhas nas montanhas, local para a prática de astroturismo e local para acampamentos.",
+  "funcionamento": "Finais de semana."
+ },
+ {
+  "codigo": "agua-de-coco-vem-do-verde",
+  "descricao": "Visitação a unidade envasadora de água de coco e degustação.",
+  "funcionamento": "De segunda-feira a sábado. Das 6h às 17h."
+ },
+ {
+  "codigo": "centro-de-tecnologia-de-engenho-cte",
+  "descricao": "Espaço onde são produzidas a cachaça Chico Tobias e bebidas mistas como a Meladinha com degustação.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "sitio-agroecologico-sao-geraldo",
+  "descricao": "Área de 100 mil m2 com uma grande variedade de árvores frutíferas. Pomar, horta, curral, galinheiros, etc. Cozinha rural com churrasqueira e fogão à lenha, duchas, área de lazer/refeições, área de exposição de produtos, redário, campina, área de apiário e três tanques de peixes.",
+  "funcionamento": "Comercial."
+ },
+ {
+  "codigo": "quilombo-machadinha",
+  "descricao": "Experiências de uma viagem no tempo remontando o período da cana de açúcar, antigas senzalas ainda habitadas por moradores em resistência a luta dos escravizados, além do casarão do Visconde de Ururaí e sua filha em ruínas, o armazém, a igreja construída em 1833, o restaurante comunitário Casa de Artes Machadinha e o canal Campos-Macaé, construído pelos escravizados que vai de Campos a Macaé. Por fim, é importante destacar a vivência quilombola, nos modos do fazer e existir.",
+  "funcionamento": "Das 10h às 16h."
+ },
+ {
+  "codigo": "sitio-irmaos-ferreira",
+  "descricao": "Hidroponia, lavouras brancas e gado de leite.",
+  "funcionamento": "Das 7h às 18h."
+ },
+ {
+  "codigo": "rancho-mota",
+  "descricao": "Visitação ao processo de produção de pastagens e o processo de ordenha.",
+  "funcionamento": "Das 5h30 às 7h e das 15h30 às 17h."
+ },
+ {
+  "codigo": "cachacaria-7-engenhos",
+  "descricao": "No espaço você verá a demonstração de como é produzida a cachaça mais bem colocada na coqueletaria carioca, podendo degustar ou comprar os produtos no local. Agente sua visita para experimentar essa experiência!",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "horta-nilza",
+  "descricao": "Atividades na área de produção de hortaliças, participar da produção de farinha e manuseio com criação de aves além de particpar na tirada de leite e aulas de produção de doces rural.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "solar-fazenda-sao-miguel",
+  "descricao": "A Fazenda São Miguel foi a primeira residência do barão e visconde de Quissamã. A casa típica representada pela arquitetura do fim do ciclo da cana de açúcar, é rodeadas por palmeiras, eucaliptos e abriga móveis e objetos do início do século. Agende uma visita para embarcar nessa história e saborear um delicioso almoço típico.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "sitio-recanto-da-uva",
+  "descricao": "Visita às parreiras, café 'da Roça', feirinha com produtos diversos.",
+  "funcionamento": "Das 8h às 11h30 e das 14h30 às 16h."
+ },
+ {
+  "codigo": "umami-cogumelos",
+  "descricao": "Visitação à produção local de cogumelos, venda de produtos derivados como sal de ervas, risotos e canjiquinha.",
+  "funcionamento": "De segunda-feira a sábado, das 9h às 16h."
+ },
+ {
+  "codigo": "restaurante-rancho-da-pedra",
+  "descricao": "Restaurante com área de lazer, campo de futebol, passeio a cavalo, pesque e solte, piscinas e playground infantil.",
+  "funcionamento": "Finais de semana. Das 9h às 17h."
+ },
+ {
+  "codigo": "restaurante-sabor-da-roca",
+  "descricao": "Pesque e pague, comida mineira e ambiente familiar.",
+  "funcionamento": "De segunda-feira a sexta-feira, das 11h às 14h30. Finais de semana, das 11h às 17h."
+ },
+ {
+  "codigo": "sitio-das-bromelias",
+  "descricao": "Hospedagem com café da manhã, circuito de arvorismo, quadra de esportes, piscina, nossa arara.",
+  "funcionamento": "De terça-feira a domingo, das 10h30 às 17h."
+ },
+ {
+  "codigo": "restaurante-do-jamil",
+  "descricao": "Gastronomia rural, pescaria, passeio de cavalo, piscina e eventos.",
+  "funcionamento": "Finais de semana das 10h às 17h."
+ },
+ {
+  "codigo": "pura-vida-natureza-pousada-e-spa",
+  "descricao": "Vivenciamento de atividades rurais, horta, cavalos, caminhadas rurais pelo entorno, sempre acompanhadas por profissionais de educação física, piscina, hidromassagem e academia. Cardápio fit e atendimento direto com os proprietários.",
+  "funcionamento": "24h."
+ },
+ {
+  "codigo": "sitio-vitoria",
+  "descricao": "Vista panorâmica, apiário, plantações de laranja e aipim, churrasqueira e campo de futebol. A visita é acompanhada por uma arara Canindé, que se chama Amora.",
+  "funcionamento": "De segunda-feira a sábado, das 9h às 16h."
+ },
+ {
+  "codigo": "recanto-dona-carolina",
+  "descricao": "Representa a cultura rural aldeense através da sua rica culinária, uma experiência gastronômica rural autêntica, com os sabores e o clima do campo. A piscina e o cavalo para passeio no local não são cobrados ao visitante que almoça ou janta conosco.",
+  "funcionamento": "Das 12h as 00h."
+ },
+ {
+  "codigo": "fazenda-sao-jose",
+  "descricao": "Passeios de cavalo e de charrete, interação com os animais locais, caminhado ecológica, piscina, pesque e pague. Gastronomia da roça..",
+  "funcionamento": "Agendamento prévio."
+ },
+ {
+  "codigo": "hotel-fazenda-vale-encantado-de-saquarema",
+  "descricao": "Hotel Fazenda construído dentro de uma fazenda de 480 mil m² de muito verde e beleza natural, atividades variadas com equipe de recreação e gastronomia de fazenda..",
+  "funcionamento": "Das 8h30 às 18h."
+ },
+ {
+  "codigo": "hotel-eco-sitio-nosso-paraiso",
+  "descricao": "Hotel day use, cavalgadas com guia experientes, trilha botânica.",
+  "funcionamento": "24h."
+ },
+ {
+  "codigo": "saquatrilhas",
+  "descricao": "Trilhas e atrativos naturais.",
+  "funcionamento": "Das 6h às 20h."
+ },
+ {
+  "codigo": "casa-da-ponte-arte-e-jardim",
+  "descricao": "Enquanto desfruta de um local único, próximo à natureza e a cachoeira, o visitante pode apreciar o artesanato e plantas. Artesanato feitos no local, contato direto com o Mestre Artesão, arte com feltro, telhas de barro, em espelhos, peças de gesso decoradas e pintadas, arte sacra, confecção de peças de decoração com diversos elementos, jogos lúdicos, arte em madeira (pinus, eucalipto ou madeira de demolição), pintura em tecido, imãs de geladeira entre outros artesanatos. Plantas: variedades de suculentas, cactos, rosas, terrários, mini-mundos e diversidades de outras plantas. Em desenvolvimento a arte com kokedama.",
+  "funcionamento": "Não informado."
+ },
+ {
+  "codigo": "delicias-da-serra",
+  "descricao": "Agroindústria Familiar onde é produzido doces em compotas, geléias e queijos, utilizando receitas da família.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "ebiobambu",
+  "descricao": "Tour em permacultura, visita guiada por todas as estruturas de bioconstrução, sistemas agroflorestais, plantio de bambus e gerenciamento de resíduos com opção de alimentação.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "cachaca-adelina",
+  "descricao": "Agradável experiência com a bebida que faz parte da história do Brasil e de Porto Real. Visita guiada pelo proprietário do Alambique Cachaça Adelina, explicando todo o processo da produção da cachaça, desde o plantio da cana até o engarrafamento da bebida. Degustação e venda no final do tour.",
+  "funcionamento": "Das 9h às 17h."
+ },
+ {
+  "codigo": "sitio-romeu-verri",
+  "descricao": "No Sítio Romeu Verri você viverá momentos de interação com a realidade de uma família que preserva as tradições de seus antepassados no cultivo de hortaliças e na produção de mel. Ao final da visita, todos poderão adquirir produtos fresquinhos e saborosos.",
+  "funcionamento": "Das 8h às 12h."
+ }
+]

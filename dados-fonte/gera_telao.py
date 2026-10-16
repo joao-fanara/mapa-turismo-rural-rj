@@ -84,11 +84,11 @@ COMPOE = {'cafe': ['produção e degustação de café', 'fazendas históricas']
 CURTO = {'cafe': 'Café e fazendas', 'queijos': 'Queijos e montanha', 'bebidas-doces': 'Cachaças e doces', 'colheitas': 'Frutas e flores', 'pesca': 'Águas e pesca',
          'natureza': 'Mata e natureza', 'mesa-pouso': 'Mesa e pouso', 'cultura': 'Cultura e festas', 'campo': 'Vivências no campo'}
 cam = [{'slug': s, 'nome': n, 'curto': CURTO.get(s, n), 'simbolo': sb, 'cor': cl, 'compoe': COMPOE.get(s, [])} for n, s, cd, cl, sb in ROTA if tot[s]]
-lentes = {'camadas': {'rotulo': 'Rotas', 'unidade': 'atrativos', 'itens': cam},
-          'eixos': {'rotulo': 'Quero…', 'unidade': 'atrativos', 'itens': itens(EXP, 'estrela'),
-                    'nota': 'Um atrativo pode oferecer mais de uma experiência: as contagens não somam.'},
-          'tipos': {'rotulo': 'Produtos', 'unidade': 'atrativos', 'itens': itens(CAT, 'anel'),
-                    'nota': 'Um atrativo pode ter mais de um produto: as contagens não somam.'}}
+lentes = {'camadas': {'rotulo': 'Rotas', 'unidade': 'lugares', 'itens': cam},
+          'eixos': {'rotulo': 'Quero…', 'unidade': 'lugares', 'itens': itens(EXP, 'estrela'),
+                    'nota': 'Um lugar pode oferecer mais de uma experiência: as contagens não somam.'},
+          'tipos': {'rotulo': 'Produtos', 'unidade': 'lugares', 'itens': itens(CAT, 'anel'),
+                    'nota': 'Um lugar pode ter mais de um produto: as contagens não somam.'}}
 json.dump({'versao_base': meta['versao_base'], 'data_corte': meta['data_corte'], 'fonte': meta['fonte'], 'lentes': lentes, 'por_registro': por_reg},
           open(D + 'lentes.json', 'w', encoding='utf-8'), ensure_ascii=False)
 json.dump(fichas, open(D + 'fichas.json', 'w', encoding='utf-8'), ensure_ascii=False)

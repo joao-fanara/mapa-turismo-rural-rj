@@ -20,6 +20,7 @@ const WIN = process.platform === 'win32';
 const CHROME = process.env.TELAO_CHROME || (WIN ? 'C:/Program Files/Google/Chrome/Application/chrome.exe' : 'google-chrome');
 const PYTHON = WIN ? 'python' : 'python3';
 const espera = (ms) => new Promise((r) => setTimeout(r, ms));
+const HOSTS_PERMITIDOS = new Set(['127.0.0.1', 'localhost']); // com TELAO_URL, só o próprio site provado entra aqui (qualquer outro host é falha)
 const filhos = [];
 const matar = (c) => { try { WIN ? execFileSync('taskkill', ['/PID', String(c.pid), '/T', '/F'], { stdio: 'ignore' }) : process.kill(-c.pid, 'SIGKILL'); } catch { try { c.kill('SIGKILL'); } catch {} } };
 const encerrar = () => { for (const c of filhos) if (c.exitCode === null) matar(c); };
@@ -56,7 +57,7 @@ async function abrirAba(cdpPorta, url, tam) {
   cdp.on('Runtime.exceptionThrown', (p) => erros.push('exceção: ' + (p.exceptionDetails.exception?.description || p.exceptionDetails.text)));
   cdp.on('Runtime.consoleAPICalled', (p) => { if (p.type === 'error') erros.push('console.error: ' + p.args.map((a) => a.value ?? a.description).join(' ')); });
   cdp.on('Log.entryAdded', ({ entry: e }) => { if (e.level === 'error') erros.push(`log ${e.source}: ${e.text} ${e.url ?? ''}`); });
-  cdp.on('Network.requestWillBeSent', ({ request: req }) => { const u = new URL(req.url); if (/^https?:$/.test(u.protocol) && !['127.0.0.1', 'localhost'].includes(u.hostname)) erros.push(`requisição externa: ${req.url}`); });
+  cdp.on('Network.requestWillBeSent', ({ request: req }) => { const u = new URL(req.url); if (/^https?:$/.test(u.protocol) && !HOSTS_PERMITIDOS.has(u.hostname)) erros.push(`requisição externa: ${req.url}`); });
   await cdp.send('Runtime.enable'); await cdp.send('Page.enable'); await cdp.send('Log.enable'); await cdp.send('Network.enable');
   await cdp.send('Emulation.setDeviceMetricsOverride', { width: w, height: h, deviceScaleFactor: 1, mobile: w < 768 });
   await cdp.send('Page.addScriptToEvaluateOnNewDocument', { source: "window.__csp = []; document.addEventListener('securitypolicyviolation', (e) => window.__csp.push(e.violatedDirective + ' ' + e.blockedURI));" });
@@ -148,7 +149,8 @@ async function carregar(A) {
   ok('carregar: h1 "Rio Rural" e lema', (await A.av("document.querySelector('h1').textContent")) === 'Rio Rural' && (await A.av("document.querySelector('.lema').textContent")).includes('Sabores, histórias e caminhos'));
   const munCom = Object.keys(AGR).filter((c) => c !== 'sem_municipio' && AGR[c].total > 0).length;
   const sub = await A.av("document.getElementById('subtitulo').textContent");
-  ok('carregar: subtítulo com os totais dos dados', sub.includes(`${fmt(REG.meta.total)} atrativos`) && sub.includes(`${munCom} municípios`) && sub.includes(`${REG.grupos.length} rotas`), sub);
+  ok('carregar: subtítulo com os totais dos dados', sub.includes(`${fmt(REG.meta.total)} lugares`) && sub.includes(`${munCom} municípios`), sub);
+  ok('carregar: autoria no HTML (meta author)', await A.av("document.querySelector('meta[name=author]')?.content === 'João Fanara'"));
   const tri = await A.av('window.__telao.info().triangulos');
   ok('carregar: relevo sólido desenhado (mais de 500 mil triângulos)', tri > 500000, tri);
   await A.capturar('p-carregar.png');
@@ -172,7 +174,7 @@ async function estado(A) {
   await A.abrirTelao();
   const s = Object.values(AGR).reduce((a, g) => ({ p: a.p + g.pontuais, n: a.n + g.nao_pontuais }), { p: 0, n: 0 });
   ok('estado: total no cartão', (await A.av("document.getElementById('c-total').textContent")) === fmt(REG.meta.total));
-  ok('estado: com ponto / só no município', (await A.av("document.getElementById('c-sub').textContent")) === `${fmt(s.p)} com ponto no mapa · ${fmt(s.n)} só no município`);
+  ok('estado: texto de turista (sem jargão de inventário)', await A.av("document.getElementById('c-total-rot').textContent === 'lugares para visitar' && document.getElementById('c-sub').hidden && !/inventário|MapBiomas/.test(document.getElementById('cartao').textContent)"));
   const leg = await A.av("[...document.querySelectorAll('#c-grupos li')].map((li) => [li.dataset.slug, li.querySelector('.n').textContent])");
   ok('estado: legenda de rotas = totais de registros.json', REG.grupos.every((g) => leg.some(([s2, n]) => s2 === g.slug && n === fmt(g.total))), leg);
 }
@@ -279,7 +281,7 @@ async function juntos(A) { // dois alvos colados sob o mesmo toque: abre a lista
   ok('juntos: há dois alvos colados (6–16 px) para testar', !!par);
   if (!par) return;
   await A.clicar(par.p);
-  ok('juntos: toque entre dois alvos abre a lista para escolher', await A.ate("!document.getElementById('item').hidden && /atrativos próximos/.test(document.getElementById('i-titulo').textContent)", 3000), par);
+  ok('juntos: toque entre dois alvos abre a lista para escolher', await A.ate("!document.getElementById('item').hidden && /lugares próximos/.test(document.getElementById('i-titulo').textContent)", 3000), par);
   const cods = await A.av("[...document.querySelectorAll('#i-lista li')].map((li) => li.dataset.codigo)");
   ok('juntos: a lista traz exatamente os dois', cods.length === 2 && cods.includes(par.a) && cods.includes(par.b), cods);
   ok('juntos: nenhuma ficha abriu antes da escolha', !(await A.av('window.__telao.ficha()')));
@@ -371,6 +373,23 @@ async function passeio(A) {
   ok('passeio: botão retoma', await A.ate('!window.__telao.estado().pausado', 1500));
 }
 
+// notebooks e telas baixas: o cartão da direita precisa caber inteiro (nada de legenda cortada) no estado e num município
+async function notebook(A, cdpPorta, url) {
+  for (const tam of ['1280x720', '1366x768', '1536x864', '1920x869', '1920x1080']) {
+    const B = await abrirAba(cdpPorta, url, tam);
+    await B.abrirTelao();
+    const cartao = () => B.av("(() => { const c = document.getElementById('cartao'); return { sobra: c.scrollHeight - c.clientHeight, nome: document.getElementById('c-nome').textContent, fim: c.getBoundingClientRect().bottom, rodape: document.getElementById('rodape').getBoundingClientRect().top }; })()");
+    const e = await cartao();
+    ok(`notebook ${tam}: cartão do estado cabe inteiro (sem corte)`, e.sobra <= 2 && e.fim <= e.rodape + 1, e);
+    await B.av("window.__telaoDepuracao.selecionar('3303906')"); await espera(1200);
+    const m = await cartao();
+    ok(`notebook ${tam}: cartão de município cabe inteiro`, m.sobra <= 2 && m.fim <= m.rodape + 1, m);
+    await B.capturar(`p-notebook-${tam}.png`);
+    await B.limpo(`notebook ${tam}`);
+    await fetch(`http://127.0.0.1:${cdpPorta}/json/close/${B.id}`);
+  }
+}
+
 async function tamanhos(A, cdpPorta, url) {
   const rica = Object.keys(FIC).find((c) => FIC[c].telefone && FIC[c].funcionamento && FIC[c].descricao.length > 300 && FIC[c].lat != null);
   for (const [tam, lim] of [['1920x1080', { dd: 20, nome: 32, qr: 200 }], ['3840x2160', { dd: 40, nome: 64, qr: 400 }], ['1366x768', { dd: 14, nome: 24, qr: 150 }], ['390x844', { dd: 14, nome: 20, qr: 120 }]]) {
@@ -422,7 +441,7 @@ async function servidor() {
   matar(ps);
 }
 
-const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos];
+const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook];
 
 function servidorHTTP(porta) {
   const mimes = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.bin': 'application/octet-stream' };
@@ -443,9 +462,11 @@ async function main() {
   const marca = path.join(PERFIL, 'DevToolsActivePort');
   fs.rmSync(marca, { force: true });
   const tam = process.env.TELAO_TAM || '1920x1080', so = process.env.TELAO_SECAO;
-  const porta = await portaLivre();
-  const srv = await servidorHTTP(porta);
-  const url = `http://127.0.0.1:${porta}/`;
+  // TELAO_URL=https://… prova o site publicado (os dados de referência continuam sendo os de telao/dados: publique antes de provar)
+  const remoto = process.env.TELAO_URL ? process.env.TELAO_URL.replace(/\/?$/, '/') : null;
+  const srv = remoto ? null : await servidorHTTP(await portaLivre());
+  const url = remoto ?? `http://127.0.0.1:${srv.address().port}/`;
+  if (remoto) HOSTS_PERMITIDOS.add(new URL(remoto).hostname);
   const chrome = spawn(CHROME, ['--headless=new', `--user-data-dir=${PERFIL}`, '--remote-debugging-port=0', '--no-first-run', '--no-default-browser-check', '--mute-audio',
     `--window-size=${tam.replace('x', ',')}`, '--ignore-gpu-blocklist', ...(WIN ? ['--use-angle=d3d11'] : ['--no-sandbox', '--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader']), '--disable-renderer-backgrounding', '--disable-background-timer-throttling', '--disable-backgrounding-occluded-windows', 'about:blank'], { stdio: 'ignore', detached: !WIN });
   filhos.push(chrome);
@@ -453,7 +474,7 @@ async function main() {
   for (let t = 0; t < 80 && !cdpPorta; t++) { await espera(250); try { cdpPorta = Number(fs.readFileSync(marca, 'utf8').split('\n')[0]) || 0; } catch {} }
   if (!cdpPorta) throw new Error('o Chrome não abriu a porta de depuração');
   if (!so || so === 'contraste') { console.log('--- contraste'); contraste(); }
-  if (WIN && (!so || so === 'servidor')) { console.log('--- servidor (PowerShell: só no Windows)'); await servidor(); }
+  if (WIN && !remoto && (!so || so === 'servidor')) { console.log('--- servidor (PowerShell: só no Windows)'); await servidor(); }
   for (const secao of SECOES.filter((s) => !so || s.name === so)) {
     console.log(`--- ${secao.name}`);
     const A = await abrirAba(cdpPorta, url + (secao.name === 'passeio' ? '?ocio=1500' : ''), tam);
@@ -464,7 +485,7 @@ async function main() {
     await fetch(`http://127.0.0.1:${cdpPorta}/json/close/${A.id}`);
   }
   console.log(falhas ? `${falhas} verificação(ões) falharam` : 'todas as verificações passaram');
-  srv.close(); encerrar();
+  srv?.close(); encerrar();
   process.exit(falhas ? 1 : 0);
 }
 main().catch((e) => { console.error(e); encerrar(); process.exit(2); });

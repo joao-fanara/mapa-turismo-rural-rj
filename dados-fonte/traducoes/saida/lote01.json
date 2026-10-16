@@ -1,0 +1,242 @@
+{
+"pousada-vale-do-cafe": {
+"en": {"descricao": "Located in the Historic Village of Ipiabas, in an architectural ensemble built in the 19th century, surrounded by nature and with a large garden, Pousada Vale do Café offers restful days at the gentle pace of the rural countryside, where time moves without hurry. Breakfast is served with selected local and homemade items.", "funcionamento": "24 hours"},
+"fr": {"descricao": "Située dans le village historique d'Ipiabas, au sein d'un ensemble architectural du XIXe siècle, entourée de nature et dotée d'un vaste jardin, la Pousada Vale do Café propose des journées de repos au rythme paisible de la campagne, où le temps s'écoule sans hâte. Le petit-déjeuner est servi avec une sélection de produits locaux et faits maison.", "funcionamento": "24 h/24"},
+"de": {"descricao": "Die Pousada Vale do Café liegt im historischen Dorf Ipiabas in einem architektonischen Ensemble aus dem 19. Jahrhundert, umgeben von Natur und mit einem weitläufigen Garten. Sie bietet erholsame Tage im sanften Rhythmus des ländlichen Hinterlandes, wo die Zeit ohne Eile vergeht. Das Frühstück wird mit ausgewählten lokalen und hausgemachten Produkten serviert.", "funcionamento": "24 Stunden"}
+},
+"rvc-turismo": {
+"en": {"descricao": "Builds partnerships and helps tourists fall in love with our destination. Offers the chance to enjoy new experiences, especially in the countryside.", "funcionamento": "8 am–6 pm"},
+"fr": {"descricao": "Crée des partenariats et fait en sorte que les touristes tombent sous le charme de notre destination. Offre la possibilité de vivre de nouvelles expériences, notamment en milieu rural.", "funcionamento": "De 8 h à 18 h"},
+"de": {"descricao": "Knüpft Partnerschaften und sorgt dafür, dass Touristen unser Reiseziel ins Herz schließen. Bietet die Möglichkeit, neue Erfahrungen zu machen, vor allem im ländlichen Raum.", "funcionamento": "8–18 Uhr"}
+},
+"hotel-fazenda-sao-sebastiao": {
+"en": {"descricao": "We want our guests to enjoy country life in a rustic, welcoming setting. Plenty of space for walks along trails and country roads, lakes for fishing, and a swimming pool with constantly renewed water.", "funcionamento": "Monday to Saturday, 8:30 am–6 pm – Sunday, 9 am–4 pm"},
+"fr": {"descricao": "Nous souhaitons que nos hôtes profitent de la vie à la campagne dans un cadre rustique et chaleureux. De vastes espaces pour se promener sur les sentiers et les chemins ruraux, des lacs pour la pêche, une piscine à l'eau constamment renouvelée.", "funcionamento": "Du lundi au samedi, de 8 h 30 à 18 h – Dimanche, de 9 h à 16 h"},
+"de": {"descricao": "Wir möchten, dass unsere Gäste das Landleben in einer rustikalen, gemütlichen Umgebung genießen. Viel Platz für Wanderungen auf Pfaden und Landstraßen, Seen zum Angeln und ein Schwimmbad mit ständig erneuertem Wasser.", "funcionamento": "Montag bis Samstag, 8.30–18 Uhr – Sonntag, 9–16 Uhr"}
+},
+"casarao-cultural-vale-do-cafe": {
+"en": {"descricao": "A unique venue in the Vale do Café, located in the Historic Village of Piedade in Ipiabas, RJ, and built in 1874. Through the Handicraft Project, in which craftspeople from the Vale do Café take part, it offers products related to Neoclassical architecture and to the historical and cultural themes of the region. It provides tourist itineraries and city tours and hosts cultural events, organic produce markets and craft fairs. Through the Espaço Vida e Arte, it showcases local artists who wish to exhibit their work. It has a café that prioritizes regional products, and a space with antiques and collectibles.", "funcionamento": "Thursday to Sunday, 10 am–6 pm"},
+"fr": {"descricao": "Lieu unique dans la Vale do Café, situé dans le village historique de Piedade, à Ipiabas (RJ), construit en 1874. Grâce au Projet d'artisanat auquel participent des artisans de la Vale do Café, il propose des produits liés à l'architecture néoclassique et aux thèmes historiques et culturels de la région. Il organise des circuits touristiques et des visites de la ville, et accueille des événements culturels, des marchés de produits biologiques et des foires d'artisanat. Par l'intermédiaire de l'Espaço Vida e Arte, il met à l'honneur les artistes de la région qui souhaitent exposer leurs œuvres. Il dispose d'un café où les produits régionaux sont privilégiés, ainsi que d'un espace présentant des objets d'antiquaire et de collection.", "funcionamento": "Du jeudi au dimanche, de 10 h à 18 h"},
+"de": {"descricao": "Ein einzigartiger Ort im Vale do Café, gelegen im historischen Dorf Piedade in Ipiabas (RJ) und 1874 erbaut. Über das Kunsthandwerksprojekt, an dem Kunsthandwerker aus dem Vale do Café teilnehmen, bietet es Produkte rund um die neoklassizistische Architektur sowie die historischen und kulturellen Themen der Region an. Es organisiert Touristenrouten und Stadtrundfahrten und veranstaltet Kulturevents, Märkte für Bioprodukte und Kunsthandwerksmärkte. Über den Espaço Vida e Arte würdigt es Künstler der Region, die ihre Arbeiten ausstellen möchten. Es verfügt über ein Café, in dem Produkte aus der Region im Vordergrund stehen, sowie über einen Bereich mit Antiquitäten und Sammlerstücken.", "funcionamento": "Donnerstag bis Sonntag, 10–18 Uhr"}
+},
+"vera-plantas-ipiabas": {
+"en": {"descricao": "When we talk about landscaping, we usually think of beautiful gardens and squares. Yet, when well planned, landscaping in a rural setting makes a property an even more pleasant place to enjoy, thus attracting more visitors.", "funcionamento": "9 am–5 pm"},
+"fr": {"descricao": "Quand on parle de paysagisme, on pense généralement à de beaux jardins et à des places. Pourtant, en milieu rural, un paysagisme bien pensé rend la propriété encore plus agréable à découvrir et attire ainsi davantage de visiteurs.", "funcionamento": "De 9 h à 17 h"},
+"de": {"descricao": "Wenn wir von Landschaftsgestaltung sprechen, denken wir meist an schöne Gärten und Plätze. Doch auch im ländlichen Raum macht eine gut geplante Landschaftsgestaltung ein Anwesen noch angenehmer und zieht dadurch mehr Besucher an.", "funcionamento": "9–17 Uhr"}
+},
+"rota-393": {
+"en": {"descricao": "Receptive tourism throughout the Vale do Café, combining rural tourism with experiences in ecotourism, adventure, history and culture, and gastronomy. We value the particularities and potential of the district of Ipiabas and how it relates to the environment and sustainability.", "funcionamento": "9 am–7 pm / Weekends 7 am–9 pm"},
+"fr": {"descricao": "Tourisme réceptif dans toute la Vale do Café, associant le tourisme rural à des expériences d'écotourisme, d'aventure, d'histoire et de culture, ainsi que de gastronomie. Nous valorisons les particularités et le potentiel du district d'Ipiabas et sa relation avec l'environnement et la durabilité.", "funcionamento": "De 9 h à 19 h / Week-ends de 7 h à 21 h"},
+"de": {"descricao": "Empfangstourismus im gesamten Vale do Café, der ländlichen Tourismus mit Erlebnissen in den Bereichen Ökotourismus, Abenteuer, Geschichte und Kultur sowie Gastronomie verbindet. Wir schätzen die Besonderheiten und das Potenzial des Distrikts Ipiabas und seinen Bezug zu Umwelt und Nachhaltigkeit.", "funcionamento": "9–19 Uhr / Wochenende 7–21 Uhr"}
+},
+"adventure-jeep-didu": {
+"en": {"descricao": "Adventure Jeep Didu offers tours in 4x4 vehicles that seat up to 10 people. Visits to historic farms, cultural attractions and ecological parks. City tours that favor local businesses.", "funcionamento": ""},
+"fr": {"descricao": "Adventure Jeep Didu propose des balades en véhicules 4x4 pouvant accueillir jusqu'à 10 personnes. Visites de fermes historiques, d'attraits culturels et de parcs écologiques. Visites de la ville mettant en valeur le commerce local.", "funcionamento": ""},
+"de": {"descricao": "Adventure Jeep Didu bietet Touren in Geländefahrzeugen (4x4) für bis zu 10 Personen an. Besuche historischer Farmen, kultureller Sehenswürdigkeiten und Ökoparks. Stadtrundfahrten, die den lokalen Handel in den Mittelpunkt stellen.", "funcionamento": ""}
+},
+"fazenda-allianca-agroecologica": {
+"en": {"descricao": "A historic 19th-century farm that today runs a sustainable food-production project. They were pioneers in the Vale do Café region in organic buffalo farming and in organic specialty coffee, certified by IDB.", "funcionamento": "Monday to Saturday, 9 am–4 pm"},
+"fr": {"descricao": "Ferme historique du XIXe siècle qui abrite aujourd'hui un projet durable de production alimentaire. Elle a été pionnière dans la région de la Vale do Café pour l'élevage de bufflonnes biologiques et la production de café de spécialité biologique, certifiés par l'IBD.", "funcionamento": "Du lundi au samedi, de 9 h à 16 h"},
+"de": {"descricao": "Eine historische Farm aus dem 19. Jahrhundert, die heute ein nachhaltiges Projekt zur Lebensmittelproduktion betreibt. Sie war in der Region Vale do Café Vorreiterin bei der Haltung von Bio-Wasserbüffeln und bei der Erzeugung von biologischem Spezialitätenkaffee, zertifiziert durch das IDB.", "funcionamento": "Montag bis Samstag, 9–16 Uhr"}
+},
+"cerveja-barra-do-pirai": {
+"en": {"descricao": "Beer tour – an explanation of how the beer production process works.", "funcionamento": "9 am–4 pm"},
+"fr": {"descricao": "Beer tour – explication du fonctionnement du processus de fabrication de la bière.", "funcionamento": "De 9 h à 16 h"},
+"de": {"descricao": "Bier-Tour – Erklärung, wie der Bierproduktionsprozess funktioniert.", "funcionamento": "9–16 Uhr"}
+},
+"fazenda-da-taquara": {
+"en": {"descricao": "Nearly two centuries old, the main house, still in perfect condition, preserves its history with original furniture and portraits. The property welcomes visitors from all over the world and offers a delicious lunch or colonial-style breakfast with products from the farm itself. There is also a tour of the coffee plantation, showing the entire coffee process through to processing.", "funcionamento": ""},
+"fr": {"descricao": "Vieille de près de deux siècles, la maison principale, toujours en parfait état de conservation, préserve son histoire grâce à son mobilier et à ses portraits d'origine. La propriété accueille des visiteurs du monde entier et propose un délicieux déjeuner ou un brunch colonial avec des produits de la ferme. Il est également possible de visiter la caféière, qui présente tout le processus du café jusqu'à sa transformation.", "funcionamento": ""},
+"de": {"descricao": "Das fast zweihundert Jahre alte Herrenhaus, noch immer in perfektem Erhaltungszustand, bewahrt seine Geschichte mit Originalmöbeln und -porträts. Das Anwesen empfängt Besucher aus aller Welt und bietet ein köstliches Mittagessen oder ein Kolonial-Frühstück mit Produkten der Farm selbst. Außerdem gibt es eine Führung durch die Kaffeeplantage, die den gesamten Kaffeeprozess bis zur Aufbereitung zeigt.", "funcionamento": ""}
+},
+"haras-fire-notes": {
+"en": {"descricao": "Since 1988, Haras Fire Notes has offered a variety of activities, such as riding lessons, show jumping, barrel racing, functional training, courses and horseback rides, where leisure goes hand in hand with environmental education and the sustainable development of the region. Visitors can interact with the natural environment of Ipiabas and its many attractions through different horseback routes (Pedra do Gavião, a waterfall and several trails).", "funcionamento": "Tuesday to Saturday, 8 am–5 pm / Sunday, 8 am–noon"},
+"fr": {"descricao": "Depuis 1988, le Haras Fire Notes propose diverses activités, comme des cours d'équitation, du saut d'obstacles, du barrel racing, de l'entraînement fonctionnel, des stages et des randonnées équestres où le loisir s'allie à l'éducation à l'environnement et au développement durable de la région. Les touristes peuvent découvrir le milieu naturel d'Ipiabas et ses nombreux attraits grâce à différents itinéraires de randonnée à cheval (Pedra do Gavião, une cascade et de nombreux sentiers).", "funcionamento": "Du mardi au samedi, de 8 h à 17 h / Dimanche, de 8 h à 12 h"},
+"de": {"descricao": "Seit 1988 bietet das Haras Fire Notes verschiedene Aktivitäten an, darunter Reitunterricht, Springreiten, Tonnenrennen, Funktionstraining, Kurse und Ausritte, bei denen sich Freizeit mit Umweltbildung und nachhaltiger Entwicklung der Region verbindet. Besucher können die Natur von Ipiabas und ihre vielfältigen Attraktionen auf unterschiedlichen Reitrouten erleben (Pedra do Gavião, ein Wasserfall und zahlreiche Wanderwege).", "funcionamento": "Dienstag bis Samstag, 8–17 Uhr / Sonntag, 8–12 Uhr"}
+},
+"fazenda-da-posse": {
+"en": {"descricao": "Colonial-style breakfast by appointment, with a guided tour telling the history of the farm.  The first building in Barra Mansa, dating from 1768, Fazenda da Posse today houses a Documentation and Memory Center, governed by the Municipal Culture Plan and the Artistic Occupation Program of Public Cultural Facilities. Run by the Fundação de Cultura, the CEDOC is a space devoted to research and to the production and storage of documents related to the historical, social, political and cultural universe of Barra Mansa and the region. It is of great historical and cultural value to the entire region. It is currently a Culture Center.", "funcionamento": "8 am–noon"},
+"fr": {"descricao": "Brunch colonial sur rendez-vous, avec visite guidée retraçant l'histoire de la ferme.  Première construction de Barra Mansa, datant de 1768, la Fazenda da Posse abrite aujourd'hui un Centre de documentation et de mémoire, régi par le Plan municipal de la culture et par le Programme d'occupation artistique des équipements publics de culture. Administré par la Fundação de Cultura, le CEDOC est un espace consacré à la recherche, à la production et à la conservation de documents liés à l'univers historique, social, politique et culturel de Barra Mansa et de sa région. Il revêt une grande valeur historique et culturelle pour toute la région. C'est aujourd'hui un centre culturel.", "funcionamento": "De 8 h à 12 h"},
+"de": {"descricao": "Kolonial-Frühstück nach Voranmeldung, mit einer Führung, die die Geschichte der Farm erzählt.  Die Fazenda da Posse, das erste Bauwerk von Barra Mansa aus dem Jahr 1768, beherbergt heute ein Dokumentations- und Gedächtniszentrum, das den Bestimmungen des kommunalen Kulturplans und des Programms zur künstlerischen Nutzung öffentlicher Kultureinrichtungen unterliegt. Das von der Fundação de Cultura verwaltete CEDOC ist ein Ort für Forschung sowie für die Erstellung und Aufbewahrung von Dokumenten zur historischen, sozialen, politischen und kulturellen Welt von Barra Mansa und der Region. Es hat großen historisch-kulturellen Wert für die gesamte Region. Heute ist es ein Kulturzentrum.", "funcionamento": "8–12 Uhr"}
+},
+"fazenda-santana-do-turvo": {
+"en": {"descricao": "Accommodation, horseback rides and coffee for non-guests.", "funcionamento": "9 am–5 pm"},
+"fr": {"descricao": "Hébergement, balades à cheval et café pour les visiteurs non hébergés.", "funcionamento": "De 9 h à 17 h"},
+"de": {"descricao": "Übernachtung, Ausritte und Kaffee auch für Gäste, die nicht dort übernachten.", "funcionamento": "9–17 Uhr"}
+},
+"palacio-barao-de-guapy-1857": {
+"en": {"descricao": "A Neoclassical building, its construction began in 1857 under Commander Lucas Antônio Monteiro de Barros and was completed in 1865 under Commendador Joaquim José Ferraz de Oliveira, the Baron of Guapi. It was listed as a heritage site in 1979 by the State Institute of Cultural Heritage (Inepac). In 1914, the City Council ceded the ground floor to house the Barra Mansa City Hall, which operated there for 70 years. In the legislative chamber, the carved leather chairs, crystal chandeliers and a picture gallery of significant historical value stand out. It currently houses the Municipal Library. The chamber hall and paintings have been preserved.", "funcionamento": "8 am–5 pm"},
+"fr": {"descricao": "De style néoclassique, le bâtiment dont la construction a débuté en 1857, sous l'administration du commandant Lucas Antônio Monteiro de Barros, a été achevé en 1865, sous celle du commandeur Joaquim José Ferraz de Oliveira, baron de Guapi. Il a été classé en 1979 par l'Institut de l'État du patrimoine culturel (Inepac). En 1914, la Chambre municipale a cédé le rez-de-chaussée pour y installer la mairie de Barra Mansa, qui y a fonctionné pendant 70 ans. Dans la salle plénière du Législatif, on remarque les fauteuils en cuir ouvragé, les lustres en cristal et une pinacothèque d'une grande valeur historique. Il abrite aujourd'hui la Bibliothèque municipale. La salle plénière et les peintures sont conservées.", "funcionamento": "De 8 h à 17 h"},
+"de": {"descricao": "Das neoklassizistische Gebäude wurde 1857 unter Kommandant Lucas Antônio Monteiro de Barros begonnen und 1865 unter Komtur Joaquim José Ferraz de Oliveira, dem Baron von Guapi, fertiggestellt. 1979 wurde es vom Staatlichen Institut für Kulturerbe (Inepac) unter Denkmalschutz gestellt. 1914 überließ der Stadtrat das Erdgeschoss, damit dort die Stadtverwaltung von Barra Mansa einziehen konnte, die 70 Jahre lang dort ihren Sitz hatte. Im Plenarsaal des Legislativorgans fallen die Stühle aus verziertem Leder, die Kristalllüster und eine Gemäldesammlung von bedeutendem historischem Wert auf. Heute beherbergt es die Stadtbibliothek. Der Plenarsaal und die Gemälde sind erhalten geblieben.", "funcionamento": "8–17 Uhr"}
+},
+"destilaria-amazzoni": {
+"en": {"descricao": "Distillery tour with an explanation of the production process and history, plus a tasting shot of the 3 products. Amázzoni Gin was named the best gin in the world at the World Gin Awards in 2021.", "funcionamento": "9 am–5 pm"},
+"fr": {"descricao": "Visite de la distillerie avec explication du processus de production et de l'histoire, ainsi qu'une dégustation des 3 produits. L'Amázzoni Gin a été élu meilleur gin du monde en 2021 par les World Gin Awards.", "funcionamento": "De 9 h à 17 h"},
+"de": {"descricao": "Rundgang durch die Destillerie mit Erläuterung des Produktionsprozesses und der Geschichte, dazu ein Verkostungsschluck der 3 Produkte. Amázzoni Gin wurde 2021 bei den World Gin Awards zum besten Gin der Welt gewählt.", "funcionamento": "9–17 Uhr"}
+},
+"parque-centenario-jardim-das-preguica": {
+"en": {"descricao": "This park is home to 25 sloths that live freely among the trees and paths in the heart of the city. Parque Centenário, also known as Praça da Bandeira, is an urban park designed by the French engineer and landscape architect Auguste François Marie Glaziou, at the request of Joaquim José Ferraz de Oliveira, the Baron of Guapy, first president of the Barra Mansa City Council. Created in the 1870s, the park was later redesigned by the landscape architect Burle Marx, in 1991. The park was once called “Jardim de Baixo” (Lower Garden), since there was a “Jardim de Cima” (Upper Garden) in Largo da Matriz, but the name “Parque Centenário” was given in 1922, as a tribute to the centennial of Brazil's Independence. Some time later, it took the name Praça Feliciano Sodré, in honor of the then governor of the State. In 1932, the year of Barra Mansa's centennial, Mayor Izimbardo Peixoto, through a municipal law, restored the name “Parque Centenário”. Known as the Sloth Garden (Jardim das Preguiças), it earned the nickname for hosting sloths, which wander among the old, tall trees.", "funcionamento": "8 am–8 pm"},
+"fr": {"descricao": "Ce parc abrite 25 paresseux qui vivent en liberté parmi les arbres et les allées, en plein centre-ville. Le Parque Centenário, également connu sous le nom de Praça da Bandeira, est un parc urbain conçu par l'ingénieur et paysagiste français Auguste François Marie Glaziou, à la demande de Joaquim José Ferraz de Oliveira, baron de Guapy, premier président de la Chambre municipale de Barra Mansa. Créé dans les années 1870, le parc a été réaménagé par le paysagiste Burle Marx en 1991. Il s'est autrefois appelé « Jardim de Baixo » (Jardin du bas), car il existait un « Jardim de Cima » (Jardin du haut) au Largo da Matriz, mais le nom « Parque Centenário » lui a été donné en 1922, en hommage au centenaire de l'Indépendance du Brésil. Quelque temps plus tard, il a porté le nom de Praça Feliciano Sodré, en hommage au gouverneur de l'État de l'époque. En 1932, année du centenaire de Barra Mansa, le maire Izimbardo Peixoto, par une loi municipale, lui a rendu le nom de « Parque Centenário ». Connu sous le nom de Jardim das Preguiças (Jardin des paresseux), il doit ce surnom aux paresseux qui se promènent dans ses arbres anciens et élevés.", "funcionamento": "De 8 h à 20 h"},
+"de": {"descricao": "In diesem Park leben 25 Faultiere frei zwischen den Bäumen und Wegen mitten in der Stadt. Der Parque Centenário, auch als Praça da Bandeira bekannt, ist ein Stadtpark, der von dem französischen Ingenieur und Landschaftsarchitekten Auguste François Marie Glaziou im Auftrag von Joaquim José Ferraz de Oliveira, dem Baron von Guapy und ersten Präsidenten des Stadtrats von Barra Mansa, entworfen wurde. Der in den 1870er-Jahren angelegte Park wurde 1991 vom Landschaftsarchitekten Burle Marx neu gestaltet. Er hieß früher „Jardim de Baixo“ (Unterer Garten), da es am Largo da Matriz einen „Jardim de Cima“ (Oberer Garten) gab; den Namen „Parque Centenário“ erhielt er 1922 zu Ehren des hundertjährigen Jubiläums der Unabhängigkeit Brasiliens. Einige Zeit später trug er den Namen Praça Feliciano Sodré, zu Ehren des damaligen Gouverneurs des Bundesstaates. 1932, im Jahr des hundertjährigen Bestehens von Barra Mansa, gab Bürgermeister Izimbardo Peixoto ihm durch ein städtisches Gesetz den Namen „Parque Centenário“ zurück. Unter dem Namen Jardim das Preguiças (Faultiergarten) bekannt, verdankt er seinen Beinamen den Faultieren, die in den alten, hohen Bäumen umherstreifen.", "funcionamento": "8–20 Uhr"}
+},
+"fazenda-cachoeira": {
+"en": {"descricao": "Carefully rebuilt, it retains the architectural features of the late 18th century, having been erected around 1717. Fazenda Cachoeira was initially devoted to growing sugarcane for the production of sugar and cachaça, and later adopted coffee cultivation, which was the town's great product during the imperial period. The Cachaçaria Rochinha is open to visitors, including product tastings and an introduction to stages of the production process, a true journey back to Imperial Brazil, with the flavors and aromas of the countryside.", "funcionamento": "10 am–5 pm"},
+"fr": {"descricao": "Soigneusement reconstruite, elle conserve les caractéristiques de l'architecture de la fin du XVIIIe siècle et a été édifiée vers 1717. La Fazenda Cachoeira s'est d'abord consacrée à la culture de la canne à sucre pour la production de sucre et de cachaça, avant d'adopter la culture du café, grand produit de la ville pendant la période impériale. La Cachaçaria Rochinha est ouverte à la visite, avec dégustation de produits et découverte de certaines étapes du processus de production, un véritable voyage dans le Brésil impérial, avec les saveurs et les arômes de la campagne.", "funcionamento": "De 10 h à 17 h"},
+"de": {"descricao": "Sorgfältig wiederaufgebaut, bewahrt sie die architektonischen Merkmale des späten 18. Jahrhunderts und wurde um 1717 errichtet. Die Fazenda Cachoeira widmete sich zunächst dem Zuckerrohranbau für die Herstellung von Zucker und Cachaça und ging später zum Kaffeeanbau über, dem großen Erzeugnis der Stadt während der Kaiserzeit. Die Cachaçaria Rochinha kann besichtigt werden, einschließlich Produktverkostung und Einblick in Phasen des Herstellungsprozesses – eine wahre Reise ins kaiserliche Brasilien, mit den Aromen und Düften des Landes.", "funcionamento": "10–17 Uhr"}
+},
+"estufa-de-mudas-do-robson": {
+"en": {"descricao": "Pick and pay: visitors choose their vegetables, harvest them and pay. It has been a different and pleasant experience for tourists.", "funcionamento": ""},
+"fr": {"descricao": "Cueillez et payez : le visiteur choisit ses légumes, les récolte et les paie. C'est une expérience différente et agréable pour les touristes.", "funcionamento": ""},
+"de": {"descricao": "Selbst ernten und bezahlen: Die Besucher suchen sich ihr Gemüse aus, ernten es und bezahlen. Für Touristen ist das eine abwechslungsreiche und angenehme Erfahrung.", "funcionamento": ""}
+},
+"fazenda-bocaina": {
+"en": {"descricao": "Reception with colonial-style breakfast on the farm grounds.", "funcionamento": "By appointment"},
+"fr": {"descricao": "Accueil avec brunch colonial dans l'enceinte de la ferme.", "funcionamento": "Sur rendez-vous"},
+"de": {"descricao": "Empfang mit Kolonial-Frühstück auf dem Gelände der Farm.", "funcionamento": "Nur nach Voranmeldung"}
+},
+"cachoeira-do-salto": {
+"en": {"descricao": "A beautiful waterfall, a chance to connect with nature.", "funcionamento": "24 hours"},
+"fr": {"descricao": "Une belle cascade, un contact avec la nature.", "funcionamento": "24 h/24"},
+"de": {"descricao": "Ein schöner Wasserfall, Kontakt mit der Natur.", "funcionamento": "24 Stunden"}
+},
+"artesanato-stella-carvalho": {
+"en": {"descricao": "It is right here that the craftspeople make their pieces and give craft classes to the district's residents. Built by the Associação das Damas de Caridade de Amparo in 1981. Its goals include encouraging craft skills and making it easier to reach the sales market, with the proceeds going to the craftswomen, as a kind of cooperative. The project was designed by engineer Luiz Roberto Correia Reche and features a facade with colonial-style window frames, maintaining the atmosphere of Amparo's historic setting. The patchwork quilts produced here are famous, known even in other countries, and have become a hallmark of Amparo.", "funcionamento": ""},
+"fr": {"descricao": "C'est sur place que les artisans fabriquent leurs pièces et donnent des cours d'artisanat aux habitants du district. Construit par l'Associação das Damas de Caridade de Amparo en 1981. Parmi ses objectifs figurent l'encouragement des savoir-faire artisanaux et la facilitation de l'accès au marché de la vente, dont les résultats reviennent aux artisanes, à la manière d'une coopérative. Le projet est de l'ingénieur Luiz Roberto Correia Reche et présente une façade aux menuiseries de style colonial, qui préserve l'atmosphère du cadre historique d'Amparo. Les courtepointes en patchwork produites par l'atelier sont célèbres, connues jusque dans d'autres pays, et sont devenues une référence d'Amparo.", "funcionamento": ""},
+"de": {"descricao": "Genau hier stellen die Kunsthandwerker ihre Stücke her und geben den Bewohnern des Distrikts Kunsthandwerkskurse. Erbaut 1981 von der Associação das Damas de Caridade de Amparo. Zu ihren Zielen gehören die Förderung handwerklicher Fähigkeiten und der erleichterte Zugang zum Absatzmarkt, dessen Erlöse den Kunsthandwerkerinnen zugutekommen, ähnlich wie bei einer Genossenschaft. Das Projekt stammt vom Ingenieur Luiz Roberto Correia Reche und zeigt eine Fassade mit Fensterrahmen im Kolonialstil, die die Atmosphäre des historischen Ortsbilds von Amparo bewahrt. Die hier gefertigten Patchwork-Decken sind berühmt, auch im Ausland bekannt und zu einem Markenzeichen von Amparo geworden.", "funcionamento": ""}
+},
+"fazenda-sao-lucas": {
+"en": {"descricao": "Pay-to-fish pond, restaurant, swimming pool, horseback rides and model aircraft flying. Lots of greenery and animals.", "funcionamento": "Sunday, 8 am–4 pm"},
+"fr": {"descricao": "Pêche payante, restaurant, piscine, balades à cheval et aéromodélisme. Beaucoup de verdure et d'animaux.", "funcionamento": "Dimanche, de 8 h à 16 h"},
+"de": {"descricao": "Angelteich (Pay-to-fish), Restaurant, Schwimmbad, Ausritte und Modellflug. Viel Grün und Tiere.", "funcionamento": "Sonntag, 8–16 Uhr"}
+},
+"hotel-fazenda-caluje": {
+"en": {"descricao": "What experience does the place offer? Zip line, football field, heated pool, lake with pedal boats, little farm (contact with animals), Mini Bugre, Kids Hall, Vale do Sol pool, Skibunda.", "funcionamento": "8 am–6 pm"},
+"fr": {"descricao": "Quelle expérience le lieu propose-t-il ? Tyrolienne, terrain de football, piscine chauffée, lac avec pédalos, mini-ferme (contact avec les animaux), Mini Bugre, salle pour enfants, piscine Vale do Sol, Skibunda.", "funcionamento": "De 8 h à 18 h"},
+"de": {"descricao": "Welches Erlebnis bietet der Ort? Seilrutsche, Fußballplatz, beheiztes Schwimmbad, See mit Tretbooten, kleiner Bauernhof (Kontakt mit Tieren), Mini Bugre, Kinderspielsaal, Schwimmbad Vale do Sol, Skibunda.", "funcionamento": "8–18 Uhr"}
+},
+"hotel-fazenda-rancho-mineiro": {
+"en": {"descricao": "Horseback rides, carriage rides, pedal boats, zip line over the lake, sport fishing, guided trails, recreation. Plenty of contact with nature, rest and leisure!", "funcionamento": "24 hours"},
+"fr": {"descricao": "Balades à cheval, promenades en calèche, pédalos, tyrolienne au-dessus du lac, pêche sportive, sentiers guidés, animations. Beaucoup de contact avec la nature, de détente et de loisirs !", "funcionamento": "24 h/24"},
+"de": {"descricao": "Ausritte, Kutschfahrten, Tretboote, Seilrutsche über dem See, Sportangeln, geführte Wanderungen, Freizeitprogramm. Viel Kontakt mit der Natur, Erholung und Freizeitspaß!", "funcionamento": "24 Stunden"}
+},
+"castelo-dos-riachos": {
+"en": {"descricao": "Besides the castle itself, built in 1867 and a cultural heritage site of the municipality, the place is set in the middle of the Atlantic Forest, with lush fauna and flora.", "funcionamento": "9 am–5 pm"},
+"fr": {"descricao": "Outre le château lui-même, construit en 1867 et patrimoine culturel de la commune, le site est niché au cœur de la forêt atlantique, avec une faune et une flore luxuriantes.", "funcionamento": "De 9 h à 17 h"},
+"de": {"descricao": "Neben dem Schloss selbst, das 1867 erbaut wurde und ein Kulturerbe der Gemeinde ist, liegt der Ort mitten im Atlantischen Regenwald mit üppiger Fauna und Flora.", "funcionamento": "9–17 Uhr"}
+},
+"sitio-amazoel": {
+"en": {"descricao": "A beautiful property among the mountains of the Atlantic Forest, with bathing in spring water. Walks on easy and moderate trails, forest bathing, ecopsychology, observation fish farming and organic food, plus its own production of Shiitake mushrooms.", "funcionamento": "24 hours"},
+"fr": {"descricao": "Une belle propriété au milieu des montagnes de la forêt atlantique, avec baignade dans des eaux de source. Randonnées sur des sentiers de difficulté facile à moyenne, bain de forêt, écopsychologie, pisciculture d'observation et alimentation biologique, ainsi que production propre de champignons shiitake.", "funcionamento": "24 h/24"},
+"de": {"descricao": "Ein wunderschönes Anwesen zwischen den Bergen des Atlantischen Regenwaldes mit Bademöglichkeit in Quellwasser. Wanderungen auf leichten und mittelschweren Pfaden, Waldbaden, Ökopsychologie, Beobachtungs-Fischzucht und Bio-Verpflegung sowie eigener Anbau von Shiitake-Pilzen.", "funcionamento": "24 Stunden"}
+},
+"uana-ete-jardim-ecologico": {
+"en": {"descricao": "Contact with the lush nature of the Garden, Music Labyrinth, 10 km of trails, exercise circuit, stunning views, showers, foot baths, massages, crystal tree, bell groves, webs and hammocks.", "funcionamento": "10 am–6 pm"},
+"fr": {"descricao": "Contact avec la nature exubérante du Jardin, Labyrinthe de la musique, 10 km de sentiers, parcours d'exercices, vues époustouflantes, douches, bains de pieds chauds, massages, arbre aux cristaux, bosquets de clochettes, toiles et hamacs.", "funcionamento": "De 10 h à 18 h"},
+"de": {"descricao": "Kontakt mit der üppigen Natur des Gartens, Musik-Labyrinth, 10 km Wanderwege, Fitnessparcours, atemberaubende Aussichten, Duschen, Fußbäder, Massagen, Kristallbaum, Glockenhaine, Netze und Hängematten.", "funcionamento": "10–18 Uhr"}
+},
+"hotel-fazenda-santa-barbara": {
+"en": {"descricao": "Accommodation in comfortable rooms with full board, daytime and evening entertainment, recreation, visits to the orchard, vegetable garden and little farm with animals. Extensive leisure facilities with sports courts, swimming pools, a waterfall and a lovely lake for water sports and fishing.", "funcionamento": "8 am–midnight"},
+"fr": {"descricao": "Hébergement dans de confortables chambres en pension complète, animations de jour comme de soir, loisirs, visite du verger, du potager et de la mini-ferme avec animaux. Vaste infrastructure de loisirs avec terrains de sport, piscines, cascade et un beau lac pour les sports nautiques et la pêche.", "funcionamento": "De 8 h à minuit"},
+"de": {"descricao": "Übernachtung in komfortablen Zimmern mit Vollpension, Unterhaltung tagsüber und abends, Freizeitprogramm, Besuch von Obstgarten, Gemüsegarten und kleinem Bauernhof mit Tieren. Umfangreiche Freizeitanlagen mit Sportplätzen, Schwimmbädern, einem Wasserfall und einem schönen See für Wassersport und Angeln.", "funcionamento": "8 Uhr bis Mitternacht"}
+},
+"sitio-pai-oti-mae-ide-e-tio-nadi": {
+"en": {"descricao": "Pick and pay in an organic plantation of leafy greens, vegetables, PANCs (unconventional edible plants) and fruit on a family-run property.", "funcionamento": "Monday and Tuesday, 9 am–3 pm / Saturday, 8–11 am"},
+"fr": {"descricao": "Cueillette payante dans une plantation biologique de légumes-feuilles, de légumes, de PANC (plantes alimentaires non conventionnelles) et de fruits, sur une propriété familiale.", "funcionamento": "Lundi et mardi, de 9 h à 15 h / Samedi, de 8 h à 11 h"},
+"de": {"descricao": "Selbst ernten und bezahlen in einer Bio-Plantage mit Blattgemüse, Gemüse, PANC (unkonventionelle essbare Pflanzen) und Obst auf einem Familienbetrieb.", "funcionamento": "Montag und Dienstag, 9–15 Uhr / Samstag, 8–11 Uhr"}
+},
+"fazenda-entresserros": {
+"en": {"descricao": "Visit to an organic dairy farm with hands-on lessons in cheese making.", "funcionamento": "Saturday, 8 am–noon"},
+"fr": {"descricao": "Visite d'une ferme laitière biologique avec enseignements pratiques sur la fabrication du fromage.", "funcionamento": "Samedi, de 8 h à 12 h"},
+"de": {"descricao": "Besuch eines biologischen Milchviehbetriebs mit praktischer Anleitung zur Käseherstellung.", "funcionamento": "Samstag, 8–12 Uhr"}
+},
+"fungo-do-vale": {
+"en": {"descricao": "Visit to a shiitake mushroom farm, with the chance to take part in the harvest.", "funcionamento": "Tuesday, 8 am–4 pm"},
+"fr": {"descricao": "Visite d'une production de champignons shiitake, avec la possibilité d'assister à la récolte.", "funcionamento": "Mardi, de 8 h à 16 h"},
+"de": {"descricao": "Besuch einer Shiitake-Pilzzucht mit der Möglichkeit, bei der Ernte zuzusehen.", "funcionamento": "Dienstag, 8–16 Uhr"}
+},
+"espaco-do-agricultor": {
+"en": {"descricao": "Contact with local produce: fruit and vegetables, dairy products, preserves, seasonings, cured meats and sausages, flowers.", "funcionamento": "Wednesday to Sunday, 7 am–4 pm"},
+"fr": {"descricao": "Contact avec la production locale : fruits et légumes, produits laitiers, confitures, assaisonnements, charcuterie, fleurs.", "funcionamento": "Du mercredi au dimanche, de 7 h à 16 h"},
+"de": {"descricao": "Kontakt mit der lokalen Erzeugung: Obst und Gemüse, Milchprodukte, Konfitüren, Gewürze, Wurstwaren, Blumen.", "funcionamento": "Mittwoch bis Sonntag, 7–16 Uhr"}
+},
+"cervejaria-artesanal-brew-berg": {
+"en": {"descricao": "Brewery visits.", "funcionamento": ""},
+"fr": {"descricao": "Visite de la brasserie.", "funcionamento": ""},
+"de": {"descricao": "Brauereibesichtigung.", "funcionamento": ""}
+},
+"gyros-turismo": {
+"en": {"descricao": "Guiding in rural tourism and in the Vale do Café.", "funcionamento": "10 am–4 pm"},
+"fr": {"descricao": "Guidage en tourisme rural et dans la Vale do Café.", "funcionamento": "De 10 h à 16 h"},
+"de": {"descricao": "Führungen im ländlichen Tourismus und im Vale do Café.", "funcionamento": "10–16 Uhr"}
+},
+"terra-dos-chocolates": {
+"en": {"descricao": "Guided tour of the factory space, with a presentation on Bean to Bar chocolate production (from cacao to bar) and a guided chocolate tasting; an exclusive menu of spiced hot chocolate and chocolate fondue; chocolate shop for personal consumption and gifts.", "funcionamento": "Wednesday to Saturday, 10 am–6 pm"},
+"fr": {"descricao": "Visite guidée de l'espace de fabrication, avec présentation de la production de chocolats Bean to Bar (de la fève à la tablette) et dégustation commentée de chocolats ; menu exclusif de chocolat chaud épicé et de fondue au chocolat ; boutique de chocolats pour se faire plaisir ou offrir.", "funcionamento": "Du mercredi au samedi, de 10 h à 18 h"},
+"de": {"descricao": "Geführter Rundgang durch die Fabrik mit einer Präsentation zur Bean-to-Bar-Schokoladenherstellung (von der Kakaobohne bis zur Tafel) und angeleiteter Schokoladenverkostung; exklusive Karte mit gewürzter heißer Schokolade und Schokoladenfondue; Schokoladenladen für den Eigenbedarf und als Geschenk.", "funcionamento": "Mittwoch bis Samstag, 10–18 Uhr"}
+},
+"licor-artesanal-terra-serrana": {
+"en": {"descricao": "Liqueur tasting", "funcionamento": "9 am–6 pm"},
+"fr": {"descricao": "Dégustation de liqueurs", "funcionamento": "De 9 h à 18 h"},
+"de": {"descricao": "Likörverkostung", "funcionamento": "9–18 Uhr"}
+},
+"divino-tempero-caseiro-artesanal-especiarias-e-con": {
+"en": {"descricao": "Visitors can buy high-quality products made with organically and home-grown ingredients. The products are on display in the Espaço do Agricultor.", "funcionamento": "7 am–3 pm"},
+"fr": {"descricao": "Le visiteur peut acquérir des produits de grande qualité, élaborés avec des ingrédients cultivés de façon biologique et artisanale. Les produits sont exposés dans l'Espaço do Agricultor.", "funcionamento": "De 7 h à 15 h"},
+"de": {"descricao": "Besucher können hochwertige Produkte erwerben, hergestellt aus biologisch und hausgemacht angebauten Zutaten. Die Produkte sind im Espaço do Agricultor ausgestellt.", "funcionamento": "7–15 Uhr"}
+},
+"queijo-do-vale": {
+"en": {"descricao": "Visit to an artisanal cheese dairy, with tasting.", "funcionamento": "8 am–4 pm"},
+"fr": {"descricao": "Visite d'une fromagerie artisanale avec dégustation.", "funcionamento": "De 8 h à 16 h"},
+"de": {"descricao": "Besuch einer handwerklichen Käserei mit Verkostung.", "funcionamento": "8–16 Uhr"}
+},
+"vale-beer": {
+"en": {"descricao": "Craft beer tasting.", "funcionamento": "11 am–5 pm"},
+"fr": {"descricao": "Dégustation de bière artisanale.", "funcionamento": "De 11 h à 17 h"},
+"de": {"descricao": "Verkostung von Craft-Bier.", "funcionamento": "11–17 Uhr"}
+},
+"cervejaria-artesanal-og-beer": {
+"en": {"descricao": "Tasting of the best craft beer in the Vale do Café.", "funcionamento": "By appointment"},
+"fr": {"descricao": "Dégustation de la meilleure bière artisanale de la Vale do Café.", "funcionamento": "Sur rendez-vous"},
+"de": {"descricao": "Verkostung des besten Craft-Biers im Vale do Café.", "funcionamento": "Nur nach Voranmeldung"}
+},
+"parque-equestre-felipe-azevedo": {
+"en": {"descricao": "The site has quality facilities, with a large area, several paddocks, 50 stables and five spacious arenas (two sand and three grass), all in excellent condition, as well as a riding ring and trails for ecological outings.  Luiz Felipe de Azevedo holds numerous titles, including two Olympic bronze medals (Atlanta and Sydney) and a gold medal won at the Pan American Games in Havana (Cuba), as well as the title of American Champion and the power-jump record set in Rome (Italy) in 2001, when he cleared 2.32 metres.", "funcionamento": "8 am–6 pm"},
+"fr": {"descricao": "Le site dispose d'installations de qualité, avec une vaste superficie, plusieurs paddocks, 50 boxes et cinq carrières spacieuses (deux en sable et trois en herbe), toutes en excellent état, ainsi qu'un manège et des sentiers pour des balades écologiques.  Luiz Felipe de Azevedo détient de nombreux titres, dont deux médailles olympiques de bronze (Atlanta et Sydney) et une médaille d'or remportée aux Jeux panaméricains de La Havane (Cuba), ainsi que le titre de champion américain et le record de puissance établi à Rome (Italie) en 2001, lorsqu'il a franchi 2,32 mètres.", "funcionamento": "De 8 h à 18 h"},
+"de": {"descricao": "Die Anlage verfügt über hochwertige Einrichtungen mit einem weitläufigen Gelände, mehreren Koppeln, 50 Boxen und fünf großzügigen Reitplätzen (zwei Sand- und drei Rasenplätze), alle in ausgezeichnetem Zustand, sowie eine Reithalle und Wege für Ausritte in der Natur.  Luiz Felipe de Azevedo hält zahlreiche Titel, darunter zwei olympische Bronzemedaillen (Atlanta und Sydney) und eine Goldmedaille bei den Panamerikanischen Spielen in Havanna (Kuba), außerdem den Titel des Amerikameisters und den Rekord im Mächtigkeitsspringen, aufgestellt 2001 in Rom (Italien) mit einem Sprung über 2,32 Meter.", "funcionamento": "8–18 Uhr"}
+},
+"casa-netuhria-kombucheria-bistro": {
+"en": {"descricao": "Tourists will learn how kombucha is made, a probiotic drink with strong detoxifying power, from the bacterial culture all the way to the drink. Other products, both food and cosmetics, are made from the cultures. It is an incredible experience.", "funcionamento": ""},
+"fr": {"descricao": "Le touriste découvrira comment se fabrique le kombucha, une boisson probiotique au fort pouvoir détoxifiant, de la colonie de bactéries jusqu'à la boisson. D'autres produits, alimentaires et cosmétiques, sont fabriqués à partir des colonies. C'est une expérience incroyable.", "funcionamento": ""},
+"de": {"descricao": "Die Besucher erleben, wie Kombucha hergestellt wird, ein probiotisches Getränk mit starker entgiftender Wirkung, von der Bakterienkultur bis zum fertigen Getränk. Aus den Kulturen werden auch weitere Produkte hergestellt, sowohl Lebensmittel als auch Kosmetika. Es ist ein unglaubliches Erlebnis.", "funcionamento": ""}
+},
+"fruto-das-flores": {
+"en": {"descricao": "Gastronomy and Gardening", "funcionamento": "8 am–11:30 pm"},
+"fr": {"descricao": "Gastronomie et jardinage", "funcionamento": "De 8 h à 23 h 30"},
+"de": {"descricao": "Gastronomie und Gartenbau", "funcionamento": "8–23.30 Uhr"}
+},
+"cachaca-tairera": {
+"en": {"descricao": "Tasting of sugarcane spirits", "funcionamento": ""},
+"fr": {"descricao": "Dégustation de spiritueux de canne à sucre", "funcionamento": ""},
+"de": {"descricao": "Verkostung von Zuckerrohrbränden", "funcionamento": ""}
+},
+"cachaca-curio": {
+"en": {"descricao": "Tasting of sugarcane spirits", "funcionamento": ""},
+"fr": {"descricao": "Dégustation de spiritueux de canne à sucre", "funcionamento": ""},
+"de": {"descricao": "Verkostung von Zuckerrohrbränden", "funcionamento": ""}
+},
+"sitio-sabia": {
+"en": {"descricao": "Orchid house, organic coffee harvest, fishing and agritourism.", "funcionamento": "9 am–5 pm"},
+"fr": {"descricao": "Orchidarium, récolte de café biologique, pêche et agrotourisme.", "funcionamento": "De 9 h à 17 h"},
+"de": {"descricao": "Orchideenhaus, Ernte von Bio-Kaffee, Angeln und Agrotourismus.", "funcionamento": "9–17 Uhr"}
+},
+"cachaca-paracambicana": {
+"en": {"descricao": "Tasting of Sugarcane Spirits", "funcionamento": "9 am–5 pm"},
+"fr": {"descricao": "Dégustation de spiritueux de canne à sucre", "funcionamento": "De 9 h à 17 h"},
+"de": {"descricao": "Verkostung von Zuckerrohrbränden", "funcionamento": "9–17 Uhr"}
+},
+"pesque-pague-ilha": {
+"en": {"descricao": "Leisure space and sport fishing.", "funcionamento": "9 am–6 pm"},
+"fr": {"descricao": "Espace de loisirs et pêche sportive.", "funcionamento": "De 9 h à 18 h"},
+"de": {"descricao": "Freizeitbereich und Sportangeln.", "funcionamento": "9–18 Uhr"}
+}
+}

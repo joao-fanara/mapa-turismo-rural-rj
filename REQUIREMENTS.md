@@ -22,7 +22,13 @@ Público: visitantes e turistas (leitura a 3–4 m, toque ou mouse), equipe da S
 | RF8 | Passaporte digital com carimbos por visita | **fora de escopo** (inspira o visual da ficha) | futuro |
 | RF9 | Versão 2D leve para celular | **fora de escopo** (o telão é para TV/notebook) | futuro |
 | RF10 | **Área administrativa web (PHP + MySQL)** para inserir, editar e excluir atrativos (e rotas, categorias, experiências), com login, trilha de auditoria e publicação; o telão passa a ler do banco por uma API. Detalhes na seção 9 | **pendente — pedido de 16/10/2026** (plano em `STEPS.md`, F7–F8) | alta |
+| RF12 | **Celular**: layout responsivo (fichas e listas em folha na base da tela, gestos de toque) | **pendente — pedido de 16/10/2026** | alta |
+| RF13 | **Modelo reutilizável**: o projeto deve servir de base para outros mapas temáticos de outros órgãos do governo — tema, marca, textos, rotas/categorias, região e dados configuráveis fora do código (sem "Rio"/"Turismo Rural" fixos em `cena.js`) | **pendente — pedido de 16/10/2026** | alta |
+| RF14 | **Cadastro enviado pelo cidadão** (horizonte): o produtor/empreendedor entra com **login gov.br**, envia o próprio cadastro e a área administrativa **avalia e libera ou recusa** (fila de moderação). **Não implementar agora**; a F7–F8 deve deixá-lo preparado | **futuro — pedido de 16/10/2026** | média |
+| RF15 | **Importação em lote por CSV** no admin: enviar planilha .csv (UTF-8, `;` ou `,`), com modelo para baixar, **pré-visualização com validação linha a linha** (erros e avisos), confirmação e gravação em transação; atualiza por código ou insere; registra na auditoria; limite de tamanho; sem executar fórmulas (neutralizar `=`,`+`,`-`,`@` na exportação) | **pendente — pedido de 16/10/2026** (F8) | alta |
 | RF11 | **Idiomas: português, inglês, francês e alemão** no telão (interface e conteúdo), com seletor de idioma, `?lang=` e fallback para o português. Detalhes na seção 9 | **pendente — pedido de 16/10/2026** (plano em `STEPS.md`, F9) | alta |
+
+**Linguagem (16/10/2026):** o público é o **turista**, não o gestor do mapa. Textos da tela usam palavras do visitante ("lugares para visitar"); detalhes de método, fontes e precisão ficam em "Sobre o mapa". **Autoria:** `<meta name="author" content="João Fanara">` em toda página publicada (teste automático).
 
 ## 3. Regras de negócio
 
@@ -77,3 +83,4 @@ Cadastro/edição de produtores, passaporte digital, versão mobile, calendário
 | D10 | Hospedagem do PHP + MySQL (versão do PHP e do MySQL, acesso SSH, cron) | mesma do `mapa-3d` (compartilhada, PHP ≥ 8.2) · outra |
 | D11 | Excluir atrativo | exclusão lógica com "restaurar" (recomendado) · exclusão definitiva |
 | D12 | Nomes próprios em outros idiomas (rotas/categorias traduzidos; nomes de atrativos, municípios e regiões ficam como no guia) | confirmar com a Setur |
+| D13 | Login gov.br para cidadãos: exige credenciamento junto ao gov.br e tratamento LGPD dos dados | credenciar o órgão · alternativa: cadastro com e-mail verificado |

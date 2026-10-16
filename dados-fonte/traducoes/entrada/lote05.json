@@ -1,0 +1,242 @@
+[
+ {
+  "codigo": "rancho-sao-francisco",
+  "descricao": "Lugar sossegado e com uma fantástica vista do Rio Paraíba do Sul. Pesque e Pague, e Pesca Esportiva. Restaurante com deliciosos pratos e porções com tilápia.",
+  "funcionamento": "Das 7h às 17h e das 12h às 18h."
+ },
+ {
+  "codigo": "rancho-primavera",
+  "descricao": "Experiência incrível para os amantes de esportes equestres, com aula de hipismo ministrada por competidores de grandes eventos, e ainda ter contato com cavalos que possuem vários títulos.",
+  "funcionamento": "Das 7h às 12h e das 14h às 18h."
+ },
+ {
+  "codigo": "sitio-sao-roque",
+  "descricao": "O visitante vai experimentar o clima típico das antigas propriedades dos primeiros colonos de Porto Real, e ainda pode adquirir tilápias criadas no local e também patos vivos ou abatidos. O sítio oferece almoço para grupos, por agendamento.",
+  "funcionamento": "Das 9h às 17h."
+ },
+ {
+  "codigo": "secretaria-municipal-de-desenvolvimento-rural-agri",
+  "descricao": "No local, o visitante poderá conhecer uma horta com diversas espécies de verduras e legumes, e acompanhar o processo de produção de mudas de hortaliças.",
+  "funcionamento": "Das 7h às 12h e das 13h às 16h."
+ },
+ {
+  "codigo": "feira-da-roca",
+  "descricao": "A Feira da Roça é um lugar típico de Quatis, fundada em 1985, muitas pessoas procuram o lugar atrás de produtos rurais artesanais e artesanatos; existe também um bom restaurante self-service com comidas típicas e um forró animado.",
+  "funcionamento": "Das 11h às 18h, todo segundo e quarto domingo do mês."
+ },
+ {
+  "codigo": "feira-da-roca-de-sao-joaquim",
+  "descricao": "Lugar sossegado e com uma fantástica vista do Rio Paraíba do Sul. Pesque e Pague, e Pesca Esportiva. Restaurante com deliciosos pratos e porções com tilápia.",
+  "funcionamento": "Das 12h às 00h."
+ },
+ {
+  "codigo": "hotel-fazenda-bom-retiro",
+  "descricao": "Tonico Sampaio, proprietário da Fazenda Bom Retiro, idealizou nos primeiros anos do século passado (1912) , a produção da mais pura aguardente da região: a Cachaça Quatis, uma tradição que foi mantida pelo seu filho Silvio Sampaio e seguida hoje,por seus netos.",
+  "funcionamento": "Das 8h às 22h."
+ },
+ {
+  "codigo": "pousada-por-do-sol",
+  "descricao": "Acordar com o canto dos pássaros, pisar na grama, relaxar na rede embaixo do pé de jambo e colher a fruta do pé, além de sucos serem adoçados com caldo de cana de açúcar e seus biscoitos feito exclusivamente com produtos da Pousada.",
+  "funcionamento": "De segunda-feira a domingo, 24h,"
+ },
+ {
+  "codigo": "feirarte",
+  "descricao": "A Feirarte conta com barracas de produtos artesanais e gastronômicos de artesões e microempreendedores do município.",
+  "funcionamento": "Das 09h às 14h, 1° e 3° Sábado do mês."
+ },
+ {
+  "codigo": "pesqueiro-toca-do-tucunare",
+  "descricao": "Pesca Esportiva",
+  "funcionamento": "DE quinta-feira a domingo, das 8h às 17h."
+ },
+ {
+  "codigo": "quilombo-de-santana",
+  "descricao": "uma experiência histórica de volta ao passado onde pode-se ver de perto casas de pau a pique, peças históricas do quilombo , além de muita história e receitas somente encontradas lá.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "hotel-fazenda-lagos-do-vale-cachaca-lagos-do-vale",
+  "descricao": "Visitação ao processo de produção da Cachaça, iniciada em 2017. Alambique, pesca esportiva e produção de laticínios.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "rotas-de-pedal",
+  "descricao": "O projeto Rotas de Pedal é um turismo de aventura para quem deseja respirar ar puro e ter liberdade junto à natureza. Contamos com aproximadamente 75 rotas, passando por várias paisagem rurais.",
+  "funcionamento": "Não informado."
+ },
+ {
+  "codigo": "pesqueiro-recanto-do-tambaqui",
+  "descricao": "Com vista privilegiada da região da Capelinha e da Serra da Mantiqueira, em meio ao verde envolvente num cenário com marcas típicas da área rural, o Recanto do Tambaqui oferece ao visitante um acolhedor e amplo espaço ao ar livre, com um restaurante arejado e simpático. A comida é digna de elogios dos mais exigentes frequentadores. Sem falar na produção própria de geleias artesanais 100% naturais e doces caseiros. Delícias da roça.",
+  "funcionamento": "O pesqueiro funciona de Quarta à Segunda-feira das 8h às 18h. O restaurante funciona de quinta-feira a domingo e feriados das 11h30min às 15h45min."
+ },
+ {
+  "codigo": "trutas-da-serrinha-trutario",
+  "descricao": "Trutas da Serrinha é um recanto aprazível e uma das marcas da Serrinha do Alambari. Ele se acomoda entre os braços verdes da mata, com seus tanques de água muito fria, próprio para a proliferação da truta, peixe que é também uma tradição regional. O Trutário produz e vende várias delícias manufaturadas à base da truta, como o filé, o filé defumado, o patê e a casquinha",
+  "funcionamento": "De terça-feira a domingo de 9h às 16h."
+ },
+ {
+  "codigo": "elbers-bier-cervejaria-artesanal",
+  "descricao": "Na Área de Proteção Ambiental da Serrinha do Alambari, em Resende, é possível encontrar em meio à Mata Atlântica, uma cervejaria artesanal com a tradição cervejeira belga: a Elbers Bier. A água cristalina e pura que vem de nascentes da Serra da Mantiqueira se junta ao mais tradicionais maltes e demais ingredientes belgas para produzir uma variedade de cervejas que vai das Ales, passando pelas clássicas Blonde, Trippel, Witbier, Dubbel e até uma à base de pinhão, a semente da Araucária, o pinheiro típico da região.",
+  "funcionamento": "A fábrica está em atividade de Segunda à Sexta-feira, das 7h às 15h. O bar da fábrica recebe visitantes aos sábados, domingos e feriados, de 11h às 18h."
+ },
+ {
+  "codigo": "alambique-da-cachaca-reserva-do-nosco",
+  "descricao": "Na Fazenda Valparaíso está localizado o belo Alambique da Cachaça Reserva do Nosco, premiadíssima, dentro e fora do país. A visita inclui degustação.",
+  "funcionamento": "Das 10h às 16h."
+ },
+ {
+  "codigo": "sitio-velho-engenho",
+  "descricao": "Contato com a natureza, mata, trilhas cachoeiras, engenho de farinha que presume-se que seja do século XX, época que não havia luz elétrica na região e todo processo de fabricação foi inteiramente artesanal,estrada de terra que traz toda a riqueza de uma área rural com paisagens das fazendas, haras e plantações. O local traz com sigo um resgate de toda a simplicidade de uma vida rural vivida no passado.",
+  "funcionamento": "A combinar"
+ },
+ {
+  "codigo": "parada-funchal-colonia-japonesa",
+  "descricao": "Comida caseira típica da roça e produtos caseiros. Disponibilidade a qualquer horário para atendimento seja grupo ou não.",
+  "funcionamento": "08h às 17h"
+ },
+ {
+  "codigo": "reserva-ecologica-de-guapiacu-regua",
+  "descricao": "A REGUA possui trilhas criadas ao redor dos alagados próximos ao Centro de Visitantes e outras trilhas que aproximam os visitantes da floresta e as áreas restauradas pela reserva. Uma experiência que almeja sensibilizar os visitantes para a relevância e beleza ímpar da Mata Atlântica e toda a sua biodiversidade. A REGUA se especializa em receber o público de observadores de aves. Ofertamos um espaço bem próximo ao Rio de Janeiro com uma infraestrutura adequada para receber visitantes amantes da natureza numa região ainda muito preservada. Para melhor atender o público de observadores de aves, contamos com trilhas e 3 torres de observação e um abrigo, todas na sede da REGUA.",
+  "funcionamento": "07h às 16h30min"
+ },
+ {
+  "codigo": "campo-do-prado",
+  "descricao": "Passeios rurais em Cachoeiras de Macacu",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "escola-desempenho-de-equitacao",
+  "descricao": "Cavalgadas, aulas de equitação, trilhas nas matas e montanhas a pé, a cavalo e de mountain bike. Cavalos bem treinados e confiáveis, instrutores e guias altamente qualificados, convivência com cavalos soltos na natureza, áreas de Mata Atlântica preservadas e em regeneração para visitação. Mirantes, jardins, várzeas, riachos e nascentes.",
+  "funcionamento": "08h às 17h"
+ },
+ {
+  "codigo": "sandra-turismo",
+  "descricao": "Local de atendimento aos clientes com folders ilustrativos de destinos turísticos, Acompanhamento com guia credenciado, transporte com seguro e atividades interativas, serviço de bordo, participação em feiras e congressos, encontros culturais com profissionais da educação, encontros religiosos, by night.",
+  "funcionamento": "09h às 17h"
+ },
+ {
+  "codigo": "hostel-do-matuto",
+  "descricao": "Uma conexão divina com a natureza e as cachoeiras. Trilhas em meio a mata atlântica, visita ao passado. Ficamos dentro da área de preservação ambiental do Parque Estadual dos Três Picos, o acesso a trilha da Cachoeira 7 Quedas e a Árvore Jequitibá de 1600 anos, além de outras cachoeiras que nascem no Alto da Serra de Cachoeiras.",
+  "funcionamento": "8h às 16h"
+ },
+ {
+  "codigo": "fazenda-tringuele",
+  "descricao": "Visita ao Alambique Serra Verde, passeio a cavalo, almoço e venda de queijos e doces em compota.",
+  "funcionamento": "Seg a Seg, mediante agendamento prévio"
+ },
+ {
+  "codigo": "restaurante-chafariz-de-ouro",
+  "descricao": "Comida caseira no fogão a lenha, pesque e solte e playground para crianças.",
+  "funcionamento": "07h às 17h"
+ },
+ {
+  "codigo": "sitio-sao-joaquim",
+  "descricao": "Produção de cachaça orgânica artesanal e aluguel do espaço para temporada. Não há refeições no local. O diferencial é a hospitalidade dos proprietários Sr. Isaac e Sra. Vera.",
+  "funcionamento": "Seg a Seg, mediante agendamento prévio com guias credenciados."
+ },
+ {
+  "codigo": "sitio-isa-brown",
+  "descricao": "Café da manhã rural, pesque e pague e venda de doces, ovos caipiras e licor artesanal, melhores experiências para o turista.",
+  "funcionamento": "Sáb e Dom de 09h às 18h. Ter a Sex somente com agendamento prévio."
+ },
+ {
+  "codigo": "alambique-serra-verde",
+  "descricao": "Explanação sobre todo o processo de produção das cachaças e degustação com petiscos. A visitação pode ser feita a cavalo em parceria com a Fazenda Tringuelê.",
+  "funcionamento": "Seg a Seg"
+ },
+ {
+  "codigo": "sitio-sato",
+  "descricao": "Visita ao goiabal, colheita da fruta, história do local, explanação sobre a produção da goiabada, degustação e venda de goiabas e goiabadas. O diferencial é oferecer a experiência de retirar a fruta direto do pé.",
+  "funcionamento": "Seg a Sáb"
+ },
+ {
+  "codigo": "cervejaria-rota-imperial",
+  "descricao": "Bar com cervejas artesanais e tour na fábrica com explanações do processo de produção das cervejas, história por trás dos nomes das cervejas e degustação. Ótimo atendimento, variedades de estilos de cervejas artesanais e fantásticos petiscos para harmonizar com as cervejas. Local aberto imerso na natureza e com uma vista espetacular da Serra dos Órgãos.",
+  "funcionamento": "Sex de 17h às 21h - Sáb 12h às 21h - Dom 11h às 13h"
+ },
+ {
+  "codigo": "haras-vale-do-fojo",
+  "descricao": "Trilhas e passeios a cavalo com guias especializados. Equoterapia para adultos e crianças.",
+  "funcionamento": "Todos os dias mediante agendamento"
+ },
+ {
+  "codigo": "feira-organica-e-agroecologica-de-guapimirim",
+  "descricao": "Feira livre de produtos orgânicos da agricultura familiar de Guapimirim",
+  "funcionamento": "8h às 13h"
+ },
+ {
+  "codigo": "guapimirimtur",
+  "descricao": "Venda de passeios e atrativos da cidade de Guapimirim. Primeira agência de turismo receptivo em da cidade.",
+  "funcionamento": "Seg 13h às 18h - Ter a Sex 09h às 18h Sáb 09h às 13h"
+ },
+ {
+  "codigo": "aponte-tur",
+  "descricao": "Agência emissiva e receptiva",
+  "funcionamento": "8h às 13h"
+ },
+ {
+  "codigo": "clevertur-turismo",
+  "descricao": "Agência de viagens emissiva e receptiva",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "canoa-da-serra",
+  "descricao": "Passeios de bike por áreas de produção orgânica e café regional. Não há concorrentes.",
+  "funcionamento": "09h as 18h"
+ },
+ {
+  "codigo": "emporio-mio-di-bao",
+  "descricao": "Local com característica rural que oferece os mais diversos produtos da região, além de refeição aos domingos e massas caseiras montadas na hora.",
+  "funcionamento": "Sex de 09 às 22h, Sáb de 09 às 22h e Dom 09 às 18h"
+ },
+ {
+  "codigo": "casa-gibachi",
+  "descricao": "Tirolesa, banho de riacho, piscina natural, horta orgânica, trilhas e passeios de 4x4.",
+  "funcionamento": "Sob reserva"
+ },
+ {
+  "codigo": "sitio-castelo-das-trutas",
+  "descricao": "O sítio possui produção de Trutas.",
+  "funcionamento": "8h às 16h"
+ },
+ {
+  "codigo": "za-tur",
+  "descricao": "Agência de receptivo. Um turismo de experiência com diversos atrativos desde laticínios naturais e sem aditivos químicos, goiabada cascão no tacho de cobre e fogão a lenha, cachaçaria artesanal, restaurantes fogão a lenha, queijos trufados, criação de trutas, experiência em um castelo de pedra, sítio com produção 100% orgânicos com colhe e pague, plantação de morangos, plantação de lúpulos, experiência com realizações de bouquet de flores, sítio com day use e experiência de realização de eco jóias, horto com uma gama diferenciada de produtos, artesanato e decoração para jardim e vários locais com geleias diferenciadas com destaque de produtos com lúpulo. Pesque e pague, uma granja com ovos caipiras de ótima qualidade, camping, galpão com antiguidades revivendo o passado, um armazém centenário com especialidade de comidas orgânicas e tradicional carne na lata. Experiências com café da manhã ou da tarde a escolher. O principal diferencial do atendimento é a exclusividade para grupos nos atrativos individualizados. O grupo é atendido como uma família.",
+  "funcionamento": "9h às 18h"
+ },
+ {
+  "codigo": "donana-delicias",
+  "descricao": "Queijos trufados",
+  "funcionamento": "13h às 18h"
+ },
+ {
+  "codigo": "cachacaria-atras-da-pedra",
+  "descricao": "Degustação dos produtos e vivência em uma fábrica de cachaça e licores. Atendimento feito pelos donos. Produtos artesanais.",
+  "funcionamento": "Sob agendamento."
+ },
+ {
+  "codigo": "laticinios-amparo-e-cafe-colonial",
+  "descricao": "Gastronômica sensorial, cognitiva, conscientização sobre alimentação natural e saudável. Nossa produção, desde o leite, é própria. Tudo é fabricado no próprio estabelecimento. Alimentos naturais e artesanais, sem aditivos químicos. Ambiente bucólico e agradável.",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "horto-mayer",
+  "descricao": "Contato com a Natureza, aprender manejo e fornecimento de plantas ornamentais, decoração de interior e exterior, cultivo de alimentos orgânicos, temperos, ervas medicinais, reaproveitamento de resíduos orgânicos (Compostagem, Húmus de Minhoca, Biofertilizante). Acreditamos na sustentabilidade, passamos para nossos visitantes a importância da reciclagem de nossos resíduos tanto para o meio ambiente quanto para nosso benefício, os resíduos orgânicos por exemplo como fonte de nutrientes para as plantas.",
+  "funcionamento": "8h às 17h"
+ },
+ {
+  "codigo": "galpao-brasil",
+  "descricao": "Somos um espaço goumert cultural com ótima receptividade. Encontro Cultural com artistas locais, espaços para fotos e produtos artesanais do Circuito Rural.",
+  "funcionamento": "Sex a Dom das 12 às 23 horas"
+ },
+ {
+  "codigo": "armazem-centenario",
+  "descricao": "O Espaço fica dentro de um residencial, com um plantio enorme de horta orgânica e um lago maravilhoso, a melhor carne de lata e a cerveja mais gelada da região!",
+  "funcionamento": "Sáb de 09h às 22h Dom de 09h as 18h"
+ },
+ {
+  "codigo": "pesque-pague-rancho-das-palmeiras",
+  "descricao": "Um local para relaxar em meio a natureza, pesca, serviço de bar, restaurante com comidinha caseira, porções variadas de petiscos, área para festas, churrasco.",
+  "funcionamento": "Sáb, Domingos e feriados - de 8h às 20h"
+ }
+]

@@ -63,7 +63,6 @@ const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 const lerp = (a, b, t) => a + (b - a) * t;
 const rad = THREE.MathUtils.degToRad;
 const fmt = new Intl.NumberFormat('pt-BR').format;
-const fmt1 = new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format;
 const dataBR = (iso) => iso.slice(0, 10).split('-').reverse().join('/');
 const $ = (id) => document.getElementById(id);
 
@@ -157,7 +156,7 @@ async function iniciar() {
   }
   let lente = 'camadas'; // aba de abertura e do passeio
   const painelI = $('item'); // painel "o que tem aqui" (abrirItem)
-  const TITULO_LENTE = { camadas: 'Atrativos por rota', eixos: 'O que fazer', tipos: 'Produtos' };
+  const TITULO_LENTE = { camadas: 'Lugares por rota', eixos: 'O que fazer', tipos: 'Produtos' };
 
   // id do município por célula (varredura por linhas, par-ímpar: trata buracos e multipolígonos)
   const M = new Uint8Array(W * H);
@@ -569,12 +568,6 @@ async function iniciar() {
     }
     return s;
   }
-  function coberturaDe(ms) { // média ponderada pela área dos percentuais em 30 m
-    const out = {}; let area = 0;
-    for (const m of ms) { area += m.area_km2; for (const [c, p] of Object.entries(m.cobertura_pct)) out[c] = (out[c] || 0) + p * m.area_km2; }
-    for (const c in out) out[c] /= area;
-    return out;
-  }
   const NS = 'http://www.w3.org/2000/svg';
   function glifo(simbolo, cor) {
     const s = document.createElementNS(NS, 'svg'), [tag, atr] = SIMBOLO[simbolo];
@@ -586,31 +579,30 @@ async function iniciar() {
     return s;
   }
   function preencherCartao() {
-    let olho, nome, ag, cob;
+    let olho, nome, ag;
     if (selecao.tipo === 'municipio') {
       const m = selecao.m;
-      olho = regiaoDe.get(m.regiao_id)?.nome ?? m.regiao; nome = m.nome; ag = somar([m]); cob = m.cobertura_pct;
+      olho = regiaoDe.get(m.regiao_id)?.nome ?? m.regiao; nome = m.nome; ag = somar([m]);
     } else if (selecao.tipo === 'regiao') {
       const ms = membrosDe(selecao.r);
-      olho = `Região turística · ${ms.length} municípios`; nome = selecao.r.nome; ag = somar(ms); cob = coberturaDe(ms);
+      olho = `Região turística · ${ms.length} municípios`; nome = selecao.r.nome; ag = somar(ms);
     } else {
-      olho = `Visão geral · ${municipios.length} municípios`; nome = 'Estado do Rio de Janeiro';
+      olho = 'Todo o estado'; nome = 'Estado do Rio de Janeiro';
       ag = somar(Object.keys(agregados).map((codigo) => ({ codigo }))); // inclui registros sem município
-      cob = Object.fromEntries(cobJ.classes.filter((c) => c.codigo >= 2).map((c) => [c.codigo, c.percentual_rj_30m]));
     }
     const h2 = $('c-nome');
     $('c-olho').textContent = olho; h2.textContent = nome; h2.style.fontSize = '';
     $('c-olho').classList.toggle('subir', selecao.tipo === 'municipio' && !!regiaoDe.get(selecao.m.regiao_id)); // município: a região no olho leva à região
     $('c-total').textContent = fmt(ag.total);
-    $('c-total-rot').textContent = ag.total === 1 ? 'atrativo no inventário' : 'atrativos no inventário';
-    $('c-sub').textContent = `${fmt(ag.pontuais)} com ponto no mapa · ${fmt(ag.nao_pontuais)} só no município`;
+    $('c-total-rot').textContent = ag.total === 1 ? 'lugar para visitar' : 'lugares para visitar';
+    $('c-sub').hidden = true; // quantos têm ponto exato é assunto de quem mantém o mapa: fica em "Sobre o mapa"
     // lista da lente ativa: todos os itens sempre (o cartão é também a legenda: cor + símbolo + nome)
     const L = LENTES[lente], vals = ag[lente], duas = L.itens.length > 9; // muitos itens: duas colunas, nome curto, sem barra
     $('cartao').classList.toggle('compacto', duas);
     // nome numa linha só: o mais longo (São José do Vale do Rio Preto) encolhe a letra em vez de quebrar e empurrar o cartão
     if (h2.scrollWidth > h2.clientWidth) h2.style.fontSize = `${((parseFloat(getComputedStyle(h2).fontSize) * h2.clientWidth) / h2.scrollWidth / remPx).toFixed(3)}rem`;
     $('c-grupos-titulo').textContent = TITULO_LENTE[lente];
-    $('leitura').textContent = 'Toque num município, num alfinete ou numa rota do cartão.';
+    $('leitura').textContent = 'Toque num município, num alfinete ou numa rota para descobrir o que visitar.';
     $('c-lente').setAttribute('aria-labelledby', `c-aba-${lente}`);
     $('c-nota').textContent = L.nota ?? ''; $('c-nota').hidden = !L.nota; // eixos e tipos não são exclusivos: não somar
     const ul = $('c-grupos'); ul.replaceChildren(); ul.classList.toggle('duas', duas);
@@ -642,22 +634,6 @@ async function iniciar() {
     if (itemAberto) marcarLegenda();
     const st = $('c-semtipo'); st.hidden = !L.sem_tipo; // registros sem tipo: leitura de lentes.json e contagem do recorte, em tom neutro
     if (L.sem_tipo) { const t = document.createElement('span'), b = document.createElement('b'); t.textContent = L.sem_tipo.leitura; b.textContent = fmt(ag.sem_tipo); st.replaceChildren(t, b); }
-    $('c-cob-titulo').textContent = 'Cobertura do solo · MapBiomas';
-    const ordem = Object.entries(cob).map(([c, p]) => [Number(c), p]).filter(([, p]) => p > 0).sort((a, b) => b[1] - a[1]);
-    const barraCob = $('c-barra'); barraCob.replaceChildren();
-    const lista = $('c-cob'); lista.replaceChildren();
-    let resto = 0, linhas = 0;
-    for (const [c, p] of ordem) {
-      const i = document.createElement('i'); i.style.width = `${p}%`; i.style.background = COR_CLASSE[c][0]; barraCob.append(i);
-      if (p < 1 || linhas >= 4) { resto += p; continue; }
-      linhas++;
-      const li = document.createElement('li'), bol = document.createElement('i'), t = document.createElement('span'), b = document.createElement('b');
-      bol.style.background = COR_CLASSE[c][0]; bol.style.color = COR_CLASSE[c][0];
-      t.textContent = classeNome[c]; b.textContent = `${fmt1(p)}%`;
-      li.append(bol, t, b); lista.append(li);
-    }
-    if (resto > 0) { const li = document.createElement('li'), t = document.createElement('span'), b = document.createElement('b'); t.textContent = 'Demais classes'; b.textContent = `${fmt1(resto)}%`; li.append(t, b); lista.append(li); }
-    $('c-ressalva').textContent = meta.ressalvas.ausencia;
     requestAnimationFrame(medirHud);
   }
 
@@ -977,12 +953,12 @@ async function iniciar() {
 
   // ---------- HUD fixo (tudo lido dos dados) ----------
   const munComAtrativo = Object.keys(agregados).filter((c) => porCodigo.has(c) && agregados[c].total > 0).length;
-  $('subtitulo').textContent = `Relevo, cobertura do solo e ${fmt(meta.total)} atrativos de turismo rural de ${fmt(munComAtrativo)} municípios, em ${grupos.length} rotas temáticas`;
+  $('subtitulo').textContent = `${fmt(meta.total)} lugares do campo para visitar, provar e viver, em ${fmt(munComAtrativo)} municípios fluminenses`;
   $('l-exag').textContent = `${EXAG}×`;
   // rodapé mínimo + painel ⓘ com as fontes completas
   const rb = $('r-base'), precisaoTotal = (cl) => regJ.precisoes.find((p) => p.classe === cl)?.total ?? 0;
   for (const [titulo, texto] of [
-    ['Atrativos de Turismo Rural', `${meta.fonte}. Base v${meta.versao_base}, corte ${dataBR(meta.data_corte)}. ${meta.aviso}`],
+    ['Lugares de Turismo Rural', `${meta.fonte}. Base v${meta.versao_base}, corte ${dataBR(meta.data_corte)}. ${meta.aviso}${meta.ressalvas.ausencia}`],
     ['Localização', `Ponto exato: coordenada do QR "Ver mapa" impresso no guia (${fmt(precisaoTotal('endereco'))} atrativos). Aproximado: o QR do guia aponta só o bairro, ou o endereço do guia foi geocodificado no OpenStreetMap/Nominatim (${fmt(precisaoTotal('referencia'))}). Sem ponto: o guia não traz coordenada utilizável e o atrativo conta só no município (${fmt(precisaoTotal('municipal'))}).`],
     ['Rotas', 'Rotas temáticas sugeridas para promoção, atribuídas por palavras-chave do nome e da descrição de cada atrativo; não são rotas oficiais.'],
     ['Relevo', `${altJ.atribuicao} Ano ${altJ.ano}${altJ.ano_nota ? ` (${altJ.ano_nota.replace(/\.$/, '')})` : ''}. Licença: ${altJ.licenca}. Extraído em ${dataBR(altJ.data_extracao)}.`],
@@ -1157,9 +1133,9 @@ async function iniciar() {
     interagiu();
     const lista = $('i-lista');
     lista.replaceChildren();
-    $('i-olho').textContent = 'Atrativos neste ponto do mapa';
+    $('i-olho').textContent = 'Lugares neste ponto do mapa';
     $('i-glifo').replaceChildren();
-    $('i-titulo').textContent = `${regs.length} atrativos próximos`;
+    $('i-titulo').textContent = `${regs.length} lugares próximos`;
     $('i-conta').textContent = 'Toque num nome para abrir a ficha';
     $('i-def').hidden = true; $('i-pos').hidden = true; $('i-nota').hidden = true; $('i-mais').hidden = true;
     for (const r of regs) {
@@ -1214,7 +1190,7 @@ async function iniciar() {
       $('i-conta').textContent = `${plural(regs.length, L.unidade)} ${esc.onde}`;
       $('i-def').textContent = lente === 'camadas' && it.compoe?.length ? `Reúne ${juntar(it.compoe)}.` : '';
       $('i-def').hidden = !$('i-def').textContent; // Quero… e Produtos: o nome já diz o que é
-      $('i-pos').textContent = `${fmt(exatos.length)} com ponto no mapa (alvos acesos no chão) · ${fmt(regs.length - exatos.length)} só no município`;
+      $('i-pos').textContent = `${fmt(exatos.length)} com alfinete no mapa${regs.length > exatos.length ? ` · ${fmt(regs.length - exatos.length)} sem endereço exato (só o município)` : ''}`;
       for (const r of regs.slice(0, TETO_LISTA)) {
         const li = document.createElement('li'), b = document.createElement('b'), pr = precisao[r[3]], ps = document.createElement('span');
         b.textContent = r[6]; li.append(b); li.dataset.codigo = r[5];
@@ -1229,8 +1205,8 @@ async function iniciar() {
       itemTex.needsUpdate = true; U.uTemItem.value = 1;
     } else {
       $('i-glifo').replaceChildren(); $('i-titulo').textContent = `Outros ${itens.length} itens`;
-      $('i-conta').textContent = `${plural(itens.reduce((s, x) => s + (v[x.slug] || 0), 0), L.unidade)} ${esc.onde}, nos itens com menos atrativos`;
-      $('i-def').textContent = 'Toque num item para ver os atrativos dele.'; $('i-def').hidden = false;
+      $('i-conta').textContent = `${plural(itens.reduce((s, x) => s + (v[x.slug] || 0), 0), L.unidade)} ${esc.onde}, nos itens com menos lugares`;
+      $('i-def').textContent = 'Toque num item para ver os lugares dele.'; $('i-def').hidden = false;
       $('i-pos').textContent = '';
       for (const x of itens) {
         const li = document.createElement('li'), bt = document.createElement('button'), nm = document.createElement('span'), n = document.createElement('b');
@@ -1305,8 +1281,8 @@ async function iniciar() {
     }
     selos.hidden = !selos.childElementCount;
     const pr = $('f-precisao');
-    pr.textContent = r[3] === 'municipal' ? 'O guia não traz a localização exata: no mapa, só o município. O QR busca o atrativo pelo nome.'
-      : r[3] === 'referencia' ? 'Localização aproximada (bairro ou endereço do guia). O QR busca o atrativo pelo nome.' : '';
+    pr.textContent = r[3] === 'municipal' ? 'Endereço exato não informado: o mapa mostra só o município. O QR procura o lugar pelo nome.'
+      : r[3] === 'referencia' ? 'Localização aproximada (bairro ou endereço). O QR procura o lugar pelo nome.' : '';
     pr.hidden = !pr.textContent;
     // ponto exato: link curto com a coordenada (QR com módulos grandes, legível de longe na TV); aproximado ou sem ponto: busca pelo nome
     const url = f.precisao === 'endereco' && f.lat != null ? `https://maps.google.com/?q=${(+f.lat).toFixed(5)},${(+f.lng).toFixed(5)}` : f.mapa_url;

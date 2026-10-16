@@ -1,0 +1,242 @@
+[
+ {
+  "codigo": "fazenda-paraizo",
+  "descricao": "Uma belíssima fazenda histórica, do século XIX, muito bem preservada, até com móveis de época. O casarão possui  99 janelas e mais de 2 mil metros quadrados de construção. Os proprietários moram no local e são eles mesmos que conduzem a visita que passa também pelo antigo engenho de café.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "fazenda-vista-alegre",
+  "descricao": "Tour histórico guiado pelo casarão e jardins em que contamos toda a história da Fazenda desde o ciclo do café até os dias de hoje.",
+  "funcionamento": "08h às 17h"
+ },
+ {
+  "codigo": "hotel-fazenda-vilarejo",
+  "descricao": "Hotel Fazenda Vilarejo conta com Fazendinha com animais de verdade, horta orgânica, pedalinho no lago, pesqueiro, passeio a cavalo e de bicicleta, ampla área verde com recreação para todas as idades, festas temáticas o ano inteiro e o Vilarejo Radical, com 2 mega tirolesas, arvorismo, parede de escalada e rapel. Temos Piscina aberta com toboágua e parque aquático infantil e piscina coberta. Cinema, Espaço Kids e Espaço Zen. Além de usufruir de toda estrutura do hotel, os hóspedes podem viver uma experiência única em visita à produção da Cachaçaria Vilarejo, onde são feitos artesanalmente os rótulos de cachaças e licores Vilarejo. Nosso all inclusive oferece café, lanche, almoço, petiscos, jantar e comidas temáticas de acordo com o calendário de festas anual do Hotel. Bebidas alcoólicas e não alcoólicas durante todo o período de hospedagem nos três bares disponíveis no hotel.",
+  "funcionamento": "10h às 20h"
+ },
+ {
+  "codigo": "hotel-fazenda-da-florenca",
+  "descricao": "Visita ao Cafezal com degustação do café que é premiado; saraus; Passeio a cavalo e Charrete; Visita guiada ao casarão histórico do Ciclo do Café.",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "parque-natural-municipal-do-acude-da-concordia",
+  "descricao": "O Açude da Concórdia com certeza é um lindo lugar onde se mantém contato com a natureza quase intocada e um ótimo lugar para fazer um daqueles piqueniques com a família no final de semana. Suas águas transparentes e frias têm 4.170 metros de contorno. Inserido em área florestal com resquícios da Mata Atlântica. É contornado por vegetação de pastagem e um caminho gramado propício à caminhada. Durante o percurso pode-se ouvir animais como o inhambu, juriti, e o jacu",
+  "funcionamento": "QUI a DOM - 09h às 17h"
+ },
+ {
+  "codigo": "hotel-fazenda-rochedo",
+  "descricao": "Lago e fazendinha.",
+  "funcionamento": "Com hóspede: 24h | Sem hóspede: 07h às 16h"
+ },
+ {
+  "codigo": "capril-do-lago",
+  "descricao": "O tour guiado consiste no passeio pelo capril com participação do trato de nossas cabras e retirada do leite. Há também tour com degustação de produtos feitos com o leite das cabras do Lago, como diversos queijos, doces e tortas. Inclui um lanche com bolos, broas, biscoitos e suco. E um brinde com sabonete de leite de cabra e um doce de leite artesanal. Além de todo o passeio guiado e o lanche, as crianças que acompanham os pais neste guia com a degustação, têm direito a dar uma mamadeira para a cabra sem custo adicional",
+  "funcionamento": "Sáb de 09h às 11h e 14h às 16h"
+ },
+ {
+  "codigo": "fazenda-cachoeira-grande",
+  "descricao": "Datada de 1820, O programa consiste em visita à sede, onde será contada a história da fazenda, sua recuperação, além de informações sobre o mobiliário existente e objetos, os jardins e lago bem como museu de carros antigos e as ruínas de petrechos usados para secar e beneficiar arroz são experiências únicas que a fazenda proporciona aos seus visitantes. Ao final do tour é servido um delicioso café com comidas típicas.",
+  "funcionamento": "Seg. a seg. 10h às 19h"
+ },
+ {
+  "codigo": "vale-das-cabras",
+  "descricao": "Experiência de vida no campo. Visita à propriedade, que é destinada à criação e comercialização de caprinos da raça saanen.  Durante a visitação há degustação de queijos finos e artesanais, inspirados na secular tradição queijeira francesa.",
+  "funcionamento": "Sáb de 10h às 11h30min e 16h às 17h30min / Dom às 10h"
+ },
+ {
+  "codigo": "cachaca-kana-karam",
+  "descricao": "Visita às instalações que estão totalmente dentro das mais rigorosas normas e padrões de qualidade. Você pode saborear uma cachaça produzida artesanalmente em alambique de cobre e armazenada em madeiras nobres. Deguste as madeiras que quiser ou mesmo a purinha, faça-nos uma visita.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "fazenda-sao-luiz-da-boa-sorte-museu-do-cafe",
+  "descricao": "Recebe para visitas guiadas, hospedagens, atividades pedagógicas e eventos turístico-culturais. Uma verdadeira viagem de volta ao passado. A visita à fazenda inclui também o único Museu do Café do estado do Rio.  Uma experiência única e muito especial. O museu foi concebido para que a história dos escravos na época dos Barões do Café fique preservada e seja contada por muitas gerações. Uma visita enriquecedora de cultura e conhecimento, proporcionando uma experiência única ao visitante.",
+  "funcionamento": "02h às 03h"
+ },
+ {
+  "codigo": "fazenda-uniao-carvalheira",
+  "descricao": "Visita Guiada pelo Alambique desde o processamento do Caldo de Cana até a estocagem em Toneis. Degustação das cachaças e licores, Caldo de cana com os deliciosos pastéis e bolos da Luiza. Passeio de Trenzinho da Estrada de Ferro União Carvalheira. Circuito de aproximadamente 1 km passando por túnel, pontes e lagos. Tem restaurante, e ainda passeio de pedalinho pelo lago.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "fazenda-santa-eufrasia",
+  "descricao": "Construída por cerca de 1830, a única fazenda particular tombada pelo Instituto de Patrimônio Histórico e Artístico Nacional (IPAM) em Vassouras, é uma das construções históricas mais importantes da área. visitas guiadas com turistas pelas edificações com pessoal vestida com roupas da época. O passeio passa por três quartos mobiliados com artefatos da época e pela sala de música. Ao final, os visitantes podem degustar do café produzido na fazenda, é possível agendar um piquenique também.",
+  "funcionamento": "Sob consulta"
+ },
+ {
+  "codigo": "mulungu-vermelho",
+  "descricao": "A Fazenda Mulungu Vermelho recebe visita e participa de eventos culturais.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "vassouras-cafe-escola",
+  "descricao": "O propósito é disseminar a cultura do café especial com capacitação de pessoas, tecnologia em equipamentos e utensílios, propagar a torra sob demanda de cafés especiais. Imperdível para amantes dessa bebida!",
+  "funcionamento": "Sáb, Dom e feriados das 9h às 17h."
+ },
+ {
+  "codigo": "fazenda-santo-antonio-pesqueiro",
+  "descricao": "Pesque e pague em um ambiente de paz e tranquilidade pra quem busca contato com a natureza e pesca.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "chacara-modelo",
+  "descricao": "Visita ao cafezal, torra presencial, e degustação do café artesanal.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "vassouras-eco-resort",
+  "descricao": "Com uma grande variedade de pacotes o Vassouras Eco Resort está localizado no Vale do Café, uma área repleta de belezas naturais de tirarem o fôlego. Por aqui, respeitamos e nos preocupamos com a natureza e adotamos diversas práticas sustentáveis. Em reconhecimento a esses esforços, e por cumprirmos as resoluções de proteção ambiental, conquistamos o Certificado Ambiental do Ibama. Afinal, acreditamos que é possível oferecer o melhor para você, sem prejudicar os nossos recursos naturais, por meio de um turismo sustentável de qualidade.",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "fazenda-sao-roque",
+  "descricao": "Um lindo casarão em “L” disposto sobre um platô ladeado por um muro de arrimo em pedra seca que delimita o antigo terreiro de café da propriedade. Um vasto campo gramado e antigas ruínas formam cenários perfeitos para cerimônias ao ar livre, trazendo todo o charme dos casamentos no campo, com a bela fazenda histórica de fundo. Realiza um teatro histórico com mais de 10 atores e um grupo de jongo e maculelê. A composição entre o casarão, grandes árvores dispostas em torno dele e o muro feito de pedras que cerca ambos, dão a dimensão da beleza do lugar. a propriedade dedica-se a hotelaria e ao passeio histórico.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "hotel-fazenda-galo-vermelho",
+  "descricao": "No Hotel Fazenda Galo Vermelho você encontra aconchego, carinho e uma completa estrutura de lazer. Além de fazendinha, horta orgânica, ordenha e passeio de charrete, possui toda estrutura de lazer para toda a família: recreação, canoagem, piscina, piscina aquecida, arco e flecha e parede de escalada entre outros. Tudo isso cercado por belíssimas sedes de fazendas históricas.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "rei-da-silagem",
+  "descricao": "Loja com produtos da roça, passeios a cavalo e mini fazendinha.",
+  "funcionamento": "09h às 17h"
+ },
+ {
+  "codigo": "fazendinha",
+  "descricao": "Cavalgado para turistas pelo entorno, nas trilhas da Serra das Emerências e Caravelas. Equitação no Haras.",
+  "funcionamento": "Consultar diretamente."
+ },
+ {
+  "codigo": "buzios-country-club",
+  "descricao": "Aulas de Equitação & Passeios a Cavalo. Única hípica da Região dos Lagos especializada em Equitação Clássica e Salto, que é uma disciplina olímpica.",
+  "funcionamento": "Das 8h às 18h."
+ },
+ {
+  "codigo": "cooperativa-de-mulheres-nativas-de-arraial-do-cabo",
+  "descricao": "As mulheres nativas são mulheres idosas, que pescam, beneficiam, preparam e comercializam seus produtos. Além de serem responsáveis por todo o processo, elas são atuantes na luta pela pesca artesanal dentro da ResexMar de Arraial do Cabo (que é uma Unidade de Conservação Federal), promovem o resgate das tradições cabistas e ensinam outras mulheres a pescar. Na sede da Cooperativa de Mulheres Nativas, acontece a degustação de pratos com referência ao mar e a cultura da pesca tradicional, e também preparam cachaças com camboi - conhecido como \"úisque cabista\" - e outros frutos e sementes da Restinga de Massambaba, resgatando parte da história e da cultura popular cabista. Tudo acompanhado de muita prosa e histórias incríveis das \"MULHERES MARAVILHAS DA PESCA\".",
+  "funcionamento": "Não informado."
+ },
+ {
+  "codigo": "feira-do-produtor-rural-do-parque-de-exposicoes-de",
+  "descricao": "Comidas típicas, passeios a cavalo, venda de produtos de roça e músicas populares.",
+  "funcionamento": "Das 9h às 16h."
+ },
+ {
+  "codigo": "fazenda-campos-novos",
+  "descricao": "Feira do produtor rural, feira de artesanato, passeio a cavalo, gastronomia rural, visitação a capela tricentenária de Santo Inácio de Loyola e ao entorno do casarão jesuítico, brincadeiras infantis, apresentações musicais, trilha sensorial, entre outros.",
+  "funcionamento": "Das 9h às 15h."
+ },
+ {
+  "codigo": "rancho-sanjour",
+  "descricao": "Haras com provas de laço e tambor, criação de mini cavalos, entre outros animais de fazenda, eventos rurais, shows e campeonato de três tambores.",
+  "funcionamento": "Não informado."
+ },
+ {
+  "codigo": "pousada-ecorrural-rancho-ouro-preto",
+  "descricao": "Suítes em estilo colonial, piscina com área de lazer, passeio a cavalo e caminhada ecológica em área de preservação particular.",
+  "funcionamento": "Mediante reserva."
+ },
+ {
+  "codigo": "rancho-jurubatiba",
+  "descricao": "Suítes, piscina, haras e aluguel para eventos.",
+  "funcionamento": "Finais de semana, das 9h às 18h."
+ },
+ {
+  "codigo": "cavalgadas-tradicionais",
+  "descricao": "Cavalgada da padroeira, realizada no feriado de comemoração das festividades da padroeira da cidade, em agosto.",
+  "funcionamento": "Não informado."
+ },
+ {
+  "codigo": "caminhadas-ecologicas-tradicionais",
+  "descricao": "Caminhada de comemoração ao aniversário do PARNA da Restinga de Jurubatiba, 29 de abril. Caminhada de comemoração à semana do meio ambiente, em maio. Circuito de caminhada Eco-rural do Rancho Ouro Preto, nos padrões internacionais do Anda Brasil, em Setembro.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "pousada-fazenda-sao-joao",
+  "descricao": "Local onde o hóspede pode vivenciar experiências de um dia na fazenda: ordenha, passeios a cavalo, de charrete, contato com os animais, e também a famosa caminhada contornando o Morro São João, ou a caminhada do Vulcão.. O imóvel do século XVIII, construído em estilo colonial português, mantém suas características históricas e naturais preservadas. A área de 200 alqueires fica a 50 metros do nível do mar, no Morro São João.",
+  "funcionamento": "24 horas."
+ },
+ {
+  "codigo": "tanque-de-pesca-comunitario",
+  "descricao": "Vivência de Pescaria gratuita, contato com a natureza e lazer ao ar livre.",
+  "funcionamento": "Das 8h às 12h. Quizenalmente"
+ },
+ {
+  "codigo": "sitio-santa-isolina",
+  "descricao": "Atua no Agroturismo Ecológico, com produção agroecológica, e alimentos orgânicos certificados. Recebe para Turismo Pedagógico. Área de Camping Rural.",
+  "funcionamento": "Das 8h às 17h."
+ },
+ {
+  "codigo": "arrastao-da-cultura",
+  "descricao": "O roteiro Arrastão da Cultura remonta a história, trazendo curiosidades da cultura local. Passando por lugares históricos, como o Bairro Estação, é possível ver o espaço onde existia a Antiga Estação Ferroviária. O passeio segue pela antiga rota dos tropeiros, por antigos armazéns e sítios arqueológicos. Localizado às margens da Lagoa de Araruama, é possível embarcar no Coração de Iguaba Grande. No Sítio Palinha é servido um típico café da roça. No Sítio Angino, o destaque é para a antiga rota dos tropeiros e suas nascentes. A recepção é feita pelos proprietários do local, onde são comercializados produtos agroecológicos. Paradas no Sítio dos Dias, no Sítio da Dona Vilma e no Espaço Ecológico Celia Barbosa da Silva (Lagoa do Bulcão), onde é possível realizar uma pequena trilha e apreciar algumas espécies de Aroeira, Ipê, Flamboyant, Saguis, Galo da Serra, Canário da Terra e outras espécies da fauna e flora presentes, também fazem parte do roteiro. O roteiro é finalizado com um delicioso almoço no Restaurante Mineiro.",
+  "funcionamento": "O percurso é feito de jardineira ou micro-ônibus, com duração de 7 horas e os sítios visitados são agendados previamente"
+ },
+ {
+  "codigo": "coracao-de-iguaba",
+  "descricao": "Localizado às margens da Rodovia Amaral Peixoto, o espaço foi revitalizado em 2020, tornando-se um ponto de encontro e registros fotográficos promovendo a divulgação da cidade.",
+  "funcionamento": "Livre."
+ },
+ {
+  "codigo": "lagoa-do-bulcao",
+  "descricao": "Um espaço ecológico criado em 2020, com intuito de preservar e promover espaço de lazer e educação ambiental,composto por uma quadra, uma trilha que dá acesso ao monte de oração, espaço para exposição de artesanato local, área para recreação infantil e um lago. Nessa localidade é possível realizar uma pequena trilha e apreciar algumas espécies de Aroeira, Ipê, Flamboyant e saguis, galo da serra, canário da terra e outras espécies da fauna e flora presentes em nossa cidade.",
+  "funcionamento": "Livre."
+ },
+ {
+  "codigo": "cantinho-da-ivanilda",
+  "descricao": "Ao chegar no sítio somos recebidos com um delicioso café da manhã com tapioca, bolo de milho, cuscuz salgado, doce e sucos de frutas naturais colhidas no próprio quintal.",
+  "funcionamento": "Agendamento prévio."
+ },
+ {
+  "codigo": "rancho-gratidao",
+  "descricao": "Interação e contato direto com animais de estimação, como bezerros e cavalos, alimentar peixes no lago, recreação, jogos de sinuca e totó, campo de futebol, cozinha a lenha, churrasqueira, e um espaço convidativo e apropriado para ser oferecido e servido refeições como café, lanches e almoço.",
+  "funcionamento": "Agendamento prévio."
+ },
+ {
+  "codigo": "restaurante-tempero-mineiro",
+  "descricao": "Delicioso almoço rural.",
+  "funcionamento": "Agendamento prévio."
+ },
+ {
+  "codigo": "sitio-faisao-dourado",
+  "descricao": "É comercializado produtos do sítio e oferecido a experiência e vivência no meio rural com a criação de peixe e camarões em tanques de cativeiro, algumas aves como faisão, patos, gansos, galinhas, suínos, ovelhas, entre outros.",
+  "funcionamento": "Agendamento prévio."
+ },
+ {
+  "codigo": "sitio-dos-chaves",
+  "descricao": "Ao chegar na propriedade os visitantes serão recebidos com muita cordialidade pelo proprietário, o sítio possui espécies de bananeiras e canteiros com hortaliças agroecológicas onde é possível adquirir direto do produtor.",
+  "funcionamento": "Agendamento prévio."
+ },
+ {
+  "codigo": "sitio-palinha",
+  "descricao": "É oferecido um típico café da roça, com bolo de aipim, bolo de fubá de milho, sucos de frutas da época e chás de ervas cultivadas na propriedade",
+  "funcionamento": "Agendamento prévio."
+ },
+ {
+  "codigo": "sitio-dos-dias",
+  "descricao": "Uma fazenda com criação de gados, produção e comercialização de leite e queijo minas, produzidos na propriedade.",
+  "funcionamento": "Agendamento prévio."
+ },
+ {
+  "codigo": "sitio-angino-moura",
+  "descricao": "No trajeto passando pela antiga rota dos tropeiros e pela nascente. Chegando na propriedade, onde é comercializado produtos agroecológicos e um delicioso pastel com caldo de cana.",
+  "funcionamento": "Agendamento prévio."
+ },
+ {
+  "codigo": "sitio-dos-bem-aventurados",
+  "descricao": "Podemos apreciar várias culturas de plantações como, coco, aipim, laranja, manga, variedade de hortaliças entre outros.",
+  "funcionamento": "Agendamento prévio."
+ },
+ {
+  "codigo": "caminhos-de-sapeatiba",
+  "descricao": "Embarque no Coração de Iguaba Grande, localizado às margens da lagoa de Araruama e seguimos para o Parque Ecológico Célia Barbosa Da Silva - Lagoa Do Bulcão, um espaço ecológico criado em 2020, com intuito de preservar e promover educação ambiental. Nessa localidade é possível realizar uma pequena trilha e apreciar algumas espécies de Aroeira, Ipê, Pau Brasil, Pau Ferro, Saguis, Galo da Serra, Canário da Terra, Tiê sangue, Tiziu e outras espécies da fauna e flora presentes em nossa cidade. A próxima parada é no Sítio Ivonilda, onde é oferecido o café da manhã rural e pode-se degustar bolos, frutas e sucos naturais preparados com produtos colhidos na propriedade. Após o café, a visita é no Sítio Faisão Dourado onde é comercializado produtos do sítio e é oferecido a experiência e vivência no meio rural com a criação de peixe e camarões em tanques de cativeiro, algumas aves como faisão, patos, gansos, galinhas, suínos, ovelhas, entre outros. A seguir, a visita é ao Sítio dos Chaves, propriedade com algumas espécies de bananeiras e canteiros com hortaliças agroecológicas onde é possível adquirir direto do produtor. Na sequência a parada é no Rancho Gratidão lindo lugar com aspecto de fazenda onde pode se viver experiências interação e contato direto com animais como bezerros e cavalos, alimentar peixes no lago, recreação, jogos de sinuca e totó, campo de futebol, cozinha a lenha, churrasqueira, e um espaço convidativo e apropriado para ser oferecido e servido refeições como café, lanches e almoço.",
+  "funcionamento": "O percurso é feito de jardineira ou micro-ônibus, com duração de 7 horas e os sítios visitados são agendados previamente."
+ },
+ {
+  "codigo": "sitio-organicos-monte-alto",
+  "descricao": "Experiência de integração para toda a família. Caminhadas agroecológicas, oficinas com enfoque na alimentação orgânica e nas práticas agroecológicas. O principal projeto é o \"da horta à mesa\" com oficinas de plantio, colheita e feitura da comida no fogão a lenha, visando a vivência no meio rural. Observação de pássaros livres em seus ambientes naturais, pesque e pague, trilhas ao Peito do Pombo com guia, caminhadas com reconhecimento de plantas, árvores e horta medicinal, e para as crianças, o projeto \" Pé no Chão \", com subida de árvores, escalagem, e outras brincadeiras  no campo com o contato direto com a natureza.",
+  "funcionamento": "Das 6h às 17h."
+ }
+]

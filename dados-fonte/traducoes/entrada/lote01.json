@@ -1,0 +1,242 @@
+[
+ {
+  "codigo": "pousada-vale-do-cafe",
+  "descricao": "Localizada na Vila Histórica de Ipiabas, em um conjunto arquitetônico construído no século XIX, cercada de natureza, e com amplo jardim, a Pousada Vale do Café oferece dias de descanso no ritmo suave do interior rural, onde o tempo anda sem pressa. O café da manhã é servido com itens selecionados de produção local e caseiro.",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "rvc-turismo",
+  "descricao": "Realiza parcerias e faz com que o turista se encante com nosso destino. Oferece a possibilidade de novas experiências, principalmente no meio rural.",
+  "funcionamento": "08h às 18h"
+ },
+ {
+  "codigo": "hotel-fazenda-sao-sebastiao",
+  "descricao": "Buscamos que nossos hóspedes desfrutem da vida no campo em um ambiente rústico e acolhedor. Amplo espaço para caminhadas por trilhas e estradas rurais, lagos para pesca, piscina com água constantemente renovada.",
+  "funcionamento": "Seg a Sab 08h30min às 18h - Dom 09h às 16h"
+ },
+ {
+  "codigo": "casarao-cultural-vale-do-cafe",
+  "descricao": "Espaço único no Vale do Café, localizado na Vila Histórica da Piedade em Ipiabas - RJ, foi construído em 1874. Por intermédio do Projeto de Artesanato do qual participam artesãos do Vale do Café, oferece produtos relacionados à Arquitetura Neoclássica e aos temas históricos e culturais da região.Disponibiliza roteiros turísticos e city tour e promove eventos culturais, feiras de produtos orgânicos e de artesanato.Por intermédio do Espaço Vida e Arte valoriza o artista da região que deseja expor seus trabalhos. Dispõe de cafeteria na qual são priorizados os produtos da região e de espaço com peças de antiquário e colecionáveis.",
+  "funcionamento": "Qui a Dom - 10h às 18h"
+ },
+ {
+  "codigo": "vera-plantas-ipiabas",
+  "descricao": "Quando falamos em paisagismo geralmente a gente se lembra de lindos jardins e praças. Entretanto, o paisagismo no ambiente rural, quando planejado, torna a propriedade um local ainda mais agradável de se apreciar, atraindo assim mais visitantes.",
+  "funcionamento": "09h às 17h"
+ },
+ {
+  "codigo": "rota-393",
+  "descricao": "Turismo receptivo em todo o Vale do Café, associando o turismo rural às experiências ligadas ao ecoturismo, aventura, histórico cultural e gastronômico. Valorizamos as particularidades e potencial do distrito de Ipiabas e como este se relaciona com o meio ambiente e a sustentabilidade.",
+  "funcionamento": "09h às 19h / Finais de semana 07h às 21h"
+ },
+ {
+  "codigo": "adventure-jeep-didu",
+  "descricao": "Adventure Jeep Didu oferece Passeios em veículos 4x 4 com capacidade para até 10 pessoas. Visitação a fazendas históricas e atrativos culturais e parques ecológicos. City Tours privilegiando o comércio local.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "fazenda-allianca-agroecologica",
+  "descricao": "É uma fazenda histórica do século XIX que hoje possui projeto sustentável de produção de alimentos. Foram pioneiros na região Vale do Café na produção de búfalas orgânicas e na produção de café especial orgânico, com certificação pela IDB.",
+  "funcionamento": "Seg a Sáb - 09h às 16h"
+ },
+ {
+  "codigo": "cerveja-barra-do-pirai",
+  "descricao": "Beer Tour cervejeiro - explicação de como funciona o processo de produção de cervejas.",
+  "funcionamento": "09h às 16h"
+ },
+ {
+  "codigo": "fazenda-da-taquara",
+  "descricao": "Com quase dois séculos de existência, a sede, ainda em perfeito estado de conservação, preserva sua história com móveis e retratos originais. A propriedade recebe visitantes do mundo inteiro, e oferece um delicioso almoço ou café colonial com produtos da própria fazenda. Há também visitação no cafezal , mostrando todo o processo do café até o seu beneficiamento.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "haras-fire-notes",
+  "descricao": "Desde 1988 o Haras Fire Notes oferece várias atividades, como aulas de equitação, salto, tambor, treinamento funcional, cursos e cavalgadas onde o lazer alia-se à educação ambiental e ao desenvolvimento sustentável da região. Os turistas que visitarem o local poderão interagir com o ambiente natural de Ipiabas e seus diversos atrativos por meio de diferentes roteiros de cavalgadas. (Pedra do Gavião, Cachoeira e diversas trilhas).",
+  "funcionamento": "Ter a Sáb - 08h às 17h / Dom - 08h às 12h"
+ },
+ {
+  "codigo": "fazenda-da-posse",
+  "descricao": "Café Colonial com agendamento e guiamento contando a História da Fazenda.  Primeira Construção de Barra Mansa, datada de 1768, hoje a Fazenda da Posse abriga um Centro de Documentação e Memória, regido nos termos do Plano Municipal de Cultura e pelo Programa de Ocupação Artística dos Equipamentos Públicos de Cultura. Administrado pela Fundação de Cultura, o CEDOC é um espaço direcionado para pesquisas, produção e armazenamento de documentos relacionados ao universo histórico, social, político e cultural de Barra Mansa e região. Apresenta grande valor histórico-cultural para toda Região. Atualmente é um Centro de Cultura.",
+  "funcionamento": "08h à 12h"
+ },
+ {
+  "codigo": "fazenda-santana-do-turvo",
+  "descricao": "Hospedagem, passeio a cavalo e café sem estar hospedado.",
+  "funcionamento": "09h às 17h"
+ },
+ {
+  "codigo": "palacio-barao-de-guapy-1857",
+  "descricao": "De arquitetura neoclássica, o prédio teve sua construção iniciada no ano de 1857, na administração do Comandante Lucas Antônio Monteiro de Barros, e concluída em 1865, na gestão do Comendador Joaquim José Ferraz de Oliveira, o Barão de Guapi. Foi tombado em 1979 pelo Instituto Estadual do Patrimônio Cultural (Inepac). Em 1914, a Câmara Municipal cedeu a parte térrea para que nela fosse instalada a Prefeitura de Barra Mansa, que durante 70 anos funcionou no local. No plenário do Legislativo, chamam atenção as cadeiras em couro trabalhado, lustres de cristal e uma pinacoteca de valor histórico relevante. Atualmente abriga a Biblioteca Municipal. Mantém o salão do plenário e pinturas preservadas.",
+  "funcionamento": "08h às 17h"
+ },
+ {
+  "codigo": "destilaria-amazzoni",
+  "descricao": "Tour pela destilaria com explicação do processo produtivo e história + shot de degustação dos 3 produtos. O Amázzoni Gin foi eleito pelo World Gin Awards como o melhor gin do mundo em 2021.",
+  "funcionamento": "09h às 17h"
+ },
+ {
+  "codigo": "parque-centenario-jardim-das-preguica",
+  "descricao": "Neste Parque encontram-se 25 bichos preguiças que vivem soltas por entre as árvores e Caminhos em pleno centro da cidade. O Parque Centenário, também conhecido como Praça da Bandeira, é um parque urbano projetado pelo engenheiro e paisagista francês Auguste François Marie Glaziou, a pedido de Joaquim José Ferraz de Oliveira, o Barão de Guapy, primeiro presidente da Câmara Municipal de Barra Mansa. Criado na década de 1870, o Parque já foi reorganizado pelo paisagista Burle Marx, em 1991. O parque já foi chamado de “Jardim de Baixo”, já que havia o “Jardim de Cima” no Largo da Matriz, mas o nome “Parque Centenário” foi dado em 1922, como uma homenagem ao centenário da Independência do Brasil. Algum tempo depois, levou o nome de Praça Feliciano Sodré, em homenagem ao então governador do Estado. Em 1932, no ano do centenário de Barra Mansa, o prefeito Izimbardo Peixoto, por meio de uma lei municipal, devolveu a denominação de ‘Parque Centenário’. Conhecido como Jardim das Preguiças, ganhou o pseudônimo por hospedar o bicho preguiça, que passeia nas árvores, antigas e altas.",
+  "funcionamento": "08h às 20h"
+ },
+ {
+  "codigo": "fazenda-cachoeira",
+  "descricao": "Cuidadosamente reconstruída, mantém as características da arquitetura do final do século XVIII, tendo sido erguida por volta de 1717. A fazenda Cachoeira, dedicou-se inicialmente ao plantio da cana para a produção de açúcar e aguardente, tendo adotado mais tarde o cultivo do café, que era o grande produto da cidade durante o período imperial. A Cachaçaria Rochinha está aberta à visitação, incluindo degustação de produtos e conhecimento de fases do processo produtivo, uma verdadeira viagem ao Brasil Império, com os sabores e aromas do campo.",
+  "funcionamento": "10h às 17h"
+ },
+ {
+  "codigo": "estufa-de-mudas-do-robson",
+  "descricao": "Colhe e pague, o visitante escolhe suas hortaliças, colhe e paga. Tem sido uma experiência diferente e agradável ao turista.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "fazenda-bocaina",
+  "descricao": "Recepção Café colonial na Área da Fazenda.",
+  "funcionamento": "Somente com agendamento"
+ },
+ {
+  "codigo": "cachoeira-do-salto",
+  "descricao": "Um bela cachoeira, contato com a natureza",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "artesanato-stella-carvalho",
+  "descricao": "É no próprio local que os artesãos fabricam suas peças e dão aula de artesanato para o moradores do Distrito. Construído pela Associação das Damas de Caridade de Amparo, em 1981. Entre seus objetivos estão o incentivo às habilidades artesanais e a facilitação do acesso ao mercado de vendas, cujos resultados revertem para as artesãs, como uma espécie de cooperativa. O projeto foi do Engenheiro Luiz Roberto Correia Reche e mostra uma fachada com esquadria em estilo colonial, mantendo o clima do cenário histórico de Amparo. As colchas de retalhos produzidas pelo artesanato são famosas, conhecidas inclusive em outros países, tornando-se um referencial de Amparo.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "fazenda-sao-lucas",
+  "descricao": "Pesque-pague, restaurante, piscina, passeios a cavalo e aeromodelismo. Muito verde e animais",
+  "funcionamento": "DOM de 08 às 08h às 16h"
+ },
+ {
+  "codigo": "hotel-fazenda-caluje",
+  "descricao": "Qual é a experiência oferecida no local? Tirolesa, Campo de Futebol, Piscina Térmica, Lago com Pedalinho, Fazendinha (contato com os animais), Mini Bugre, Salão Kids, Piscina Vale do Sol, Skibunda.",
+  "funcionamento": "08h às 18h"
+ },
+ {
+  "codigo": "hotel-fazenda-rancho-mineiro",
+  "descricao": "Passeios a cavalo, charrete, pedalinho, tirolesa sobre o lago, pesca esportiva, trilhas guiadas, recreação. Muito contato com a natureza, descanso e lazer!",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "castelo-dos-riachos",
+  "descricao": "Além do próprio castelo construído em 1867, que é um patrimônio cultural do município, o local está inserido no meio da mata atlântica, com fauna e flora exuberantes.",
+  "funcionamento": "09h às 17h"
+ },
+ {
+  "codigo": "sitio-amazoel",
+  "descricao": "Uma linda propriedade entre as montanhas da Mata Atlântica e banho com águas de nascentes. Caminhada em trilhas de fácil e média dificuldades, banho de Floresta, ecopsicologia, piscicultura de observação e alimentação orgânica, e  produção própria de Cogumelos Shiitake.",
+  "funcionamento": "24h"
+ },
+ {
+  "codigo": "uana-ete-jardim-ecologico",
+  "descricao": "Contato com a exuberante natureza do Jardim, Labirinto da música, 10 km de trilhas, percurso de exercícios, vistas deslumbrantes, chuveirões, escalda pés, massagens, árvore cristais, bosques de sino, teias e redes.",
+  "funcionamento": "10h às 18h"
+ },
+ {
+  "codigo": "hotel-fazenda-santa-barbara",
+  "descricao": "Hospedagem e confortáveis apartamentos com pensão completa, entretenimento diurno e noturno, recreação, visitação a pomar, horta e fazendinha com animais. Ampla infra-estrutura de lazer com quadras esportivas, piscinas, cachoeira e um lindo lago para esportes náuticos e pescaria.",
+  "funcionamento": "08h às 00h"
+ },
+ {
+  "codigo": "sitio-pai-oti-mae-ide-e-tio-nadi",
+  "descricao": "Colhe e Pague em plantação orgânica de verduras, legumes, panc e frutas em propriedade familiar.",
+  "funcionamento": "Seg e Ter - 09h às 15h / SAB 08h às 11h"
+ },
+ {
+  "codigo": "fazenda-entresserros",
+  "descricao": "Visita à fazenda de laticínio orgânico com ensinamentos práticos de produção de queijo.",
+  "funcionamento": "Sab - 08h às 12h"
+ },
+ {
+  "codigo": "fungo-do-vale",
+  "descricao": "Visita à produção de cogumelo shiitake com possibilidade de acompanhar a colheita.",
+  "funcionamento": "Ter - 08h às 16h"
+ },
+ {
+  "codigo": "espaco-do-agricultor",
+  "descricao": "Contato com a produção local, hortifruti, laticínios, compotas, temperos, embutidos, flores.",
+  "funcionamento": "Qua à Dom - das 07h às 16h"
+ },
+ {
+  "codigo": "cervejaria-artesanal-brew-berg",
+  "descricao": "Visitação na fábrica de cerveja.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "gyros-turismo",
+  "descricao": "Guiamento no Turismo Rural e no Vale do Café.",
+  "funcionamento": "10h às 16h"
+ },
+ {
+  "codigo": "terra-dos-chocolates",
+  "descricao": "Visitação guiada no espaço da fábrica, com apresentação sobre a produção de Chocolates Bean to Bar (do cacau à barra) e com degustação orientada de chocolates; menu exclusivo de chocolate quente temperado e fondue de chocolate; loja de chocolates para consumo próprio e presentes.",
+  "funcionamento": "Qua à Sab - 10h às 18h"
+ },
+ {
+  "codigo": "licor-artesanal-terra-serrana",
+  "descricao": "Degustação de licor",
+  "funcionamento": "09h às 18h"
+ },
+ {
+  "codigo": "divino-tempero-caseiro-artesanal-especiarias-e-con",
+  "descricao": "O visitante poderá adquirir produtos de alta qualidade, com ingredientes plantados de forma orgânica e caseira. Os produtos podem ser encontrados em exposição no espaço do Agricultor.",
+  "funcionamento": "07h às 15h"
+ },
+ {
+  "codigo": "queijo-do-vale",
+  "descricao": "Visita com degustação a uma queijaria artesanal",
+  "funcionamento": "08h às 16h"
+ },
+ {
+  "codigo": "vale-beer",
+  "descricao": "Degustação de cerveja artesanal.",
+  "funcionamento": "11h às 17h"
+ },
+ {
+  "codigo": "cervejaria-artesanal-og-beer",
+  "descricao": "Degustação da melhor cerveja artesanal do Vale do Café.",
+  "funcionamento": "Somente com agendamento"
+ },
+ {
+  "codigo": "parque-equestre-felipe-azevedo",
+  "descricao": "O local possui instalações de qualidade, dispondo de ampla área, com diversos piquetes, 50 cocheiras e cinco pistas espaçosas (duas de areia e três de grama), todas em excelente condições, além de picadeiro e trilhas destinadas a passeios ecológicos.  Luiz Felipe de Azevedo, é detentor de diversos títulos, possuindo, inclusive, duas medalhas olímpicas de bronze (Atlanta e Sidnei) e uma medalha de ouro obtida no pan-americano de Havana (Cuba), além do título de Campeão Americano e do recorde de potência, alcançado em Roma (Itália), em 2001, quando saltou 2.32 metros.",
+  "funcionamento": "08h às 18h"
+ },
+ {
+  "codigo": "casa-netuhria-kombucheria-bistro",
+  "descricao": "O turista terá a vivência de como é feita a Kombucha, bebida probiótica de alto poder desintoxicante. Desde a colônia de bactérias até a bebida. Outros produtos são fabricados a partir das colônias, alimentícios e cosméticos. Trata-se de uma experiência incrível.",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "fruto-das-flores",
+  "descricao": "Gastronomia e Jardinagem",
+  "funcionamento": "08h às 23h30min"
+ },
+ {
+  "codigo": "cachaca-tairera",
+  "descricao": "Degustação de destilados de Cana de açúcar",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "cachaca-curio",
+  "descricao": "Degustação de destilados de Cana de açúcar",
+  "funcionamento": ""
+ },
+ {
+  "codigo": "sitio-sabia",
+  "descricao": "Orquidário, colheita de café orgânico, pesca e agro-turismo.",
+  "funcionamento": "09h às 17h"
+ },
+ {
+  "codigo": "cachaca-paracambicana",
+  "descricao": "Degustação de Destilados de Cana de Açúcar",
+  "funcionamento": "09h às 17h"
+ },
+ {
+  "codigo": "pesque-pague-ilha",
+  "descricao": "Espaçodelazerepescaesportiva.",
+  "funcionamento": "09h às 18h"
+ }
+]

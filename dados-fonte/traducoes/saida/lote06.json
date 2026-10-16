@@ -1,0 +1,674 @@
+{
+ "sitio-bonfim": {
+  "en": {
+   "descricao": "Rural immersion and organic vegetable garden workshop. Preservation of local culture, heirloom seeds, family farming, and organic growing with participatory certification.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Immersion rurale et atelier de potagers biologiques. Préservation de la culture locale, semences créoles, agriculture familiale, culture biologique avec certification participative.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Ländliches Erlebnis und Workshop zu Biogärten. Bewahrung der lokalen Kultur, traditionelles Saatgut, bäuerliche Familienlandwirtschaft, Bioanbau mit partizipativer Zertifizierung.",
+   "funcionamento": ""
+  }
+ },
+ "chacara-do-amparo": {
+  "en": {
+   "descricao": "Crafts with natural flowers. Visitors make their own craft piece.",
+   "funcionamento": "9 am–1 pm"
+  },
+  "fr": {
+   "descricao": "Artisanat avec des fleurs naturelles. Le visiteur réalise lui-même sa création.",
+   "funcionamento": "De 9 h à 13 h"
+  },
+  "de": {
+   "descricao": "Kunsthandwerk mit Naturblumen. Die Gäste fertigen ihr Kunstwerk selbst an.",
+   "funcionamento": "9–13 Uhr"
+  }
+ },
+ "atelier-tramando-arte": {
+  "en": {
+   "descricao": "Hand-weaving workshop and products. There is nothing else like it.",
+   "funcionamento": "10 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Atelier de tissage manuel et produits artisanaux. Il n'existe rien de similaire.",
+   "funcionamento": "De 10 h à 17 h"
+  },
+  "de": {
+   "descricao": "Workshop für Handweberei und Produkte. Etwas Vergleichbares gibt es nicht.",
+   "funcionamento": "10–17 Uhr"
+  }
+ },
+ "cervejaria-cabeca-de-dragao": {
+  "en": {
+   "descricao": "Craft beer tasting and a connection with nature.",
+   "funcionamento": "Weekends and holidays"
+  },
+  "fr": {
+   "descricao": "Dégustation de bière artisanale, au contact de la nature.",
+   "funcionamento": "Week-ends et jours fériés"
+  },
+  "de": {
+   "descricao": "Verkostung von Craftbier, Kontakt mit der Natur.",
+   "funcionamento": "Wochenenden und Feiertage"
+  }
+ },
+ "refugio-tres-picos": {
+  "en": {
+   "descricao": "A place in the heart of nature with simple, rustic accommodation, a restaurant and a craft brewery. Warm hospitality and nature.",
+   "funcionamento": "Sat and Sun"
+  },
+  "fr": {
+   "descricao": "Un lieu au cœur de la nature avec un hébergement simple et rustique, un restaurant et une brasserie artisanale. Accueil chaleureux et nature.",
+   "funcionamento": "Sam. et dim."
+  },
+  "de": {
+   "descricao": "Ein Ort mitten in der Natur mit einfacher, ländlicher Unterkunft, Restaurant und Craftbier-Brauerei. Herzliche Gastfreundschaft und Natur.",
+   "funcionamento": "Sa und So"
+  }
+ },
+ "alpendorf-cervejaria": {
+  "en": {
+   "descricao": "Brewery tour, factory bar, live music.",
+   "funcionamento": "Fri 2–6 pm; Sat and Sun 11 am–7 pm"
+  },
+  "fr": {
+   "descricao": "Visite de brasserie, bar de l'usine, musique live.",
+   "funcionamento": "Ven. de 14 h à 18 h ; sam. et dim. de 11 h à 19 h"
+  },
+  "de": {
+   "descricao": "Brauereitour, Fabrikbar, Livemusik.",
+   "funcionamento": "Fr 14–18 Uhr; Sa und So 11–19 Uhr"
+  }
+ },
+ "sawabona-eco-pousada-cafe-bistro": {
+  "en": {
+   "descricao": "Sustainable inn built from a shipping container, with the Sawabona experience, plus a charming café and bistro serving handmade treats such as cakes, tea, crêpes, ice cream and bonbons. A container-stay experience combined with meditation and the contemplation of a panoramic view in complete privacy, along with sustainable practices such as a vegetable garden grown in reused tires, among other examples.",
+   "funcionamento": "12 pm–4 pm"
+  },
+  "fr": {
+   "descricao": "Auberge durable construite dans un conteneur, avec l'expérience Sawabona, ainsi qu'un charmant café-bistro proposant des produits artisanaux tels que gâteaux, thé, crêpes, glaces et bonbons au chocolat. Une expérience d'hébergement en conteneur, associée à la méditation et à la contemplation d'une vue panoramique en toute intimité, ainsi que des pratiques durables comme un potager dans des pneus réutilisés, entre autres exemples.",
+   "funcionamento": "De 12 h à 16 h"
+  },
+  "de": {
+   "descricao": "Nachhaltige Pousada in einem umgebauten Container mit dem Sawabona-Erlebnis, dazu ein charmantes Café und Bistro mit handgemachten Spezialitäten wie Kuchen, Tee, Crêpes, Eis und Pralinen. Übernachtung im Container, verbunden mit Meditation und dem Genuss eines Panoramablicks in völliger Privatsphäre, dazu nachhaltige Praktiken wie ein Gemüsegarten in wiederverwendeten Reifen und weitere Beispiele.",
+   "funcionamento": "12–16 Uhr"
+  }
+ },
+ "altos-da-serramar": {
+  "en": {
+   "descricao": "The Altos da Serramar network is made up of rural producers who carry out remarkable initiatives with sustainable practices for agriculture and tourism in the districts of Mury, Lumiar and São Pedro da Serra (Nova Friburgo) and Barra Alegre (Bom Jardim), in the mountain region of the state of Rio de Janeiro. The properties, notable for their excellent environmental conservation, are located in the territory of the Macaé de Cima Environmental Protection Area (APA) or around it. Agritourism brings together the region's potential, integrating environmental conservation with agriculture and tourism, and is a major boost to agroecology",
+   "funcionamento": "By appointment only"
+  },
+  "fr": {
+   "descricao": "Le réseau Altos da Serramar réunit des producteurs ruraux qui mènent d'incroyables initiatives de pratiques durables pour l'agriculture et le tourisme dans les districts de Mury, Lumiar et São Pedro da Serra (Nova Friburgo) et Barra Alegre (Bom Jardim), dans la région de montagne de l'État de Rio de Janeiro. Les propriétés, remarquables par leur excellente conservation environnementale, se trouvent sur le territoire de l'APA (zone de protection de l'environnement) de Macaé de Cima ou à proximité. L'agritourisme concilie les atouts de la région en intégrant la conservation de l'environnement à l'agriculture et au tourisme, et constitue un grand encouragement à l'agroécologie",
+   "funcionamento": "Uniquement sur rendez-vous"
+  },
+  "de": {
+   "descricao": "Das Netzwerk Altos da Serramar besteht aus Landwirten, die in den Distrikten Mury, Lumiar und São Pedro da Serra (Nova Friburgo) sowie Barra Alegre (Bom Jardim) in der Bergregion des Bundesstaates Rio de Janeiro beeindruckende Initiativen mit nachhaltigen Praktiken für Landwirtschaft und Tourismus umsetzen. Die Betriebe, die sich durch einen hervorragenden Umweltschutz auszeichnen, liegen im Gebiet des Umweltschutzgebiets (APA) Macaé de Cima oder in dessen Umgebung. Der Agrotourismus vereint die Stärken der Region, indem er Umweltschutz mit Landwirtschaft und Tourismus verbindet, und ist ein starker Impuls für die Agrarökologie",
+   "funcionamento": "Nur nach Voranmeldung"
+  }
+ },
+ "refugio-pedra-do-reino": {
+  "en": {
+   "descricao": "Mosaic workshops (with or without accommodation), nature-immersion experiences (with lunch), lodging, a mosaic studio, heartfelt home cooking with produce from the farm (wood-fired stove), and interactive conversation circles.",
+   "funcionamento": "8 am–6 pm"
+  },
+  "fr": {
+   "descricao": "Ateliers de mosaïque (avec ou sans hébergement), immersions en pleine nature (avec déjeuner), hébergement, atelier de mosaïque, cuisine affective avec les produits de la ferme (cuisinière à bois) et interactivité avec des cercles de discussion.",
+   "funcionamento": "De 8 h à 18 h"
+  },
+  "de": {
+   "descricao": "Mosaik-Workshops (mit oder ohne Übernachtung), Naturerlebnisse zum Eintauchen (mit Mittagessen), Unterkunft, Mosaikatelier, herzliche Hausmannskost mit Produkten vom Hof (Holzofenherd) und Interaktion in Gesprächsrunden.",
+   "funcionamento": "8–18 Uhr"
+  }
+ },
+ "docuras-da-suely": {
+  "en": {
+   "descricao": "Visit to the strawberry greenhouse, with more than 10,000 plants, where visitors can have their photo taken and, at certain times, pick their own strawberries. For strawberry picking, please get in touch and check beforehand, as picking is only possible during certain periods depending on production. There is also a large, comfortable shop with ample parking, offering many sweets made with the fruit, natural fruit juice, the house pastel with homemade dough, and many other products from small producers in our region and our state.",
+   "funcionamento": "9 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Visite de la serre de fraises, avec plus de 10 000 plants, où les visiteurs peuvent se faire photographier et, à certaines périodes, cueillir leurs propres fraises. Pour la cueillette, il faut prendre contact et se renseigner au préalable, car elle n'est possible qu'à certaines périodes en fonction de la production. Il y a aussi une grande boutique confortable, avec un vaste parking, proposant de nombreuses douceurs à base de fraises, du jus de fruits naturel, le pastel maison à la pâte faite maison, ainsi que de nombreux autres produits de petits producteurs de notre région et de notre État.",
+   "funcionamento": "De 9 h à 17 h"
+  },
+  "de": {
+   "descricao": "Besichtigung des Erdbeergewächshauses mit mehr als 10.000 Pflanzen, in dem die Besucher sich fotografieren lassen und zu bestimmten Zeiten auch selbst Erdbeeren pflücken können. Für das Erdbeerpflücken bitte vorher Kontakt aufnehmen und sich erkundigen, da das Pflücken je nach Ernte nur in bestimmten Zeiträumen möglich ist. Außerdem gibt es einen großen, gemütlichen Laden mit reichlich Parkplätzen und vielen Süßwaren aus der Frucht, natürlichem Fruchtsaft, dem hauseigenen Pastel mit selbstgemachtem Teig sowie vielen weiteren Produkten kleiner Erzeuger aus unserer Region und unserem Bundesstaat.",
+   "funcionamento": "9–17 Uhr"
+  }
+ },
+ "lane-s-doces-cabana-dos-morangos": {
+  "en": {
+   "descricao": "Our confectionery offers customers a tour of the strawberry greenhouses at Cabana dos Morangos. Learn about strawberry growing and family farming. The place sells fresh, just-picked strawberries, as well as handmade products.",
+   "funcionamento": "Tue 1–6 pm / Wed to Sun 10 am–6 pm"
+  },
+  "fr": {
+   "descricao": "Notre confiserie propose aux clients une visite des serres de fraises, à la Cabana dos Morangos. Découvrez la culture de la fraise et l'agriculture familiale. Sur place, vente de fraises fraîches cueillies à l'instant, ainsi que de produits artisanaux.",
+   "funcionamento": "Mar. de 13 h à 18 h / du mer. au dim. de 10 h à 18 h"
+  },
+  "de": {
+   "descricao": "Unsere Konditorei bietet ihren Gästen eine Tour durch die Erdbeergewächshäuser der Cabana dos Morangos an. Lernen Sie den Erdbeeranbau und die bäuerliche Familienlandwirtschaft kennen. Vor Ort werden frisch gepflückte Erdbeeren sowie handgemachte Produkte verkauft.",
+   "funcionamento": "Di 13–18 Uhr / Mi bis So 10–18 Uhr"
+  }
+ },
+ "associacao-de-guias-de-turismo-de-petropolis-agp": {
+  "en": {
+   "descricao": "Guided tours of rural properties along the main Eco-Rural Circuits of Petrópolis. Personalized support for tourists and visitors, bringing history, culture and information about each place visited.",
+   "funcionamento": "9 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Circuits guidés dans les propriétés rurales des principaux Circuits Écoruraux de Petrópolis. Accompagnement personnalisé des touristes et des visiteurs, avec histoire, culture et informations sur chaque lieu visité.",
+   "funcionamento": "De 9 h à 17 h"
+  },
+  "de": {
+   "descricao": "Geführte Touren zu ländlichen Betrieben auf den wichtigsten Öko-Rural-Routen von Petrópolis. Persönliche Begleitung für Touristen und Besucher, mit Geschichte, Kultur und Informationen zu jedem besuchten Ort.",
+   "funcionamento": "9–17 Uhr"
+  }
+ },
+ "armazem-sustentavel": {
+  "en": {
+   "descricao": "Guided factory tour and product tasting. Sustainability and organic production.",
+   "funcionamento": "11 am–4 pm"
+  },
+  "fr": {
+   "descricao": "Visite guidée de l'usine et dégustation des produits. Durabilité et production biologique.",
+   "funcionamento": "De 11 h à 16 h"
+  },
+  "de": {
+   "descricao": "Geführte Besichtigung der Fabrik und Verkostung der Produkte. Nachhaltigkeit und Bioproduktion.",
+   "funcionamento": "11–16 Uhr"
+  }
+ },
+ "atelie-arte-em-comum": {
+  "en": {
+   "descricao": "Discover local craft production. Hands-on interaction with embroiderers.",
+   "funcionamento": "By appointment"
+  },
+  "fr": {
+   "descricao": "Découverte de la production artisanale locale. Interaction pratique avec les brodeuses.",
+   "funcionamento": "Sur rendez-vous"
+  },
+  "de": {
+   "descricao": "Einblick in die lokale Kunsthandwerksproduktion. Praktischer Austausch mit den Stickerinnen.",
+   "funcionamento": "Nur nach Voranmeldung"
+  }
+ },
+ "atelier-de-ceramica-jean-ruffier": {
+  "en": {
+   "descricao": "Technical insights into ceramics, a one-of-a-kind activity of its kind.",
+   "funcionamento": "8 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Informations techniques sur la céramique, une activité unique en son genre.",
+   "funcionamento": "De 8 h à 17 h"
+  },
+  "de": {
+   "descricao": "Technische Einblicke in die Keramik, eine einzigartige Aktivität in ihrer Art.",
+   "funcionamento": "8–17 Uhr"
+  }
+ },
+ "barkeria-mimos-e-petiscos": {
+  "en": {
+   "descricao": "Visit to a natural dog treat factory, with tastings for dogs and curious humans. Our products are natural, free of colorings, preservatives and chemicals, made with fresh, carefully selected, locally grown ingredients.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Visite d'une fabrique de friandises naturelles pour chiens, avec dégustation pour les chiens et les humains curieux. Nos produits sont naturels, sans colorants, conservateurs ni produits chimiques, et préparés avec des ingrédients frais, sélectionnés et cultivés localement.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Besichtigung einer Manufaktur für natürliche Hundeleckerlis mit Verkostung für Hunde und neugierige Menschen. Unsere Produkte sind natürlich, ohne Farb- und Konservierungsstoffe oder Chemie und werden aus frischen, sorgfältig ausgewählten, lokal angebauten Zutaten hergestellt.",
+   "funcionamento": ""
+  }
+ },
+ "fazenda-pedras-altas-organicos": {
+  "en": {
+   "descricao": "A visit among the organic crops, where tourists can pick produce themselves if they wish. An incredible experience! The owner shows visitors how to use the greens and vegetables, as well as some teas made from medicinal herbs. Working with organic products for 40 years.",
+   "funcionamento": "9 am–2 pm"
+  },
+  "fr": {
+   "descricao": "Une visite au milieu des cultures biologiques, où les touristes peuvent cueillir eux-mêmes s'ils le souhaitent. Une expérience incroyable ! Le propriétaire explique aux visiteurs comment utiliser les légumes verts et les légumes, ainsi que quelques tisanes d'herbes médicinales. Cela fait 40 ans qu'il travaille avec des produits biologiques.",
+   "funcionamento": "De 9 h à 14 h"
+  },
+  "de": {
+   "descricao": "Ein Besuch zwischen den Bio-Pflanzungen, bei dem die Gäste auf Wunsch selbst ernten können. Ein unglaubliches Erlebnis! Der Besitzer zeigt den Besuchern, wie man Blattgemüse und Gemüse verwendet, und stellt einige Tees aus Heilkräutern vor. Seit 40 Jahren arbeitet er mit Bioprodukten.",
+   "funcionamento": "9–14 Uhr"
+  }
+ },
+ "fazenda-vira-mundo": {
+  "en": {
+   "descricao": "Vira-Mundo is a non-profit community project based on the exchange of knowledge, experiences and ideas for the well-being of individuals, the community and the environment around us.",
+   "funcionamento": "9 am–4 pm"
+  },
+  "fr": {
+   "descricao": "Vira-Mundo est un projet communautaire à but non lucratif, fondé sur l'échange de connaissances, d'expériences et d'idées pour le bien-être de chacun, de la collectivité et de notre environnement.",
+   "funcionamento": "De 9 h à 16 h"
+  },
+  "de": {
+   "descricao": "Vira-Mundo ist ein gemeinnütziges Gemeinschaftsprojekt, das auf dem Austausch von Wissen, Erfahrungen und Ideen beruht – für das Wohlergehen des Einzelnen, der Gemeinschaft und der Umwelt, die uns umgibt.",
+   "funcionamento": "9–16 Uhr"
+  }
+ },
+ "jeep-tour": {
+  "en": {
+   "descricao": "Guided jeep tours to the properties of the Caminhos do Brejal Eco-Rural Circuit. There is no similar service provider.",
+   "funcionamento": "7 am–10 pm"
+  },
+  "fr": {
+   "descricao": "Circuits touristiques guidés en jeep vers les propriétés du Circuit Écorural Caminhos do Brejal. Il n'existe aucun prestataire similaire.",
+   "funcionamento": "De 7 h à 22 h"
+  },
+  "de": {
+   "descricao": "Geführte Jeeptouren zu den Betrieben der Öko-Rural-Route Caminhos do Brejal. Einen vergleichbaren Anbieter gibt es nicht.",
+   "funcionamento": "7–22 Uhr"
+  }
+ },
+ "mudas-katsumoto": {
+  "en": {
+   "descricao": "Property producing bonsai, organic seedlings of aromatic herbs, seasonings and medicinal plants; fruit trees, ornamentals and native trees, honey, jams and fruit preserves. Organic seedlings, produced with respect for the environment, reducing carbon emissions, making use of what nature offers as inputs and cutting back on industrial inputs as much as we can. A property with plenty of forest within and around it.",
+   "funcionamento": "8 am–4 pm"
+  },
+  "fr": {
+   "descricao": "Propriété productrice de bonsaïs, de plants biologiques d'herbes aromatiques, d'épices et de plantes médicinales ; d'arbres fruitiers, d'arbres d'ornement et d'arbres indigènes, de miel, de confitures et de compotes. Plants biologiques, production respectueuse de l'environnement, réduisant les émissions de carbone, utilisant ce que la nature nous offre comme intrants et limitant autant que possible les intrants industriels. Une propriété avec de nombreuses forêts à l'intérieur et tout autour.",
+   "funcionamento": "De 8 h à 16 h"
+  },
+  "de": {
+   "descricao": "Betrieb, der Bonsai, biologische Setzlinge von Gewürz-, Küchen- und Heilkräutern, Obstbäume, Zierpflanzen und heimische Bäume, Honig, Marmeladen und eingemachtes Obst erzeugt. Bio-Setzlinge, Produktion im Einklang mit der Umwelt, mit reduziertem CO₂-Ausstoß, unter Nutzung dessen, was die Natur uns als Ressourcen bietet, und mit möglichst wenig industriellen Betriebsmitteln. Ein Anwesen mit viel Wald auf dem Gelände und in der Umgebung.",
+   "funcionamento": "8–16 Uhr"
+  }
+ },
+ "passo-da-invernada": {
+  "en": {
+   "descricao": "Visit to an escargot farm, with tasting and sale of the product. No competition, a one-of-a-kind experience in the country.",
+   "funcionamento": "7 am–10 pm"
+  },
+  "fr": {
+   "descricao": "Visite d'un élevage d'escargots, avec dégustation et vente du produit. Sans concurrence, une expérience unique dans le pays.",
+   "funcionamento": "De 7 h à 22 h"
+  },
+  "de": {
+   "descricao": "Besuch einer Schneckenzucht mit Verkostung und Verkauf des Produkts. Ohne Konkurrenz, ein einzigartiges Erlebnis im ganzen Land.",
+   "funcionamento": "7–22 Uhr"
+  }
+ },
+ "sitio-candeias": {
+  "en": {
+   "descricao": "Countryside experience with organic production and laying hens. Communication, hospitality and love in everything we do.",
+   "funcionamento": "From 10 am"
+  },
+  "fr": {
+   "descricao": "Expérience à la campagne avec production biologique et élevage de poules pondeuses. Communication, hospitalité et amour dans ce que nous faisons.",
+   "funcionamento": "À partir de 10 h"
+  },
+  "de": {
+   "descricao": "Landerlebnis mit biologischer Erzeugung und Haltung von Legehennen. Kommunikation, Gastfreundschaft und Liebe zu dem, was wir tun.",
+   "funcionamento": "Ab 10 Uhr"
+  }
+ },
+ "sitio-do-canto": {
+  "en": {
+   "descricao": "Gourmet tasting, lunch. PANC experience (non-conventional edible plants).",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Dégustation gastronomique, déjeuner. Expérience autour des PANC (plantes alimentaires non conventionnelles).",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Gourmet-Verkostung, Mittagessen. Erlebnis mit PANCs (unkonventionelle essbare Pflanzen).",
+   "funcionamento": ""
+  }
+ },
+ "sitio-jequitiba-mirim": {
+  "en": {
+   "descricao": "Traditional country lunch cooked on a wood-fired stove, hiking, climbing, camping, a waterfall with a natural pool, bike rental and day use. There are no similar services.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Déjeuner traditionnel de la campagne préparé sur une cuisinière à bois, randonnée, escalade, camping, cascade avec piscine naturelle, location de vélos et day use. Il n'existe aucun service similaire.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Traditionelles Landessen vom Holzofenherd, Wandern, Klettern, Camping, Wasserfall mit Naturpool, Fahrradverleih und Day Use. Vergleichbare Angebote gibt es nicht.",
+   "funcionamento": ""
+  }
+ },
+ "sitio-vaca-do-brejo": {
+  "en": {
+   "descricao": "A wonderful house called \"Sítio Vaca do Brejo\". Without false modesty, a \"five-star\" place in the Brejal! Unmatched in infrastructure and comfort! From a heated infinity-edge pool to playgrounds for children and adults, a games room, and ultra-comfortable suites with panoramic views! In addition to the traditional fireplace, the whole house is fitted with heating and cooling! On top of all that, an excellent and irresistible gourmet area.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "Une maison merveilleuse nommée « Sítio Vaca do Brejo ». Sans fausse modestie, un « cinq étoiles » au cœur du Brejal ! Incomparable en termes d'infrastructures et de confort ! D'une piscine chauffée à débordement à des aires de jeux pour enfants et adultes, une salle de jeux, des suites ultra-confortables avec vues panoramiques ! Outre la cheminée traditionnelle, toute la maison est équipée de chauffage et de climatisation ! Et pour couronner le tout, un excellent et irrésistible espace gourmet.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Ein wunderbares Haus namens „Sítio Vaca do Brejo“. Ohne falsche Bescheidenheit: ein „Fünf-Sterne-Haus“ im Brejal! Unvergleichlich in Ausstattung und Komfort! Von einem beheizten Infinity-Pool über Spielplätze für Kinder und Erwachsene und einen Spielesaal bis hin zu superbequemen Suiten mit Panoramablick! Neben dem traditionellen Kamin verfügt das ganze Haus über Heizung und Kühlung! Und obendrein ein hervorragender, unwiderstehlicher Gourmetbereich.",
+   "funcionamento": ""
+  }
+ },
+ "artesanal-gourmet-e-pousada": {
+  "en": {
+   "descricao": "Nature and gastronomy. The owners' personal presence and a human touch.",
+   "funcionamento": "9 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Nature et gastronomie. Présence des propriétaires et approche humaine.",
+   "funcionamento": "De 9 h à 17 h"
+  },
+  "de": {
+   "descricao": "Natur und Gastronomie. Persönliche Präsenz der Besitzer und menschliche Zuwendung.",
+   "funcionamento": "9–17 Uhr"
+  }
+ },
+ "cachoeira-s-bar": {
+  "en": {
+   "descricao": "Nature and gastronomy. The owners' personal presence and a human touch.",
+   "funcionamento": "8 am–8 pm"
+  },
+  "fr": {
+   "descricao": "Nature et gastronomie. Présence des propriétaires et approche humaine.",
+   "funcionamento": "De 8 h à 20 h"
+  },
+  "de": {
+   "descricao": "Natur und Gastronomie. Persönliche Präsenz der Besitzer und menschliche Zuwendung.",
+   "funcionamento": "8–20 Uhr"
+  }
+ },
+ "sitio-10-palmeiras": {
+  "en": {
+   "descricao": "Sport hiking, yoga in the heights, a walk through the forest up to the Lageado (a rise facing Pedra do Elefante, 300 m high), with Pranayama yoga (breathing) and transcendental meditation on arrival at the Lageado. A stunning view, with the walk ending at a crystal-clear spring at 300 m altitude.",
+   "funcionamento": "8 am–6 pm"
+  },
+  "fr": {
+   "descricao": "Randonnée sportive, yoga en altitude, marche à travers une forêt jusqu'au Lageado (une élévation face à la Pedra do Elefante, à 300 m de hauteur), avec pratique du yoga Pranayama (respiration) et méditation transcendantale à l'arrivée au Lageado. Vue éblouissante, avec une fin de balade à une source d'eau cristalline à 300 m d'altitude.",
+   "funcionamento": "De 8 h à 18 h"
+  },
+  "de": {
+   "descricao": "Sportliche Wanderung, Yoga in der Höhe, Spaziergang durch einen Wald bis zum Lageado (eine Anhöhe gegenüber der Pedra do Elefante, in 300 m Höhe), mit Pranayama-Yoga (Atemübungen) und transzendentaler Meditation bei der Ankunft am Lageado. Atemberaubender Blick, der Ausflug endet an einer kristallklaren Quelle auf 300 m Höhe.",
+   "funcionamento": "8–18 Uhr"
+  }
+ },
+ "sitio-alto-taquaril": {
+  "en": {
+   "descricao": "Breeding of dairy and wool goats and sale of breeding stock. Poultry farming with various kinds of birds. Beekeeping. Sale of farm products (eggs, honey, cheeses, jams, capers, some types of plants). Garden and orchard produce depending on the season. Bromeliad collection. Guided visit to the various animal-raising areas and a walk with a panoramic view of Pedra do Elefante and Maria Antônia. A variety of attractions, with service in English, Italian and Spanish as well as Portuguese.",
+   "funcionamento": "9 am–12 pm and 2–5 pm"
+  },
+  "fr": {
+   "descricao": "Élevage de chèvres laitières et à laine, et vente de reproducteurs. Aviculture avec divers types d'oiseaux. Apiculture. Vente de produits de la ferme (œufs, miel, fromages, confitures, câpres, quelques types de plantes). Produits du potager et du verger selon la saison. Collection de broméliacées. Visite guidée des différents élevages et promenade avec vue panoramique sur la Pedra do Elefante et la Maria Antônia. Attractions variées et accueil en anglais, italien et espagnol, en plus du portugais.",
+   "funcionamento": "De 9 h à 12 h et de 14 h à 17 h"
+  },
+  "de": {
+   "descricao": "Zucht von Milch- und Wollziegen und Verkauf von Zuchttieren. Geflügelhaltung mit verschiedenen Vogelarten. Imkerei. Verkauf von Hofprodukten (Eier, Honig, Käse, Marmeladen, Kapern, einige Pflanzenarten). Gemüse und Obst aus Garten und Obstgarten je nach Jahreszeit. Bromeliensammlung. Geführter Besuch der verschiedenen Tierhaltungen und Wanderung mit Panoramablick auf die Pedra do Elefante und die Maria Antônia. Vielfältige Attraktionen und Betreuung auf Englisch, Italienisch und Spanisch sowie Portugiesisch.",
+   "funcionamento": "9–12 Uhr und 14–17 Uhr"
+  }
+ },
+ "costela-no-bafo": {
+  "en": {
+   "descricao": "Family-friendly atmosphere, private parking, chicken coop. Wood-fired stove, parking, outdoor tables, children's swings.",
+   "funcionamento": "11:30 am–4:30 pm"
+  },
+  "fr": {
+   "descricao": "Ambiance familiale, parking privé, poulailler. Cuisinière à bois, parking, tables en plein air, balançoires pour enfants.",
+   "funcionamento": "De 11 h 30 à 16 h 30"
+  },
+  "de": {
+   "descricao": "Familiäre Atmosphäre, eigener Parkplatz, Hühnerstall. Holzofenherd, Parkplatz, Tische im Freien, Kinderschaukeln.",
+   "funcionamento": "11.30–16.30 Uhr"
+  }
+ },
+ "doces-e-queijos-dona-nika": {
+  "en": {
+   "descricao": "Dulce de leche (compared to Uruguayan ones by customers) and artisanal cheese, canastra style. Everything is made by us, from the honey and eggs to 60 kinds of sweets, jams and chutneys, and 3 kinds of artisanal cheese",
+   "funcionamento": "9 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Dulce de leche (comparé aux uruguayens par les clients) et fromage artisanal de type canastra. Tout est produit par nous, du miel aux œufs, en passant par 60 sortes de douceurs, confitures et chutneys, et 3 sortes de fromages artisanaux",
+   "funcionamento": "De 9 h à 17 h"
+  },
+  "de": {
+   "descricao": "Dulce de leche (von Kunden mit dem uruguayischen verglichen) und handwerklich hergestellter Käse nach Canastra-Art. Alles stellen wir selbst her, vom Honig über Eier und 60 Sorten Süßwaren, Marmeladen und Chutneys bis zu 3 Sorten handwerklichem Käse",
+   "funcionamento": "9–17 Uhr"
+  }
+ },
+ "espaco-colaborativo-agroserra": {
+  "en": {
+   "descricao": "Handmade products from the region and craft beer with snacks. A wide variety of high-quality products made in the region.",
+   "funcionamento": "Fri 2–10 pm; Sat 10 am–10 pm; Sun 10 am–2 pm"
+  },
+  "fr": {
+   "descricao": "Produits artisanaux de la région et bière artisanale avec petites assiettes à grignoter. Produits très variés et de grande qualité, fabriqués dans la région.",
+   "funcionamento": "Ven. de 14 h à 22 h ; sam. de 10 h à 22 h ; dim. de 10 h à 14 h"
+  },
+  "de": {
+   "descricao": "Handgemachte Produkte aus der Region und Craftbier mit Snacks. Sehr vielfältige, hochwertige Produkte aus der Region.",
+   "funcionamento": "Fr 14–22 Uhr; Sa 10–22 Uhr; So 10–14 Uhr"
+  }
+ },
+ "estacao-pdr-cervejaria-serra-velha": {
+  "en": {
+   "descricao": "Craft draft beer tasting and snacks.",
+   "funcionamento": "Thu and Fri 2–10 pm, and Sat 2–10 pm"
+  },
+  "fr": {
+   "descricao": "Dégustation de bières pression artisanales et petites assiettes à grignoter.",
+   "funcionamento": "Jeu. et ven. de 14 h à 22 h, et sam. de 14 h à 22 h"
+  },
+  "de": {
+   "descricao": "Verkostung von handwerklichem Fassbier und Snacks.",
+   "funcionamento": "Do und Fr 14–22 Uhr und Sa 14–22 Uhr"
+  }
+ },
+ "fazenda-projeto-agua": {
+  "en": {
+   "descricao": "Educational tourism focused on environmental education. There is nothing similar in the region.",
+   "funcionamento": "Mon to Fri 9 am–4 pm; Sun 10 am–2 pm"
+  },
+  "fr": {
+   "descricao": "Tourisme pédagogique axé sur l'éducation à l'environnement. Il n'existe rien de similaire dans la région.",
+   "funcionamento": "Du lun. au ven. de 9 h à 16 h ; dim. de 10 h à 14 h"
+  },
+  "de": {
+   "descricao": "Pädagogischer Tourismus mit Schwerpunkt Umweltbildung. In der Region gibt es nichts Vergleichbares.",
+   "funcionamento": "Mo bis Fr 9–16 Uhr; So 10–14 Uhr"
+  }
+ },
+ "fazenda-sertao": {
+  "en": {
+   "descricao": "At Fazenda Sertão, the planting area is entirely dedicated to syntropic farming methods.",
+   "funcionamento": ""
+  },
+  "fr": {
+   "descricao": "À la Fazenda Sertão, l'espace de culture est entièrement consacré aux méthodes d'agriculture syntropique.",
+   "funcionamento": ""
+  },
+  "de": {
+   "descricao": "Auf der Fazenda Sertão ist die Anbaufläche vollständig der syntropischen Landwirtschaft gewidmet.",
+   "funcionamento": ""
+  }
+ },
+ "galpao-caipira-de-secretario": {
+  "en": {
+   "descricao": "Spa, bike rides, restaurant.",
+   "funcionamento": "Thu and Sun 8 am–5 pm; Fri and Sat 8 am–11 pm"
+  },
+  "fr": {
+   "descricao": "Spa, balades à vélo, restaurant.",
+   "funcionamento": "Jeu. et dim. de 8 h à 17 h ; ven. et sam. de 8 h à 23 h"
+  },
+  "de": {
+   "descricao": "Spa, Radtouren, Restaurant.",
+   "funcionamento": "Do und So 8–17 Uhr; Fr und Sa 8–23 Uhr"
+  }
+ },
+ "haras-radachi": {
+  "en": {
+   "descricao": "Pony and horse rental and a mini petting farm. Contact with nature, wonderful local climate, a cozy, family-friendly place.",
+   "funcionamento": "9–11:30 am and 1–2:30 pm"
+  },
+  "fr": {
+   "descricao": "Location de poneys, de chevaux et mini-ferme pédagogique. Contact avec la nature, merveilleux climat de la région, lieu chaleureux et familial.",
+   "funcionamento": "De 9 h à 11 h 30 et de 13 h à 14 h 30"
+  },
+  "de": {
+   "descricao": "Verleih von Ponys und Pferden und kleiner Streichelzoo. Kontakt mit der Natur, wunderbares Klima in der Region, gemütlicher und familiärer Ort.",
+   "funcionamento": "9–11.30 Uhr und 13–14.30 Uhr"
+  }
+ },
+ "instituto-caminho-da-roca": {
+  "en": {
+   "descricao": "Country café and vegan treats. A place to enjoy vegan products and to interact with and learn about social projects of public interest.",
+   "funcionamento": "Wed to Sun 10 am–5 pm"
+  },
+  "fr": {
+   "descricao": "Café de la campagne et douceurs véganes. Un lieu où l'on peut déguster des produits véganes, échanger avec des projets sociaux d'intérêt public et les découvrir.",
+   "funcionamento": "Du mer. au dim. de 10 h à 17 h"
+  },
+  "de": {
+   "descricao": "Landcafé und vegane Leckereien. Ein Ort, an dem man vegane Produkte genießen und soziale Projekte von öffentlichem Interesse kennenlernen und mit ihnen in Austausch treten kann.",
+   "funcionamento": "Mi bis So 10–17 Uhr"
+  }
+ },
+ "jeep-tour-2": {
+  "en": {
+   "descricao": "Guided jeep tours to the properties of the Secretário Eco-Rural and Gastronomic Circuit. There is no similar service provider.",
+   "funcionamento": "7 am–10 pm"
+  },
+  "fr": {
+   "descricao": "Circuits touristiques guidés en jeep vers les propriétés du Circuit Écorural et Gastronomique de Secretário. Il n'existe aucun prestataire similaire.",
+   "funcionamento": "De 7 h à 22 h"
+  },
+  "de": {
+   "descricao": "Geführte Jeeptouren zu den Betrieben der Öko-Rural- und Gastronomie-Route von Secretário. Einen vergleichbaren Anbieter gibt es nicht.",
+   "funcionamento": "7–22 Uhr"
+  }
+ },
+ "laticinios-leitepuro": {
+  "en": {
+   "descricao": "Cow milking and dairy factory. Artisanal production.",
+   "funcionamento": "9 am–4 pm"
+  },
+  "fr": {
+   "descricao": "Traite des vaches et fabrique de produits laitiers. Fabrication artisanale.",
+   "funcionamento": "De 9 h à 16 h"
+  },
+  "de": {
+   "descricao": "Kühe melken und Molkerei. Handwerkliche Herstellung.",
+   "funcionamento": "9–16 Uhr"
+  }
+ },
+ "le-coq-bistro": {
+  "en": {
+   "descricao": "Historical and gastronomic. An itinerary by the chef who won the National Tourism Award",
+   "funcionamento": "Fri 12–10 pm; Sat 12–10 pm; Sun 12–5 pm"
+  },
+  "fr": {
+   "descricao": "Historique et gastronomique. Parcours du chef lauréat du Prix national du tourisme",
+   "funcionamento": "Ven. de 12 h à 22 h ; sam. de 12 h à 22 h ; dim. de 12 h à 17 h"
+  },
+  "de": {
+   "descricao": "Historisch und gastronomisch. Route des Küchenchefs, Gewinner des Nationalen Tourismuspreises",
+   "funcionamento": "Fr 12–22 Uhr; Sa 12–22 Uhr; So 12–17 Uhr"
+  }
+ },
+ "oka-organicos": {
+  "en": {
+   "descricao": "Oka Orgânicos is a small rural property that began production in 2015 with vegetables and later added egg-laying hens, both certified by Abio. On site, you can see the chicken coops and the vegetable garden. Not wheelchair accessible, as it is hilly terrain. A fully sustainable property, making full use of the land and reforesting with fruit trees and native plants.",
+   "funcionamento": "9–11 am"
+  },
+  "fr": {
+   "descricao": "Oka Orgânicos est une petite propriété rurale qui a débuté sa production en 2015 avec des légumes, puis l'élevage de poules pour les œufs, le tout certifié par l'Abio. Sur place, on peut visiter les poulaillers et le potager. Lieu non accessible aux fauteuils roulants, car il s'agit d'un terrain en pente. Une propriété entièrement durable, qui exploite pleinement le terrain et le reboise avec des arbres fruitiers et des plantes indigènes.",
+   "funcionamento": "De 9 h à 11 h"
+  },
+  "de": {
+   "descricao": "Oka Orgânicos ist ein kleiner landwirtschaftlicher Betrieb, der 2015 mit Gemüse begann und später die Haltung von Hühnern für die Eierproduktion hinzufügte, beides von Abio zertifiziert. Vor Ort kann man die Hühnerställe und den Gemüsegarten besichtigen. Für Rollstuhlfahrer nicht geeignet, da es sich um hügeliges Gelände handelt. Ein vollständig nachhaltiger Betrieb, der die Fläche voll nutzt und mit Obstbäumen und heimischen Pflanzen aufforstet.",
+   "funcionamento": "9–11 Uhr"
+  }
+ },
+ "paiol-da-praca": {
+  "en": {
+   "descricao": "A rigorous selection of quality products and attentive customer service. Buy handmade products from various producers in the region. You can enjoy a delicious coffee, a craft beer, savor excellent cheeses and relax in a friendly, interesting and welcoming setting.",
+   "funcionamento": "Tue 11 am–6 pm; Wed and Thu 9 am–6 pm; Fri, Sat and Sun 9 am–6 pm."
+  },
+  "fr": {
+   "descricao": "Une sélection rigoureuse de produits de qualité et un service attentionné. Achat de produits artisanaux de plusieurs producteurs de la région. On peut y prendre un délicieux café, une bière artisanale, savourer d'excellents fromages et profiter d'un cadre sympathique, intéressant et accueillant.",
+   "funcionamento": "Mar. de 11 h à 18 h ; mer. et jeu. de 9 h à 18 h ; ven., sam. et dim. de 9 h à 18 h."
+  },
+  "de": {
+   "descricao": "Eine strenge Auswahl hochwertiger Produkte und aufmerksamer Kundenservice. Hier kaufen Sie handgemachte Produkte verschiedener Erzeuger der Region. Sie können einen köstlichen Kaffee oder ein Craftbier genießen, hervorragende Käsesorten probieren und sich in einer sympathischen, interessanten und einladenden Atmosphäre wohlfühlen.",
+   "funcionamento": "Di 11–18 Uhr; Mi und Do 9–18 Uhr; Fr, Sa und So 9–18 Uhr."
+  }
+ },
+ "raiz-atelier": {
+  "en": {
+   "descricao": "A bucolic little house in the center of Secretário that is both an art space and a place offering coffee and other souvenirs of our historic region. Located in the center of Secretário, the space is devoted to art and the sale of souvenirs from our historic region.",
+   "funcionamento": "Fri and Sat 9 am–6 pm / Sun 10 am–3 pm"
+  },
+  "fr": {
+   "descricao": "Une petite maison bucolique dans le centre de Secretário qui, en plus d'être un espace d'art, propose des cafés et la vente d'autres souvenirs de notre région historique. Situé dans le centre de Secretário, l'espace est consacré à l'art et à la vente de souvenirs de notre région historique.",
+   "funcionamento": "Ven. et sam. de 9 h à 18 h / dim. de 10 h à 15 h"
+  },
+  "de": {
+   "descricao": "Ein idyllisches Häuschen im Zentrum von Secretário, das nicht nur ein Kunstraum ist, sondern auch Kaffee und weitere Souvenirs unserer historischen Region anbietet. Der im Zentrum von Secretário gelegene Raum ist der Kunst und dem Verkauf von Souvenirs aus unserer historischen Region gewidmet.",
+   "funcionamento": "Fr und Sa 9–18 Uhr / So 10–15 Uhr"
+  }
+ },
+ "real-bikes": {
+  "en": {
+   "descricao": "MTB experience. We specialize in bicycle rental, sales and maintenance.",
+   "funcionamento": "Friday, Saturday and Sunday"
+  },
+  "fr": {
+   "descricao": "MTB experience. Nous sommes spécialisés dans la location, la vente et l'entretien de vélos.",
+   "funcionamento": "Vendredi, samedi et dimanche"
+  },
+  "de": {
+   "descricao": "MTB experience. Wir sind auf Verleih, Verkauf und Wartung von Fahrrädern spezialisiert.",
+   "funcionamento": "Freitag, Samstag und Sonntag"
+  }
+ },
+ "veramente-italiana": {
+  "en": {
+   "descricao": "Italian cuisine and, soon, accommodation in the style of home-stay tourism. The charm of being welcomed into a home, an Italian accent, a unique gastronomic experience, artisanal breads, everything made with care.",
+   "funcionamento": "Friday, Saturday and Sunday"
+  },
+  "fr": {
+   "descricao": "Gastronomie italienne et, bientôt, hébergement dans l'esprit du tourisme chez l'habitant. Le charme d'être reçu à la maison, l'accent italien, une expérience gastronomique unique, des pains artisanaux, le tout préparé avec soin.",
+   "funcionamento": "Vendredi, samedi et dimanche"
+  },
+  "de": {
+   "descricao": "Italienische Küche und bald auch Unterkunft nach dem Vorbild des Wohnens bei Gastgebern. Der Charme, wie zu Hause empfangen zu werden, italienischer Akzent, ein einzigartiges kulinarisches Erlebnis, handwerklich gebackenes Brot, alles mit Liebe zubereitet.",
+   "funcionamento": "Freitag, Samstag und Sonntag"
+  }
+ },
+ "oipceve-artesanato": {
+  "en": {
+   "descricao": "Crafts, quality products.",
+   "funcionamento": "Wed to Fri 12:30–4 pm; Sat 9 am–5 pm; Sun 9 am–1 pm"
+  },
+  "fr": {
+   "descricao": "Artisanat, produits de qualité.",
+   "funcionamento": "Du mer. au ven. de 12 h 30 à 16 h ; sam. de 9 h à 17 h ; dim. de 9 h à 13 h"
+  },
+  "de": {
+   "descricao": "Kunsthandwerk, Qualitätsprodukte.",
+   "funcionamento": "Mi bis Fr 12.30–16 Uhr; Sa 9–17 Uhr; So 9–13 Uhr"
+  }
+ },
+ "pousada-quinta-das-nascentes": {
+  "en": {
+   "descricao": "Located next to the Serra dos Órgãos National Park in Petrópolis, 1.3 km from the Parnaso headquarters, recharge your energy on 17 hectares amid nature and wildlife, with all the comfort and facilities for the most relaxing stay possible. Quinta das Nascentes is a place where you will find, and take part in the development and creation of, a large organic farm in the mountain city. You will receive an excellent welcome from the owners, who live at the Quinta. You will enjoy quality accommodation with respect and without prejudice. Immersing yourself in the Atlantic Forest ecosystem in an organic way, with its climatic and physical curiosities, it is the perfect place for observation tourism.",
+   "funcionamento": "Fri to Sun"
+  },
+  "fr": {
+   "descricao": "Située à côté du Parc national de la Serra dos Órgãos à Petrópolis, à 1,3 km du siège de Parnaso, rechargez vos batteries sur 17 hectares au milieu de la nature et des animaux sauvages, avec tout le confort et les équipements pour un séjour des plus relaxants. La Quinta das Nascentes est un lieu où vous trouverez et participerez au développement et à la création d'une grande culture biologique de la ville de montagne. Vous y serez très bien accueillis par les propriétaires, qui résident à la Quinta. Vous profiterez d'un séjour de qualité, dans le respect et sans préjugés. S'immerger dans l'écosystème de la forêt atlantique de manière organique, avec ses curiosités climatiques et physiques, en fait le lieu idéal pour le tourisme d'observation.",
+   "funcionamento": "Du vendredi au dimanche"
+  },
+  "de": {
+   "descricao": "Direkt neben dem Nationalpark Serra dos Órgãos in Petrópolis gelegen, 1,3 km von der Parnaso-Zentrale entfernt, tanken Sie auf 17 Hektar inmitten von Natur und Wildtieren neue Energie, mit allem Komfort und aller Ausstattung für einen möglichst entspannenden Aufenthalt. Die Quinta das Nascentes ist ein Ort, an dem Sie eine große Bio-Anbaufläche der Bergstadt vorfinden und an ihrer Entwicklung und Gestaltung teilhaben können. Sie werden von den Besitzern, die auf der Quinta wohnen, herzlich empfangen. Sie erwartet ein qualitätvoller Aufenthalt mit Respekt und ohne Vorurteile. Das Eintauchen in das Ökosystem des Atlantischen Regenwalds auf organische Weise, mit seinen klimatischen und landschaftlichen Besonderheiten, macht den Ort zum perfekten Ziel für Beobachtungstourismus.",
+   "funcionamento": "Freitag bis Sonntag"
+  }
+ }
+}

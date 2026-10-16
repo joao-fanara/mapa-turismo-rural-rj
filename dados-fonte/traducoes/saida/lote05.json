@@ -1,0 +1,242 @@
+{
+"rancho-sao-francisco": {
+"en": {"descricao": "A peaceful spot with a fantastic view of the Paraíba do Sul River. Catch-and-pay fishing and sport fishing. Restaurant serving delicious dishes and portions featuring tilapia.", "funcionamento": "7 am–5 pm and 12–6 pm."},
+"fr": {"descricao": "Un endroit paisible avec une vue fantastique sur le fleuve Paraíba do Sul. Pêche payante et pêche sportive. Restaurant proposant de délicieux plats et assiettes à base de tilapia.", "funcionamento": "De 7 h à 17 h et de 12 h à 18 h."},
+"de": {"descricao": "Ein ruhiger Ort mit einem fantastischen Blick auf den Rio Paraíba do Sul. Angeln mit Bezahlung nach Fang und Sportangeln. Restaurant mit köstlichen Gerichten und Portionen mit Tilapia.", "funcionamento": "7–17 Uhr und 12–18 Uhr."}
+},
+"rancho-primavera": {
+"en": {"descricao": "An incredible experience for equestrian sports lovers, with riding lessons given by competitors from major events, and the chance to get close to horses that hold several titles.", "funcionamento": "7 am–12 pm and 2–6 pm."},
+"fr": {"descricao": "Une expérience incroyable pour les amoureux des sports équestres, avec des cours d'équitation donnés par des compétiteurs de grands événements, et la possibilité d'approcher des chevaux titrés à plusieurs reprises.", "funcionamento": "De 7 h à 12 h et de 14 h à 18 h."},
+"de": {"descricao": "Ein unglaubliches Erlebnis für Liebhaber des Reitsports, mit Reitunterricht von Teilnehmern großer Turniere und der Möglichkeit, Pferden nahezukommen, die mehrere Titel gewonnen haben.", "funcionamento": "7–12 Uhr und 14–18 Uhr."}
+},
+"sitio-sao-roque": {
+"en": {"descricao": "Visitors can experience the typical atmosphere of the old properties of the first settlers of Porto Real, and can also buy tilapia raised on site, as well as live or dressed ducks. The farm offers lunch for groups, by appointment.", "funcionamento": "9 am–5 pm."},
+"fr": {"descricao": "Le visiteur découvrira l'ambiance typique des anciennes propriétés des premiers colons de Porto Real et pourra aussi acheter des tilapias élevés sur place ainsi que des canards vivants ou abattus. La ferme propose des déjeuners pour les groupes, sur rendez-vous.", "funcionamento": "De 9 h à 17 h."},
+"de": {"descricao": "Besucher erleben die typische Atmosphäre der alten Anwesen der ersten Siedler von Porto Real und können außerdem vor Ort gezüchtete Tilapia sowie lebende oder geschlachtete Enten erwerben. Der Hof bietet Mittagessen für Gruppen nach Voranmeldung.", "funcionamento": "9–17 Uhr."}
+},
+"secretaria-municipal-de-desenvolvimento-rural-agri": {
+"en": {"descricao": "On site, visitors can see a vegetable garden with a variety of leafy greens and vegetables, and follow the process of producing vegetable seedlings.", "funcionamento": "7 am–12 pm and 1–4 pm."},
+"fr": {"descricao": "Sur place, le visiteur peut découvrir un potager avec de nombreuses variétés de légumes-feuilles et de légumes, et suivre le processus de production de plants maraîchers.", "funcionamento": "De 7 h à 12 h et de 13 h à 16 h."},
+"de": {"descricao": "Vor Ort können Besucher einen Gemüsegarten mit zahlreichen Blatt- und Gemüsesorten besichtigen und die Anzucht von Gemüsepflanzen miterleben.", "funcionamento": "7–12 Uhr und 13–16 Uhr."}
+},
+"feira-da-roca": {
+"en": {"descricao": "The Feira da Roça is a typical spot in Quatis, founded in 1985. Many people come looking for handmade rural products and crafts; there is also a good self-service restaurant with traditional dishes and a lively forró.", "funcionamento": "11 am–6 pm, every second and fourth Sunday of the month."},
+"fr": {"descricao": "La Feira da Roça est un lieu typique de Quatis, fondé en 1985. Beaucoup de gens viennent y chercher des produits ruraux artisanaux et de l'artisanat ; on y trouve aussi un bon restaurant en self-service proposant des plats typiques et un forró animé.", "funcionamento": "De 11 h à 18 h, tous les deuxièmes et quatrièmes dimanches du mois."},
+"de": {"descricao": "Die Feira da Roça ist ein typischer Ort in Quatis, gegründet 1985. Viele Menschen kommen hierher, um handwerklich hergestellte ländliche Produkte und Kunsthandwerk zu finden; es gibt außerdem ein gutes Selbstbedienungsrestaurant mit typischen Gerichten und einen lebhaften Forró.", "funcionamento": "11–18 Uhr, jeden zweiten und vierten Sonntag im Monat."}
+},
+"feira-da-roca-de-sao-joaquim": {
+"en": {"descricao": "A peaceful spot with a fantastic view of the Paraíba do Sul River. Catch-and-pay fishing and sport fishing. Restaurant serving delicious dishes and portions featuring tilapia.", "funcionamento": "12 pm–12 am."},
+"fr": {"descricao": "Un endroit paisible avec une vue fantastique sur le fleuve Paraíba do Sul. Pêche payante et pêche sportive. Restaurant proposant de délicieux plats et assiettes à base de tilapia.", "funcionamento": "De 12 h à minuit."},
+"de": {"descricao": "Ein ruhiger Ort mit einem fantastischen Blick auf den Rio Paraíba do Sul. Angeln mit Bezahlung nach Fang und Sportangeln. Restaurant mit köstlichen Gerichten und Portionen mit Tilapia.", "funcionamento": "12–24 Uhr."}
+},
+"hotel-fazenda-bom-retiro": {
+"en": {"descricao": "Tonico Sampaio, owner of Fazenda Bom Retiro, conceived in the early years of the last century (1912) the production of the purest cachaça in the region: Cachaça Quatis, a tradition kept up by his son Silvio Sampaio and continued today by his grandchildren.", "funcionamento": "8 am–10 pm."},
+"fr": {"descricao": "Tonico Sampaio, propriétaire de la Fazenda Bom Retiro, a imaginé dans les premières années du siècle dernier (1912) la production de l'eau-de-vie la plus pure de la région : la Cachaça Quatis, une tradition maintenue par son fils Silvio Sampaio et poursuivie aujourd'hui par ses petits-enfants.", "funcionamento": "De 8 h à 22 h."},
+"de": {"descricao": "Tonico Sampaio, Besitzer der Fazenda Bom Retiro, hatte in den ersten Jahren des vergangenen Jahrhunderts (1912) die Idee, den reinsten Zuckerrohrbrand der Region herzustellen: die Cachaça Quatis, eine Tradition, die sein Sohn Silvio Sampaio fortführte und die heute von seinen Enkeln weitergeführt wird.", "funcionamento": "8–22 Uhr."}
+},
+"pousada-por-do-sol": {
+"en": {"descricao": "Wake up to birdsong, walk barefoot on the grass, relax in a hammock under the rose-apple tree and pick fruit straight from the tree, with juices sweetened with sugarcane juice and biscuits made exclusively with the Pousada's own products.", "funcionamento": "Monday to Sunday, 24 hours,"},
+"fr": {"descricao": "Se réveiller au chant des oiseaux, fouler l'herbe, se détendre dans un hamac sous le jambosier et cueillir le fruit directement sur l'arbre, avec des jus sucrés au jus de canne à sucre et des biscuits préparés exclusivement avec les produits de la Pousada.", "funcionamento": "Du lundi au dimanche, 24 h/24,"},
+"de": {"descricao": "Mit Vogelgezwitscher aufwachen, über das Gras laufen, in der Hängematte unter dem Rosenapfelbaum entspannen und die Früchte direkt vom Baum pflücken – dazu Säfte, die mit Zuckerrohrsaft gesüßt werden, und Kekse, die ausschließlich mit Erzeugnissen der Pousada gebacken werden.", "funcionamento": "Montag bis Sonntag, 24 Stunden,"}
+},
+"feirarte": {
+"en": {"descricao": "Feirarte has stalls selling handmade and gastronomic products from local artisans and micro-entrepreneurs of the municipality.", "funcionamento": "9 am–2 pm, 1st and 3rd Saturday of the month."},
+"fr": {"descricao": "La Feirarte compte des stands de produits artisanaux et gastronomiques d'artisans et de micro-entrepreneurs de la commune.", "funcionamento": "De 9 h à 14 h, les 1ers et 3es samedis du mois."},
+"de": {"descricao": "Die Feirarte bietet Stände mit handwerklichen und kulinarischen Produkten von Kunsthandwerkern und Kleinunternehmern der Gemeinde.", "funcionamento": "9–14 Uhr, am 1. und 3. Samstag im Monat."}
+},
+"pesqueiro-toca-do-tucunare": {
+"en": {"descricao": "Sport fishing", "funcionamento": "Thursday to Sunday, 8 am–5 pm."},
+"fr": {"descricao": "Pêche sportive", "funcionamento": "Du jeudi au dimanche, de 8 h à 17 h."},
+"de": {"descricao": "Sportangeln", "funcionamento": "Donnerstag bis Sonntag, 8–17 Uhr."}
+},
+"quilombo-de-santana": {
+"en": {"descricao": "A historical experience that takes you back in time, where you can see up close wattle-and-daub houses and historic pieces from the quilombo, along with plenty of history and recipes found nowhere else.", "funcionamento": "8 am–5 pm."},
+"fr": {"descricao": "Une expérience historique qui ramène dans le passé, où l'on peut voir de près des maisons en pisé et torchis, des objets historiques du quilombo, ainsi que beaucoup d'histoire et des recettes que l'on ne trouve qu'ici.", "funcionamento": "De 8 h à 17 h."},
+"de": {"descricao": "Eine historische Reise in die Vergangenheit, bei der man Lehmflechtwerkhäuser und historische Stücke des Quilombo aus nächster Nähe sehen kann, dazu viel Geschichte und Rezepte, die es nur hier gibt.", "funcionamento": "8–17 Uhr."}
+},
+"hotel-fazenda-lagos-do-vale-cachaca-lagos-do-vale": {
+"en": {"descricao": "Visits to the cachaça production process, which began in 2017. Distillery, sport fishing and dairy production.", "funcionamento": "8 am–5 pm."},
+"fr": {"descricao": "Visite du processus de production de la cachaça, lancée en 2017. Distillerie, pêche sportive et production laitière.", "funcionamento": "De 8 h à 17 h."},
+"de": {"descricao": "Besichtigung der Cachaça-Herstellung, die 2017 begann. Brennerei, Sportangeln und Milchprodukte.", "funcionamento": "8–17 Uhr."}
+},
+"rotas-de-pedal": {
+"en": {"descricao": "The Rotas de Pedal project is adventure tourism for those who want to breathe fresh air and enjoy freedom in nature. We offer approximately 75 routes through a variety of rural landscapes.", "funcionamento": "Not specified."},
+"fr": {"descricao": "Le projet Rotas de Pedal est un tourisme d'aventure pour ceux qui souhaitent respirer l'air pur et goûter la liberté au cœur de la nature. Nous proposons environ 75 itinéraires à travers de nombreux paysages ruraux.", "funcionamento": "Non précisé."},
+"de": {"descricao": "Das Projekt Rotas de Pedal ist Abenteuertourismus für alle, die frische Luft atmen und die Freiheit in der Natur genießen möchten. Wir bieten rund 75 Routen durch vielfältige ländliche Landschaften.", "funcionamento": "Keine Angabe."}
+},
+"pesqueiro-recanto-do-tambaqui": {
+"en": {"descricao": "With a privileged view of the Capelinha area and the Serra da Mantiqueira, surrounded by greenery in a setting with typical rural touches, Recanto do Tambaqui offers visitors a welcoming, spacious outdoor area, with an airy and friendly restaurant. The food earns praise even from the most demanding guests. Not to mention its own production of 100% natural handmade jams and homemade sweets. Country delights.", "funcionamento": "The fishing area is open Wednesday to Monday, 8 am–6 pm. The restaurant is open Thursday to Sunday and on public holidays, 11:30 am–3:45 pm."},
+"fr": {"descricao": "Avec une vue privilégiée sur la région de Capelinha et la Serra da Mantiqueira, au milieu d'une verdure enveloppante dans un décor aux marques typiques du monde rural, le Recanto do Tambaqui offre au visiteur un grand espace extérieur accueillant, avec un restaurant aéré et sympathique. La cuisine mérite les éloges des clients les plus exigeants. Sans oublier la production maison de confitures artisanales 100 % naturelles et de douceurs faites maison. Des délices de la campagne.", "funcionamento": "L'étang de pêche est ouvert du mercredi au lundi, de 8 h à 18 h. Le restaurant est ouvert du jeudi au dimanche et les jours fériés, de 11 h 30 à 15 h 45."},
+"de": {"descricao": "Mit privilegiertem Blick auf die Region Capelinha und die Serra da Mantiqueira, inmitten umgebender Natur und typisch ländlicher Kulisse, bietet das Recanto do Tambaqui seinen Besuchern ein einladendes, weitläufiges Freigelände mit einem luftigen, freundlichen Restaurant. Das Essen findet Lob selbst bei den anspruchsvollsten Gästen. Hinzu kommen eigene, handgemachte Konfitüren zu 100 % aus natürlichen Zutaten und hausgemachte Süßigkeiten. Köstlichkeiten vom Land.", "funcionamento": "Der Angelteich ist von Mittwoch bis Montag von 8 bis 18 Uhr geöffnet. Das Restaurant ist von Donnerstag bis Sonntag und an Feiertagen von 11.30 bis 15.45 Uhr geöffnet."}
+},
+"trutas-da-serrinha-trutario": {
+"en": {"descricao": "Trutas da Serrinha is a pleasant retreat and one of the landmarks of Serrinha do Alambari. Nestled among the green arms of the forest, it has very cold water tanks, ideal for trout farming, a fish that is also a regional tradition. The trout farm produces and sells a range of trout-based delicacies, such as fillet, smoked fillet, pâté and casquinha (baked stuffed shell)", "funcionamento": "Tuesday to Sunday, 9 am–4 pm."},
+"fr": {"descricao": "Trutas da Serrinha est un lieu agréable et l'une des figures emblématiques de la Serrinha do Alambari. Niché entre les bras verdoyants de la forêt, il dispose de bassins d'eau très froide, propices à l'élevage de la truite, poisson qui est aussi une tradition régionale. La pisciculture produit et vend diverses délicatesses à base de truite, comme le filet, le filet fumé, le pâté et la casquinha (coquille farcie gratinée)", "funcionamento": "Du mardi au dimanche, de 9 h à 16 h."},
+"de": {"descricao": "Trutas da Serrinha ist ein angenehmer Zufluchtsort und eines der Wahrzeichen der Serrinha do Alambari. Eingebettet zwischen den grünen Armen des Waldes, verfügt es über Becken mit sehr kaltem Wasser, ideal für die Forellenzucht – ein Fisch, der auch eine regionale Tradition ist. Die Forellenzucht stellt verschiedene Forellenspezialitäten her und verkauft sie, etwa Filet, geräuchertes Filet, Pastete und Casquinha (überbackene gefüllte Schale)", "funcionamento": "Dienstag bis Sonntag, 9–16 Uhr."}
+},
+"elbers-bier-cervejaria-artesanal": {
+"en": {"descricao": "In the Serrinha do Alambari Environmental Protection Area, in Resende, you can find, amid the Atlantic Forest, a craft brewery in the Belgian brewing tradition: Elbers Bier. Crystal-clear, pure water from springs in the Serra da Mantiqueira is combined with the most traditional malts and other Belgian ingredients to produce a variety of beers ranging from Ales to the classic Blonde, Trippel, Witbier and Dubbel, and even one made with pinhão, the seed of the Araucaria, the typical pine tree of the region.", "funcionamento": "The brewery is in operation Monday to Friday, 7 am–3 pm. The brewery bar welcomes visitors on Saturdays, Sundays and public holidays, 11 am–6 pm."},
+"fr": {"descricao": "Dans l'Aire de Protection de l'Environnement de la Serrinha do Alambari, à Resende, on trouve, au milieu de la forêt atlantique, une brasserie artisanale dans la tradition brassicole belge : Elbers Bier. L'eau cristalline et pure qui provient des sources de la Serra da Mantiqueira se mêle aux malts les plus traditionnels et aux autres ingrédients belges pour produire une variété de bières allant des Ales aux classiques Blonde, Trippel, Witbier et Dubbel, jusqu'à une bière à base de pinhão, la graine de l'araucaria, le pin typique de la région.", "funcionamento": "La brasserie fonctionne du lundi au vendredi, de 7 h à 15 h. Le bar de la brasserie accueille les visiteurs les samedis, dimanches et jours fériés, de 11 h à 18 h."},
+"de": {"descricao": "Im Umweltschutzgebiet Serrinha do Alambari in Resende findet man mitten im Atlantischen Regenwald eine Craft-Brauerei in belgischer Brautradition: Elbers Bier. Kristallklares, reines Wasser aus den Quellen der Serra da Mantiqueira verbindet sich mit den traditionellsten Malzsorten und weiteren belgischen Zutaten zu einer Vielfalt an Bieren, von Ales über die klassischen Blonde, Trippel, Witbier und Dubbel bis hin zu einem Bier auf Basis von Pinhão, dem Samen der Araukarie, der typischen Kiefer der Region.", "funcionamento": "Die Brauerei ist montags bis freitags von 7 bis 15 Uhr in Betrieb. Die Brauereibar empfängt Besucher samstags, sonntags und an Feiertagen von 11 bis 18 Uhr."}
+},
+"alambique-da-cachaca-reserva-do-nosco": {
+"en": {"descricao": "At Fazenda Valparaíso stands the beautiful Alambique da Cachaça Reserva do Nosco distillery, highly awarded both in Brazil and abroad. The visit includes a tasting.", "funcionamento": "10 am–4 pm."},
+"fr": {"descricao": "À la Fazenda Valparaíso se trouve la belle distillerie Alambique da Cachaça Reserva do Nosco, très primée au Brésil comme à l'étranger. La visite comprend une dégustation.", "funcionamento": "De 10 h à 16 h."},
+"de": {"descricao": "Auf der Fazenda Valparaíso liegt die schöne Brennerei Alambique da Cachaça Reserva do Nosco, die im In- und Ausland vielfach prämiert wurde. Der Besuch beinhaltet eine Verkostung.", "funcionamento": "10–16 Uhr."}
+},
+"sitio-velho-engenho": {
+"en": {"descricao": "Contact with nature, forest, trails, waterfalls, and a manioc flour mill believed to date from the 20th century, a time when there was no electricity in the region and the whole production process was entirely handmade; a dirt road that brings all the richness of a rural area, with views of farms, horse studs and plantations. The place brings with it a revival of all the simplicity of rural life as it was lived in the past.", "funcionamento": "To be arranged"},
+"fr": {"descricao": "Contact avec la nature, la forêt, des sentiers, des cascades, et un moulin à farine de manioc que l'on suppose du XXe siècle, une époque où il n'y avait pas d'électricité dans la région et où tout le processus de fabrication était entièrement artisanal ; un chemin de terre qui offre toute la richesse d'une zone rurale, avec des paysages de fermes, de haras et de plantations. Le lieu fait revivre toute la simplicité de la vie rurale d'autrefois.", "funcionamento": "À convenir"},
+"de": {"descricao": "Kontakt mit der Natur, Wald, Wanderwege, Wasserfälle und eine Maniokmehlmühle, die vermutlich aus dem 20. Jahrhundert stammt, einer Zeit, in der es in der Region noch keinen Strom gab und der gesamte Herstellungsprozess rein handwerklich erfolgte; eine Erdstraße, die den ganzen Reichtum des ländlichen Raums mit Landschaften aus Farmen, Gestüten und Plantagen bietet. Der Ort lässt die ganze Einfachheit des Landlebens vergangener Zeiten wieder aufleben.", "funcionamento": "Nach Absprache"}
+},
+"parada-funchal-colonia-japonesa": {
+"en": {"descricao": "Homemade country food and homemade products. Available to serve at any time, for groups or individuals.", "funcionamento": "8 am–5 pm"},
+"fr": {"descricao": "Cuisine maison typique de la campagne et produits faits maison. Disponible à toute heure pour accueillir groupes ou particuliers.", "funcionamento": "De 8 h à 17 h"},
+"de": {"descricao": "Typische hausgemachte Landküche und selbst gemachte Produkte. Zu jeder Zeit für Gruppen und Einzelbesucher da.", "funcionamento": "8–17 Uhr"}
+},
+"reserva-ecologica-de-guapiacu-regua": {
+"en": {"descricao": "REGUA has trails created around the wetlands near the Visitor Centre and other trails that bring visitors closer to the forest and the areas restored by the reserve. An experience that aims to raise visitors' awareness of the unique relevance and beauty of the Atlantic Forest and all its biodiversity. REGUA specializes in welcoming birdwatchers. We offer a space very close to Rio de Janeiro with suitable infrastructure to receive nature-loving visitors in a region that is still very well preserved. To better serve birdwatchers, we have trails, 3 observation towers and a hide, all at REGUA's headquarters.", "funcionamento": "7 am–4:30 pm"},
+"fr": {"descricao": "La REGUA dispose de sentiers aménagés autour des zones humides proches du Centre des visiteurs et d'autres sentiers qui rapprochent les visiteurs de la forêt et des zones restaurées par la réserve. Une expérience qui vise à sensibiliser les visiteurs à l'importance et à la beauté uniques de la forêt atlantique et de toute sa biodiversité. La REGUA est spécialisée dans l'accueil des ornithologues amateurs. Nous proposons un espace tout près de Rio de Janeiro, doté d'une infrastructure adaptée pour recevoir les amoureux de la nature dans une région encore très préservée. Pour mieux accueillir les observateurs d'oiseaux, nous disposons de sentiers, de 3 tours d'observation et d'un abri, tous situés au siège de la REGUA.", "funcionamento": "De 7 h à 16 h 30"},
+"de": {"descricao": "Die REGUA verfügt über Wege rund um die Feuchtgebiete in der Nähe des Besucherzentrums und weitere Wege, die Besucher näher an den Wald und die vom Reservat renaturierten Flächen heranführen. Ein Erlebnis, das die Besucher für die einzigartige Bedeutung und Schönheit des Atlantischen Regenwalds und seiner gesamten Artenvielfalt sensibilisieren soll. Die REGUA ist auf die Aufnahme von Vogelbeobachtern spezialisiert. Wir bieten einen Ort ganz in der Nähe von Rio de Janeiro mit geeigneter Infrastruktur für naturliebende Besucher in einer noch sehr gut erhaltenen Region. Für Vogelbeobachter stehen Wege, 3 Beobachtungstürme und ein Unterstand bereit, alle am Sitz der REGUA.", "funcionamento": "7–16.30 Uhr"}
+},
+"campo-do-prado": {
+"en": {"descricao": "Rural outings in Cachoeiras de Macacu", "funcionamento": ""},
+"fr": {"descricao": "Excursions rurales à Cachoeiras de Macacu", "funcionamento": ""},
+"de": {"descricao": "Ausflüge ins ländliche Cachoeiras de Macacu", "funcionamento": ""}
+},
+"escola-desempenho-de-equitacao": {
+"en": {"descricao": "Horseback rides, riding lessons, and trails through forests and mountains on foot, on horseback and by mountain bike. Well-trained, reliable horses, highly qualified instructors and guides, time spent among horses roaming free in nature, and preserved and regenerating Atlantic Forest areas open for visits. Viewpoints, gardens, floodplains, streams and springs.", "funcionamento": "8 am–5 pm"},
+"fr": {"descricao": "Balades à cheval, cours d'équitation, sentiers en forêt et en montagne à pied, à cheval et en VTT. Chevaux bien dressés et fiables, moniteurs et guides hautement qualifiés, cohabitation avec des chevaux en liberté dans la nature, zones de forêt atlantique préservées et en régénération ouvertes à la visite. Belvédères, jardins, plaines inondables, ruisseaux et sources.", "funcionamento": "De 8 h à 17 h"},
+"de": {"descricao": "Ausritte, Reitunterricht und Touren durch Wälder und Berge zu Fuß, zu Pferd und mit dem Mountainbike. Gut ausgebildete, zuverlässige Pferde, hochqualifizierte Reitlehrer und Guides, das Zusammensein mit frei in der Natur lebenden Pferden sowie geschützte und sich regenerierende Gebiete des Atlantischen Regenwalds, die besucht werden können. Aussichtspunkte, Gärten, Auen, Bäche und Quellen.", "funcionamento": "8–17 Uhr"}
+},
+"sandra-turismo": {
+"en": {"descricao": "Customer service point with illustrated brochures of tourist destinations, accompaniment by an accredited guide, insured transport and interactive activities, onboard service, participation in fairs and conferences, cultural meetings with education professionals, religious gatherings, by night.", "funcionamento": "9 am–5 pm"},
+"fr": {"descricao": "Point d'accueil des clients avec des dépliants illustrés de destinations touristiques, accompagnement par un guide agréé, transport assuré et activités interactives, service à bord, participation à des foires et congrès, rencontres culturelles avec des professionnels de l'éducation, rencontres religieuses, sorties nocturnes.", "funcionamento": "De 9 h à 17 h"},
+"de": {"descricao": "Kundenservice-Stelle mit bebilderten Foldern zu Reisezielen, Begleitung durch einen zugelassenen Guide, versicherter Transport und interaktive Aktivitäten, Bordservice, Teilnahme an Messen und Kongressen, kulturelle Begegnungen mit Fachleuten aus dem Bildungsbereich, religiöse Treffen, Touren bei Nacht.", "funcionamento": "9–17 Uhr"}
+},
+"hostel-do-matuto": {
+"en": {"descricao": "A divine connection with nature and waterfalls. Trails through the Atlantic Forest, a visit to the past. We are located inside the environmental preservation area of Parque Estadual dos Três Picos, with access to the Cachoeira 7 Quedas trail and the 1,600-year-old Jequitibá tree, as well as other waterfalls that spring from the Alto da Serra de Cachoeiras.", "funcionamento": "8 am–4 pm"},
+"fr": {"descricao": "Une connexion divine avec la nature et les cascades. Sentiers au milieu de la forêt atlantique, visite du passé. Nous sommes situés dans l'aire de préservation environnementale du Parque Estadual dos Três Picos, avec accès au sentier de la Cachoeira 7 Quedas et au jequitibá vieux de 1 600 ans, ainsi qu'à d'autres cascades qui naissent dans l'Alto da Serra de Cachoeiras.", "funcionamento": "De 8 h à 16 h"},
+"de": {"descricao": "Eine göttliche Verbindung mit der Natur und den Wasserfällen. Wanderwege durch den Atlantischen Regenwald, ein Besuch in der Vergangenheit. Wir liegen innerhalb des Naturschutzgebiets des Parque Estadual dos Três Picos, mit Zugang zum Weg zur Cachoeira 7 Quedas und zum 1.600 Jahre alten Jequitibá-Baum sowie zu weiteren Wasserfällen, die im Alto da Serra de Cachoeiras entspringen.", "funcionamento": "8–16 Uhr"}
+},
+"fazenda-tringuele": {
+"en": {"descricao": "Visit to Alambique Serra Verde, horseback ride, lunch, and sale of cheeses and fruit preserves.", "funcionamento": "Monday to Monday (every day), by prior appointment"},
+"fr": {"descricao": "Visite de l'Alambique Serra Verde, balade à cheval, déjeuner et vente de fromages et de confitures de fruits entiers.", "funcionamento": "Du lundi au lundi (tous les jours), sur rendez-vous préalable"},
+"de": {"descricao": "Besuch der Brennerei Alambique Serra Verde, Ausritt, Mittagessen und Verkauf von Käse und eingekochten Früchten.", "funcionamento": "Montag bis Montag (täglich), nur nach vorheriger Voranmeldung"}
+},
+"restaurante-chafariz-de-ouro": {
+"en": {"descricao": "Home-style cooking on a wood-fired stove, catch-and-release fishing and a playground for children.", "funcionamento": "7 am–5 pm"},
+"fr": {"descricao": "Cuisine maison au fourneau à bois, pêche no-kill et aire de jeux pour enfants.", "funcionamento": "De 7 h à 17 h"},
+"de": {"descricao": "Hausmannskost vom Holzofen, Angeln mit Zurücksetzen der Fische (Catch and Release) und ein Spielplatz für Kinder.", "funcionamento": "7–17 Uhr"}
+},
+"sitio-sao-joaquim": {
+"en": {"descricao": "Production of handmade organic cachaça and rental of the space for holiday stays. No meals are served on site. The highlight is the hospitality of the owners, Mr. Isaac and Mrs. Vera.", "funcionamento": "Monday to Monday (every day), by prior appointment with accredited guides."},
+"fr": {"descricao": "Production de cachaça biologique artisanale et location de l'espace pour des séjours de vacances. Aucun repas n'est servi sur place. Le point fort est l'hospitalité des propriétaires, M. Isaac et Mme Vera.", "funcionamento": "Du lundi au lundi (tous les jours), sur rendez-vous préalable avec des guides agréés."},
+"de": {"descricao": "Herstellung von handwerklichem Bio-Cachaça und Vermietung der Anlage für Ferienaufenthalte. Vor Ort werden keine Mahlzeiten angeboten. Das Besondere ist die Gastfreundschaft der Besitzer, Herr Isaac und Frau Vera.", "funcionamento": "Montag bis Montag (täglich), nur nach vorheriger Voranmeldung bei zugelassenen Guides."}
+},
+"sitio-isa-brown": {
+"en": {"descricao": "Rural breakfast, catch-and-pay fishing and sale of sweets, free-range eggs and homemade liqueur: the best experiences for tourists.", "funcionamento": "Sat and Sun, 9 am–6 pm. Tuesday to Friday by prior appointment only."},
+"fr": {"descricao": "Petit-déjeuner rural, pêche payante et vente de douceurs, d'œufs de poules élevées en plein air et de liqueur artisanale : les meilleures expériences pour le touriste.", "funcionamento": "Sam. et dim. de 9 h à 18 h. Du mardi au vendredi uniquement sur rendez-vous préalable."},
+"de": {"descricao": "Ländliches Frühstück, Angeln mit Bezahlung nach Fang und Verkauf von Süßigkeiten, Freilandeiern und handwerklichem Likör – die besten Erlebnisse für Touristen.", "funcionamento": "Sa und So 9–18 Uhr. Di bis Fr nur nach vorheriger Voranmeldung."}
+},
+"alambique-serra-verde": {
+"en": {"descricao": "Explanation of the entire cachaça production process and a tasting with snacks. The visit can be made on horseback in partnership with Fazenda Tringuelé.", "funcionamento": "Monday to Monday (every day)"},
+"fr": {"descricao": "Explication de tout le processus de production des cachaças et dégustation accompagnée de petites bouchées. La visite peut se faire à cheval en partenariat avec la Fazenda Tringuelé.", "funcionamento": "Du lundi au lundi (tous les jours)"},
+"de": {"descricao": "Erläuterung des gesamten Herstellungsprozesses der Cachaças und Verkostung mit Häppchen. Der Besuch kann in Partnerschaft mit der Fazenda Tringuelé auch zu Pferd erfolgen.", "funcionamento": "Montag bis Montag (täglich)"}
+},
+"sitio-sato": {
+"en": {"descricao": "Visit to the guava orchard, fruit picking, the history of the place, an explanation of how goiabada (guava paste) is made, and tasting and sale of guavas and goiabada. The highlight is the chance to pick the fruit straight from the tree.", "funcionamento": "Mon to Sat"},
+"fr": {"descricao": "Visite du verger de goyaviers, cueillette du fruit, histoire du lieu, explications sur la production de la goiabada (pâte de goyave), dégustation et vente de goyaves et de goiabada. Le point fort est de pouvoir cueillir le fruit directement sur l'arbre.", "funcionamento": "Du lun. au sam."},
+"de": {"descricao": "Besuch der Guavenplantage, Obsternte, Geschichte des Ortes, Erläuterung der Herstellung von Goiabada (Guavenpaste), Verkostung und Verkauf von Guaven und Goiabada. Das Besondere: die Früchte direkt vom Baum pflücken zu können.", "funcionamento": "Mo bis Sa"}
+},
+"cervejaria-rota-imperial": {
+"en": {"descricao": "A bar with craft beers and a brewery tour with explanations of the brewing process, the story behind the beers' names, and a tasting. Great service, a variety of craft beer styles and fantastic snacks to pair with the beers. An open-air venue immersed in nature with a spectacular view of the Serra dos Órgãos.", "funcionamento": "Fri 5–9 pm - Sat 12–9 pm - Sun 11 am–1 pm"},
+"fr": {"descricao": "Bar proposant des bières artisanales et visite de la brasserie avec explications sur le processus de fabrication des bières, l'histoire derrière leurs noms et dégustation. Excellent accueil, grande variété de styles de bières artisanales et fantastiques petites bouchées à marier avec les bières. Lieu en plein air plongé dans la nature, avec une vue spectaculaire sur la Serra dos Órgãos.", "funcionamento": "Ven. de 17 h à 21 h - Sam. de 12 h à 21 h - Dim. de 11 h à 13 h"},
+"de": {"descricao": "Bar mit Craft-Bieren und Brauereiführung mit Erläuterungen zum Brauprozess, zur Geschichte hinter den Biernamen und einer Verkostung. Ausgezeichneter Service, eine Vielfalt an Craft-Bierstilen und fantastische Häppchen, die perfekt zu den Bieren passen. Offener Ort inmitten der Natur mit spektakulärem Blick auf die Serra dos Órgãos.", "funcionamento": "Fr 17–21 Uhr - Sa 12–21 Uhr - So 11–13 Uhr"}
+},
+"haras-vale-do-fojo": {
+"en": {"descricao": "Trails and horseback rides with specialist guides. Equine therapy for adults and children.", "funcionamento": "Every day, by appointment"},
+"fr": {"descricao": "Sentiers et balades à cheval avec des guides spécialisés. Équithérapie pour adultes et enfants.", "funcionamento": "Tous les jours, sur rendez-vous"},
+"de": {"descricao": "Wanderwege und Ausritte mit spezialisierten Guides. Reittherapie für Erwachsene und Kinder.", "funcionamento": "Täglich nur nach Voranmeldung"}
+},
+"feira-organica-e-agroecologica-de-guapimirim": {
+"en": {"descricao": "Open-air market of organic products from family farming in Guapimirim", "funcionamento": "8 am–1 pm"},
+"fr": {"descricao": "Marché de plein air de produits biologiques issus de l'agriculture familiale de Guapimirim", "funcionamento": "De 8 h à 13 h"},
+"de": {"descricao": "Wochenmarkt mit Bioprodukten aus der bäuerlichen Familienlandwirtschaft von Guapimirim", "funcionamento": "8–13 Uhr"}
+},
+"guapimirimtur": {
+"en": {"descricao": "Sale of tours and attractions in the city of Guapimirim. The city's first inbound tourism agency.", "funcionamento": "Mon 1–6 pm - Tue to Fri 9 am–6 pm - Sat 9 am–1 pm"},
+"fr": {"descricao": "Vente d'excursions et d'attractions de la ville de Guapimirim. Première agence de tourisme réceptif de la ville.", "funcionamento": "Lun. de 13 h à 18 h - Du mar. au ven. de 9 h à 18 h - Sam. de 9 h à 13 h"},
+"de": {"descricao": "Verkauf von Ausflügen und Sehenswürdigkeiten der Stadt Guapimirim. Erste Agentur für Incoming-Tourismus der Stadt.", "funcionamento": "Mo 13–18 Uhr - Di bis Fr 9–18 Uhr - Sa 9–13 Uhr"}
+},
+"aponte-tur": {
+"en": {"descricao": "Outbound and inbound travel agency", "funcionamento": "8 am–1 pm"},
+"fr": {"descricao": "Agence de voyages émissive et réceptive", "funcionamento": "De 8 h à 13 h"},
+"de": {"descricao": "Reisebüro für Outgoing- und Incoming-Reisen", "funcionamento": "8–13 Uhr"}
+},
+"clevertur-turismo": {
+"en": {"descricao": "Outbound and inbound travel agency", "funcionamento": ""},
+"fr": {"descricao": "Agence de voyages émissive et réceptive", "funcionamento": ""},
+"de": {"descricao": "Reisebüro für Outgoing- und Incoming-Reisen", "funcionamento": ""}
+},
+"canoa-da-serra": {
+"en": {"descricao": "Bike rides through organic production areas and regional coffee. No competitors.", "funcionamento": "9 am–6 pm"},
+"fr": {"descricao": "Balades à vélo à travers des zones de production biologique et de café régional. Aucun concurrent.", "funcionamento": "De 9 h à 18 h"},
+"de": {"descricao": "Radtouren durch Gebiete mit biologischem Anbau und regionalem Kaffee. Keine Konkurrenz.", "funcionamento": "9–18 Uhr"}
+},
+"emporio-mio-di-bao": {
+"en": {"descricao": "A place with a rural character offering a wide range of regional products, as well as meals on Sundays and homemade pasta made fresh on the spot.", "funcionamento": "Fri 9 am–10 pm, Sat 9 am–10 pm and Sun 9 am–6 pm"},
+"fr": {"descricao": "Lieu à caractère rural proposant les produits les plus variés de la région, ainsi que des repas le dimanche et des pâtes maison préparées à la minute.", "funcionamento": "Ven. de 9 h à 22 h, sam. de 9 h à 22 h et dim. de 9 h à 18 h"},
+"de": {"descricao": "Ein Ort mit ländlichem Charakter, der die unterschiedlichsten Produkte der Region anbietet, dazu sonntags Mahlzeiten und hausgemachte Pasta, frisch zubereitet.", "funcionamento": "Fr 9–22 Uhr, Sa 9–22 Uhr und So 9–18 Uhr"}
+},
+"casa-gibachi": {
+"en": {"descricao": "Zip line, creek bathing, natural pool, organic vegetable garden, trails and 4x4 tours.", "funcionamento": "By reservation"},
+"fr": {"descricao": "Tyrolienne, baignade en ruisseau, piscine naturelle, potager biologique, sentiers et excursions en 4x4.", "funcionamento": "Sur réservation"},
+"de": {"descricao": "Seilrutsche, Baden im Bach, Naturpool, Biogemüsegarten, Wanderwege und Geländewagen-Touren (4x4).", "funcionamento": "Nur nach Reservierung"}
+},
+"sitio-castelo-das-trutas": {
+"en": {"descricao": "The farm produces trout.", "funcionamento": "8 am–4 pm"},
+"fr": {"descricao": "La ferme produit des truites.", "funcionamento": "De 8 h à 16 h"},
+"de": {"descricao": "Der Hof betreibt Forellenzucht.", "funcionamento": "8–16 Uhr"}
+},
+"za-tur": {
+"en": {"descricao": "Inbound tour agency. An experience-based tourism offering a range of attractions, from natural dairy products free of chemical additives, thick-cut goiabada (guava paste) cooked in a copper pot over a wood-fired stove, a craft cachaça distillery, wood-fired restaurants, truffle cheeses, trout farming, an experience in a stone castle, a 100% organic farm with pick-your-own, a strawberry plantation, a hop plantation, flower bouquet-making experiences, a farm with day use and an eco-jewelry-making experience, a nursery with a distinctive range of products, crafts and garden decoration, and several places with distinctive jams, featuring hop-based products. Catch-and-pay fishing, a poultry farm with top-quality free-range eggs, camping, a shed with antiques reviving the past, a century-old general store specializing in organic food and traditional carne na lata (canned-style preserved meat). Breakfast or afternoon tea experiences to choose from. The main distinguishing feature of the service is exclusivity for groups at each individual attraction. The group is treated like family.", "funcionamento": "9 am–6 pm"},
+"fr": {"descricao": "Agence de tourisme réceptif. Un tourisme d'expérience avec de multiples attractions : produits laitiers naturels sans additifs chimiques, goiabada (pâte de goyave) en gros morceaux cuite dans un chaudron en cuivre sur un fourneau à bois, distillerie artisanale de cachaça, restaurants au fourneau à bois, fromages truffés, élevage de truites, expérience dans un château de pierre, ferme 100 % biologique avec cueillette payante, plantation de fraises, plantation de houblon, expériences de composition de bouquets de fleurs, ferme avec day use et expérience de fabrication d'éco-bijoux, pépinière proposant une gamme originale de produits, d'artisanat et de décoration de jardin, et plusieurs lieux avec des confitures originales, notamment des produits au houblon. Pêche payante, élevage de volailles avec des œufs de poules élevées en plein air d'excellente qualité, camping, hangar d'antiquités qui fait revivre le passé, un entrepôt centenaire spécialisé dans les produits biologiques et la traditionnelle carne na lata (viande conservée en boîte). Expériences de petit-déjeuner ou de goûter au choix. Le principal atout de l'accueil est l'exclusivité pour les groupes dans chaque attraction. Le groupe est reçu comme une famille.", "funcionamento": "De 9 h à 18 h"},
+"de": {"descricao": "Agentur für Incoming-Tourismus. Ein Erlebnistourismus mit vielfältigen Attraktionen: natürliche Milchprodukte ohne chemische Zusätze, grobstückige Goiabada (Guavenpaste), im Kupferkessel auf dem Holzofen gekocht, eine handwerkliche Cachaça-Brennerei, Restaurants mit Holzofen, Trüffelkäse, Forellenzucht, ein Erlebnis in einem Steinschloss, ein zu 100 % biologischer Hof mit Selbstpflücken gegen Bezahlung, eine Erdbeerplantage, eine Hopfenplantage, Erlebnisse mit dem Binden von Blumensträußen, ein Hof mit Day Use und dem Erlebnis, Öko-Schmuck herzustellen, eine Gärtnerei mit einem besonderen Sortiment an Produkten, Kunsthandwerk und Gartendekoration sowie mehrere Orte mit besonderen Konfitüren, darunter Produkte mit Hopfen. Angeln mit Bezahlung nach Fang, ein Geflügelhof mit Freilandeiern von bester Qualität, Camping, eine Halle mit Antiquitäten, die die Vergangenheit wieder aufleben lässt, ein hundertjähriges Warenlager mit Spezialität für Bioprodukte und das traditionelle Carne na Lata (in der Dose konserviertes Fleisch). Frühstücks- oder Nachmittagskaffee-Erlebnisse zur Auswahl. Das wichtigste Merkmal des Services ist die Exklusivität für Gruppen bei jeder einzelnen Attraktion. Die Gruppe wird wie eine Familie betreut.", "funcionamento": "9–18 Uhr"}
+},
+"donana-delicias": {
+"en": {"descricao": "Truffle cheeses", "funcionamento": "1–6 pm"},
+"fr": {"descricao": "Fromages truffés", "funcionamento": "De 13 h à 18 h"},
+"de": {"descricao": "Trüffelkäse", "funcionamento": "13–18 Uhr"}
+},
+"cachacaria-atras-da-pedra": {
+"en": {"descricao": "Tasting of the products and an immersive experience at a cachaça and liqueur factory. Service provided by the owners. Handmade products.", "funcionamento": "By appointment."},
+"fr": {"descricao": "Dégustation des produits et immersion dans une fabrique de cachaça et de liqueurs. Accueil assuré par les propriétaires. Produits artisanaux.", "funcionamento": "Sur rendez-vous."},
+"de": {"descricao": "Verkostung der Produkte und Erlebnis in einer Cachaça- und Likörmanufaktur. Betreuung durch die Besitzer. Handwerkliche Produkte.", "funcionamento": "Nur nach Voranmeldung."}
+},
+"laticinios-amparo-e-cafe-colonial": {
+"en": {"descricao": "A sensory and cognitive gastronomic experience, raising awareness of natural and healthy eating. Our production, starting with the milk, is our own. Everything is made on the premises. Natural, handmade foods, free of chemical additives. A pleasant, bucolic setting.", "funcionamento": "9 am–6 pm"},
+"fr": {"descricao": "Une gastronomie sensorielle et cognitive, pour sensibiliser à une alimentation naturelle et saine. Notre production, à commencer par le lait, est la nôtre. Tout est fabriqué sur place. Aliments naturels et artisanaux, sans additifs chimiques. Cadre bucolique et agréable.", "funcionamento": "De 9 h à 18 h"},
+"de": {"descricao": "Eine sinnliche und lehrreiche kulinarische Erfahrung, die das Bewusstsein für natürliche und gesunde Ernährung schärft. Unsere Produktion, angefangen bei der Milch, ist eigen. Alles wird im Haus hergestellt. Natürliche, handwerkliche Lebensmittel ohne chemische Zusätze. Eine idyllische, angenehme Umgebung.", "funcionamento": "9–18 Uhr"}
+},
+"horto-mayer": {
+"en": {"descricao": "Contact with nature, learning about the care and supply of ornamental plants, interior and exterior decoration, growing organic food, seasonings and medicinal herbs, and reusing organic waste (composting, worm humus, biofertilizer). We believe in sustainability and show our visitors the importance of recycling our waste, both for the environment and for our own benefit; organic waste, for example, as a source of nutrients for plants.", "funcionamento": "8 am–5 pm"},
+"fr": {"descricao": "Contact avec la nature, apprentissage de la gestion et de l'approvisionnement en plantes ornementales, décoration d'intérieur et d'extérieur, culture d'aliments biologiques, d'épices et d'herbes médicinales, réutilisation des déchets organiques (compostage, humus de lombric, biofertilisant). Nous croyons en la durabilité et transmettons à nos visiteurs l'importance de recycler nos déchets, tant pour l'environnement que pour notre propre bénéfice ; les déchets organiques, par exemple, comme source de nutriments pour les plantes.", "funcionamento": "De 8 h à 17 h"},
+"de": {"descricao": "Kontakt mit der Natur, Einblick in Pflege und Bezug von Zierpflanzen, Innen- und Außendekoration, Anbau von Bio-Lebensmitteln, Gewürzen und Heilkräutern sowie Wiederverwertung organischer Abfälle (Kompostierung, Wurmhumus, Biodünger). Wir glauben an Nachhaltigkeit und vermitteln unseren Besuchern, wie wichtig das Recycling unserer Abfälle ist, sowohl für die Umwelt als auch zu unserem eigenen Nutzen; organische Abfälle zum Beispiel als Nährstoffquelle für Pflanzen.", "funcionamento": "8–17 Uhr"}
+},
+"galpao-brasil": {
+"en": {"descricao": "We are a gourmet cultural space with excellent hospitality. Cultural gatherings with local artists, photo spots and handmade products from the Circuito Rural.", "funcionamento": "Fri to Sun, 12 pm–11 pm"},
+"fr": {"descricao": "Nous sommes un espace culturel gourmet à l'accueil chaleureux. Rencontres culturelles avec des artistes locaux, espaces photo et produits artisanaux du Circuito Rural.", "funcionamento": "Du ven. au dim., de 12 h à 23 h"},
+"de": {"descricao": "Wir sind ein kulinarisch-kultureller Treffpunkt mit hervorragender Gastfreundschaft. Kulturelle Begegnungen mit lokalen Künstlern, Fotospots und handwerkliche Produkte des Circuito Rural.", "funcionamento": "Fr bis So, 12–23 Uhr"}
+},
+"armazem-centenario": {
+"en": {"descricao": "The space is located inside a residential development, with a huge organic vegetable garden and a wonderful lake, the best carne de lata and the coldest beer in the region!", "funcionamento": "Sat 9 am–10 pm, Sun 9 am–6 pm"},
+"fr": {"descricao": "L'espace se trouve à l'intérieur d'un ensemble résidentiel, avec un énorme potager biologique et un lac merveilleux, la meilleure carne de lata et la bière la plus fraîche de la région !", "funcionamento": "Sam. de 9 h à 22 h, dim. de 9 h à 18 h"},
+"de": {"descricao": "Der Ort liegt innerhalb einer Wohnanlage, mit einem riesigen Biogemüsegarten und einem wunderschönen See, dem besten Carne de Lata und dem kältesten Bier der Region!", "funcionamento": "Sa 9–22 Uhr, So 9–18 Uhr"}
+},
+"pesque-pague-rancho-das-palmeiras": {
+"en": {"descricao": "A place to relax in the midst of nature, with fishing, bar service, a restaurant serving homestyle cooking, a variety of snack platters, a party area and barbecue.", "funcionamento": "Sat, Sundays and public holidays - 8 am–8 pm"},
+"fr": {"descricao": "Un endroit pour se détendre au cœur de la nature, avec pêche, service de bar, restaurant proposant une petite cuisine maison, assiettes variées de petites bouchées, espace pour les fêtes et barbecue.", "funcionamento": "Sam., dimanches et jours fériés - de 8 h à 20 h"},
+"de": {"descricao": "Ein Ort zum Entspannen mitten in der Natur, mit Angeln, Barservice, einem Restaurant mit Hausmannskost, vielfältigen Snackplatten, einem Festbereich und Grillmöglichkeiten.", "funcionamento": "Sa, So und an Feiertagen - 8–20 Uhr"}
+}
+}

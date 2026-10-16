@@ -13,11 +13,11 @@ Porta ocupada? `abrir-telao.bat 9000`.
 
 > Por que não abrir o `index.html` direto? Os navegadores bloqueiam módulos e arquivos de dados em `file://`. O servidor local resolve isso.
 
-Precisa de um navegador com WebGL e de uma placa de vídeo razoável (a cena desenha ~250 mil pontos). Em máquinas fracas, abra com `?q=media` ou `?q=baixa` no endereço.
+Precisa de um navegador com WebGL e de uma placa de vídeo razoável (o relevo é uma malha de ~1 milhão de triângulos). Em máquinas fracas, abra com `?q=baixa` no endereço (malha mais leve e resolução menor).
 
 ## Como usar
 
-- **Tocar/clicar**: etiqueta de município → município; alvo colorido no chão → ficha do atrativo (vários colados abrem uma lista curta); ladrilho → lista do que há ali; item da lista → ficha.
+- **Tocar/clicar**: etiqueta de município → município; alfinete no mapa → ficha do atrativo (vários colados abrem uma lista curta); ladrilho → lista do que há ali; item da lista → ficha.
 - **Cartão à direita**: abas **Rotas / Quero… / Produtos** (teclas `1`, `2`, `3`); tocar numa linha da legenda realça aquela rota (ou experiência, ou produto) no recorte atual; tocar de novo desfaz. Tocar na região, no topo do cartão de um município, sobe para a região.
 - **Ficha**: dados do guia e um **QR code** que abre o local no Google Maps no celular. A localização exata vem do QR "Ver mapa" impresso no guia; "aproximada" é o bairro apontado pelo QR ou o endereço geocodificado (o QR da ficha busca pelo nome); "só no município" quando o guia não traz coordenada.
 - **Passeio automático**: começa após 30 s sem toque, percorre as 12 regiões turísticas e abre fichas de alguns atrativos. Qualquer toque interrompe. `Espaço` pausa/retoma.

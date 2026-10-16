@@ -1,5 +1,5 @@
-// Telão 3D de Turismo Rural RJ, direção "nuvem de pontos / matriz de LEDs".
-// Relevo e cobertura do solo como pontos discretos; registros como marcações em DOM (etiqueta por município, ladrilho por grupo).
+// Telão 3D de Turismo Rural RJ, direção "mapa ilustrado em papel": relevo sólido pintado pela cobertura do solo,
+// atrativos como alfinetes em gota com o ícone da rota; municípios e ladrilhos como marcações em DOM sobre o relevo.
 // Sem addons do three (importam o especificador nu 'three', vetado pela CSP sem importmap):
 // controles, raycast no relevo e pós-processamento são próprios.
 import * as THREE from './vendor/three/three.module.js';
@@ -11,28 +11,26 @@ const EXAG = 6;   // exagero vertical do relevo (mostrado no HUD)
 const FOV = 24;   // graus, vertical
 const OCIOSO_MS = parseInt(new URL(window.location).searchParams.get('ocio') || '30000', 10); // parâmetro ?ocio para teste
 const QUALIDADES = {
-  // dpr: teto de devicePixelRatio; altMax: altura máxima do buffer de desenho (o HUD é DOM e fica nítido);
-  // passo da amostragem da grade, em células: [terra do RJ, área urbanizada, terra vizinha, mar]
-  alta: { dpr: 2, altMax: 2160, pos: true, passo: [2, 1, 4, 6] },
-  media: { dpr: 1.5, altMax: 1080, pos: false, passo: [2, 1, 4, 6] },
-  baixa: { dpr: 1, altMax: 1080, pos: false, passo: [3, 2, 6, 9] },
+  // dpr: teto de devicePixelRatio; altMax: altura máxima do buffer de desenho (o HUD é DOM e fica nítido); malha: células entre vértices do relevo
+  alta: { dpr: 2, altMax: 2160, malha: 2 },
+  media: { dpr: 1.5, altMax: 1080, malha: 2 },
+  baixa: { dpr: 1, altMax: 1080, malha: 3 },
 };
 const qPedida = new URLSearchParams(location.search).get('q');
 const qualidade = Object.hasOwn(QUALIDADES, qPedida) ? qPedida : 'alta';
 const CFG = QUALIDADES[qualidade];
 
-// Paleta luminosa contida, por código de cobertura (cobertura.json): [cor, intensidade]
+// Paleta do relevo pintado, por código de cobertura (cobertura.json): [cor]. A legenda do cartão usa as mesmas cores.
 const COR_CLASSE = {
-// O relevo é fundo: brilho e saturação baixos, para as marcações serem de longe o mais claro da tela.
-  0: ['#3f5a66', 0.34], // terra fora do RJ (fundo)
-  1: ['#1d5a70', 0.55], // mar (modulado pela profundidade)
-  2: ['#3f78a8', 0.74], // água interior e áreas alagadas (azul apagado)
-  3: ['#f0dfbf', 0.92], // área urbanizada: branco-quente de cidade à noite (não laranja: Formação e Ecossistema são laranja)
-  4: ['#3e9a62', 0.62], // mata (verde)
-  5: ['#a9ad78', 0.56], // campo e pasto (oliva claro, separado da mata pela matiz)
-  6: ['#c7ad5c', 0.62], // lavoura e silvicultura
-  7: ['#4fb3a8', 0.62], // mangue e restinga
-  8: ['#9a8cbc', 0.62], // outros usos
+  0: ['#d5d6a4'], // terra fora do RJ (esmaece no papel)
+  1: ['#7cc4cf'], // mar (o shader modula pela profundidade)
+  2: ['#5aa7c2'], // água interior e áreas alagadas
+  3: ['#d9b79a'], // área urbanizada (telhado/terra batida)
+  4: ['#2f6b3b'], // mata
+  5: ['#b8c870'], // campo e pasto
+  6: ['#d6bc63'], // lavoura e silvicultura
+  7: ['#6aa88d'], // mangue e restinga
+  8: ['#cdbf94'], // outros usos
 };
 // Símbolo de cada item das lentes (campo `simbolo` de lentes.json; redundância da cor), em viewBox 24x24.
 const SIMBOLO = {
@@ -48,6 +46,16 @@ const SIMBOLO = {
   pentagono: ['polygon', { points: '12,2.5 21.5,9.4 17.9,20.6 6.1,20.6 2.5,9.4' }],
   octogono: ['polygon', { points: '8,2.5 16,2.5 21.5,8 21.5,16 16,21.5 8,21.5 2.5,16 2.5,8' }],
   'meia-lua': ['path', { d: 'M2.5 16.5a9.5 9.5 0 0 1 19 0z' }], barra: ['rect', { x: 2.5, y: 8.5, width: 19, height: 7 }],
+  // ícones rurais das rotas (silhuetas de um traçado só; furos = subtraçado em sentido anti-horário)
+  cafe: ['path', { d: 'M7 3h1.8v5H7zM11 3h1.8v5H11zM3.5 11h13v3.2a5.8 5.8 0 0 1-5.8 5.8H9.3a5.8 5.8 0 0 1-5.8-5.8zM16.5 12.2h1.2a3 3 0 0 1 0 6h-1.8v-1.7h1.8a1.3 1.3 0 0 0 0-2.6h-1.2zM2 21h16v1.6H2z' }],
+  queijo: ['path', { d: 'M2 18.5V12L21.5 6.5v12zM9.2 14.2a1.4 1.4 0 1 0-2.8 0 1.4 1.4 0 1 0 2.8 0zM14.7 12.4a1.1 1.1 0 1 0-2.2 0 1.1 1.1 0 1 0 2.2 0zM18.2 15.2a1.2 1.2 0 1 0-2.4 0 1.2 1.2 0 1 0 2.4 0zM12.3 16.2a.9.9 0 1 0-1.8 0 .9.9 0 1 0 1.8 0z' }],
+  garrafa: ['path', { d: 'M10 2h4v3.2c0 .9.8 1.4 1.6 2.4.7.9 1.4 1.8 1.4 3.2V21a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 7 21v-9.2c0-1.4.7-2.3 1.4-3.2C9.2 6.6 10 6.1 10 5.2zM9 13v5h6v-5z' }],
+  flor: ['path', { d: 'M15.8 7.8a3.8 3.8 0 1 1 -7.6 0 3.8 3.8 0 1 1 7.6 0zM19.79 10.7a3.8 3.8 0 1 1 -7.6 0 3.8 3.8 0 1 1 7.6 0zM18.27 15.4a3.8 3.8 0 1 1 -7.6 0 3.8 3.8 0 1 1 7.6 0zM13.33 15.4a3.8 3.8 0 1 1 -7.6 0 3.8 3.8 0 1 1 7.6 0zM11.81 10.7a3.8 3.8 0 1 1 -7.6 0 3.8 3.8 0 1 1 7.6 0zM13.5 12a1.5 1.5 0 1 0 -3 0 1.5 1.5 0 1 0 3 0z' }],
+  peixe: ['path', { d: 'M2 12c3-5 8-7 13-4.5l1.5 1.2L22 6v12l-5.5-2.7-1.5 1.2C10 18.5 5 17 2 12zM8.5 11.3a1 1 0 1 0-2 0 1 1 0 1 0 2 0z' }],
+  folha: ['path', { d: 'M4 20C4 11 9 5 21 4c0 11-5 17-13 17-1.5 0-3-.3-4-1zM7 18l1.8.7L15.5 8.5z' }],
+  mesa: ['path', { d: 'M5 3v6a2.5 2.5 0 0 0 2 2.4V21h1.8V11.4A2.5 2.5 0 0 0 11 9V3H9.6v5H8.4V3H7.2v5H6.4V3zM16 3c-2 1.5-3 4-3 7v3h2.2v8H17V3z' }],
+  artesanato: ['path', { d: 'M9 3h6v2.2c0 1 1 1.6 2 3 1.2 1.6 1.8 3.4 1.8 5.3 0 5-2.8 8-6.8 8s-6.8-3-6.8-8c0-1.9.6-3.7 1.8-5.3 1-1.4 2-2 2-3zM7 12.5v1.8h10v-1.8z' }],
+  campo: ['path', { d: 'M2.5 11.5L12 3.5l9.5 8h-2.3V20H4.8v-8.5zM10 20h4v-5h-4z' }],
 };
 
 const rgb = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255);
@@ -191,18 +199,6 @@ async function iniciar() {
     const exato = new Set(regJ.precisoes.filter((p) => p.ponto_exato_permitido).map((p) => p.classe));
   // âncora = ponto de rótulo da malha: o agregado do município (inclusive os registros sem ponto exato) fica ali, como posição aproximada
   for (const m of municipios) m.ancora = m.rotulo;
-  // distância (km) de cada célula à âncora mais próxima, até 7 km: onda de luz no chão
-  const DA = new Uint8Array(W * H).fill(255);
-  for (const m of municipios) {
-    const [ax, ay] = m.ancora, R = 7;
-    const jA = Math.max(0, Math.floor((ax - R - G.x0) / G.dx)), jB = Math.min(W - 1, Math.ceil((ax + R - G.x0) / G.dx));
-    const iA = Math.max(0, Math.floor((G.y1 - ay - R) / G.dy)), iB = Math.min(H - 1, Math.ceil((G.y1 - ay + R) / G.dy));
-    for (let i = iA; i <= iB; i++) for (let j = jA; j <= jB; j++) {
-      const d = Math.hypot(xDe(j) - ax, yDe(i) - ay);
-      if (d < R) { const v = Math.round((d / R) * 254); if (v < DA[i * W + j]) DA[i * W + j] = v; }
-    }
-  }
-
   // distância (km) ao RJ em grade grossa (chanfro 2 passadas): vizinhos e mar somem com a distância
   const F = 4, wF = Math.ceil(W / F), hF = Math.ceil(H / F), DR = new Float32Array(wF * hF).fill(1e9);
   for (let i = 0; i < H; i++) for (let j = 0; j < W; j++) if (C[i * W + j] >= 2) DR[((i / F) | 0) * wF + ((j / F) | 0)] = 0;
@@ -222,77 +218,36 @@ async function iniciar() {
   }
   const distRJ = (i, j) => DR[((i / F) | 0) * wF + ((j / F) | 0)] * F * G.dx;
 
-  // ---------- nuvem de pontos ----------
-  // tipo: 0 mar, 1 terra vizinha, 2 terra do RJ, 3 área urbanizada, 4 costa, 5 divisa da UF, 6 limite municipal, 7 registro com ponto exato
-  const CAP = 700000;
-  const pPos = new Float32Array(CAP * 3), pCor = new Uint8Array(CAP * 4), pInf = new Uint8Array(CAP * 4);
-  let nP = 0;
-  function ponto(x, y, ym, c, luz, intens, mun, tipo, dAnc, tamKm) {
-    if (nP >= CAP) return;
-    const a = nP * 3, b = nP * 4;
-    pPos[a] = x; pPos[a + 1] = ym; pPos[a + 2] = -y;
-    pCor[b] = Math.min(255, c[0] * luz * 255); pCor[b + 1] = Math.min(255, c[1] * luz * 255); pCor[b + 2] = Math.min(255, c[2] * luz * 255);
-    pCor[b + 3] = Math.min(255, (intens / 4) * 255);
-    pInf[b] = mun; pInf[b + 1] = tipo; pInf[b + 2] = dAnc; pInf[b + 3] = Math.min(255, Math.round(tamKm * 200));
-    nP++;
-  }
-  const pal = Object.fromEntries(Object.entries(COR_CLASSE).map(([k, [h, i]]) => [k, [rgb(h), i]]));
-  const dxm = G.dx * 1000, dym = G.dy * 1000;
-  const L = [-Math.SQRT1_2 * Math.cos(rad(40)), Math.SQRT1_2 * Math.cos(rad(40)), Math.sin(rad(40))]; // luz de noroeste
-  function sombra(i, j) {
-    const zx = (A[i * W + Math.min(W - 1, j + 1)] - A[i * W + Math.max(0, j - 1)]) / (2 * dxm);
-    const zy = (A[Math.max(0, i - 1) * W + j] - A[Math.min(H - 1, i + 1) * W + j]) / (2 * dym);
-    const nx = -zx * 2.5, ny = -zy * 2.5, n = Math.hypot(nx, ny, 1);
-    return clamp(0.36 + 0.9 * ((nx * L[0] + ny * L[1] + L[2]) / n), 0.22, 1.08);
-  }
-  const branco = (c, t) => c.map((v) => v + (1 - v) * t);
-  const [pRJ, pUrb, pViz, pMar] = CFG.passo;
-  const COTA = 200; // m, curvas de nível acesas na terra
-  const ISOBATAS = [-25, -50, -100, -200, -500, -1000, -2000];
-  const corRaso = rgb('#2a8aa8'), corFundo = rgb('#0b2c3c'), corIso = rgb('#3fb6d6');
-  const corCosta = rgb('#7fd8e4'), corDivisa = rgb('#3fb0a4'), corFrio = rgb('#2a7f90');
-  for (let i = 0; i < H; i++) {
-    const y = yDe(i);
-    for (let j = 0; j < W; j++) {
-      const k = i * W + j, c = C[k], h = A[k], x = xDe(j);
-      if (c >= 2) {
-        const naGrade = i % pRJ === 0 && j % pRJ === 0;
-        const urb = c === 3 && i % pUrb === 0 && j % pUrb === 0;
-        if (naGrade || urb) {
-          const [cor, intens] = pal[c];
-          let it = intens, cc = cor;
-          if (naGrade && c !== 3) { // curva de nível: o nível muda entre este ponto e o vizinho da grade
-            const lv = Math.floor(h / COTA);
-            const d = Math.floor(A[i * W + Math.min(W - 1, j + pRJ)] / COTA), s = Math.floor(A[Math.min(H - 1, i + pRJ) * W + j] / COTA);
-            if (lv !== d || lv !== s) { it *= 1.3; cc = branco(cor, 0.15); }
-          }
-          const sb = c === 3 ? 1 : sombra(i, j);
-          if (c !== 3) cc = cc.map((v, n) => lerp(v, corFrio[n], Math.max(0, 1 - sb) * 0.35)); // encosta na sombra puxa para o ciano da mesa, sem virar cinza
-          ponto(x, y, yMundo(Math.max(h, 1)), cc, sb, it, M[k], c === 3 ? 3 : 2, DA[k], c === 3 ? 0.17 * pUrb : 0.34 * (pRJ / 2));
-        }
-        // costa e divisa da UF em resolução cheia, a partir da cobertura (não do contorno da malha)
-        const viz = [j > 0 ? C[k - 1] : 9, j < W - 1 ? C[k + 1] : 9, i > 0 ? C[k - W] : 9, i < H - 1 ? C[k + W] : 9];
-        if (viz.includes(1)) ponto(x, y, yMundo(Math.max(h, 1)) + 0.03, corCosta, 1, 0.85, M[k], 4, 255, 0.24);
-        else if (viz.includes(0)) ponto(x, y, yMundo(Math.max(h, 1)) + 0.03, corDivisa, 1, 0.55, M[k], 5, 255, 0.22);
-      } else if (c === 0) {
-        if (i % pViz === 0 && j % pViz === 0) {
-          const f = Math.pow(clamp(1 - distRJ(i, j) / 40, 0.04, 1), 1.6) * clamp(Math.min(i, j, H - 1 - i, W - 1 - j) / 120, 0, 1);
-          if (f > 0.03) ponto(x, y, yMundo(Math.max(h, 0)), pal[0][0], sombra(i, j), pal[0][1] * f, 0, 1, 255, 0.5 * (pViz / 4));
-        }
-      } else { // mar: pontos esparsos na batimetria + isóbatas em resolução cheia
-        const f = clamp(1 - distRJ(i, j) / 90, 0.06, 1) * clamp(Math.min(i, j, H - 1 - i, W - 1 - j) / 120, 0, 1);
-        const d = Math.min(0, h), r = A[k + (j < W - 1 ? 1 : 0)], b = A[k + (i < H - 1 ? W : 0)];
-        let iso = false;
-        if (C[k + (j < W - 1 ? 1 : 0)] === 1 || C[k + (i < H - 1 ? W : 0)] === 1) for (const lv of ISOBATAS) if ((h > lv) !== (r > lv) || (h > lv) !== (b > lv)) { iso = true; break; }
-        if (iso && f > 0.08) ponto(x, y, yMundo(d), corIso, 1, 0.6 * f, 0, 0, 255, 0.24);
-        else if (i % pMar === 0 && j % pMar === 0 && f > 0.08) {
-          const t = clamp(Math.log1p(-d / 20) / Math.log1p(2300 / 20), 0, 1);
-          ponto(x, y, yMundo(d), corRaso.map((v, n) => lerp(v, corFundo[n], t)), 1, 0.45 * f, 0, 0, 255, 0.45 * pMar / 6 * 1.6);
-        }
-      }
+  // ---------- relevo sólido pintado ----------
+  // Malha regular sobre a grade de altura (1 vértice a cada PASSO células). A cor vem da cobertura do solo (textura, com mistura suave
+  // entre células), relevo sombreado com luz de noroeste, mata com textura de copa, mar raso → fundo com espuma na costa,
+  // tudo esmaecendo no papel creme longe do estado (como no mapa ilustrado de referência).
+  const PASSO = CFG.malha, dxm = G.dx * 1000, dym = G.dy * 1000;
+  const nxv = Math.floor((W - 1) / PASSO) + 1, nyv = Math.floor((H - 1) / PASSO) + 1;
+  const vPos = new Float32Array(nxv * nyv * 3), vInfo = new Float32Array(nxv * nyv * 4); // vInfo: sombra, profundidade (mar), distância ao RJ (km), altitude 0..1
+  const Luz = [-Math.SQRT1_2 * Math.cos(rad(40)), Math.SQRT1_2 * Math.cos(rad(40)), Math.sin(rad(40))];
+  for (let b = 0; b < nyv; b++) {
+    const i = Math.min(H - 1, b * PASSO);
+    for (let a = 0; a < nxv; a++) {
+      const j = Math.min(W - 1, a * PASSO), k = i * W + j, h = A[k], mar = C[k] === 1, v = b * nxv + a;
+      vPos[v * 3] = xDe(j); vPos[v * 3 + 1] = yMundo(Math.max(h, 0)); vPos[v * 3 + 2] = -yDe(i);
+      const zx = (A[i * W + Math.min(W - 1, j + PASSO)] - A[i * W + Math.max(0, j - PASSO)]) / (2 * PASSO * dxm);
+      const zy = (A[Math.max(0, i - PASSO) * W + j] - A[Math.min(H - 1, i + PASSO) * W + j]) / (2 * PASSO * dym);
+      const gx = -zx * 2.5, gy = -zy * 2.5, gn = Math.hypot(gx, gy, 1);
+      vInfo[v * 4] = mar ? 0.84 : clamp(0.36 + 0.9 * ((gx * Luz[0] + gy * Luz[1] + Luz[2]) / gn), 0.22, 1.08);
+      vInfo[v * 4 + 1] = mar ? clamp(Math.log1p(-Math.min(0, h) / 20) / Math.log1p(2300 / 20), 0, 1) : 0;
+      vInfo[v * 4 + 2] = Math.max(distRJ(i, j), (1 - clamp(Math.min(i, j, H - 1 - i, W - 1 - j) / 120, 0, 1)) * 80);
+      vInfo[v * 4 + 3] = mar ? 0 : clamp(h / 2400, 0, 1);
     }
   }
-  // limites municipais: só arestas compartilhadas (as externas viram costa/divisa, desenhadas pela cobertura)
+  const indT = new Uint32Array((nxv - 1) * (nyv - 1) * 6);
+  for (let b = 0, q = 0; b < nyv - 1; b++) for (let a = 0; a < nxv - 1; a++) { const v = b * nxv + a; indT[q++] = v; indT[q++] = v + nxv; indT[q++] = v + 1; indT[q++] = v + 1; indT[q++] = v + nxv; indT[q++] = v + nxv + 1; }
+  const geoT = new THREE.BufferGeometry();
+  geoT.setAttribute('position', new THREE.BufferAttribute(vPos, 3));
+  geoT.setAttribute('aInfo', new THREE.BufferAttribute(vInfo, 4));
+  geoT.setIndex(new THREE.BufferAttribute(indT, 1));
+
+  // limites: municipais (arestas compartilhadas) em fio claro; contorno do estado (costa e divisas) tracejado
   const chave = (p, q) => (p[0] < q[0] || (p[0] === q[0] && p[1] < q[1]) ? `${p}|${q}` : `${q}|${p}`);
   const arestasDe = (m) => {
     const out = [];
@@ -301,31 +256,52 @@ async function iniciar() {
   };
   const uso = new Map();
   for (const m of municipios) for (const [p, q] of arestasDe(m)) { const kk = chave(p, q); const u = uso.get(kk); u ? u.n++ : uso.set(kk, { p, q, n: 1 }); }
-  const corLimite = rgb('#b8eef5');
+  const segsInt = [], segsExt = [];
   for (const { p, q, n } of uso.values()) {
-    if (n < 2) continue;
-    const comp = Math.hypot(q[0] - p[0], q[1] - p[1]), passos = Math.max(1, Math.ceil(comp / 0.28));
+    const out = n < 2 ? segsExt : segsInt, comp = Math.hypot(q[0] - p[0], q[1] - p[1]), passos = Math.max(1, Math.ceil(comp / 0.28));
     for (let s = 0; s < passos; s++) {
-      const x = lerp(p[0], q[0], s / passos), y = lerp(p[1], q[1], s / passos);
-      ponto(x, y, chaoY(x, y) + 0.06, corLimite, 1, 0.45, 0, 6, 255, 0.16);
+      const xa = lerp(p[0], q[0], s / passos), ya = lerp(p[1], q[1], s / passos), xb = lerp(p[0], q[0], (s + 1) / passos), yb = lerp(p[1], q[1], (s + 1) / passos);
+      out.push(xa, chaoY(xa, ya) + 0.2, -ya, xb, chaoY(xb, yb) + 0.2, -yb);
     }
   }
-  // registros com ponto exato permitido (endereço, instalação de referência) como faíscas no chão
-  const corGrupo = Object.fromEntries(grupos.map((g) => [g.slug, rgb(g.cor_luz)]));
-  // ficam no fim da nuvem, numa geometria própria com o índice do registro (aReg): o painel "o que tem aqui" acende só os do item
-  const nAlvo0 = nP, alvoReg = [];
-  regJ.registros.forEach(([x, y, g, prec, mun], i) => {
+
+  // textura de classe e de município (uma por célula; leitura no shader), paleta das classes
+  const texCelula = (dados) => { const t = new THREE.DataTexture(dados, W, H, THREE.RedFormat, THREE.UnsignedByteType); t.unpackAlignment = 1; t.flipY = false; t.magFilter = t.minFilter = THREE.NearestFilter; t.needsUpdate = true; return t; };
+  const cobTex = texCelula(C), munTex = texCelula(M);
+  const palDados = new Uint8Array(9 * 4);
+  for (let k = 0; k < 9; k++) { const [r, g, b] = rgb(COR_CLASSE[k][0]); palDados.set([r * 255, g * 255, b * 255, 255], k * 4); }
+  const palTex = new THREE.DataTexture(palDados, 9, 1, THREE.RGBAFormat); palTex.magFilter = palTex.minFilter = THREE.NearestFilter; palTex.needsUpdate = true;
+
+  // alfinetes: um por atrativo com ponto (exato ou aproximado); índice da rota e do registro por sprite
+  const idxRota = new Map(grupos.map((g, n) => [g.slug, n]));
+  const alfPos = [], alfRota = [], alvoReg = [];
+  regJ.registros.forEach(([x, y, g, prec], i) => {
     if (!exato.has(prec)) return;
-    const antes = nP;
-    ponto(x, y, chaoY(x, y) + 0.12, corGrupo[g], 1, 1.7, porCodigo.get(mun) || 0, 7, 255, 0.9); // 3× o LED do terreno; desenho de alvo no shader
-    if (nP > antes) alvoReg.push(i);
+    alfPos.push(x, chaoY(x, y) + 0.12, -y); alfRota.push(idxRota.get(g) ?? 0); alvoReg.push(i);
   });
+  // atlas em canvas: uma gota por rota (cor da rota, contorno de papel, ícone no miolo, sombra no chão); ponta na base da célula
+  const CEL_W = 192, CEL_H = 240;
+  const atlas = document.createElement('canvas'); atlas.width = CEL_W * grupos.length; atlas.height = CEL_H;
+  { const ca = atlas.getContext('2d'), iconeDe = Object.fromEntries(LENTES.camadas.itens.map((it) => [it.slug, it.simbolo]));
+    grupos.forEach((g, n) => {
+      const cor = g.cor_luz;
+      ca.save(); ca.translate(n * CEL_W, 0);
+      ca.fillStyle = 'rgba(58, 42, 26, .30)'; ca.beginPath(); ca.ellipse(96, 228, 36, 9, 0, 0, Math.PI * 2); ca.fill();
+      ca.beginPath(); ca.moveTo(96, 226); ca.bezierCurveTo(52, 172, 16, 142, 16, 96); ca.arc(96, 96, 80, Math.PI, 0); ca.bezierCurveTo(176, 142, 140, 172, 96, 226); ca.closePath();
+      ca.fillStyle = cor; ca.fill(); ca.lineWidth = 10; ca.lineJoin = 'round'; ca.strokeStyle = '#fbf5e6'; ca.stroke();
+      ca.beginPath(); ca.arc(96, 96, 52, 0, Math.PI * 2); ca.fillStyle = '#fbf5e6'; ca.fill();
+      const ic = SIMBOLO[iconeDe[g.slug]];
+      ca.translate(96 - 36, 96 - 36); ca.scale(72 / 24, 72 / 24); ca.fillStyle = cor;
+      if (ic && ic[0] === 'path') ca.fill(new Path2D(ic[1].d)); else { ca.beginPath(); ca.arc(12, 12, 8, 0, Math.PI * 2); ca.fill(); }
+      ca.restore();
+    });
+  }
 
   // ---------- renderizador ----------
   const canvas = $('tela');
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: false, powerPreference: 'high-performance' });
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' });
   renderer.setSize(innerWidth, innerHeight, false);
-  renderer.setClearColor(0x03090d, 1);
+  renderer.setClearColor(0xefe3c3, 1);
   renderer.outputColorSpace = THREE.LinearSRGBColorSpace; // sem conversão na saída: 'media' (direto na tela) igual a 'alta' (via alvo)
   renderer.info.autoReset = false;
   const gl = renderer.getContext();
@@ -333,17 +309,9 @@ async function iniciar() {
   rendererNome = dbg ? gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER);
 
   const cena = new THREE.Scene();
-  { // fundo: gradiente radial escuro (mesa holográfica)
-    const g = document.createElement('canvas'); g.width = g.height = 256;
-    const c2 = g.getContext('2d'), gr = c2.createRadialGradient(115, 150, 10, 128, 140, 190);
-    gr.addColorStop(0, '#0b2230'); gr.addColorStop(0.55, '#06131b'); gr.addColorStop(1, '#020508');
-    c2.fillStyle = gr; c2.fillRect(0, 0, 256, 256);
-    cena.background = new THREE.CanvasTexture(g);
-  }
+  cena.background = new THREE.Color(0xefe3c3); // papel creme (o relevo esmaece nele)
   const camera = new THREE.PerspectiveCamera(FOV, innerWidth / innerHeight, 1, 3000);
 
-  const aditivoBase = () => ({ transparent: true, depthWrite: false, blending: THREE.AdditiveBlending });
-  const aditivo = aditivoBase();
   const destaqueDados = new Uint8Array(128 * 4);
   const destaqueTex = new THREE.DataTexture(destaqueDados, 128, 1, THREE.RGBAFormat);
   destaqueTex.needsUpdate = true;
@@ -354,124 +322,125 @@ async function iniciar() {
   const U = {
     uTempo: { value: 0 }, uEscalaPx: { value: 1 }, uPxRef: { value: 1 }, uRes: { value: new THREE.Vector2(1, 1) },
     uDestaque: { value: destaqueTex }, uTemDestaque: { value: 0 }, uLonge: { value: 0 }, uItem: { value: itemTex }, uTemItem: { value: 0 },
-    uNevoa: { value: new THREE.Vector2(500, 1500) }, uNevoaCor: { value: new THREE.Vector3(0.025, 0.07, 0.09) },
+    uNevoa: { value: new THREE.Vector2(500, 1500) },
   };
 
-  const geoP = new THREE.BufferGeometry();
-  geoP.setAttribute('position', new THREE.BufferAttribute(pPos.subarray(0, nAlvo0 * 3), 3));
-  geoP.setAttribute('aCor', new THREE.BufferAttribute(pCor.subarray(0, nAlvo0 * 4), 4, true));
-  geoP.setAttribute('aInfo', new THREE.BufferAttribute(pInf.subarray(0, nAlvo0 * 4), 4, true));
-  const geoA = new THREE.BufferGeometry();
-  geoA.setAttribute('position', new THREE.BufferAttribute(pPos.subarray(nAlvo0 * 3, nP * 3), 3));
-  geoA.setAttribute('aCor', new THREE.BufferAttribute(pCor.subarray(nAlvo0 * 4, nP * 4), 4, true));
-  geoA.setAttribute('aInfo', new THREE.BufferAttribute(pInf.subarray(nAlvo0 * 4, nP * 4), 4, true));
-  geoA.setAttribute('aReg', new THREE.BufferAttribute(new Float32Array(alvoReg), 1));
-  const pontos = new THREE.Points(geoP, new THREE.ShaderMaterial({
-    uniforms: U,
+  const terreno = new THREE.Mesh(geoT, new THREE.ShaderMaterial({
+    uniforms: { uCob: { value: cobTex }, uMun: { value: munTex }, uPal: { value: palTex }, uDestaque: U.uDestaque, uTemDestaque: U.uTemDestaque, uNevoa: U.uNevoa,
+      uPapel: { value: new THREE.Vector3(...rgb('#efe3c3')) }, uGrade: { value: new THREE.Vector4(G.x0, G.y1, G.dx * W, G.dy * H) }, uCel: { value: new THREE.Vector2(W, H) } },
+    side: THREE.DoubleSide,
     vertexShader: /* glsl */`
-      attribute vec4 aCor; attribute vec4 aInfo; attribute float aReg;
-      uniform float uEscalaPx, uPxRef, uTempo, uTemDestaque, uLonge, uTemItem; uniform sampler2D uDestaque, uItem;
-      uniform vec2 uNevoa; uniform vec3 uNevoaCor;
-      varying vec3 vCor; varying float vTipo;
+      attribute vec4 aInfo; varying vec4 vInfo; varying vec2 vXZ; varying float vDist;
+      void main() {
+        vInfo = aInfo; vXZ = position.xz;
+        vec4 mv = modelViewMatrix * vec4(position, 1.0);
+        vDist = -mv.z; gl_Position = projectionMatrix * mv;
+      }`,
+    fragmentShader: /* glsl */`
+      uniform sampler2D uCob, uMun, uPal, uDestaque; uniform float uTemDestaque; uniform vec2 uNevoa, uCel; uniform vec3 uPapel; uniform vec4 uGrade;
+      varying vec4 vInfo; varying vec2 vXZ; varying float vDist;
+      float h21(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+      float ruido(vec2 p) { vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f);
+        return mix(mix(h21(i), h21(i + vec2(1.0, 0.0)), f.x), mix(h21(i + vec2(0.0, 1.0)), h21(i + vec2(1.0, 1.0)), f.x), f.y); }
+      float classeEm(vec2 t) { return floor(texture2D(uCob, t).r * 255.0 + 0.5); }
+      vec3 corDe(float c, float perto) {
+        if (c > 0.5 && c < 1.5) { // mar: raso turquesa → fundo azul, espuma na costa
+          vec3 m = mix(vec3(0.486, 0.769, 0.812), vec3(0.239, 0.561, 0.659), smoothstep(0.0, 0.7, vInfo.y));
+          m = mix(m, vec3(1.0), (1.0 - smoothstep(0.0, 0.08, vInfo.y)) * 0.7);
+          return m * (0.97 + 0.06 * ruido(vXZ * 1.6) * perto);
+        }
+        vec3 k = texture2D(uPal, vec2((c + 0.5) / 9.0, 0.5)).rgb;
+        if (c > 3.5 && c < 4.5) k *= mix(1.0, 0.78 + 0.44 * ruido(vXZ * 9.0), perto) * (0.94 + 0.12 * ruido(vXZ * 1.4)); // mata: copas
+        else if (c > 4.5 && c < 5.5) k *= mix(1.0, 0.92 + 0.16 * ruido(vXZ * vec2(20.0, 5.0)), perto); // pasto
+        else if (c > 5.5 && c < 6.5) k *= mix(1.0, 0.9 + 0.2 * step(0.5, fract(vXZ.x * 6.0 + vXZ.y * 2.0)), perto * 0.7); // lavoura em faixas
+        else if (c > 2.5 && c < 3.5) k *= 0.92 + 0.16 * ruido(vXZ * 40.0) * perto; // área urbana
+        return k;
+      }
+      void main() {
+        vec2 uv = vec2((vXZ.x - uGrade.x) / uGrade.z, (-vXZ.y - (uGrade.y - uGrade.w)) / uGrade.w);
+        vec2 tuv = vec2(uv.x, 1.0 - uv.y);
+        float perto = 1.0 - smoothstep(150.0, 450.0, vDist); // o detalhe fino some de longe
+        // mistura suave entre as 4 células vizinhas (sem blocos de pixel de perto), com transição mais estreita que a célula
+        // a borda entre classes é entortada por ruído: manchas orgânicas em vez de quadradinhos da grade de 280 m
+        vec2 warp = vec2(ruido(vXZ * 5.0), ruido(vXZ * 5.0 + 17.3)) - 0.5;
+        vec2 cp = tuv * uCel - 0.5 + warp * 1.2 * perto, fr = fract(cp), f = smoothstep(0.1, 0.9, fr), b0 = (floor(cp) + 0.5) / uCel, dt = 1.0 / uCel;
+        float c00 = classeEm(b0), c10 = classeEm(b0 + vec2(dt.x, 0.0)), c01 = classeEm(b0 + vec2(0.0, dt.y)), c11 = classeEm(b0 + dt);
+        vec3 col = mix(mix(corDe(c00, perto), corDe(c10, perto), f.x), mix(corDe(c01, perto), corDe(c11, perto), f.x), f.y);
+        vec2 canto = b0 + dt * step(0.5, fr); // célula dominante (mesma da mistura de cor)
+        float c = classeEm(canto);
+        float mun = floor(texture2D(uMun, canto).r * 255.0 + 0.5);
+        if (!(c > 0.5 && c < 1.5)) { // terra: relevo sombreado e leve frio na altitude
+          float s = clamp((vInfo.x - 0.22) / 0.86, 0.0, 1.0);
+          col *= 0.55 + 0.5 * s;
+          col = mix(col, col * vec3(0.88, 0.94, 1.0), vInfo.w * 0.35);
+        }
+        if (c < 0.5) col = mix(col, uPapel, smoothstep(5.0, 40.0, vInfo.z));       // terra de fora: some no papel
+        else if (c < 1.5) col = mix(col, uPapel, smoothstep(25.0, 85.0, vInfo.z)); // mar: some no papel
+        else { // seleção: o resto do estado esmaece, o escolhido ganha cor
+          float dest = texture2D(uDestaque, vec2((mun + 0.5) / 128.0, 0.5)).r, dim = uTemDestaque * (1.0 - dest);
+          col = mix(col, mix(vec3(dot(col, vec3(0.3, 0.5, 0.2))), uPapel, 0.5), dim * 0.7);
+          col *= 1.0 + 0.05 * uTemDestaque * dest;
+        }
+        col = mix(col, uPapel, smoothstep(uNevoa.x, uNevoa.y, vDist) * 0.5); // bruma: o fundo do mapa clareia na distância
+        gl_FragColor = vec4(col, 1.0);
+      }`,
+  }));
+  terreno.frustumCulled = false;
+  cena.add(terreno);
+  const linhas = (arr, mat) => {
+    const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(arr, 3));
+    const l = new THREE.LineSegments(g, mat); if (mat.isLineDashedMaterial) l.computeLineDistances();
+    l.frustumCulled = false; cena.add(l); return l;
+  };
+  linhas(segsInt, new THREE.LineBasicMaterial({ color: 0xfff6e0, transparent: true, opacity: 0.5 }));
+  linhas(segsExt, new THREE.LineDashedMaterial({ color: 0xffffff, dashSize: 0.17, gapSize: 0.11, transparent: true, opacity: 0.95 }));
+
+  const atlasTex = new THREE.CanvasTexture(atlas); atlasTex.flipY = false; atlasTex.generateMipmaps = true; atlasTex.minFilter = THREE.LinearMipmapLinearFilter; atlasTex.anisotropy = 4;
+  const geoA = new THREE.BufferGeometry();
+  geoA.setAttribute('position', new THREE.Float32BufferAttribute(alfPos, 3));
+  geoA.setAttribute('aRota', new THREE.Float32BufferAttribute(alfRota, 1));
+  geoA.setAttribute('aReg', new THREE.Float32BufferAttribute(alvoReg, 1));
+  const alfinetes = new THREE.Points(geoA, new THREE.ShaderMaterial({
+    uniforms: { uAtlas: { value: atlasTex }, uN: { value: grupos.length }, uEscalaPx: U.uEscalaPx, uPxRef: U.uPxRef, uRes: U.uRes, uItem: U.uItem, uTemItem: U.uTemItem },
+    alphaToCoverage: true,
+    vertexShader: /* glsl */`
+      attribute float aRota; attribute float aReg;
+      uniform float uEscalaPx, uPxRef, uTemItem; uniform vec2 uRes; uniform sampler2D uItem;
+      varying float vRota, vLit;
       void main() {
         vec4 mv = modelViewMatrix * vec4(position, 1.0);
         gl_Position = projectionMatrix * mv;
-        float mun = floor(aInfo.x * 255.0 + 0.5), tipo = floor(aInfo.y * 255.0 + 0.5);
-        float dAnc = aInfo.z * (255.0 / 254.0) * 7.0, tamKm = aInfo.w * (255.0 / 200.0);
         float dist = -mv.z;
-        float px = tamKm * uEscalaPx / dist;
-        float energia = clamp(px / 1.2, 0.65, 1.0);
-        bool exato = tipo > 6.5;
-        vTipo = tipo;
-        float item = exato && uTemItem > 0.5 ? texture2D(uItem, vec2((mod(aReg, 64.0) + 0.5) / 64.0, (floor(aReg / 64.0) + 0.5) / 64.0)).r : 1.0;
-        if (exato && uTemItem > 0.5) px *= mix(0.6, 1.5, item); // painel aberto: só os alvos do item ficam acesos
-        if (exato) { // registro com ponto exato: pulso lento só de perto, e um leve avanço na profundidade para o relevo não cortar o alvo
-          px *= 1.0 + 0.2 * sin(uTempo * 1.6 + mun) * smoothstep(260.0, 120.0, dist);
-          gl_Position.z -= 0.001 * gl_Position.w;
-        }
-        gl_PointSize = clamp(px, exato ? 4.0 * uPxRef : 1.5, 22.0 * uPxRef);
-        vec3 c = aCor.rgb * (aCor.a * 4.0);
-        bool terra = tipo > 1.5 && tipo < 3.5;
-        if (terra) { // onda de luz que sai da sede de cada município, igual para todos
-          float r = mod(uTempo * 1.1 + fract(mun * 0.6180339) * 7.0, 7.0);
-          float onda = exp(-pow((dAnc - r) * 1.6, 2.0)) * (1.0 - r / 7.0) * step(dAnc, 6.95);
-          c += (c * 1.3 + vec3(0.05, 0.14, 0.14)) * onda;
-        }
-        if (tipo > 2.5 && tipo < 3.5) c *= (0.82 + 0.18 * sin(uTempo * 1.7 + dot(position.xz, vec2(12.9898, 78.233)))) * (1.0 + 0.9 * uLonge);
-        // de longe, costa e divisa da UF mais fortes e menos saturadas (não competem com o ciano das etiquetas)
-        if (tipo > 3.5 && tipo < 5.5) c = mix(c, vec3(dot(c, vec3(0.3, 0.5, 0.2))), 0.35 * uLonge) * (1.0 + 0.7 * uLonge);
-        float dest = texture2D(uDestaque, vec2((mun + 0.5) / 128.0, 0.5)).r;
-        if (terra || tipo > 6.5) c *= mix(1.0, mix(0.55, 1.2, dest), uTemDestaque);
-        if (exato && uTemItem > 0.5) c *= mix(0.1, 1.7, item);
-        float f = smoothstep(uNevoa.x, uNevoa.y, dist);
-        float l = dot(c, vec3(0.3, 0.5, 0.2));
-        vCor = mix(c, uNevoaCor * l * 6.0, f * 0.7) * energia * (1.0 - 0.55 * f);
+        float item = uTemItem > 0.5 ? texture2D(uItem, vec2((mod(aReg, 64.0) + 0.5) / 64.0, (floor(aReg / 64.0) + 0.5) / 64.0)).r : 1.0;
+        float px = clamp(uEscalaPx * 1.9 / dist, 25.0 * uPxRef, 54.0 * uPxRef);
+        if (uTemItem > 0.5) px *= mix(0.8, 1.22, item); // painel aberto: só os alfinetes do item crescem
+        gl_PointSize = px;
+        gl_Position.y += gl_Position.w * 0.88 * px / uRes.y; // a ponta da gota fica no ponto do mapa
+        gl_Position.z -= 0.002 * gl_Position.w;
+        vRota = aRota; vLit = item;
       }`,
     fragmentShader: /* glsl */`
-      varying vec3 vCor; varying float vTipo;
+      uniform sampler2D uAtlas; uniform float uN, uTemItem; varying float vRota, vLit;
       void main() {
-        vec2 p = gl_PointCoord * 2.0 - 1.0;
-        float r2 = dot(p, p);
-        if (r2 > 1.0) discard;
-        if (vTipo > 6.5) { // alvo: miolo claro, vão escuro, anel em cor_luz, halo escuro
-          float r = sqrt(r2);
-          vec3 escuro = vec3(0.01, 0.02, 0.03);
-          gl_FragColor = vec4(r < 0.32 ? vCor * 1.4 + 0.15 : r < 0.5 ? escuro : r < 0.78 ? vCor * 1.15 : escuro, 1.0);
-          return;
-        }
-        gl_FragColor = vec4(vCor * (0.3 + 0.95 * smoothstep(1.0, 0.15, r2)), 1.0);
+        vec4 t = texture2D(uAtlas, vec2((vRota + gl_PointCoord.x) / uN, gl_PointCoord.y));
+        if (t.a < 0.02) discard;
+        vec3 c = t.rgb;
+        if (uTemItem > 0.5) c = mix(vec3(0.93, 0.89, 0.80), c, 0.3 + 0.7 * vLit); // fora do item: gota desbotada
+        gl_FragColor = vec4(c, t.a);
       }`,
   }));
-  pontos.frustumCulled = false;
-  cena.add(pontos);
-  const pontosAlvo = new THREE.Points(geoA, pontos.material); // mesmo shader; aReg só existe aqui
-  pontosAlvo.frustumCulled = false;
-  cena.add(pontosAlvo);
-
-  // ---------- mesa holográfica: anéis e raios no nível do mar, só sobre o mar e fora da grade ----------
-  const cobTex = new THREE.DataTexture(C, W, H, THREE.RedFormat, THREE.UnsignedByteType);
-  cobTex.flipY = false; cobTex.magFilter = cobTex.minFilter = THREE.NearestFilter; cobTex.needsUpdate = true;
-  const centroMesa = [(municipios.reduce((s, m) => Math.min(s, m.bb[0]), Infinity) + municipios.reduce((s, m) => Math.max(s, m.bb[2]), -Infinity)) / 2,
-    (municipios.reduce((s, m) => Math.min(s, m.bb[1]), Infinity) + municipios.reduce((s, m) => Math.max(s, m.bb[3]), -Infinity)) / 2];
-  const mesa = new THREE.Mesh(new THREE.CircleGeometry(330, 128).rotateX(-Math.PI / 2).translate(centroMesa[0], -0.02, -centroMesa[1]), new THREE.ShaderMaterial({
-    uniforms: { uCob: { value: cobTex }, uTempo: U.uTempo, uCentro: { value: new THREE.Vector2(centroMesa[0], -centroMesa[1]) },
-      uGrade: { value: new THREE.Vector4(G.x0, G.y1, G.dx * W, G.dy * H) } }, ...aditivoBase(),
-    vertexShader: 'varying vec2 vP; void main() { vP = position.xz; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }',
-    fragmentShader: /* glsl */`
-      uniform sampler2D uCob; uniform float uTempo; uniform vec2 uCentro; uniform vec4 uGrade; varying vec2 vP;
-      float linha(float v, float passo) { float d = abs(fract(v / passo + 0.5) - 0.5) * passo; return 1.0 - smoothstep(0.0, fwidth(v) * 1.2, d); }
-      void main() {
-        vec2 uv = vec2((vP.x - uGrade.x) / uGrade.z, (-vP.y - (uGrade.y - uGrade.w)) / uGrade.w);
-        bool fora = any(lessThan(uv, vec2(0.0))) || any(greaterThan(uv, vec2(1.0)));
-        float cod = fora ? 1.0 : floor(texture2D(uCob, vec2(uv.x, 1.0 - uv.y)).r * 255.0 + 0.5);
-        if (cod != 1.0) discard;
-        vec2 q = vP - uCentro; float r = length(q), ang = degrees(atan(q.y, q.x));
-        float aneis = linha(r, 25.0) * 0.55 + linha(r, 100.0) * 0.6;
-        float raios = linha(ang, 15.0) * smoothstep(40.0, 120.0, r) * 0.35;
-        float borda = exp(-pow((r - 300.0) / 1.2, 2.0)) * 1.2 + linha(ang, 3.0) * step(296.0, r) * step(r, 304.0) * 0.6;
-        float varre = exp(-pow((r - mod(uTempo * 35.0, 420.0)) / 6.0, 2.0)) * 0.5;
-        float f = smoothstep(330.0, 230.0, r);
-        gl_FragColor = vec4(vec3(0.16, 0.62, 0.62) * (aneis + raios + borda + varre * (aneis + 0.25)) * f * 0.32, 1.0);
-      }`,
-  }));
-  mesa.frustumCulled = false;
-  cena.add(mesa);
+  alfinetes.frustumCulled = false;
+  cena.add(alfinetes);
 
   // ---------- cortina holográfica no contorno do selecionado ----------
   const matCortina = new THREE.ShaderMaterial({
-    uniforms: { uTempo: U.uTempo, uCor: { value: new THREE.Vector3(...rgb('#8ff6ff')) }, uForca: { value: 0 } }, ...aditivo, side: THREE.DoubleSide,
+    uniforms: { uCor: { value: new THREE.Vector3(...rgb('#b4532a')) }, uForca: { value: 0 } }, transparent: true, depthWrite: false, side: THREE.DoubleSide,
     vertexShader: /* glsl */`
       attribute vec2 aVS; varying vec2 vVS;
       void main() { vVS = aVS; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
     fragmentShader: /* glsl */`
-      uniform vec3 uCor; uniform float uTempo, uForca; varying vec2 vVS;
-      void main() {
-        float v = vVS.x;
-        float base = exp(-v * 12.0) * 0.95, corpo = pow(1.0 - v, 1.8) * 0.2;
-        float faixa = exp(-pow((v - fract(uTempo * 0.4)) * 9.0, 2.0)) * 0.4 * (1.0 - v);
-        float trama = 0.8 + 0.2 * step(0.5, fract(vVS.y * 0.8 - uTempo * 0.5));
-        gl_FragColor = vec4(uCor * (base + corpo + faixa) * trama * uForca, 1.0);
-      }`,
+      uniform vec3 uCor; uniform float uForca; varying vec2 vVS;
+      void main() { float v = vVS.x; gl_FragColor = vec4(uCor, (exp(-v * 9.0) * 0.85 + (1.0 - v) * (1.0 - v) * 0.22) * uForca); }`,
   });
   const cortina = new THREE.Mesh(new THREE.BufferGeometry(), matCortina);
   cortina.frustumCulled = false;
@@ -497,65 +466,7 @@ async function iniciar() {
     cortina.geometry = g;
   }
 
-  // ---------- pós-processamento (só em 'alta'): brilho em duas escalas + vinheta ----------
-  const posp = CFG.pos ? (() => {
-    const tipo = renderer.extensions.has('EXT_color_buffer_float') ? THREE.HalfFloatType : THREE.UnsignedByteType;
-    const alvo = (depth) => new THREE.WebGLRenderTarget(1, 1, { type: tipo, depthBuffer: depth, minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter });
-    const rt = { cena: alvo(true), a4: alvo(false), b4: alvo(false), a8: alvo(false), b8: alvo(false) };
-    const vs = 'varying vec2 vUv; void main() { vUv = position.xy * 0.5 + 0.5; gl_Position = vec4(position.xy, 0.0, 1.0); }';
-    const mat = (fs, uniforms) => new THREE.ShaderMaterial({ vertexShader: vs, fragmentShader: fs, uniforms, depthTest: false, depthWrite: false });
-    const reduzir = mat(/* glsl */`
-      uniform sampler2D tFonte; uniform vec2 uTexel; uniform float uLimiar; varying vec2 vUv;
-      void main() {
-        vec3 c = 0.25 * (texture2D(tFonte, vUv + uTexel * vec2(-1.0, -1.0)).rgb + texture2D(tFonte, vUv + uTexel * vec2(1.0, -1.0)).rgb
-                       + texture2D(tFonte, vUv + uTexel * vec2(-1.0, 1.0)).rgb + texture2D(tFonte, vUv + uTexel * vec2(1.0, 1.0)).rgb);
-        float l = max(c.r, max(c.g, c.b));
-        gl_FragColor = vec4(c * max(l - uLimiar, 0.0) / max(l, 1e-4), 1.0);
-      }`, { tFonte: { value: null }, uTexel: { value: new THREE.Vector2() }, uLimiar: { value: 0.5 } });
-    const borrar = mat(/* glsl */`
-      uniform sampler2D tFonte; uniform vec2 uDir; varying vec2 vUv;
-      void main() {
-        vec3 c = texture2D(tFonte, vUv).rgb * 0.2270270;
-        c += (texture2D(tFonte, vUv + uDir * 1.3846154).rgb + texture2D(tFonte, vUv - uDir * 1.3846154).rgb) * 0.3162162;
-        c += (texture2D(tFonte, vUv + uDir * 3.2307692).rgb + texture2D(tFonte, vUv - uDir * 3.2307692).rgb) * 0.0702703;
-        gl_FragColor = vec4(c, 1.0);
-      }`, { tFonte: { value: null }, uDir: { value: new THREE.Vector2() } });
-    const compor = mat(/* glsl */`
-      uniform sampler2D tCena, tB4, tB8; varying vec2 vUv;
-      void main() {
-        vec3 c = texture2D(tCena, vUv).rgb + texture2D(tB4, vUv).rgb * 0.85 + texture2D(tB8, vUv).rgb * 0.75;
-        float m = max(c.r, max(c.g, c.b));
-        if (m > 0.8) c *= (0.8 + (m - 0.8) / (1.0 + (m - 0.8) / 0.2)) / m; // comprime o brilho sem estourar em branco (mantém a matiz)
-        vec2 q = vUv - 0.5;
-        c *= 1.0 - dot(q, q) * 0.6;
-        gl_FragColor = vec4(c, 1.0);
-      }`, { tCena: { value: rt.cena.texture }, tB4: { value: rt.a4.texture }, tB8: { value: rt.a8.texture } });
-    const quad = new THREE.Mesh(new THREE.BufferGeometry().setAttribute('position', new THREE.Float32BufferAttribute([-1, -1, 0, 3, -1, 0, -1, 3, 0], 3)), compor);
-    quad.frustumCulled = false;
-    const cenaQ = new THREE.Scene(), camQ = new THREE.Camera();
-    cenaQ.add(quad);
-    const passe = (m, destino) => { quad.material = m; renderer.setRenderTarget(destino); renderer.render(cenaQ, camQ); };
-    return {
-      tamanho(w, h) {
-        rt.cena.setSize(w, h);
-        rt.a4.setSize(Math.max(1, w >> 2), Math.max(1, h >> 2)); rt.b4.setSize(Math.max(1, w >> 2), Math.max(1, h >> 2));
-        rt.a8.setSize(Math.max(1, w >> 3), Math.max(1, h >> 3)); rt.b8.setSize(Math.max(1, w >> 3), Math.max(1, h >> 3));
-      },
-      desenhar() {
-        renderer.setRenderTarget(rt.cena);
-        renderer.render(cena, camera);
-        const w = rt.cena.width, h = rt.cena.height;
-        reduzir.uniforms.tFonte.value = rt.cena.texture; reduzir.uniforms.uTexel.value.set(1 / w, 1 / h); reduzir.uniforms.uLimiar.value = 0.72;
-        passe(reduzir, rt.a4);
-        for (const [a, b] of [[rt.a4, rt.b4], [rt.a8, rt.b8]]) {
-          if (a === rt.a8) { reduzir.uniforms.tFonte.value = rt.a4.texture; reduzir.uniforms.uTexel.value.set(1 / rt.a4.width, 1 / rt.a4.height); reduzir.uniforms.uLimiar.value = 0; passe(reduzir, rt.a8); }
-          borrar.uniforms.tFonte.value = a.texture; borrar.uniforms.uDir.value.set(1 / a.width, 0); passe(borrar, b);
-          borrar.uniforms.tFonte.value = b.texture; borrar.uniforms.uDir.value.set(0, 1 / a.height); passe(borrar, a);
-        }
-        passe(compor, null);
-      },
-    };
-  })() : null;
+  const posp = null; // papel não tem brilho: sem pós-processamento
 
   // ---------- câmera ----------
   const cam = { tx: 0, tz: 0, dist: 700, az: 0, tilt: 40 };
@@ -564,7 +475,7 @@ async function iniciar() {
   const ajuste = { x: 0, y: 0 }; // deslize extra da vista (frações da tela) para o leque do selecionado caber na zona livre
   const valido = { tx: 0, tz: 0 };
   const limitar = () => { // limites de zoom e inclinação; o alvo nunca sai para mais de 20 km da terra do RJ
-    cam.dist = clamp(cam.dist, 22, 950); cam.tilt = clamp(cam.tilt, 2, 68);
+    cam.dist = clamp(cam.dist, 22, 1500); cam.tilt = clamp(cam.tilt, 2, 68);
     const j = Math.floor((cam.tx - G.x0) / G.dx), i = Math.floor((G.y1 + cam.tz) / G.dy);
     if (i >= 0 && i < H && j >= 0 && j < W && distRJ(i, j) <= 20) { valido.tx = cam.tx; valido.tz = cam.tz; }
     else { cam.tx = valido.tx; cam.tz = valido.tz; }
@@ -639,7 +550,7 @@ async function iniciar() {
       const qx = px * r[0] + pz * r[2], qy = px * u[0] + pz * u[2], qf = px * f[0] + pz * f[2];
       dist = Math.max(dist, (Math.abs(qx) * folga) / th - qf, (Math.abs(qy) * folga) / tv - qf);
     }
-    return { tx: cx, tz: -cy, dist: clamp(dist, 45, 950), az, tilt }; // enquadramento automático não desce de 45 km
+    return { tx: cx, tz: -cy, dist: clamp(dist, 45, 1500), az, tilt }; // enquadramento automático não desce de 45 km
   }
   const uniaoBB = (ms) => ms.reduce((b, m) => [Math.min(b[0], m.bb[0]), Math.min(b[1], m.bb[1]), Math.max(b[2], m.bb[2]), Math.max(b[3], m.bb[3])], [Infinity, Infinity, -Infinity, -Infinity]);
   const bbEstado = uniaoBB(municipios);
@@ -699,7 +610,7 @@ async function iniciar() {
     // nome numa linha só: o mais longo (São José do Vale do Rio Preto) encolhe a letra em vez de quebrar e empurrar o cartão
     if (h2.scrollWidth > h2.clientWidth) h2.style.fontSize = `${((parseFloat(getComputedStyle(h2).fontSize) * h2.clientWidth) / h2.scrollWidth / remPx).toFixed(3)}rem`;
     $('c-grupos-titulo').textContent = TITULO_LENTE[lente];
-    $('leitura').textContent = `Etiqueta: total de atrativos e nome do município, no ponto de rótulo (pé tracejado: posição aproximada). De perto, um ladrilho por ${lente === 'camadas' ? 'rota' : lente === 'eixos' ? 'tipo de experiência' : 'categoria de produto'}; os alvos coloridos no chão são atrativos com ponto exato. Toque num ladrilho para ver o que ele reúne.`;
+    $('leitura').textContent = 'Toque num município, num alfinete ou numa rota do cartão.';
     $('c-lente').setAttribute('aria-labelledby', `c-aba-${lente}`);
     $('c-nota').textContent = L.nota ?? ''; $('c-nota').hidden = !L.nota; // eixos e tipos não são exclusivos: não somar
     const ul = $('c-grupos'); ul.replaceChildren(); ul.classList.toggle('duas', duas);
@@ -718,7 +629,7 @@ async function iniciar() {
           else { fecharFicha(); abrirItem(null, [it.slug]); }
         });
       }
-      nm.className = 'nome'; nm.textContent = duas ? it.curto : it.nome; nm.title = it.nome; n.className = 'n'; n.textContent = v ? fmt(v) : '—';
+      nm.className = 'nome'; nm.textContent = it.curto; nm.title = it.nome; n.className = 'n'; n.textContent = v ? fmt(v) : '—';
       li.append(glifo(it.simbolo, it.cor), nm);
       if (!duas) {
         const tr = document.createElement('span'), barra = document.createElement('i');
@@ -731,7 +642,7 @@ async function iniciar() {
     if (itemAberto) marcarLegenda();
     const st = $('c-semtipo'); st.hidden = !L.sem_tipo; // registros sem tipo: leitura de lentes.json e contagem do recorte, em tom neutro
     if (L.sem_tipo) { const t = document.createElement('span'), b = document.createElement('b'); t.textContent = L.sem_tipo.leitura; b.textContent = fmt(ag.sem_tipo); st.replaceChildren(t, b); }
-    $('c-cob-titulo').textContent = `Cobertura do solo · MapBiomas ${cobJ.ano}`;
+    $('c-cob-titulo').textContent = 'Cobertura do solo · MapBiomas';
     const ordem = Object.entries(cob).map(([c, p]) => [Number(c), p]).filter(([, p]) => p > 0).sort((a, b) => b[1] - a[1]);
     const barraCob = $('c-barra'); barraCob.replaceChildren();
     const lista = $('c-cob'); lista.replaceChildren();
@@ -1047,7 +958,7 @@ async function iniciar() {
     if (sel.tipo === 'municipio') {
       aplicarDestaque([porCodigo.get(sel.m.codigo)]);
       segs = arestasDe(sel.m); bb = sel.m.bb; tilt = 52;
-      matCortina.uniforms.uCor.value.set(...rgb('#9ff8ff'));
+      matCortina.uniforms.uCor.value.set(...rgb('#b4532a'));
       montarCortina(segs, 3.2); destaqueAlvo = 1;
     } else if (sel.tipo === 'regiao') {
       const ms = membrosDe(sel.r);
@@ -1056,12 +967,12 @@ async function iniciar() {
       for (const m of ms) for (const [p, q] of arestasDe(m)) { const k = chave(p, q); const c = cont.get(k); c ? c.n++ : cont.set(k, { p, q, n: 1 }); }
       segs = [...cont.values()].filter((c) => c.n === 1).map((c) => [c.p, c.q]);
       bb = uniaoBB(ms); tilt = 46; vista = { folga: 1.14, ...vista };
-      matCortina.uniforms.uCor.value.set(...rgb('#ffc57a'));
+      matCortina.uniforms.uCor.value.set(...rgb('#d9a21b'));
       montarCortina(segs, 4.5); destaqueAlvo = 1;
     } else {
       aplicarDestaque([]); bb = bbEstado; tilt = 38; destaqueAlvo = 0;
     }
-    return voar(quadro(bb, vista.az ?? (sel.tipo === 'estado' ? 0 : cam.az), vista.tilt ?? tilt, vista.folga), ms);
+    return voar(quadro(bb, vista.az ?? (sel.tipo === 'estado' ? 0 : cam.az), vista.tilt ?? tilt, vista.folga ?? (sel.tipo === 'estado' ? 1.24 : undefined)), ms);
   }
 
   // ---------- HUD fixo (tudo lido dos dados) ----------
@@ -1365,9 +1276,10 @@ async function iniciar() {
     const g = regJ.grupos.find((x) => x.slug === r[2]), it = LENTES.camadas.itens.find((x) => x.slug === r[2]);
     $('f-olho').textContent = `${f.municipio} · ${f.regiao}`;
     $('f-nome').textContent = f.nome;
-    const rota = $('f-rota'), nomeRota = document.createElement('span');
-    nomeRota.textContent = g?.nome ?? ''; nomeRota.style.color = g?.cor_luz ?? '';
-    rota.replaceChildren(...(it ? [glifo(it.simbolo, it.cor)] : []), nomeRota);
+    const carimbo = $('f-carimbo');
+    carimbo.style.setProperty('--c', g?.cor_luz ?? '#1f4d36');
+    $('f-carimbo-icone').replaceChildren(...(it ? [glifo(it.simbolo, g?.cor_luz ?? '#1f4d36')] : []));
+    $('f-carimbo-rota').textContent = g?.nome ?? '';
     const dl = $('f-dados');
     dl.replaceChildren();
     const linha = (rot, txt) => {
@@ -1576,7 +1488,7 @@ async function iniciar() {
   addEventListener('resize', redimensionar);
   redimensionar();
   preencherCartao();
-  Object.assign(cam, quadro(bbEstado, 0, 38));
+  Object.assign(cam, quadro(bbEstado, 0, 38, 1.24));
 
   // ---------- laço ----------
   let anterior = performance.now(), quadros = 0;
@@ -1627,5 +1539,5 @@ async function iniciar() {
       return [((p.x + 1) / 2) * innerWidth, ((1 - p.y) / 2) * innerHeight];
     },
   };
-  console.info(`[telão] ${nP} pontos, ${marcas.length} marcações de município, qualidade ${qualidade}`);
+  console.info(`[telão] ${alvoReg.length} alfinetes, ${marcas.length} marcações de município, qualidade ${qualidade}`);
 }

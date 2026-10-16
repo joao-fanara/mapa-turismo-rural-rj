@@ -18,7 +18,8 @@
 
 <header id="titulo" class="hud">
   <div class="olho">Protótipo · Turismo Rural RJ</div>
-  <h1>Rio Rural: sabores, histórias e caminhos</h1>
+  <h1><span class="rio">Rio</span> <span class="rural">Rural</span></h1>
+  <p class="lema"><svg class="pico" viewBox="0 0 70 15" aria-hidden="true"><path d="M1 13 L14 4 L22 9 L35 1.5 L46 9 L53 5.5 L69 13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Sabores, histórias e caminhos</p>
   <p id="subtitulo"></p>
   <p id="leitura"></p>
 </header>
@@ -64,9 +65,10 @@
 
 <section id="ficha" class="hud painel" hidden role="dialog" aria-labelledby="f-nome">
   <div class="i-topo"><div class="olho" id="f-olho"></div><button id="f-fechar" type="button">Fechar</button></div>
-  <h3 id="f-nome"></h3>
-  <p id="f-rota"></p>
-  <p id="f-selos"></p>
+  <div id="f-cabeca">
+    <div><h3 id="f-nome"></h3><p id="f-selos"></p></div>
+    <div id="f-carimbo"><span id="f-carimbo-icone"></span><b id="f-carimbo-rota"></b><small>Turismo Rural RJ</small></div>
+  </div>
   <div id="f-corpo">
     <dl id="f-dados"></dl>
     <figure id="f-qr-bloco"><div id="f-qr"></div><figcaption>Aponte o celular para abrir no mapa</figcaption></figure>

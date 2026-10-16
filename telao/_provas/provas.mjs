@@ -108,6 +108,19 @@ function lerQr(arquivo) {
   return r.stdout.trim();
 }
 
+// claridade e cores de uma captura (OpenCV): o telão é papel creme e campo, nunca painel escuro
+function estatisticasImagem(arquivo) {
+  const py = `import sys, site, json
+sys.path.append(site.getusersitepackages())
+import cv2
+im = cv2.imread(sys.argv[1]); g = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY); hsv = cv2.cvtColor(im, cv2.COLOR_BGR2HSV)
+h, s, v = [hsv[..., i].astype(int) for i in range(3)]
+print(json.dumps(dict(media=float(g.mean()), escuros=float((g < 60).mean()), verde=float(((h > 35) & (h < 85) & (s > 60) & (v > 40)).mean()), turquesa=float(((h > 80) & (h < 105) & (s > 60) & (v > 100)).mean()))))`;
+  const r = spawnSync(PYTHON, ['-I', '-c', py, arquivo], { encoding: 'utf8', cwd: PROVAS });
+  if (r.status !== 0) throw new Error('estatística de imagem (python + opencv) falhou: ' + r.stderr.trim().split('\n').pop());
+  return JSON.parse(r.stdout);
+}
+
 // confere a ficha aberta na tela contra fichas.json
 async function conferirFicha(A, codigo, rotulo) {
   const f = FIC[codigo];
@@ -115,7 +128,7 @@ async function conferirFicha(A, codigo, rotulo) {
     return { aberta: window.__telao.ficha(), nome: document.getElementById('f-nome').textContent, olho: document.getElementById('f-olho').textContent,
       dl: Object.fromEntries(dl), selos: [...document.querySelectorAll('#f-selos .selo')].map((s) => s.textContent), sim: document.querySelectorAll('#f-selos .selo.sim').length,
       prec: document.getElementById('f-precisao').hidden ? '' : document.getElementById('f-precisao').textContent, url: document.getElementById('f-qr').dataset.url,
-      desc: document.getElementById('f-descricao').textContent, rota: document.getElementById('f-rota').textContent }; })()`);
+      desc: document.getElementById('f-descricao').textContent, rota: document.getElementById('f-carimbo-rota').textContent }; })()`);
   ok(`${rotulo}: ficha aberta é a do atrativo`, t.aberta === codigo, [t.aberta, codigo]);
   ok(`${rotulo}: nome e município/região`, t.nome === f.nome && t.olho === `${f.municipio} · ${f.regiao}`, [t.nome, t.olho]);
   const esperado = { Endereço: f.endereco, Funcionamento: f.funcionamento, Telefone: f.telefone };
@@ -132,13 +145,27 @@ async function conferirFicha(A, codigo, rotulo) {
 async function carregar(A) {
   await A.abrirTelao();
   ok('carregar: <title>', (await A.av('document.title')) === 'Rio Rural · Turismo Rural RJ · Telão');
-  ok('carregar: h1', (await A.av("document.querySelector('h1').textContent")) === 'Rio Rural: sabores, histórias e caminhos');
+  ok('carregar: h1 "Rio Rural" e lema', (await A.av("document.querySelector('h1').textContent")) === 'Rio Rural' && (await A.av("document.querySelector('.lema').textContent")).includes('Sabores, histórias e caminhos'));
   const munCom = Object.keys(AGR).filter((c) => c !== 'sem_municipio' && AGR[c].total > 0).length;
   const sub = await A.av("document.getElementById('subtitulo').textContent");
   ok('carregar: subtítulo com os totais dos dados', sub.includes(`${fmt(REG.meta.total)} atrativos`) && sub.includes(`${munCom} municípios`) && sub.includes(`${REG.grupos.length} rotas`), sub);
-  const pts = await A.av('window.__telao.info().pontos');
-  ok('carregar: relevo desenhado (mais de 100 mil pontos)', pts > 100000, pts);
+  const tri = await A.av('window.__telao.info().triangulos');
+  ok('carregar: relevo sólido desenhado (mais de 500 mil triângulos)', tri > 500000, tri);
   await A.capturar('p-carregar.png');
+}
+
+async function visual(A) { // identidade rural, não ficção científica: papel claro, verde de mata/campo, turquesa de rio e mar
+  await A.abrirTelao();
+  const e = estatisticasImagem(await A.capturar('p-visual-estado.png'));
+  ok('visual: claridade média alta (papel creme, não fundo escuro)', e.media >= 170, e);
+  ok('visual: quase nada escuro (HUD preto/azul-petróleo do projeto-base)', e.escuros <= 0.05, e);
+  ok('visual: há verde de mata e campo', e.verde >= 0.03, e);
+  ok('visual: há turquesa de mar e rios', e.turquesa >= 0.02, e);
+  const fundo = await A.av("getComputedStyle(document.body).backgroundColor + '|' + getComputedStyle(document.getElementById('cartao')).backgroundColor");
+  ok('visual: fundo da página e do cartão são claros', fundo.split('|').every((c) => c.match(/\d+/g).slice(0, 3).reduce((s, n) => s + +n, 0) / 3 > 190), fundo);
+  const fonte = await A.av("getComputedStyle(document.querySelector('h1')).fontFamily + '|' + getComputedStyle(document.getElementById('c-total')).fontFamily");
+  ok('visual: tipografia Montserrat (sem monoespaçada)', !/mono|consolas|cascadia/i.test(fonte) && /Montserrat/.test(fonte), fonte);
+  ok('visual: telemetria (azimute/inclinação/exagero) escondida', await A.av("getComputedStyle(document.querySelector('.leituras')).display === 'none'"));
 }
 
 async function estado(A) {
@@ -364,13 +391,16 @@ async function tamanhos(A, cdpPorta, url) {
   }
 }
 
-function contraste() {
+function contraste() { // tudo sobre o papel creme dos cartões (#fbf5e6): texto ≥ 4,5:1; cor de rota (alfinete, ícone, carimbo) ≥ 3:1
   const lum = (h) => { const [r, g, b] = [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255).map((c) => (c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4)); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
   const razao = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
-  const fundo = '#040d13';
-  const piores = REG.grupos.map((g) => [g.nome, +razao(g.cor_luz, fundo).toFixed(2)]).filter(([, r]) => r < 4.5);
-  ok('contraste: cor de cada rota (cor_luz) sobre o fundo da ficha ≥ 4,5:1', !piores.length, piores);
-  ok('contraste: texto secundário (#a9bcc4) e aviso (#ffd2a3) ≥ 4,5:1', razao('#a9bcc4', fundo) >= 4.5 && razao('#ffd2a3', fundo) >= 4.5);
+  const papel = '#fbf5e6';
+  const rotas = REG.grupos.map((g) => [g.nome, +razao(g.cor_luz, papel).toFixed(2)]).filter(([, r]) => r < 3);
+  ok('contraste: cor de cada rota sobre o papel ≥ 3:1 (gráficos)', !rotas.length, rotas);
+  const textos = { tinta: '#3a2a1a', 'tinta-suave': '#6b5440', verde: '#1f4d36', terracota: '#b4532a' };
+  const ruins = Object.entries(textos).map(([n, c]) => [n, +razao(c, papel).toFixed(2)]).filter(([, r]) => r < 4.5);
+  ok('contraste: textos (tinta, tinta suave, verde, terracota) sobre o papel ≥ 4,5:1', !ruins.length, ruins);
+  ok('contraste: texto do botão ativo (papel sobre verde) ≥ 4,5:1', razao(papel, '#1f4d36') >= 4.5);
 }
 
 async function servidor() {
@@ -392,7 +422,7 @@ async function servidor() {
   matar(ps);
 }
 
-const SECOES = [carregar, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos];
+const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos];
 
 function servidorHTTP(porta) {
   const mimes = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.bin': 'application/octet-stream' };

@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "telao", "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "8797", "--bind", "127.0.0.1", "--directory", "telao"], "port": 8797 }
+  ]
+}

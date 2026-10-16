@@ -2,6 +2,8 @@
 
 **Pedido do usuário (16/10/2026):** a estética do mapa deve remeter ao **aspecto rural, não sci-fi**. Referência: [referencia-visual.webp](referencia-visual.webp) — "Passaporte Rural do Rio" (mapa ilustrado dobrável + passaporte com carimbos). Inspiração conceitual (proposta do usuário): "Mapa dos Sabores e Vivências do Rio", título "Rio Rural: sabores, histórias e caminhos", frase de campanha "O Rio tem muitos sabores. Descubra onde eles nascem."
 
+**Estado (16/10/2026):** v1 implementada e provada (ver `STEPS.md`, F4). O relevo é uma malha pintada, não uma ilustração desenhada à mão: busca a mesma paleta e leitura (papel, verdes, turquesa, alfinetes com ícone, carimbos), sem copiar a referência. Aprovação do usuário pendente.
+
 ## O que a referência mostra (e o telão deve ecoar)
 - Fundo de **papel creme**; mapa **ilustrado**: serras em verde-mata escuro com textura de copa, campos verde-claro/amarelados, **rios e litoral em azul-turquesa** com espuma branca, contorno **tracejado** claro ao redor do estado.
 - **Alfinetes em gota** (terracota, ocre, verde, vinho) com ícone no miolo (xícara de café, mel, queijo, flor), rotas tracejadas.

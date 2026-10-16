@@ -20,16 +20,16 @@ cod = {norm(m['nome']): m['codigo'] for m in mun3d['municipios']}
 LON0, LAT0 = -42.925, -22.05
 KX = 111.320 * math.cos(math.radians(LAT0)); KY = 110.574
 
-# rotas temáticas -> grupos (cor do dado + cor clara p/ fundo escuro de TV)
-ROTA = [('Café e Fazendas Históricas', 'cafe', '#8a5a2b', '#e8b070', 'circulo'),
-        ('Queijos e Sabores da Montanha', 'queijos', '#c9a227', '#ffe07a', 'quadrado'),
-        ('Cachaças, Cervejas e Doces', 'bebidas-doces', '#a8452f', '#ff9a7a', 'losango'),
-        ('Frutas, Flores e Colheitas', 'colheitas', '#d9658b', '#ffa6c4', 'estrela'),
-        ('Águas e Pesca', 'pesca', '#1f8fa0', '#6fe3f0', 'anel'),
-        ('Mata Atlântica e Natureza', 'natureza', '#2f8a4f', '#7ee8a2', 'triangulo'),
-        ('Mesa e Pouso Rural', 'mesa-pouso', '#b5562a', '#ffb38a', 'pentagono'),
-        ('Cultura, Artesanato e Festas', 'cultura', '#7b4fa0', '#c9a6ff', 'hexagono'),
-        ('Vivências no Campo', 'campo', '#7a7468', '#d6d0c4', 'gota')]
+# rotas temáticas -> grupos (cor do dado = cor_luz = cor da rota sobre o papel creme; ícone rural por rota; contraste ≥ 3:1 para gráficos)
+ROTA = [('Café e Fazendas Históricas', 'cafe', '#7b4a24', '#7b4a24', 'cafe'),
+        ('Queijos e Sabores da Montanha', 'queijos', '#b8820a', '#b8820a', 'queijo'),
+        ('Cachaças, Cervejas e Doces', 'bebidas-doces', '#a8452f', '#a8452f', 'garrafa'),
+        ('Frutas, Flores e Colheitas', 'colheitas', '#c0446f', '#c0446f', 'flor'),
+        ('Águas e Pesca', 'pesca', '#1f7f93', '#1f7f93', 'peixe'),
+        ('Mata Atlântica e Natureza', 'natureza', '#2e7d3f', '#2e7d3f', 'folha'),
+        ('Mesa e Pouso Rural', 'mesa-pouso', '#c26a1a', '#c26a1a', 'mesa'),
+        ('Cultura, Artesanato e Festas', 'cultura', '#6f4aa0', '#6f4aa0', 'artesanato'),
+        ('Vivências no Campo', 'campo', '#7a7468', '#7a7468', 'campo')]
 RSLUG = {r[0]: r[1] for r in ROTA}
 CAT = ['Café', 'Cachaça e bebidas', 'Queijos e laticínios', 'Doces e compotas', 'Mel e abelhas', 'Frutas', 'Flores e plantas',
        'Hortaliças e orgânicos', 'Gastronomia', 'Hospedagem', 'Natureza e aventura', 'Fazenda histórica', 'Artesanato', 'Pesca e criação']
@@ -81,7 +81,9 @@ COMPOE = {'cafe': ['produção e degustação de café', 'fazendas históricas']
           'colheitas': ['frutas e pomares', 'flores e plantas', 'hortas e orgânicos'], 'pesca': ['pesque-pague', 'pesca e cultura caiçara'],
           'natureza': ['trilhas e cachoeiras', 'Mata Atlântica e observação de aves'], 'mesa-pouso': ['restaurantes rurais', 'pousadas e hospedagem'],
           'cultura': ['artesanato', 'festas tradicionais', 'museus e igrejas'], 'campo': ['cavalgadas e haras', 'sítios de lazer e fazendinhas', 'outras vivências']}
-cam = [{'slug': s, 'nome': n, 'curto': n.split(',')[0].split(' e ')[0], 'simbolo': sb, 'cor': cl, 'compoe': COMPOE.get(s, [])} for n, s, cd, cl, sb in ROTA if tot[s]]
+CURTO = {'cafe': 'Café e fazendas', 'queijos': 'Queijos e montanha', 'bebidas-doces': 'Cachaças e doces', 'colheitas': 'Frutas e flores', 'pesca': 'Águas e pesca',
+         'natureza': 'Mata e natureza', 'mesa-pouso': 'Mesa e pouso', 'cultura': 'Cultura e festas', 'campo': 'Vivências no campo'}
+cam = [{'slug': s, 'nome': n, 'curto': CURTO.get(s, n), 'simbolo': sb, 'cor': cl, 'compoe': COMPOE.get(s, [])} for n, s, cd, cl, sb in ROTA if tot[s]]
 lentes = {'camadas': {'rotulo': 'Rotas', 'unidade': 'atrativos', 'itens': cam},
           'eixos': {'rotulo': 'Quero…', 'unidade': 'atrativos', 'itens': itens(EXP, 'estrela'),
                     'nota': 'Um atrativo pode oferecer mais de uma experiência: as contagens não somam.'},

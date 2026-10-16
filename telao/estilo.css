@@ -169,20 +169,20 @@ button { font-family: var(--fonte); }
 #pausa:focus-visible, #ver-estado:focus-visible { outline: 3px solid var(--terracota); outline-offset: 3px; }
 
 /* rodapé: uma linha só, sempre visível; fontes completas no painel ⓘ */
-#rodape { position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: center; gap: 1.5rem; padding: .3rem 1.6rem .3rem 2rem; background: rgba(241, 230, 200, .97); border-top: .16rem solid var(--borda); font-size: 1.1rem; line-height: 1.2; font-weight: 600; color: var(--tinta-suave); }
+#rodape { position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: center; gap: 1.5rem; padding: .3rem 1.6rem .3rem 2rem; background: rgba(241, 230, 200, .97); border-top: .16rem solid var(--borda); font-size: .9rem; line-height: 1.2; font-weight: 600; color: var(--tinta-suave); }
 #r-base { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 #r-base b { color: var(--terracota); letter-spacing: .06em; text-transform: uppercase; }
 #info, #fechar, #i-fechar, #f-fechar, #tela-cheia {
   pointer-events: auto; flex: none; min-height: max(48px, 2.5rem); min-width: max(48px, 7.5rem); padding: 0 1.3rem;
-  font: 800 1.1rem var(--fonte); color: var(--verde); background: var(--papel);
+  font: 800 .95rem var(--fonte); color: var(--verde); background: var(--papel);
   border: .14rem solid var(--verde-2); border-radius: 3rem; cursor: pointer;
 }
 #info[aria-expanded="true"] { background: var(--verde); color: var(--papel); }
 #tela-cheia { min-width: max(48px, 3.2rem); padding: 0; display: grid; place-items: center; }
 #tela-cheia svg { width: 1.6rem; height: 1.6rem; }
 #tela-cheia:focus-visible, #info:focus-visible, #fechar:focus-visible, #i-fechar:focus-visible, #f-fechar:focus-visible, #i-lista button:focus-visible { outline: 3px solid var(--terracota); outline-offset: 3px; }
-#fontes { pointer-events: auto; right: 1.6rem; bottom: calc(var(--rodape-h) + .8rem); width: 58rem; padding: 1.2rem 1.6rem; z-index: 5; }
-#f-lista { display: grid; grid-template-columns: 11rem 1fr; gap: .7rem 1.2rem; margin-top: .8rem; font-size: 1.1rem; line-height: 1.35; }
+#fontes { pointer-events: auto; right: 1.6rem; bottom: calc(var(--rodape-h) + .8rem); width: 50rem; padding: 1.2rem 1.6rem; z-index: 5; }
+#f-lista { display: grid; grid-template-columns: 11rem 1fr; gap: .7rem 1.2rem; margin-top: .8rem; font-size: .9rem; line-height: 1.35; }
 #f-lista dt { font-weight: 800; color: var(--terracota); }
 #f-lista dd { color: var(--tinta); overflow-wrap: anywhere; }
 #fechar { display: block; margin: 1rem 0 0 auto; }

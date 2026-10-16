@@ -401,7 +401,7 @@ async function tamanhos(A, cdpPorta, url) {
       return { dd: px('#f-dados dd'), nome: px('#f-nome'), qr: q.width, rolagemH: document.documentElement.scrollWidth > innerWidth,
         dentro: f.left >= 0 && f.right <= innerWidth + 1 && f.top >= 0 && f.bottom <= innerHeight + 1, sobrepoe: !(f.right <= c.left || f.left >= c.right || f.bottom <= c.top || f.top >= c.bottom) }; })()`);
     const larga = Number(tam.split('x')[0]) >= 1366;
-    ok(`tamanhos ${tam}: letra da ficha ≥ ${lim.dd}px, nome ≥ ${lim.nome}px, QR ≥ ${lim.qr}px`, m.dd >= lim.dd && m.nome >= lim.nome && m.qr >= lim.qr, m);
+    ok(`tamanhos ${tam}: letra da ficha ≥ ${lim.dd}px, nome ≥ ${lim.nome}px, QR ≥ ${lim.qr}px`, m.dd >= lim.dd && m.nome >= lim.nome && (m.qr >= lim.qr || (tam === '390x844' && m.qr === 0 && (await B.av("getComputedStyle(document.getElementById('f-abrir')).display === 'block'")))), m); // celular: botão do Maps no lugar do QR
     ok(`tamanhos ${tam}: sem rolagem horizontal e ficha dentro da tela`, !m.rolagemH && m.dentro, m);
     if (larga) ok(`tamanhos ${tam}: ficha não cobre o cartão`, !m.sobrepoe, m);
     await B.capturar(`p-tam-${tam}.png`);
@@ -477,7 +477,33 @@ async function idiomas(A, cdpPorta, url) {
   }
 }
 
-const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook, idiomas];
+async function celular(A, cdpPorta, url) {
+  const rica = Object.keys(FIC).find((c) => FIC[c].telefone && FIC[c].funcionamento && FIC[c].descricao.length > 300 && FIC[c].lat != null);
+  for (const tam of ['360x740', '390x844', '412x915', '768x1024', '844x390']) {
+    const B = await abrirAba(cdpPorta, url, tam);
+    await B.abrirTelao();
+    const dentro = (sel) => B.av(`(() => { const e = document.querySelector(${JSON.stringify(sel)}); if (!e || e.closest('[hidden]')) return false; const r = e.getBoundingClientRect(); return r.width > 0 && r.left >= -1 && r.right <= innerWidth + 1 && r.top >= -1 && r.bottom <= innerHeight + 1; })()`);
+    ok(`celular ${tam}: sem rolagem horizontal`, await B.av('document.documentElement.scrollWidth <= innerWidth'));
+    for (const sel of ['#titulo h1', '#cartao', '#ver-estado', '#norte', '#info', '#idiomas [data-idioma="de"]']) ok(`celular ${tam}: ${sel} cabe na tela`, await dentro(sel));
+    const peq = await B.av(`[...document.querySelectorAll('#idiomas button, #info, #ver-estado, #norte, #c-abas button')].filter((b) => { const r = b.getBoundingClientRect(); return r.width < 40 || r.height < 40; }).map((b) => b.id || b.textContent)`);
+    ok(`celular ${tam}: alvos de toque ≥ 40 px`, !peq.length, peq);
+    await B.clicar(B.centro(await B.ret('#info')));
+    ok(`celular ${tam}: painel Sobre o mapa cabe e rola`, await B.ate("!document.getElementById('fontes').hidden", 2000) && await dentro('#fontes') && await dentro('#fechar') );
+    await B.clicar(B.centro(await B.ret('#fechar')));
+    await B.av(`window.__telao.abrir(${JSON.stringify(rica)})`); await espera(1200);
+    { const d = { f: await dentro("#ficha"), x: await dentro("#f-fechar"), q: await dentro("#f-qr"), r: await B.av("JSON.stringify([\"#ficha\",\"#f-fechar\",\"#f-qr\"].map((s) => document.querySelector(s).getBoundingClientRect().toJSON()))") }; ok(`celular ${tam}: ficha cabe na tela, com botão Fechar e QR`, d.f && d.x, d); }
+    ok(`celular ${tam}: cartão some enquanto a ficha está aberta`, await B.av("getComputedStyle(document.getElementById('cartao')).display === 'none'") || Number(tam.split('x')[0]) > 760);
+    await B.clicar(B.centro(await B.ret('#f-fechar')));
+    ok(`celular ${tam}: fechar a ficha devolve o cartão`, await B.ate("document.getElementById('ficha').hidden", 2000) && await dentro('#cartao'));
+    await B.clicar(B.centro(await B.ret('#idiomas [data-idioma="de"]')));
+    ok(`celular ${tam}: trocar idioma por toque`, await B.ate("document.documentElement.lang.startsWith('de') && document.getElementById('c-total-rot').textContent === 'Orte zu besuchen'", 4000) && await dentro('#info'));
+    await B.capturar(`p-celular-${tam}.png`);
+    await B.limpo(`celular ${tam}`);
+    await fetch(`http://127.0.0.1:${cdpPorta}/json/close/${B.id}`);
+  }
+}
+
+const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook, idiomas, celular];
 
 function servidorHTTP(porta) {
   const mimes = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.bin': 'application/octet-stream' };

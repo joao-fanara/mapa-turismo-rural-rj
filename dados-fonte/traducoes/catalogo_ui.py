@@ -20,6 +20,7 @@ C = {
 'Aponte o celular para abrir no mapa': ('Point your phone here to open the map', 'Scannez avec votre téléphone pour ouvrir la carte', 'Mit dem Handy scannen, um die Karte zu öffnen'),
 'Toque num município para explorar · arraste para mover · gire e incline com dois dedos': ('Tap a municipality to explore · drag to move · rotate and tilt with two fingers', 'Touchez une commune pour explorer · glissez pour déplacer · tournez et inclinez avec deux doigts', 'Gemeinde antippen · Ziehen zum Verschieben · mit zwei Fingern drehen und neigen'),
 'Informações dos guias Turismo Rural RJ (TurisRio / Setur-RJ). Confirme horários e agendamento com cada lugar antes de ir.': ('Information from the Rural Tourism RJ guides (TurisRio / Setur-RJ). Please confirm opening hours and bookings with each place before you go.', 'Informations issues des guides Tourisme rural RJ (TurisRio / Setur-RJ). Confirmez les horaires et les réservations auprès de chaque lieu avant de partir.', 'Angaben aus den Reiseführern Landtourismus RJ (TurisRio / Setur-RJ). Bitte Öffnungszeiten und Reservierung vor dem Besuch beim jeweiligen Ort bestätigen.'),
+'Abrir no Google Maps': ('Open in Google Maps', 'Ouvrir dans Google Maps', 'In Google Maps öffnen'),
 'Todo o estado': ('Whole state', 'Tout l’État', 'Ganzer Bundesstaat'),
 'Estado do Rio de Janeiro': ('State of Rio de Janeiro', 'État de Rio de Janeiro', 'Bundesstaat Rio de Janeiro'),
 'lugar para visitar': ('place to visit', 'lieu à visiter', 'Ort zu besuchen'),

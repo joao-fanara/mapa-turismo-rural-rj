@@ -247,11 +247,40 @@ button { font-family: var(--fonte); }
 #f-qr-bloco figcaption { max-width: 11rem; font-size: 1rem; line-height: 1.2; font-weight: 600; text-align: center; color: var(--tinta-suave); }
 #f-precisao { margin-top: .7rem; font-size: 1.1rem; line-height: 1.3; font-weight: 600; color: var(--terracota); }
 #f-descricao { margin-top: .8rem; padding-top: .7rem; border-top: .1rem solid var(--linha); font-size: 1.1rem; line-height: 1.45; font-weight: 500; color: var(--tinta); white-space: pre-line; }
-@media (max-width: 760px) { /* celular: ficha e lista sobem da base da tela, por cima do mapa */
-  #ficha, #item { left: .5rem !important; right: .5rem; width: auto !important; top: auto; bottom: calc(var(--rodape-h) + .5rem); max-height: 70vh; }
+@media (max-width: 900px) { /* celular: o mapa ocupa a tela; cartão, lista e ficha sobem da base como folhas */
+  html { font-size: 15px; }
+  #titulo { right: 0; padding: .5rem .9rem .3rem; }
+  #titulo .olho, #titulo .lema, #subtitulo, #leitura { display: none; }
+  #titulo h1 { font-size: 1.7rem; margin-top: 0; }
+  #cartao, #ficha, #item { left: .5rem !important; right: .5rem; width: auto !important; top: auto; bottom: calc(var(--rodape-h) + .5rem); }
+  #cartao { max-height: 40vh; overflow-y: auto; padding: .7rem 1rem .6rem; }
+  #cartao h2 { font-size: 1.5rem; white-space: normal; }
+  #cartao .c-total b { font-size: 2.1rem; }
+  #ficha, #item { max-height: 72vh; overflow-y: auto; z-index: 6; }
+  body:has(#ficha:not([hidden])) #cartao, body:has(#item:not([hidden])) #cartao { display: none; }
   #f-corpo { grid-template-columns: 1fr; justify-items: start; }
+  #f-qr-bloco { display: none; }
+  #f-abrir:not([hidden]) { display: block; margin-top: .8rem; padding: .8rem 1rem; text-align: center; font: 800 1rem var(--fonte); color: var(--papel); background: var(--verde); border-radius: 3rem; text-decoration: none; pointer-events: auto; }
+  #f-fechar, #i-fechar { position: sticky; top: 0; }
+  #fechar { position: sticky; bottom: 0; }
+  #bussola { right: .6rem; top: 2.8rem; bottom: auto; }
+  .rosa { width: 3.6rem; height: 3.6rem; }
+  #agulha { font-size: 1rem; }
+  #controles { left: .6rem; right: auto; top: 2.8rem; bottom: auto; }
+  #pausa { display: none; }
+  #ver-estado { min-width: 0; min-height: 44px; padding: .3rem .9rem; font-size: .95rem; }
+  #rodape { gap: .5rem; padding: .3rem .6rem; justify-content: space-between; }
+  #r-base { display: none; }
+  #info { min-width: 44px; padding: 0 .8rem; font-size: .9rem; white-space: nowrap; }
+  #tela-cheia { display: none; }
+  #idiomas button { min-width: 44px; padding: 0 .2rem; font-size: .9rem; }
+  #fontes { left: .5rem; right: .5rem; width: auto; max-height: 72vh; overflow-y: auto; z-index: 7; }
+  #f-lista { grid-template-columns: 1fr; gap: .2rem; }
+  #f-lista dd { margin-bottom: .6rem; }
+  #convite { left: .5rem; right: .5rem; width: auto; font-size: .9rem; }
 }
 
+#f-abrir { display: none; }
 /* idiomas */
 #idiomas { display: flex; gap: .2rem; pointer-events: auto; flex: none; }
 #idiomas button { min-width: max(44px, 2.8rem); min-height: max(44px, 2.5rem); border: .12rem solid var(--linha); border-radius: .5rem; background: var(--papel-2); color: var(--tinta-suave); font: 800 1rem var(--fonte); cursor: pointer; }

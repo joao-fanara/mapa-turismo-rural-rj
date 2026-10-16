@@ -1302,6 +1302,7 @@ async function iniciar() {
       qr.innerHTML = q.createSvgTag({ cellSize: 4, margin: 8, scalable: true }); // margem de 2 módulos: zona de silêncio para o leitor do celular
     }
     $('f-qr-bloco').hidden = !qr.childElementCount;
+    const ab = $('f-abrir'); ab.href = url || '#'; ab.hidden = !url; // no celular o próprio aparelho abre o mapa: botão no lugar do QR
     $('f-descricao').textContent = tr?.descricao ?? (f.descricao || '');
     itemDados.fill(0); // só o alvo deste atrativo fica aceso no chão (se tiver ponto)
     if (precisao[r[3]]?.ponto_exato_permitido) { itemDados[indiceReg.get(codigo) * 4] = 255; U.uTemItem.value = 1; }

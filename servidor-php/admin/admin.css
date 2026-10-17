@@ -45,4 +45,6 @@ tr.com-erro td { background: #fbe3dc; }
 .selo { font-size: .8rem; padding: .05rem .4rem; border-radius: .3rem; background: var(--papel-2); border: 1px solid var(--linha); }
 code { font-size: 1.1rem; background: #fff; padding: .1rem .4rem; border: 1px solid var(--linha); user-select: all; }
 .paginas a { margin-right: 1rem; }
+.credito { max-width: 72rem; margin: 2rem auto 1rem; padding: .8rem 1rem 0; border-top: 1px solid var(--linha); font-size: .8rem; color: var(--suave); }
+.credito a { font-weight: 400; color: var(--suave); }
 @media (max-width: 700px) { table { display: block; overflow-x: auto; } }

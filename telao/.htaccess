@@ -20,3 +20,12 @@
     ExpiresByType image/png "access plus 1 month"
     ExpiresByType application/octet-stream "access plus 1 month"
 </IfModule>
+
+# HTML, CSS, JS e JSON sempre revalidados (resposta 304 rápida quando nada mudou): depois de Publicar ou de uma
+# atualização, ninguém fica com CSS antigo misturado com JS novo.
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|css|js|json)$">
+        Header set Cache-Control "no-cache"
+        Header unset Expires
+    </FilesMatch>
+</IfModule>

@@ -52,7 +52,7 @@ function pagina(string $titulo, string $corpo): never
     echo '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
         . '<meta name="robots" content="noindex"><meta name="author" content="João Fanara"><title>' . e($titulo) . ' · Admin Rio Rural</title>'
         . '<link rel="stylesheet" href="admin.css"></head><body><header><b class="marca">Rio Rural <small>admin</small></b><nav>' . $menu . '</nav></header><main>'
-        . ($aviso ? '<p class="aviso" role="status">' . e($aviso) . '</p>' : '') . '<h1>' . e($titulo) . '</h1>' . $corpo . '</main></body></html>';
+        . ($aviso ? '<p class="aviso" role="status">' . e($aviso) . '</p>' : '') . '<h1>' . e($titulo) . '</h1>' . $corpo . '</main><footer class="credito">Solução produzida por João Fanara · <a href="mailto:estudio@fanara.com.br">estudio@fanara.com.br</a></footer></body></html>';
     exit;
 }
 

@@ -400,7 +400,7 @@ async function notebook(A, cdpPorta, url) {
 async function tamanhos(A, cdpPorta, url) {
   const rica = Object.keys(FIC).find((c) => FIC[c].telefone && FIC[c].funcionamento && FIC[c].descricao.length > 300 && FIC[c].lat != null);
   for (const [tam, lim] of [['1920x1080', { dd: 20, nome: 32, qr: 200 }], ['3840x2160', { dd: 40, nome: 64, qr: 400 }], ['1366x768', { dd: 14, nome: 24, qr: 150 }], ['390x844', { dd: 14, nome: 20, qr: 120 }]]) {
-    const B = await abrirAba(cdpPorta, url, tam);
+    const B = await abrirAba(cdpPorta, `${url}?modo=telao`, tam); // TV: ficha com QR
     await B.abrirTelao();
     await B.av(`window.__telao.abrir(${JSON.stringify(rica)})`); await espera(1500);
     const m = await B.av(`(() => { const px = (s) => parseFloat(getComputedStyle(document.querySelector(s)).fontSize), r = (s) => document.querySelector(s).getBoundingClientRect();
@@ -590,7 +590,28 @@ async function rolagem(A, cdpPorta, url) { // painel "o que tem aqui" em noteboo
   await fetch(`http://127.0.0.1:${cdpPorta}/json/close/${B.id}`);
 }
 
-const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook, idiomas, celular, modolista, busca, rolagem];
+async function links(A, cdpPorta, url) { // site (sem ?modo=telao): ficha sem QR, com links diretos
+  await A.abrirTelao();
+  const cod = Object.keys(FIC).find((c) => /^@?[A-Za-z0-9._]+$/.test(FIC[c].instagram.trim()) && /^(https?:\/\/)?[a-z0-9.-]+\.[a-z]{2,}/i.test(FIC[c].site.trim()) && FIC[c].telefone.replace(/\D/g, '').length === 11 && !/[/;]| e /.test(FIC[c].telefone));
+  ok('links: há ficha com Instagram, site e telefone para testar', !!cod);
+  await A.av(`window.__telao.abrir(${JSON.stringify(cod)})`); await espera(800);
+  const r = await A.av(`(() => { const as = [...document.querySelectorAll('#f-dados a')].map((a) => ({ t: a.textContent, h: a.href, alvo: a.target, rel: a.rel }));
+    return { as, qr: getComputedStyle(document.getElementById('f-qr-bloco')).display, abrir: getComputedStyle(document.getElementById('f-abrir')).display, maps: document.getElementById('f-abrir').href }; })()`);
+  const f = FIC[cod], arroba = f.instagram.trim().replace(/^@/, '');
+  ok('links: no site a ficha não mostra QR; mostra o botão do Google Maps', r.qr === 'none' && r.abrir === 'block' && /^https:\/\/(maps\.google\.com|www\.google\.com\/maps)/.test(r.maps), r);
+  ok('links: Instagram abre o perfil em nova aba', r.as.some((a) => a.h === `https://www.instagram.com/${arroba}/` && a.alvo === '_blank' && /noopener/.test(a.rel)), r.as);
+  ok('links: site abre em nova aba com https', r.as.some((a) => a.t === f.site && /^https?:\/\//.test(a.h) && a.alvo === '_blank'), r.as);
+  ok('links: telefone liga (tel:+55…)', r.as.some((a) => a.h === `tel:+55${f.telefone.replace(/\D/g, '')}`), r.as);
+  ok('links: texto da ficha igual ao do guia (só ganhou link)', await A.av(`[...document.querySelectorAll('#f-dados dt')].find((d) => d.textContent === 'Telefone')?.nextElementSibling.textContent === ${JSON.stringify(f.telefone)}`));
+  const B = await abrirAba(cdpPorta, `${url}?modo=telao`, '1920x1080');
+  await B.abrirTelao();
+  await B.av(`window.__telao.abrir(${JSON.stringify(cod)})`); await espera(800);
+  ok('links: no modo telão (TV) a ficha mostra o QR e não o botão', await B.av("getComputedStyle(document.getElementById('f-qr-bloco')).display === 'flex' && getComputedStyle(document.getElementById('f-abrir')).display === 'none'"));
+  await B.limpo('links telão');
+  await fetch(`http://127.0.0.1:${cdpPorta}/json/close/${B.id}`);
+}
+
+const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook, idiomas, celular, modolista, busca, rolagem, links];
 
 function servidorHTTP(porta) {
   const mimes = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.bin': 'application/octet-stream' };
@@ -626,7 +647,7 @@ async function main() {
   if (WIN && !remoto && (!so || so === 'servidor')) { console.log('--- servidor (PowerShell: só no Windows)'); await servidor(); }
   for (const secao of SECOES.filter((s) => !so || s.name === so)) {
     console.log(`--- ${secao.name}`);
-    const A = await abrirAba(cdpPorta, url + (secao.name === 'passeio' ? '?ocio=1500' : ''), tam);
+    const A = await abrirAba(cdpPorta, url + ({ passeio: '?ocio=1500&modo=telao', alvo: '?modo=telao' }[secao.name] ?? ''), tam);
     let relogio;
     await Promise.race([secao(A, cdpPorta, url), new Promise((_, nao) => { relogio = setTimeout(() => nao(new Error(`seção ${secao.name} passou de 120 s`)), 120000); })]);
     clearTimeout(relogio);

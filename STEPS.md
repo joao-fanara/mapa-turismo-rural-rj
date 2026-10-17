@@ -90,3 +90,6 @@ Cartão compacto (cabe com 9 rotas sem rolar), unidades dvh, zona dos rótulos e
 
 ## Rotas, produtos e experiências editáveis (16/10/2026)
 Admin → "Rotas e produtos": criar/editar rota (nome, nome curto da legenda, cor com contraste ≥ 3:1 sobre o papel, ícone entre 17 — novos: cacho de uva e ramo de oliveira —, o que reúne, ordem), produto e experiência; traduções do nome com "revisada"; excluir só quando nenhum lugar usa. Publicar gera também `dados/termos-{en,fr,de}.json` (nomes traduzidos), que o site carrega por cima do catálogo fixo. Provas: integração (rota nova sai no mapa com cor, total e ícone; produto novo na lente e no lugar; contraste; duplicado; exclusão bloqueada em uso) e `admin: todos os ícones oferecidos existem no mapa`.
+
+## Ficha: links no site, QR só no telão (16/10/2026)
+No site, a ficha traz Instagram (perfil), site (https) e telefone (tel:+55…) clicáveis e o botão "Abrir no Google Maps"; o QR aparece só em `?modo=telao` (o `abrir-telao.bat` já abre assim). Provas: seção `links`; `alvo`, `passeio` e `tamanhos` rodam em modo telão.

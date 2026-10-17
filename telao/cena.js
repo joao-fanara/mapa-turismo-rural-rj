@@ -8,6 +8,8 @@ import { iniciarIdiomas, localeAtual, t, tLista, traducaoDe } from './i18n.js';
 THREE.ColorManagement.enabled = false; // cores dos shaders são valores de tela (sRGB), sem conversão
 
 const DADOS = './dados/';
+// ?modo=telao (abrir-telao.bat, TV de quiosque): ficha com QR para o celular; no site, links diretos e botão do Google Maps
+if (new URLSearchParams(location.search).get('modo') === 'telao') document.documentElement.classList.add('modo-telao');
 const EXAG = 6;   // exagero vertical do relevo (mostrado no HUD)
 const FOV = 24;   // graus, vertical
 const OCIOSO_MS = parseInt(new URL(window.location).searchParams.get('ocio') || '30000', 10); // parâmetro ?ocio para teste
@@ -1297,15 +1299,29 @@ async function iniciar() {
     $('f-carimbo-rota').textContent = g?.nome ?? '';
     const dl = $('f-dados');
     dl.replaceChildren();
-    const linha = (rot, txt) => {
-      if (!txt) return;
+    // partes: texto ou [texto, href]; o link só nasce de padrão conferido (instagram, site http/https, telefone), nunca de HTML
+    const linha = (rot, ...partes) => {
+      partes = partes.filter((p) => (Array.isArray(p) ? p[0] : p));
+      if (!partes.length) return;
       const dt = document.createElement('dt'), dd = document.createElement('dd');
-      dt.textContent = rot; dd.textContent = txt; dl.append(dt, dd);
+      dt.textContent = rot;
+      partes.forEach((p, i) => {
+        if (i) dd.append(' · ');
+        if (!Array.isArray(p) || !p[1]) { dd.append(Array.isArray(p) ? p[0] : p); return; }
+        const a = Object.assign(document.createElement('a'), { textContent: p[0], href: p[1] });
+        if (!p[1].startsWith('tel:')) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+        dd.append(a);
+      });
+      dl.append(dt, dd);
     };
+    const insta = f.instagram && (f.instagram.includes(' ') || f.instagram.startsWith('@') ? f.instagram : `@${f.instagram}`);
+    const arroba = /^@?([A-Za-z0-9._]{1,30})$/.exec((f.instagram || '').trim())?.[1];
+    const site = /^(https?:\/\/)?([a-z0-9.-]+\.[a-z]{2,})(\/\S*)?$/i.exec((f.site || '').trim());
+    const tel = (f.telefone || '').replace(/\D/g, '');
     linha('Endereço', f.endereco);
     linha('Funcionamento', tr?.funcionamento ?? f.funcionamento);
-    linha('Telefone', f.telefone);
-    linha('Redes', [f.instagram && (f.instagram.includes(' ') || f.instagram.startsWith('@') ? f.instagram : `@${f.instagram}`), f.site].filter(Boolean).join(' · '));
+    linha('Telefone', [f.telefone, tel.length >= 10 && tel.length <= 13 && !/[/;]| e /.test(f.telefone) ? `tel:+${tel.length <= 11 ? '55' : ''}${tel}` : '']);
+    linha('Redes', [insta, arroba ? `https://www.instagram.com/${arroba}/` : ''], [f.site, site ? `${site[1] || 'https://'}${site[2]}${site[3] || ''}` : '']);
     linha('Produtos', f.categorias && f.categorias !== 'Outros' ? tLista(f.categorias.replaceAll('; ', ', ')) : '');
     linha('Experiências', tLista((f.experiencias || '').replaceAll('; ', ', ')));
     linha('Também nas rotas', tLista((f.rotas || '').split('; ').filter((n) => n && n !== g?.nome).join(', ')));
@@ -1320,8 +1336,8 @@ async function iniciar() {
     }
     selos.hidden = !selos.childElementCount;
     const pr = $('f-precisao');
-    pr.textContent = r[3] === 'municipal' ? 'Endereço exato não informado: o mapa mostra só o município. O QR procura o lugar pelo nome.'
-      : r[3] === 'referencia' ? 'Localização aproximada (bairro ou endereço). O QR procura o lugar pelo nome.' : '';
+    pr.textContent = r[3] === 'municipal' ? 'Endereço exato não informado: o mapa mostra só o município. O link do mapa procura o lugar pelo nome.'
+      : r[3] === 'referencia' ? 'Localização aproximada (bairro ou endereço). O link do mapa procura o lugar pelo nome.' : '';
     pr.hidden = !pr.textContent;
     // ponto exato: link curto com a coordenada (QR com módulos grandes, legível de longe na TV); aproximado ou sem ponto: busca pelo nome
     const url = f.precisao === 'endereco' && f.lat != null ? `https://maps.google.com/?q=${(+f.lat).toFixed(5)},${(+f.lng).toFixed(5)}` : f.mapa_url;

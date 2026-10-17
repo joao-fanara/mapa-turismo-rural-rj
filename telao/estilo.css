@@ -338,11 +338,13 @@ body.modo-lista #rodape { position: fixed; }
 #ml-maps { display: inline-block; margin-top: .6rem; text-decoration: none; color: var(--papel); background: var(--verde); }
 @media (max-width: 900px) { #ver-lista { min-height: 44px; padding: .3rem .6rem; font-size: .8rem; } }
 
-/* QR é do telão e do impresso: em telas menores que 1500 px o aparelho já está na mão, então vira botão */
-@media (max-width: 1499px) {
-  #f-qr-bloco { display: none; }
-  #f-abrir:not([hidden]) { display: block; margin-top: .8rem; padding: .8rem 1rem; text-align: center; font: 800 1rem var(--fonte); color: var(--papel); background: var(--verde); border-radius: 3rem; text-decoration: none; pointer-events: auto; }
-}
+/* QR é do telão (TV, ?modo=telao) e do impresso; no site o aparelho já está na mão: botão do Google Maps e links diretos */
+#f-qr-bloco { display: none; }
+#f-abrir:not([hidden]) { display: block; margin-top: .8rem; padding: .8rem 1rem; text-align: center; font: 800 1rem var(--fonte); color: var(--papel); background: var(--verde); border-radius: 3rem; text-decoration: none; pointer-events: auto; }
+.modo-telao #f-qr-bloco { display: flex; }
+.modo-telao #f-abrir { display: none !important; }
+#f-dados dd a { color: var(--verde); text-decoration: underline; text-underline-offset: .2em; pointer-events: auto; }
+#f-dados dd a:focus-visible, #f-abrir:focus-visible { outline: 3px solid var(--terracota); outline-offset: 2px; }
 
 /* busca no cartão */
 #busca { pointer-events: auto; display: block; width: 100%; min-height: max(44px, 2.6rem); margin-bottom: .6rem; padding: .3rem .9rem; font: 600 1rem var(--fonte); color: var(--tinta); background: var(--papel); border: .14rem solid var(--borda); border-radius: 3rem; }

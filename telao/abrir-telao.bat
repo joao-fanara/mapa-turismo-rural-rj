@@ -4,7 +4,7 @@ rem Uso: abrir-telao.bat [porta]      Defina TELAO_SEM_NAVEGADOR=1 para s? subir
 setlocal
 set "PORTA=%~1"
 if "%PORTA%"=="" set "PORTA=8797"
-set "URL=http://localhost:%PORTA%/"
+set "URL=http://localhost:%PORTA%/?modo=telao"
 
 start "Servidor do telao" /min powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0servidor.ps1" -porta %PORTA%
 

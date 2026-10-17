@@ -44,3 +44,6 @@ Os dados ficam em `dados/` (`registros.json`, `lentes.json`, `fichas.json`, `mun
 - 161 dos 630 atrativos não têm coordenada utilizável no guia e só aparecem na contagem do município e nas listas; outros 51 têm ponto aproximado (bairro ou endereço).
 - As rotas temáticas são sugestões de promoção, atribuídas por palavras-chave; não são rotas oficiais.
 - Relevo: Terrain Tiles (AWS/Mapzen). Cobertura do solo: MapBiomas. Malha municipal: IBGE. Veja ⓘ Info na tela.
+
+## Modo telão (TV)
+O `abrir-telao.bat` abre `http://localhost:8797/?modo=telao`: a ficha mostra o QR code para o visitante levar o lugar no celular. Sem `?modo=telao` (site), a ficha mostra links diretos e o botão do Google Maps.

@@ -189,7 +189,7 @@ button { font-family: var(--fonte); }
 
 /* painel "o que tem aqui" (abrirItem): à esquerda; left e width medidos em medirHud() */
 #item { pointer-events: auto; left: 2rem; top: calc(var(--titulo-b, 10rem) + .6rem); width: 34rem; max-height: calc(100% - var(--titulo-b, 10rem) - var(--rodape-h) - 7.6rem);
-  display: flex; flex-direction: column; padding: 1rem 1.4rem 1rem; z-index: 5; }
+  display: flex; flex-direction: column; padding: 1rem 1.4rem 1rem; z-index: 5; overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; } /* o painel inteiro rola: uma barra só, grossa */
 #item .i-topo { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 #item .i-topo .olho { overflow: hidden; text-overflow: ellipsis; }
 #i-nome { display: flex; align-items: center; gap: .7rem; font-size: 1.6rem; font-weight: 800; line-height: 1.15; margin-top: .4rem; color: var(--verde); }
@@ -198,7 +198,7 @@ button { font-family: var(--fonte); }
 #i-conta { font-size: 1.3rem; font-weight: 800; margin-top: .4rem; }
 #i-def, #i-nota, #i-pos, #i-mais { font-size: 1.1rem; line-height: 1.3; font-weight: 600; color: var(--tinta); margin-top: .3rem; }
 #i-nota, #i-pos { color: var(--tinta-suave); }
-#i-lista { list-style: none; margin-top: .6rem; border-top: .1rem solid var(--linha); overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; min-height: 0; flex: 0 1 auto;  }
+#i-lista { list-style: none; margin-top: .6rem; border-top: .1rem solid var(--linha); flex: none; }
 #i-lista li { padding: .45rem 0; border-bottom: .1rem solid var(--linha); font-size: 1.1rem; line-height: 1.25; }
 #i-lista li > b { display: block; font-weight: 800; }
 #i-lista .inst { display: block; color: var(--tinta-suave); }

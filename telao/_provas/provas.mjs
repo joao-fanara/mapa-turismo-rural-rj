@@ -559,7 +559,38 @@ async function busca(A) {
   ok('busca: nome de um lugar abre a ficha dele', await A.ate(`window.__telao.ficha() === ${JSON.stringify(cod)}`, 4000));
 }
 
-const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook, idiomas, celular, modolista, busca];
+async function rolagem(A, cdpPorta, url) { // painel "o que tem aqui" em notebook de tela baixa: roda do mouse e barra arrastada
+  const B = await abrirAba(cdpPorta, url, '1920x869');
+  await B.abrirTelao();
+  await B.clicar(B.centro(await B.ret('#c-abas [data-lente="tipos"]')));
+  await espera(400);
+  await B.clicar(B.centro(await B.ret('#c-grupos li[data-slug="queijos-e-laticinios"]')));
+  ok('rolagem: lista de um produto abre', await B.ate("!document.getElementById('item').hidden && document.querySelectorAll('#i-lista li').length > 10", 3000));
+  const info = () => B.av("(() => { const p = document.getElementById('item'), r = p.getBoundingClientRect(); return { top: p.scrollTop, max: p.scrollHeight - p.clientHeight, r: [r.left, r.top, r.width, r.height], visiveis: [...document.querySelectorAll('#i-lista li')].filter((li) => { const q = li.getBoundingClientRect(); return q.top >= r.top && q.bottom <= r.bottom; }).length }; })()");
+  let i = await info();
+  ok('rolagem: o painel mostra várias linhas da lista ao mesmo tempo', i.visiveis >= 3, i);
+  ok('rolagem: há o que rolar', i.max > 50, i);
+  const [x, y, w, h] = i.r;
+  await B.cdp.send('Input.dispatchMouseEvent', { type: 'mouseWheel', x: x + w / 2, y: y + h / 2, deltaX: 0, deltaY: 300 });
+  await espera(400);
+  const depoisRoda = (await info()).top;
+  ok('rolagem: a roda do mouse rola o painel', depoisRoda > 0, depoisRoda);
+  await B.av("document.getElementById('item').scrollTop = 0");
+  await espera(200);
+  const bx = x + w - 6, by = y + 30; // barra de rolagem na borda direita do painel
+  await B.cdp.send('Input.dispatchMouseEvent', { type: 'mousePressed', x: bx, y: by, button: 'left', clickCount: 1 });
+  for (let k = 1; k <= 8; k++) await B.cdp.send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: bx, y: by + k * 15, button: 'left', buttons: 1 });
+  await B.cdp.send('Input.dispatchMouseEvent', { type: 'mouseReleased', x: bx, y: by + 120, button: 'left', clickCount: 1 });
+  await espera(300);
+  const depoisBarra = await info();
+  ok('rolagem: arrastar a barra com o mouse rola o painel', depoisBarra.top > 0, depoisBarra);
+  ok('rolagem: arrastar a barra não fecha o painel nem mexe no mapa', await B.av("!document.getElementById('item').hidden"));
+  await B.capturar('p-rolagem.png');
+  await B.limpo('rolagem');
+  await fetch(`http://127.0.0.1:${cdpPorta}/json/close/${B.id}`);
+}
+
+const SECOES = [carregar, visual, estado, textos, lentes, municipio, alvo, juntos, relevo, lista, vazio, fechar, conteudo, legenda, passeio, tamanhos, notebook, idiomas, celular, modolista, busca, rolagem];
 
 function servidorHTTP(porta) {
   const mimes = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.bin': 'application/octet-stream' };

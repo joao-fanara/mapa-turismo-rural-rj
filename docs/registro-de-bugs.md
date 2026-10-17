@@ -2,6 +2,13 @@
 
 Cada entrada: sintoma, como reproduzir, causa, correção, prova que impede a volta. Mais recente primeiro.
 
+## B5 — Barra de rolagem da lista "o que tem aqui" não funcionava (16/10/2026)
+
+- **Sintoma (relatado pelo usuário, com captura):** num notebook de tela baixa (1920×869), ao tocar um produto na legenda, o painel da esquerda mostrava só uma linha da lista ("Café Monthal") e a barra de rolagem não respondia.
+- **Causa:** a rolagem estava na lista interna (`#i-lista`, `flex: 0 1 auto; min-height: 0`) dentro de um painel de altura limitada; com os textos de cima ocupando o painel, a lista encolhia para uma linha e a barra ficava minúscula, difícil de pegar.
+- **Correção:** o painel inteiro rola (uma barra só, grossa, na borda do painel); a lista deixou de ter rolagem própria; ao abrir, a rolagem do painel volta ao topo.
+- **Prova:** seção `rolagem` (1920×869: painel mostra várias linhas, roda do mouse rola, **arrastar a barra com o mouse rola**, o painel não fecha). Conferido que falha na versão anterior.
+
 ## B4 — Trocar de idioma e voltar deixava textos presos no idioma anterior (16/10/2026)
 
 - **Sintoma (relatado pelo usuário, com captura):** depois de escolher alemão e voltar ao português, as abas (Routen / Ich möchte… / Produkte), os botões (Rundgang anhalten / Als Liste ansehen / Ganzen Bundesstaat ansehen), o lema e o rodapé continuavam em alemão; os ladrilhos do mapa podiam ficar no idioma escolhido antes (ex.: "Guided visit" em português).

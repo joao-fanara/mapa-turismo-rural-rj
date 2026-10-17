@@ -1190,7 +1190,7 @@ async function iniciar() {
     itemTex.needsUpdate = true; U.uTemItem.value = 1;
     itemAberto = { municipio: regs[0][4], lente: 'pontos', slugs: [], codigos: regs.map((r) => r[5]) };
     painelI.hidden = false;
-    lista.scrollTop = 0;
+    painelI.scrollTop = 0;
     medirHud();
   }
 
@@ -1260,7 +1260,7 @@ async function iniciar() {
     itemAberto = { municipio: esc.chave, lente, slugs: [...slugs], codigos };
     marcarLegenda();
     painelI.hidden = false;
-    lista.scrollTop = 0; // depois de mostrar: oculto, o navegador ignora e a lista abriria rolada
+    painelI.scrollTop = 0; // depois de mostrar: oculto, o navegador ignora e a lista abriria rolada
     medirHud();
   }
   function fecharItem() {

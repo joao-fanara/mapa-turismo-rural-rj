@@ -50,6 +50,7 @@ function conectar(wsUrl) {
 
 async function abrirAba(cdpPorta, url, tam) {
   const [w, h] = tam.split('x').map(Number);
+  if (!/[?&]lang=/.test(url)) url += (url.includes('?') ? '&' : '?') + 'lang=pt'; // o idioma escolhido numa seção fica salvo no perfil: toda aba começa em português
   const alvo = await (await fetch(`http://127.0.0.1:${cdpPorta}/json/new?about:blank`, { method: 'PUT' })).json();
   await fetch(`http://127.0.0.1:${cdpPorta}/json/activate/${alvo.id}`);
   const cdp = await conectar(alvo.webSocketDebuggerUrl);
@@ -594,7 +595,8 @@ async function links(A, cdpPorta, url) { // site (sem ?modo=telao): ficha sem QR
   await A.abrirTelao();
   const cod = Object.keys(FIC).find((c) => /^@?[A-Za-z0-9._]+$/.test(FIC[c].instagram.trim()) && /^(https?:\/\/)?[a-z0-9.-]+\.[a-z]{2,}/i.test(FIC[c].site.trim()) && FIC[c].telefone.replace(/\D/g, '').length === 11 && !/[/;]| e /.test(FIC[c].telefone));
   ok('links: há ficha com Instagram, site e telefone para testar', !!cod);
-  await A.av(`window.__telao.abrir(${JSON.stringify(cod)})`); await espera(800);
+  await A.av(`window.__telao.abrir(${JSON.stringify(cod)})`);
+  await A.ate(`window.__telao.ficha() === ${JSON.stringify(cod)} && document.querySelectorAll('#f-dados a').length >= 2`, 4000); await espera(300);
   const r = await A.av(`(() => { const as = [...document.querySelectorAll('#f-dados a')].map((a) => ({ t: a.textContent, h: a.href, alvo: a.target, rel: a.rel }));
     return { as, qr: getComputedStyle(document.getElementById('f-qr-bloco')).display, abrir: getComputedStyle(document.getElementById('f-abrir')).display, maps: document.getElementById('f-abrir').href }; })()`);
   const f = FIC[cod], arroba = f.instagram.trim().replace(/^@/, '');
@@ -602,7 +604,7 @@ async function links(A, cdpPorta, url) { // site (sem ?modo=telao): ficha sem QR
   ok('links: Instagram abre o perfil em nova aba', r.as.some((a) => a.h === `https://www.instagram.com/${arroba}/` && a.alvo === '_blank' && /noopener/.test(a.rel)), r.as);
   ok('links: site abre em nova aba com https', r.as.some((a) => a.t === f.site && /^https?:\/\//.test(a.h) && a.alvo === '_blank'), r.as);
   ok('links: telefone liga (tel:+55…)', r.as.some((a) => a.h === `tel:+55${f.telefone.replace(/\D/g, '')}`), r.as);
-  ok('links: texto da ficha igual ao do guia (só ganhou link)', await A.av(`[...document.querySelectorAll('#f-dados dt')].find((d) => d.textContent === 'Telefone')?.nextElementSibling.textContent === ${JSON.stringify(f.telefone)}`));
+  ok('links: texto da ficha igual ao do guia (só ganhou link)', await A.ate(`[...document.querySelectorAll('#f-dados dt')].find((d) => d.textContent === 'Telefone')?.nextElementSibling.textContent === ${JSON.stringify(f.telefone)}`, 3000));
   const B = await abrirAba(cdpPorta, `${url}?modo=telao`, '1920x1080');
   await B.abrirTelao();
   await B.av(`window.__telao.abrir(${JSON.stringify(cod)})`); await espera(800);

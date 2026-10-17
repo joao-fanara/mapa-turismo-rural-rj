@@ -2,6 +2,12 @@
 
 Cada entrada: sintoma, como reproduzir, causa, correção, prova que impede a volta. Mais recente primeiro.
 
+## B6 — Dica "Toque num município…" ficava grande sobre a animação o tempo todo (17/10/2026)
+
+- **Sintoma (relatado pelo usuário, com captura):** a faixa com a dica de uso, grande, ficava sobre o mapa durante todo o passeio automático.
+- **Correção:** dica menor, que aparece 6 s quando o passeio começa e some sozinha (com esmaecimento).
+- **Também corrigido (harness):** o idioma escolhido numa seção das provas ficava salvo no perfil do Chrome e fazia as seções seguintes abrirem em outro idioma (a prova `links` falhava só na execução completa). Toda aba de prova agora começa em português (`?lang=pt`).
+
 ## B5 — Barra de rolagem da lista "o que tem aqui" não funcionava (16/10/2026)
 
 - **Sintoma (relatado pelo usuário, com captura):** num notebook de tela baixa (1920×869), ao tocar um produto na legenda, o painel da esquerda mostrava só uma linha da lista ("Café Monthal") e a barra de rolagem não respondia.

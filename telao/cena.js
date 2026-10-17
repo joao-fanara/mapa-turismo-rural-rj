@@ -1404,7 +1404,11 @@ async function iniciar() {
           ultima_ficha: null  // evita repetir mesma ficha consecutiva
         };
         trocarLente('camadas'); // o passeio é sempre na lente de abertura
-        $('convite').hidden = false; mostrarFontes(false); medirHud();
+        const cv = $('convite'); // dica de uso: aparece 6 s quando o passeio começa e some (não fica sobre a animação)
+        cv.classList.remove('passou'); cv.hidden = false; mostrarFontes(false); medirHud();
+        clearTimeout(cv.dataset.t1); clearTimeout(cv.dataset.t2);
+        cv.dataset.t1 = setTimeout(() => cv.classList.add('passou'), 6000);
+        cv.dataset.t2 = setTimeout(() => { cv.hidden = true; medirHud(); }, 7200);
       }
       return;
     }

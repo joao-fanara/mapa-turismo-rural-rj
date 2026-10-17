@@ -153,10 +153,11 @@ button { font-family: var(--fonte); }
 .lad small { font-size: .85rem; font-weight: 600; line-height: 1; color: var(--tinta-suave); } /* 1ª palavra do nome do grupo (registros.json) */
 
 #convite {
-  position: absolute; left: 50%; bottom: 15rem; transform: translateX(-60%); padding: .7rem 2rem; border-radius: 3rem;
-  font-size: 1.5rem; font-weight: 800; background: var(--papel); border: .16rem solid var(--terracota); color: var(--tinta);
-  box-shadow: var(--sombra); animation: pulso 2.4s ease-in-out infinite; white-space: nowrap;
+  position: absolute; left: 50%; bottom: 15rem; transform: translateX(-60%); padding: .4rem 1.1rem; border-radius: 3rem;
+  font-size: 1rem; font-weight: 700; background: rgba(251, 245, 230, .92); border: .12rem solid var(--terracota); color: var(--tinta);
+  box-shadow: var(--sombra); white-space: nowrap; transition: opacity 1s ease;
 }
+#convite.passou { opacity: 0; }
 @keyframes pulso { 50% { box-shadow: 0 .3rem 1.6rem rgba(180, 83, 42, .5); } }
 
 #controles { position: absolute; right: 39.5rem; bottom: calc(var(--rodape-h) + 1.2rem); display: flex; gap: .8rem; } /* sobre o mar, ao lado da bússola: não cobre a costa oeste */
@@ -289,7 +290,7 @@ button { font-family: var(--fonte); }
   #fontes { left: .5rem; right: .5rem; width: auto; max-height: 72vh; overflow-y: auto; z-index: 7; }
   #f-lista { grid-template-columns: 1fr; gap: .2rem; }
   #f-lista dd { margin-bottom: .6rem; }
-  #convite { left: .5rem; right: .5rem; width: auto; font-size: .9rem; }
+  #convite { left: .5rem; right: .5rem; width: auto; font-size: .85rem; transform: none; white-space: normal; text-align: center; }
 }
 
 #f-abrir { display: none; }
